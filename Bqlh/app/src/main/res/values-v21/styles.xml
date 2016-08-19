@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.Main" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="style_ripple">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/ripple_rectangle_while</item>
+    </style>
+
+    <style name="base_bg_ripple_oval">
+        <item name="android:background">@drawable/ripple_oval_color</item>
+    </style>
+
+    <style name="base_bg_ripple_rectangle">
+        <item name="android:background">@drawable/ripple_rectangle_while</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80px</item>
+    </style>
+
+    <style name="base_bg_ripple_rectangle_translate">
+        <item name="android:background">@drawable/ripple_rectangle_while</item>
+    </style>
+
+    <style name="base_ripple_button">
+        <item name="android:background">@drawable/ripple_button</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/pub_button_height</item>
+        <item name="android:textColor">@color/app_while</item>
+        <item name="android:textSize">@dimen/px_dimen_26</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="shopping_style_check_box">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:checked">false</item>
+        <item name="android:layout_marginRight">@dimen/px_dimen_20</item>
+        <item name="android:layout_marginLeft">@dimen/px_dimen_20</item>
+    </style>
+
+</resources>

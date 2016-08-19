@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="tab_layout" type="id" />
+    <item name="view_pager" type="id" />
+    <item name="recycler_view" type="id" />
+    <item name="swipe_refresh_layout" type="id" />
+    <item name="tv_text_null" type="id" />
+    <item name="vb_network_error" type="id" />
+    <item name="iv_product_image" type="id" />
+    <!--内容全局容器-->
+    <item name="fl_content" type="id" />
+    <item name="fl_back" type="id" />
+    <item name="iv_scroll_top" type="id" />
+    <!--内容全局容器-->
+    <item name="main_content" type="id" />
+    <item name="main_drawer_layout" type="id" />
+
+
+    <item name="fl_search" type="id" />
+    <item name="fl_scan" type="id" />
+
+</resources>

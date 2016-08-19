@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_content">
+
+    <LinearLayout style="@style/title_bg">
+
+        <FrameLayout
+            android:id="@id/fl_scan"
+            style="@style/title_button">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2px"
+                android:layout_marginStart="2px"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/title_button_image"
+                    android:layout_width="@dimen/px_dimen_40"
+                    android:layout_height="@dimen/px_dimen_40"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/icon_scan" />
+
+                <TextView
+                    style="@style/title_button_text"
+                    android:text="@string/bar_scan" />
+            </LinearLayout>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_app" />
+
+            <TextView
+                android:id="@+id/tv_bar_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="@dimen/px_dimen_8"
+                android:text="淮北市"
+                android:textColor="@color/app_while"
+                android:textSize="@dimen/px_dimen_20" />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@id/fl_search"
+            style="@style/title_button">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/title_button_image"
+                    android:layout_width="@dimen/px_dimen_40"
+                    android:layout_height="@dimen/px_dimen_40"
+                    android:src="@drawable/icon_search" />
+
+                <TextView
+                    style="@style/title_button_text"
+                    android:text="@string/bar_search" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.xhl.bqlh.view.custom.LazySwipeRefreshLayout style="@style/base_swipe_refresh">
+
+            <android.support.v7.widget.RecyclerView style="@style/base_recycle_view" />
+
+        </com.xhl.bqlh.view.custom.LazySwipeRefreshLayout>
+
+        <ImageView style="@style/style_scroll_top" />
+
+        <ViewStub style="@style/base_network_error" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

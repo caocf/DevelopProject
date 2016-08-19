@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="search_scrim_alpha" format="float" type="fraction">1</item>
+    <!--DP-->
+    <!-- 统一间距范围-->
+    <dimen name="pub_dimen_16dp">16dp</dimen>
+    <dimen name="pub_dimen_8dp">8dp</dimen>
+    <dimen name="pub_dimen_4dp">4dp</dimen>
+    <dimen name="pub_dimen_24dp">24dp</dimen>
+    <dimen name="pub_dimen_48dp">48dp</dimen>
+    <dimen name="pub_dimen_56dp">56dp</dimen>
+    <dimen name="pub_dimen_72dp">72dp</dimen>
+    <!--SP-->
+    <!--统一字体范围 -->
+    <dimen name="pub_text_45sp">45sp</dimen>
+    <dimen name="pub_text_34sp">34sp</dimen>
+    <dimen name="pub_text_24sp">24sp</dimen>
+    <dimen name="pub_text_22sp">22sp</dimen>
+    <dimen name="pub_text_18sp">18sp</dimen>
+    <dimen name="pub_text_16sp">16sp</dimen>
+    <dimen name="pub_text_14sp">14sp</dimen>
+    <dimen name="pub_text_13sp">13sp</dimen>
+    <dimen name="pub_text_12sp">12sp</dimen>
+
+    <dimen name="vertical_margin">16dp</dimen>
+    <dimen name="horizontal_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <dimen name="task_item_height">74dp</dimen>
+    <dimen name="display_default_height">92dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">300dp</dimen>
+    <dimen name="nav_filter_width">250dp</dimen>
+
+    <dimen name="printer_max_width">155dp</dimen>
+
+    <dimen name="pub_btn_corners">2dp</dimen>
+    <dimen name="card_corners_radius">2dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+
+
+
+    <dimen name="px_dimen_32">32px</dimen>
+    <dimen name="px_dimen_30">30px</dimen>
+    <dimen name="px_dimen_28">28px</dimen>
+    <dimen name="px_dimen_26">26px</dimen>
+    <dimen name="px_dimen_24">24px</dimen>
+    <dimen name="px_dimen_22">22px</dimen>
+    <dimen name="px_dimen_20">20px</dimen>
+    <dimen name="px_dimen_18">18px</dimen>
+    <dimen name="px_dimen_16">16px</dimen>
+    <dimen name="px_dimen_14">14px</dimen>
+    <dimen name="px_dimen_12">12px</dimen>
+    <dimen name="px_dimen_10">10px</dimen>
+    <dimen name="px_dimen_8">8px</dimen>
+    <dimen name="px_dimen_4">4px</dimen>
+
+
+</resources>

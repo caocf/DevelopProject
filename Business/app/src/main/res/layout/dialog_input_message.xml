@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/pub_dimen_16dp"
+        android:paddingLeft="@dimen/pub_dimen_16dp"
+        android:paddingRight="@dimen/pub_dimen_16dp"
+        android:paddingTop="@dimen/pub_dimen_16dp">
+
+        <EditText
+            android:id="@+id/ed_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/customer_input_hint"
+            android:lines="1"
+            android:inputType="text"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="@dimen/pub_text_14sp" />
+
+    </FrameLayout>
+
+</FrameLayout>

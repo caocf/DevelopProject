@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_while"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_details"
+        style="@style/style_ripple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:paddingBottom="12dp"
+        android:paddingLeft="@dimen/pub_dimen_4dp"
+        android:paddingRight="@dimen/pub_dimen_16dp"
+        android:paddingTop="12dp">
+
+        <LinearLayout
+            android:id="@+id/ll_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_order_type"
+                style="@style/style_order_hint_text"
+                android:text="C" />
+
+            <TextView
+                android:id="@+id/tv_order_shop"
+                style="@style/style_order_head_text"
+                android:text="@string/app_name" />
+
+            <TextView
+                android:id="@+id/tv_order_status"
+                android:text="@string/order_state_info_yh"
+                style="@style/style_order_status_hint_text" />
+
+            <TextView
+                android:id="@+id/tv_order_account"
+                android:text="@string/order_state_info_sz"
+                style="@style/style_order_status_hint_text" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_order_num"
+            style="@style/style_order_subhead_text"
+            android:layout_below="@+id/ll_order"
+            android:layout_marginTop="@dimen/pub_dimen_8dp"
+            android:text="@string/order_num" />
+
+        <TextView
+            android:id="@+id/tv_order_money"
+            style="@style/style_order_subhead_text"
+            android:layout_below="@+id/tv_order_num"
+            android:layout_marginTop="@dimen/pub_dimen_4dp"
+            android:text="@string/order_money" />
+
+        <TextView
+            android:id="@+id/tv_order_coupons_money"
+            style="@style/style_order_subhead_text"
+            android:layout_below="@+id/tv_order_money"
+            android:layout_marginTop="@dimen/pub_dimen_4dp"
+            android:text="@string/order_money_coupon" />
+
+        <TextView
+            android:id="@+id/tv_order_create_time"
+            style="@style/style_order_subhead_text"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_order_money"
+            android:layout_marginTop="0dp" />
+
+        <TextView
+            android:id="@+id/tv_order_state"
+            style="@style/style_order_state_text"
+            android:clickable="true" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/pub_line_hor" />
+</LinearLayout>

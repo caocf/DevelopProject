@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_content">
+
+    <com.xhl.bqlh.view.ui.bar.MyInfoBar
+        android:id="@+id/my_info_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_dimen_20"
+        android:background="@color/app_while"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/order_all"
+            style="@style/base_bg_ripple_rectangle_translate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pub_button_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/px_dimen_24"
+            android:paddingRight="@dimen/px_dimen_24">
+
+            <ImageView
+                android:layout_width="@dimen/px_dimen_54"
+                android:layout_height="@dimen/px_dimen_54"
+                android:src="@drawable/icon_my_order_all" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_dimen_10"
+                android:layout_marginStart="@dimen/px_dimen_10"
+                android:text="我的订单"
+                android:textColor="@color/text_dark_color"
+                android:textSize="@dimen/px_dimen_30" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/px_dimen_12"
+                android:layout_marginEnd="@dimen/px_dimen_12"
+                android:text="查看全部订单"
+                android:textColor="@color/text_light_color"
+                android:textSize="@dimen/px_dimen_24" />
+
+            <ImageView style="@style/base_arrow_image" />
+        </LinearLayout>
+
+        <View style="@style/line_hor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/order_wait_for_pay"
+                style="@style/base_bg_ripple_rectangle_translate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px_dimen_20"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="46px"
+                            android:layout_height="40px"
+                            android:src="@drawable/icon_order_wait_for_pay" />
+
+                        <TextView
+                            style="@style/AppTheme_my_grey_text"
+                            android:text="@string/order_my_wait_for_pay" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_num_order_pay"
+                        style="@style/base_num_hint_text" />
+                </FrameLayout>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/order_wait_for_take"
+                style="@style/base_bg_ripple_rectangle_translate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px_dimen_20"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="46px"
+                            android:layout_height="40px"
+                            android:src="@drawable/icon_order_wait_for_take" />
+
+                        <TextView
+                            style="@style/AppTheme_my_grey_text"
+                            android:text="@string/order_my_wait_for_take" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_num_order_take"
+                        style="@style/base_num_hint_text" />
+                </FrameLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/order_wait_for_judge"
+                style="@style/base_bg_ripple_rectangle_translate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px_dimen_20"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="46px"
+                            android:layout_height="40px"
+                            android:src="@drawable/icon_order_wait_for_judge" />
+
+                        <TextView
+                            style="@style/AppTheme_my_grey_text"
+                            android:text="@string/order_my_wait_for_judge" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_num_order_judge"
+                        style="@style/base_num_hint_text" />
+                </FrameLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        style="@style/base_recycle_view"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_dimen_40"
+        android:background="@color/app_while"
+        android:overScrollMode="never" />
+
+</LinearLayout>

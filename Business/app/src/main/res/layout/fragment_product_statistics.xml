@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/style_null_hint_text"
+        android:text="无商品"
+        android:visibility="gone" />
+
+    <com.xhl.xhl_library.ui.SwipeRefresh.SwipeRefreshLayout
+        android:id="@id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@id/recycler_view"
+            style="@style/style_base_recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingTop="@dimen/pub_dimen_16dp" />
+    </com.xhl.xhl_library.ui.SwipeRefresh.SwipeRefreshLayout>
+
+</FrameLayout>

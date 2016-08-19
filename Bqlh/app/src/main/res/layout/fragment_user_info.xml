@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_content">
+
+    <include layout="@layout/pub_title_bar_back" />
+
+    <LinearLayout
+        android:id="@+id/ll_user_face"
+        style="@style/base_bg_ripple_rectangle_translate"
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_dimen_20"
+        android:paddingRight="@dimen/px_dimen_20">
+
+        <TextView
+            style="@style/user_info_text"
+            android:text="头像"
+            android:textSize="@dimen/px_dimen_30" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <com.xhl.bqlh.view.custom.RoundedImageView
+            android:id="@+id/iv_my_pic"
+            style="@style/user_face" />
+    </LinearLayout>
+
+    <View style="@style/line_hor" />
+
+    <LinearLayout
+        style="@style/base_bg_ripple_rectangle_translate"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:background="@color/app_while"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_dimen_20"
+        android:paddingRight="@dimen/px_dimen_20">
+
+        <TextView
+            style="@style/user_info_text"
+            android:text="用户名" />
+
+        <TextView
+            android:id="@+id/tv_user_login_name"
+            style="@style/user_info_text_msg" />
+
+    </LinearLayout>
+
+    <View style="@style/line_hor" />
+
+    <LinearLayout
+        style="@style/base_bg_ripple_rectangle_translate"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:background="@color/app_while"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_dimen_20"
+        android:paddingRight="@dimen/px_dimen_20">
+
+        <TextView
+            style="@style/user_info_text"
+            android:text="法律负责人" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            style="@style/user_info_text_msg" />
+
+    </LinearLayout>
+
+    <View style="@style/line_hor" />
+
+    <LinearLayout
+        android:id="@+id/ll_user_phone"
+        style="@style/base_bg_ripple_rectangle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_dimen_20"
+        android:paddingRight="@dimen/px_dimen_20">
+
+        <TextView
+            style="@style/user_info_text"
+            android:text="电话" />
+
+        <TextView
+            android:id="@+id/tv_user_phone"
+            style="@style/user_info_text_msg" />
+
+        <ImageView style="@style/base_arrow_image" />
+    </LinearLayout>
+
+    <View style="@style/line_hor" />
+
+    <LinearLayout
+        android:id="@+id/ll_user_email"
+        style="@style/base_bg_ripple_rectangle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_dimen_20"
+        android:paddingRight="@dimen/px_dimen_20">
+
+        <TextView
+            style="@style/user_info_text"
+            android:text="邮箱" />
+
+        <TextView
+            android:id="@+id/tv_user_mail"
+            style="@style/user_info_text_msg" />
+
+        <ImageView style="@style/base_arrow_image" />
+    </LinearLayout>
+
+    <View style="@style/line_hor" />
+
+    <LinearLayout
+        android:id="@+id/ll_user_address"
+        style="@style/base_bg_ripple_rectangle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_dimen_20"
+        android:paddingRight="@dimen/px_dimen_20">
+
+        <TextView
+            style="@style/user_info_text"
+            android:text="详细地址" />
+
+        <TextView
+            android:id="@+id/tv_user_address"
+            style="@style/user_info_text_msg" />
+
+        <ImageView style="@style/base_arrow_image" />
+    </LinearLayout>
+
+    <View style="@style/line_hor" />
+
+
+    <View
+        style="@style/line_hor"
+        android:layout_marginTop="@dimen/px_dimen_30" />
+
+    <LinearLayout
+        android:id="@+id/ll_account"
+        style="@style/base_bg_ripple_rectangle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_dimen_20"
+        android:paddingRight="@dimen/px_dimen_20">
+
+        <TextView
+            style="@style/user_info_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="账户信息"
+            android:textSize="@dimen/px_dimen_30" />
+
+        <ImageView style="@style/base_arrow_image" />
+
+    </LinearLayout>
+
+    <View style="@style/line_hor" />
+
+    <LinearLayout
+        android:id="@+id/ll_fix_pwd"
+        style="@style/base_bg_ripple_rectangle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_dimen_20"
+        android:paddingRight="@dimen/px_dimen_20">
+
+        <TextView
+            style="@style/user_info_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="修改密码"
+            android:textSize="@dimen/px_dimen_30" />
+
+        <ImageView style="@style/base_arrow_image" />
+
+    </LinearLayout>
+
+    <View style="@style/line_hor" />
+
+</LinearLayout>

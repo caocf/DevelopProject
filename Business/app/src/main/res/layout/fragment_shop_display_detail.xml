@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/pub_app_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/app_black"
+        android:paddingTop="@dimen/pub_dimen_8dp">
+
+        <com.xhl.bqlh.business.view.custom.PhotoViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/pub_dimen_56dp"
+                android:layout_height="@dimen/pub_dimen_56dp"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_action_back" />
+
+            <TextView
+                android:id="@+id/tv_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/image_num"
+                android:textColor="@color/app_while"
+                android:textSize="@dimen/pub_text_16sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_black"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/pub_dimen_16dp"
+        android:paddingLeft="@dimen/pub_dimen_16dp"
+        android:paddingRight="@dimen/pub_dimen_16dp"
+        android:paddingTop="@dimen/pub_dimen_8dp">
+
+        <TextView
+            android:id="@+id/tv_location"
+            style="@style/style_hint_text"
+            android:background="@color/app_black"
+            android:drawableLeft="@drawable/ic_location"
+            android:drawablePadding="@dimen/pub_dimen_4dp"
+            android:textColor="@color/app_while"
+            android:paddingLeft="0dp"
+            android:text="当前位置" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_while"
+            android:textSize="@dimen/pub_text_12sp" />
+
+        <TextView
+            android:id="@+id/tv_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pub_dimen_4dp"
+            android:textColor="@color/app_while"
+            android:textSize="@dimen/pub_text_14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

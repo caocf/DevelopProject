@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+
+            <corners android:radius="2dp" />
+
+            <stroke android:width="1dp" android:color="@color/colorAccent_pre" />
+            <!-- 背景 -->
+            <solid android:color="@color/app_while" />
+
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+
+            <corners android:radius="2dp" />
+
+            <stroke android:width="1dp" android:color="@color/colorAccent" />
+            <!-- 背景 -->
+            <solid android:color="@color/app_while" />
+
+        </shape>
+    </item>
+</selector>

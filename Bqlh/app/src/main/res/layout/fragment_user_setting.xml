@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_content">
+
+    <include layout="@layout/pub_title_bar_back" />
+
+    <RelativeLayout
+        android:id="@+id/ripple_setting_clear"
+        style="@style/base_bg_ripple_rectangle_translate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pub_button_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_dimen_30"
+            android:text="清理缓存"
+            android:textColor="@color/text_dark_color"
+            android:textSize="@dimen/px_dimen_28" />
+
+        <TextView
+            android:id="@+id/tv_cache_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_dimen_30"
+            android:text="32MB"
+            android:textColor="@color/text_light_color"
+            android:textSize="@dimen/px_dimen_24" />
+
+    </RelativeLayout>
+
+    <View style="@style/line_hor" />
+
+    <RelativeLayout
+        android:id="@+id/ripple_setting_check_version"
+        style="@style/base_bg_ripple_rectangle_translate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pub_button_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_dimen_30"
+            android:text="版本检测"
+            android:textColor="@color/text_dark_color"
+            android:textSize="@dimen/px_dimen_28" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_dimen_30"
+            android:text="当前版本 V1.1.0"
+            android:textColor="@color/text_light_color"
+            android:textSize="@dimen/px_dimen_24" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_log_out"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="@dimen/px_dimen_20"
+        android:layout_marginRight="@dimen/px_dimen_20"
+        android:background="@drawable/code_rectangle_red"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/px_dimen_46"
+        android:text="退出登陆"
+        android:textColor="@color/app_while"
+        android:textSize="@dimen/px_dimen_28" />
+
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.xhl.bqlh.business.view.custom.LifeCycleImageView
+        android:id="@+id/iv_image"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_margin="4dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp">
+
+        <TextView
+            android:id="@+id/tv_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pub_dimen_16dp"
+            android:layout_marginTop="@dimen/pub_dimen_8dp"
+            android:text="赠品:"
+            android:textColor="@color/app_red"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/pub_dimen_8dp"
+            android:layout_marginLeft="@dimen/pub_dimen_8dp"
+            android:layout_marginRight="@dimen/pub_dimen_16dp"
+            android:layout_marginTop="@dimen/pub_dimen_8dp"
+            android:layout_toRightOf="@+id/tv_gift"
+            android:maxLines="2"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_product_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_product_name"
+            android:layout_marginLeft="@dimen/pub_dimen_16dp"
+            android:layout_marginStart="@dimen/pub_dimen_16dp"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="12sp" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_operator"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/pub_dimen_8dp"
+            android:layout_marginEnd="@dimen/pub_dimen_16dp"
+            android:layout_marginRight="@dimen/pub_dimen_16dp">
+
+            <ImageButton
+                android:id="@+id/btn_reduce"
+                style="@style/style_pro_reduce" />
+
+            <TextView
+                android:id="@+id/tv_product_numb"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/base_dark_text_color"
+                android:textSize="@dimen/pub_text_12sp" />
+
+            <ImageButton
+                android:id="@+id/btn_add"
+                style="@style/style_pro_add" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

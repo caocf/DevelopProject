@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pub_dimen_48dp"
+        android:gravity="center"
+        android:text="提交退货申请"
+        android:textColor="@color/base_dark_text_color"
+        android:textSize="20sp" />
+
+    <include layout="@layout/pub_line_hor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/pub_dimen_16dp"
+        android:paddingRight="@dimen/pub_dimen_16dp"
+        android:paddingTop="@dimen/pub_dimen_16dp">
+
+        <TextView
+            android:layout_width="@dimen/pub_dimen_72dp"
+            android:layout_height="wrap_content"
+            android:text="退款总额"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="@dimen/pub_text_16sp" />
+
+        <TextView
+            android:id="@+id/tv_order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:textColor="@color/app_price_color"
+            android:textSize="@dimen/pub_text_16sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/ed_remark"
+        style="@style/style_edit_input"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="@dimen/pub_dimen_16dp"
+        android:layout_marginRight="@dimen/pub_dimen_16dp"
+        android:layout_marginTop="@dimen/pub_dimen_16dp"
+        android:background="@drawable/code_dialog_input"
+        android:hint="请在此输入退货申请说明"
+        android:padding="@dimen/pub_dimen_16dp"
+        android:textColor="@color/base_dark_text_color"
+        android:textSize="@dimen/pub_text_16sp" />
+
+</LinearLayout>

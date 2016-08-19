@@ -1,0 +1,281 @@
+<resources>
+    <string name="app_about">Copyright@2015&#8211;2016 百企力合 All Rights Reserved</string>
+    <string name="app_name">百企业务</string>
+    <string name="price">￥%s</string>
+    <string name="price2">￥%1$s/%2$s</string>
+    <string name="barcode_tips">将二维码/条码放入框内，即可自动扫描</string>
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_title">温馨提示</string>
+
+    <string name="dialog_exit_title">退出登录</string>
+    <string name="dialog_exit_msg">是否确定退出登录?</string>
+
+    <string name="create_pay_order">正在提交支付订单，请稍后&#8230;</string>
+    <string name="pay_order_failed">付款失败</string>
+    <string name="pay_order_success">付款成功</string>
+
+    <string name="pay_type_online">在线支付</string>
+    <string name="pay_type_offline">货到付款</string>
+
+    <!--通用文本-->
+    <string name="login">登录中&#8230;</string>
+    <string name="login1">登 录</string>
+    <string name="data_error">数据异常</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="exit_app">再次点击退出应用</string>
+    <string name="empty_name_hint">用户名为空</string>
+    <string name="empty_pwd_hint">密码为空</string>
+    <string name="send_sms_success">获取成功</string>
+    <string name="load_null">没有更多数据了</string>
+    <string name="locating">定位中&#8230;</string>
+    <string name="locate_failed">定位错误</string>
+    <string name="location">地址:%s</string>
+    <string name="loading">加载中&#8230;</string>
+    <string name="car_null">购物车没有商品</string>
+    <string name="image_num">%1$s/%2$s</string>
+
+    <string name="shop_friend_add_new">加会员</string>
+    <string name="shop_friend_add_start">已邀请</string>
+    <string name="shop_friend_add_refuse">加会员</string>
+    <string name="shop_friend_add_finish">已添加</string>
+
+    <!--首页-->
+    <string name="temporary_task">临时拜访</string>
+
+    <string name="shop_sign">签到</string>
+    <string name="shop_sign_limit">%s米以内签到</string>
+    <string name="shop_sign_finish">已签到</string>
+    <string name="shop_sign_success">签到成功</string>
+    <string name="shop_sign_failed">签到失败</string>
+    <string name="shop_sign_distance">%s米</string>
+
+    <string name="product_max_0">已售完</string>
+    <string name="product_max1_0">已赠完</string>
+    <string name="product_max_num">库存: %s</string>
+    <string name="product_max1_num">剩余数量: %s</string>
+    <string name="product_price">批发价: ￥%1$s/%2$s</string>
+    <string name="product_price_or">零售价: ￥%1$s/%2$s</string>
+    <string name="product_price_2">优惠价: ￥%1$s/%2$s</string>
+    <string name="product_price_3">退货价: ￥%1$s/%2$s</string>
+    <string name="product_price_4">退货价: ￥%1$s</string>
+    <string name="product_price_5">确认价: ￥%1$s</string>
+    <string name="product_num">数量: %s</string>
+    <string name="product_num1">商品数量: %s</string>
+    <string name="product_order_num">包含%s件订单商品</string>
+    <string name="product_order_new">新增商品</string>
+    <string name="product_order_new_gift">新增赠品</string>
+    <string name="product_price1">小计: </string>
+    <string name="product_price2">小计:￥%s</string>
+    <string name="product_price_origin">批发价:￥%1$s/%2$s</string>
+    <string name="product_price_discount">优惠价:￥%1$s/%2$s</string>
+    <string name="product_price_discount_all">优惠总额:￥%s</string>
+
+    <string name="order_hint">下单成功</string>
+    <string name="order">订单</string>
+    <string name="product">商品</string>
+
+    <array name="filter_week">
+        <item>全部</item>
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </array>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--界面菜单-->
+    <string name="menu_fix_price">修改总额</string>
+    <string name="menu_refresh">刷新</string>
+    <string name="menu_scan">扫码</string>
+    <string name="menu_near_by">附近商店</string>
+    <string name="menu_store_update">提交更新</string>
+    <string name="menu_store_wait">添加待发货订单</string>
+    <string name="menu_store">车销商品</string>
+    <string name="menu_store_manager">商品退库</string>
+    <string name="menu_store_manager_apply">退库申请</string>
+    <string name="menu_search">搜索</string>
+    <string name="menu_gift">添加赠品</string>
+    <string name="menu_pay_record">清欠记录</string>
+    <string name="menu_print">打印</string>
+    <string name="menu_pay">快速支付</string>
+    <string name="menu_statistics_order">订单明细</string>
+    <string name="menu_sign_record">本月考勤</string>
+    <string name="menu_commit">提交</string>
+    <string name="menu_update_task">更新任务</string>
+    <string name="menu_feedback">意见反馈</string>
+    <string name="menu_share">分享应用</string>
+    <string name="menu_update">检测版本</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_search_hint">搜索店铺</string>
+    <string name="menu_ok">确定</string>
+    <string name="menu_shop_update">@string/shop_detail_update_info</string>
+    <string name="menu_my_location">你的位置</string>
+    <string name="menu_shop_camera">添加陈列照</string>
+    <string name="menu_target_location">店铺位置</string>
+    <string name="menu_navigation">导航</string>
+    <string name="menu_shop_close">关闭门店</string>
+    <string name="menu_sign_location">当前位置</string>
+    <string name="menu_apply">查看审核</string>
+    <string name="menu_apply_friends">会员列表</string>
+    <string name="menu_filtrate">筛选</string>
+    <array name="navigation_type">
+        <item>公交车</item>
+        <item>驾车</item>
+        <item>步行</item>
+        <item>骑车</item>
+        <item>百度地图</item>
+    </array>
+
+    <!--左侧主菜单-->
+    <string name="user_nav_main">门店拜访</string>
+    <string name="user_nav_main_attendance">考勤</string>
+    <string name="user_nav_main_add_new_customer">发现新店</string>
+
+    <string name="user_nav_main_order_manager">订单管理</string>
+    <string name="user_nav_main_order_manager_all">查看订单</string>
+    <string name="user_nav_main_order_statistics">统计报表</string>
+    <string name="user_nav_main_order_account">结款进度</string>
+    <string name="user_nav_main_order_return">退货管理</string>
+
+    <!--订单类型-->
+    <string name="order_type">订单类型</string>
+    <string name="order_by_all">全部</string>
+    <string name="order_by_shop">门店订单</string>
+    <string name="order_by_self">拜访订单</string>
+    <string name="order_by_car">车销订单</string>
+    <array name="order_type">
+        <item>@string/order_by_all</item>
+        <item>@string/order_by_car</item>
+        <item>@string/order_by_self</item>
+        <item>@string/order_by_shop</item>
+    </array>
+
+    <!--订单状态-->
+    <string name="order_state">订单状态</string>
+    <string name="order_state_all">全部</string>
+    <string name="order_state_1">待发货</string>
+    <string name="order_state_2">已发货</string>
+    <string name="order_state_3">已完成</string>
+
+    <array name="order_state">
+        <item>@string/order_state_all</item>
+        <item>@string/order_state_1</item>
+        <item>@string/order_state_2</item>
+        <item>@string/order_state_3</item>
+    </array>
+
+    <array name="order_state_by_car">
+        <item>@string/order_state_all</item>
+        <item>@string/order_state_1</item>
+        <item>@string/order_state_2</item>
+        <item>@string/order_state_3</item>
+    </array>
+
+    <string name="order_state_info_yh">惠</string>
+    <string name="order_state_info_sz">赊</string>
+    <string name="order_state_info_cd">拆</string>
+
+    <string name="order_num">订单编号:%s</string>
+    <string name="order_money">订单金额:￥%s</string>
+    <string name="order_money_coupon">优惠金额:￥%s</string>
+
+    <string name="order_details">订单详情</string>
+    <string name="order_details_all_money">订单总金额</string>
+    <string name="order_details_product">商品明细</string>
+    <string name="order_details_return">申请退货</string>
+    <string name="order_details_pay">实收金额:￥%s</string>
+    <string name="order_details_lost_money">赊账金额:￥%s</string>
+    <string name="order_details_people">收货人: %s</string>
+    <string name="order_details_location">地址: %s</string>
+    <string name="order_details_phone">联系电话: %s</string>
+    <string name="order_details_pay_lost">清 欠</string>
+    <string name="order_details_print">打印订单</string>
+
+    <string name="order_search">订单查询</string>
+    <string name="order_search_start_time">开始日期</string>
+    <string name="order_search_end_time">结束日期</string>
+    <string name="order_search_time_error">开始日期不能大于结束日期</string>
+    <string name="order_search_time_error1">结束日期不能小于开始日期</string>
+    <string name="order_search_all">全部</string>
+    <string name="order_search_select">请选择</string>
+    <string name="query">查 询</string>
+    <string name="confirm">提 交</string>
+
+    <string name="user_nav_main_store_manager">装车单</string>
+    <string name="user_nav_main_store_apply">新增车销商品</string>
+    <string name="user_nav_main_store_update">添加车销商品</string>
+    <string name="user_nav_main_store_query">查看申请</string>
+
+    <string name="user_nav_main_setting">设置</string>
+    <string name="user_nav_main_about">百企简介</string>
+
+    <string name="order_statistics">订单统计</string>
+
+    <!--考勤-->
+    <string name="attendance_start">签到</string>
+    <string name="attendance_end">签退</string>
+    <string name="attendance_start_time">签到时间：%s</string>
+    <string name="attendance_end_time">签退时间：%s</string>
+    <string name="attendance_location">打卡地点：%s</string>
+    <string name="attendance_location_cur">当前位置</string>
+    <string name="attendance_distance">有效范围：%s 米以内</string>
+    <string name="attendance_record">打卡记录</string>
+    <string name="attendance_early">早退</string>
+    <string name="attendance_late">迟到</string>
+    <string name="attendance_null">未打卡</string>
+    <string name="attendance_warn">地点异常</string>
+    <string name="attendance_sign_limit">%s米以内打卡</string>
+
+    <!--新用户-->
+    <string name="customer_shop_icon">门头照</string>
+    <string name="customer_shop_license">营业执照</string>
+    <string name="customer_shop_license_id">营业执照号</string>
+    <string name="customer_shop_location_text">收货地址</string>
+    <string name="customer_shop_location">门店位置</string>
+    <string name="customer_shop_location_mark">请标记门店位置</string>
+    <string name="customer_shop_type">门店类型</string>
+    <string name="customer_shop_user">负责人姓名</string>
+    <string name="customer_shop_phone">负责人手机号</string>
+    <string name="customer_shop_name">门店名称</string>
+    <string name="customer_shop_login_name">登陆账号名</string>
+    <string name="customer_shop_address">详细地址</string>
+    <string name="customer_input_hint">请填写</string>
+    <string name="customer_input_hint1">标记后自动识别</string>
+
+    <!--店铺详情-->
+    <string name="shop_detail_order_return">申请退货</string>
+    <string name="shop_detail_order_self">拜访下单</string>
+    <string name="shop_detail_order_store">车销下单</string>
+    <string name="shop_detail_order">全部订单</string>
+    <string name="shop_detail_money">结款进度</string>
+    <string name="shop_detail_display">陈列照片</string>
+    <string name="shop_detail_update_info">门店纠错</string>
+
+    <!--装车申请-->
+    <string name="store_add_car_product">车销商品</string>
+    <string name="store_add_order_product">订单商品</string>
+
+    <string name="cb_add">加入购物车</string>
+    <string name="cb_cancel">移除</string>
+
+    <!--蓝牙打印-->
+    <string name="bluetooth_error">请检测是否已打开蓝牙</string>
+    <string name="bluetooth_print">打印</string>
+    <string name="bluetooth_print_preview">打印预览</string>
+    <string name="bluetooth_device_disconnect">断开连接</string>
+    <string name="bluetooth_device_reconnect">重新连接</string>
+    <string name="bluetooth_device_connect">连接设备</string>
+    <string name="bluetooth_device_scan">扫描设备</string>
+
+
+    <string name="store_car_return">退回仓库</string>
+    <string name="store_car_return_hint">提示:商品数量全部退回后,车销下单时将无法看到相关商品</string>
+
+
+</resources>

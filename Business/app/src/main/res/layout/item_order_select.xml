@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/style_ripple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/pub_dimen_8dp"
+        android:paddingRight="@dimen/pub_dimen_16dp"
+        android:paddingLeft="@dimen/pub_dimen_4dp"
+        android:paddingTop="@dimen/pub_dimen_8dp">
+
+        <TextView
+            android:id="@+id/tv_order_type"
+            style="@style/style_order_hint_text"
+            android:text="C" />
+
+        <TextView
+            android:id="@+id/tv_order_shop"
+            style="@style/style_order_head_text"
+            android:layout_alignBaseline="@+id/tv_order_type"
+            android:layout_toEndOf="@+id/tv_order_type"
+            android:layout_toRightOf="@+id/tv_order_type"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tv_order_num"
+            style="@style/style_order_subhead_text"
+            android:layout_below="@+id/tv_order_shop"
+            android:layout_marginTop="@dimen/pub_dimen_8dp"
+            android:text="@string/order_num" />
+
+        <TextView
+            android:id="@+id/tv_order_money"
+            style="@style/style_order_subhead_text"
+            android:layout_below="@+id/tv_order_num"
+            android:layout_marginTop="@dimen/pub_dimen_4dp"
+            android:text="@string/order_money" />
+
+        <CheckBox
+            android:id="@+id/cb_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:duplicateParentState="true" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/pub_line_hor" />
+</LinearLayout>

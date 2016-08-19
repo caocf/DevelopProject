@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_light_grey"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/pub_dimen_4dp"
+        android:paddingLeft="@dimen/pub_dimen_16dp"
+        android:paddingRight="@dimen/pub_dimen_16dp"
+        android:paddingTop="@dimen/pub_dimen_4dp">
+
+        <TextView
+            android:id="@+id/tv_sign_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/base_light_text_color"
+            android:textSize="@dimen/pub_text_14sp" />
+
+        <TextView
+            android:id="@+id/tv_sign_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pub_dimen_24dp"
+            android:layout_marginStart="@dimen/pub_dimen_24dp"
+            android:textColor="@color/base_light_text_color"
+            android:textSize="@dimen/pub_text_14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_while"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/pub_dimen_8dp"
+        android:paddingLeft="@dimen/pub_dimen_16dp"
+        android:paddingRight="@dimen/pub_dimen_16dp"
+        android:paddingTop="@dimen/pub_dimen_8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_sign_rec_text1"
+                android:text="签到:" />
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                style="@style/style_sign_rec_text2" />
+
+            <TextView
+                android:id="@+id/tv_start_state"
+                style="@style/style_sign_rec_text3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_sign_rec_text1"
+                android:text="地址:"
+                android:textColor="@color/base_dark_text_color" />
+
+            <TextView
+                android:id="@+id/tv_start_location"
+                style="@style/style_sign_rec_text2"
+                android:layout_width="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_sign_rec_text1"
+                android:text="签退:" />
+
+            <TextView
+                android:id="@+id/tv_end_time"
+                style="@style/style_sign_rec_text2" />
+
+            <TextView
+                android:id="@+id/tv_end_state"
+                style="@style/style_sign_rec_text3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_sign_rec_text1"
+                android:text="地址:"
+                android:textColor="@color/base_dark_text_color" />
+
+            <TextView
+                android:id="@+id/tv_end_location"
+                style="@style/style_sign_rec_text2"
+                android:layout_width="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

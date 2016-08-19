@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/title_bg">
+
+    <FrameLayout style="@style/title_button">
+
+        <ImageView
+            style="@style/title_button_image"
+            android:layout_width="@dimen/px_dimen_20"
+            android:layout_height="@dimen/px_dimen_34" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/title_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/app_while"
+        android:textSize="@dimen/px_dimen_28" />
+
+    <FrameLayout
+        android:id="@+id/fl_btn_right"
+        style="@style/title_button">
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/app_while"
+            android:textSize="@dimen/px_dimen_24" />
+
+    </FrameLayout>
+
+</LinearLayout>

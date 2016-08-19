@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/style_ripple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/pub_dimen_8dp"
+        android:paddingLeft="@dimen/pub_dimen_16dp"
+        android:paddingRight="@dimen/pub_dimen_16dp"
+        android:paddingTop="@dimen/pub_dimen_8dp">
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_shop"
+            android:drawablePadding="@dimen/pub_dimen_4dp"
+            android:drawableStart="@drawable/ic_shop"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_shop_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_shop_name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/shop_state"
+            android:layout_toStartOf="@+id/shop_state"
+            android:layout_marginTop="@dimen/pub_dimen_4dp"
+            android:textSize="@dimen/pub_text_14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_shop_location"
+            android:layout_marginTop="@dimen/pub_dimen_8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="负责人："
+                android:textSize="@dimen/pub_text_14sp" />
+
+            <TextView
+                android:id="@+id/tv_shop_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/base_dark_text_color"
+                android:textSize="@dimen/pub_text_14sp" />
+        </LinearLayout>
+
+        <com.xhl.bqlh.business.view.ui.bar.ShopStateBar
+            android:id="@+id/shop_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_shop_apply_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/pub_dimen_4dp"
+            android:paddingLeft="@dimen/pub_dimen_8dp"
+            android:paddingRight="@dimen/pub_dimen_8dp"
+            android:paddingTop="@dimen/pub_dimen_4dp"
+            android:visibility="gone"
+            android:textSize="@dimen/pub_text_14sp" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/pub_line_hor" />
+
+</LinearLayout>

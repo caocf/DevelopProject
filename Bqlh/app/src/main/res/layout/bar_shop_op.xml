@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110px"
+    android:background="@color/app_while"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_product"
+        style="@style/base_bg_ripple_rectangle_translate"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="42px"
+            android:layout_height="42px"
+            android:src="@drawable/icon_shop_product" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_dimen_4"
+            android:text="商品"
+            android:textColor="@color/text_light_color"
+            android:textSize="@dimen/px_dimen_22" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_category"
+        style="@style/base_bg_ripple_rectangle_translate"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="42px"
+            android:layout_height="42px"
+            android:src="@drawable/icon_shop_category" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_dimen_4"
+            android:text="分类"
+            android:textColor="@color/text_light_color"
+            android:textSize="@dimen/px_dimen_22" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_brand"
+        style="@style/base_bg_ripple_rectangle_translate"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="42px"
+            android:layout_height="42px"
+            android:src="@drawable/icon_shop_brand" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_dimen_4"
+            android:text="品牌"
+            android:textColor="@color/text_light_color"
+            android:textSize="@dimen/px_dimen_22" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_service"
+        style="@style/base_bg_ripple_rectangle_translate"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="42px"
+            android:layout_height="42px"
+            android:src="@drawable/icon_shop_servic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_dimen_4"
+            android:text="客服"
+            android:textColor="@color/text_light_color"
+            android:textSize="@dimen/px_dimen_22" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

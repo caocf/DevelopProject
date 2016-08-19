@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_while"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/pub_app_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:padding="@dimen/pub_dimen_16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/pub_dimen_16dp"
+            android:text="签到记录"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="@dimen/pub_text_16sp" />
+
+        <EditText
+            android:id="@+id/ed_input_content"
+            style="@style/style_edit_input"
+            android:background="@drawable/code_rectangle"
+            android:hint="在此输入您的签到记录"
+            android:padding="@dimen/pub_dimen_16dp"
+            android:textSize="@dimen/pub_text_14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_while"
+        android:padding="@dimen/pub_dimen_16dp"
+        android:text="签到照片"
+        android:textColor="@color/base_dark_text_color"
+        android:textSize="@dimen/pub_text_16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pub_dimen_8dp"
+        android:background="@color/app_while"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/pub_dimen_16dp"
+        android:paddingLeft="@dimen/pub_dimen_16dp"
+        android:paddingRight="@dimen/pub_dimen_16dp">
+
+        <LinearLayout
+            android:id="@+id/ll_add_ic_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_pic_1"
+                style="@style/style_add_image" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_add_ic_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_pic_2"
+                style="@style/style_add_image" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_add_ic_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_pic_3"
+                style="@style/style_add_image" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_location"
+        style="@style/style_hint_text"
+        android:drawableLeft="@drawable/ic_location"
+        android:drawablePadding="@dimen/pub_dimen_4dp" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/button_default"
+        android:layout_marginLeft="@dimen/pub_dimen_16dp"
+        android:layout_marginRight="@dimen/pub_dimen_16dp"
+        android:layout_marginTop="@dimen/pub_dimen_8dp"
+        android:text="签 到" />
+
+</LinearLayout>

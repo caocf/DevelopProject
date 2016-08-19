@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/pub_app_bar" />
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <com.xhl.xhl_library.ui.SwipeRefresh.SwipeRefreshLayout
+            android:id="@id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@id/recycler_view"
+                style="@style/style_base_recycle_view"
+                android:layout_width="match_parent"
+                android:paddingTop="8dp"
+                android:layout_height="match_parent" />
+
+        </com.xhl.xhl_library.ui.SwipeRefresh.SwipeRefreshLayout>
+
+
+        <TextView
+            style="@style/style_null_hint_text"
+            android:text="无赊账店铺" />
+
+    </FrameLayout>
+
+    <include layout="@layout/pub_statistics_money" />
+
+</LinearLayout>

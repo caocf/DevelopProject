@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">百企力合</string>
+    <string name="building">功能建设中</string>
+    <string name="barcode_tips">将二维码/条码放入框内，即可自动扫描</string>
+    <string name="bar_input_hint">搜索商品/店铺</string>
+    <string name="price">￥%s</string>
+    <string name="price_c">%s元</string>
+    <string name="price_s">建议零售价:￥%s</string>
+    <string name="price_b">批发价:￥%s</string>
+    <string name="product_stock">库存:%s</string>
+    <string name="product_min_mun">最小起订量:%s</string>
+    <string name="product_min_mun_text">≥ %s</string>
+    <string name="product_min_mun_tip">商品最小起订量为:%s件</string>
+    <string name="product_give_num">赠送数量：%s</string>
+
+    <string name="main_home">首页</string>
+    <string name="main_classify">分类</string>
+    <string name="main_my">我的</string>
+    <string name="main_shopping">订货车</string>
+
+
+    <string name="bar_scan">扫码订货</string>
+    <string name="bar_search">搜索</string>
+
+
+    <!--通用文本-->
+    <string name="login">登录中&#8230;</string>
+    <string name="data_error">数据异常</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="exit_app">再次点击退出应用</string>
+    <string name="empty_name_hint">用户名为空</string>
+    <string name="empty_pwd_hint">密码为空</string>
+    <string name="load_null">没有更多数据了</string>
+    <string name="network_error">网络链接异常</string>
+    <string name="network_error_text">网络连接异常,点击重新加载</string>
+    <string name="bottom_tip">已经到底啦</string>
+    <string name="send_sms_success">获取成功,请注意查收短信</string>
+
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_title">温馨提示</string>
+
+    <string name="service">客服</string>
+
+    <string name="create_pay_order">正在提交支付订单，请稍后&#8230;</string>
+    <string name="pay_order_failed">付款失败</string>
+    <string name="pay_order_success">付款成功</string>
+
+    <string name="order_my">我的订单</string>
+    <string name="order_null">您暂时还没有订单</string>
+    <string name="order_my_query">查看全部订单</string>
+    <string name="order_all">全部</string>
+    <string name="order_my_wait_for_pay">待付款</string>
+    <string name="order_my_wait_for_take">待收货</string>
+    <string name="order_my_wait_for_judge">待评价</string>
+    <string name="order_cancel">交易取消</string>
+    <string name="order_finish">交易完成</string>
+
+    <string name="order_price">商品金额</string>
+    <string name="order_price_need_pay">应付金额</string>
+    <string name="order_price_real_pay">实付金额</string>
+    <string name="order_integral">积分</string>
+    <string name="order_postal">配送方式</string>
+
+    <string name="my_fun_1">统计</string>
+    <string name="my_fun_2">收藏夹</string>
+    <string name="my_fun_3">优惠券</string>
+    <string name="my_fun_4">积分</string>
+    <string name="my_fun_5">客服</string>
+    <string name="my_fun_6">投诉</string>
+    <string name="my_fun_7">力力</string>
+    <string name="my_fun_8">设置</string>
+
+
+    <string name="search_details_by_all">综合</string>
+    <string name="search_details_by_sale">销量</string>
+    <string name="search_details_by_price">价格</string>
+    <string name="search_details_filter">品牌</string>
+
+    <string name="shop_i_collection">%s人关注</string>
+    <string name="shop_i_name">业务负责：%s</string>
+    <string name="shop_i_phone">联系电话：%s</string>
+    <string name="shop_i_money">起订金额：%s元</string>
+    <string name="shop_i_area">配送区域：%s</string>
+    <!--商品详情-->
+    <string name="product_op_add">加入订货车</string>
+    <string name="product_op_add_success">添加成功</string>
+    <string name="product_op_add_collection">关注</string>
+    <string name="product_op_add_collection_finish">已关注</string>
+    <string name="product_collection_finish">已加入收藏</string>
+    <string name="product_collection_success">收藏成功</string>
+    <string name="product_yf">配送：</string>
+    <string name="product_yf_hint">由卖家自行配送,并提供售后服务</string>
+    <string name="product_service">服务：</string>
+    <string name="product_service_hint">卖家承诺%s小时内发货</string>
+    <string name="product_pay_type">支付：</string>
+
+    <string name="product_hint1">百企力合平台卖家销售并发货的商品，由平台卖家提供相应的售后服务。请您放心购买!</string>
+    <string name="product_hint2">注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若本商城没有及时更新，请大家谅解！</string>
+    <string name="product_hint3">百企力合的所有商品。商品资讯，网友讨论等内容，是百企力合的重要经营资源，未经许可，禁止非法转载使用。</string>
+    <string name="product_hint4">注：本站商品信息均来自合作方，其真实性、准确性和合法性由信息拥有者(合作方)负责</string>
+
+    <!--购物中心-->
+    <string name="my_shopping_car">我的购物车</string>
+    <string name="my_shopping_go">去逛逛</string>
+    <string name="my_shopping_edit">编辑</string>
+    <string name="my_shopping_select_all">全选</string>
+    <string name="my_shopping_delete">删除</string>
+    <string name="my_shopping_collection">移入收藏夹</string>
+    <string name="my_shopping_count">结算(%s)</string>
+    <string name="my_shopping_yf">不含邮费</string>
+    <string name="my_shopping_count_null_hint">亲,请选择您的结算商品哦!</string>
+    <string name="my_shopping_null_hint">亲,订物车空空耶~ 赶紧去订货吧</string>
+    <string name="shop_delete_goods_tips">您确定要删除这%s件商品吗？</string>
+    <string name="shop_product_min_hint">最低起订金额%s元</string>
+
+    <!--确认订单-->
+    <string name="confirm_order">确认订单</string>
+    <string name="order_people">收货人：</string>
+    <string name="pay_orders">商品清单</string>
+    <string name="pay_type">支付方式</string>
+    <string name="pay_coupon">优惠券</string>
+    <string name="pay_score">积分</string>
+    <string name="pay_now">立即下单</string>
+    <string name="pay_money">合计:￥%s</string>
+
+    <string-array name="pay_array">
+        <item>在线支付</item>
+        <item>货到付款</item>
+    </string-array>
+
+    <string-array name="sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+
+</resources>

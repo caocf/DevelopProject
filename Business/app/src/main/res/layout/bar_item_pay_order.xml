@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_while"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        style="@style/style_ripple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/pub_dimen_8dp"
+        android:layout_marginLeft="@dimen/pub_dimen_16dp"
+        android:layout_marginRight="@dimen/pub_dimen_16dp"
+        android:layout_marginTop="@dimen/pub_dimen_8dp"
+        app:cardCornerRadius="@dimen/card_corners_radius"
+        app:cardElevation="@dimen/card_elevation">
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/pub_dimen_8dp"
+                android:paddingLeft="@dimen/pub_dimen_4dp"
+                android:paddingRight="@dimen/pub_dimen_16dp"
+                android:paddingTop="@dimen/pub_dimen_8dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_order_type"
+                        style="@style/style_order_hint_text"
+                        android:text="C" />
+
+                    <TextView
+                        android:id="@+id/tv_order_shop"
+                        style="@style/style_order_head_text"
+                        android:text="@string/app_name" />
+                    <TextView
+                        android:id="@+id/tv_order_status"
+                        style="@style/style_order_status_hint_text" />
+
+                    <TextView
+                        android:id="@+id/tv_order_account"
+                        style="@style/style_order_status_hint_text" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_order_num"
+                    style="@style/style_order_subhead_text"
+                    android:layout_below="@+id/ll_order"
+                    android:layout_marginTop="@dimen/pub_dimen_8dp"
+                    android:text="@string/order_num" />
+
+                <TextView
+                    android:id="@+id/tv_order_money"
+                    style="@style/style_order_subhead_text"
+                    android:layout_below="@+id/tv_order_num"
+                    android:layout_marginTop="@dimen/pub_dimen_4dp"
+                    android:text="@string/order_money" />
+                <TextView
+                    android:id="@+id/tv_order_coupons_money"
+                    style="@style/style_order_subhead_text"
+                    android:layout_below="@+id/tv_order_money"
+                    android:textColor="@color/app_orange"
+                    android:layout_marginTop="@dimen/pub_dimen_4dp"
+                    android:text="@string/order_money_coupon" />
+                <TextView
+                    android:id="@+id/tv_order_create_time"
+                    style="@style/style_order_subhead_text"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/tv_order_money"
+                    android:layout_marginTop="0dp"
+                    android:text="2016-12-31" />
+
+                <TextView
+                    android:id="@+id/tv_order_state"
+                    style="@style/style_order_state_text"
+                    android:background="@color/transparent"
+                    android:text="已完成"
+                    android:textColor="@color/base_disable_text_color" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_light_grey"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_pay_money"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start|center_vertical"
+                    android:paddingBottom="@dimen/pub_dimen_8dp"
+                    android:paddingLeft="@dimen/pub_dimen_16dp"
+                    android:paddingTop="@dimen/pub_dimen_8dp"
+                    android:textColor="@color/app_red"
+                    android:textSize="@dimen/pub_text_14sp" />
+
+                <ImageView
+                    style="@style/arrow_right"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/pub_dimen_8dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

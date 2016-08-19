@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_details"
+        style="@style/style_customer_item"
+        android:layout_marginLeft="@dimen/pub_dimen_16dp"
+        android:layout_marginRight="@dimen/pub_dimen_16dp">
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            style="@style/style_customer_text" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end" />
+
+        <TextView
+            android:id="@+id/tv_shop_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/pub_dimen_16dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="@dimen/pub_dimen_16dp"
+            android:layout_marginStart="2dp"
+            android:lines="1"
+            android:text="4元"
+            android:textColor="@color/app_orange" />
+
+        <ImageView style="@style/arrow_right" />
+    </LinearLayout>
+
+    <include layout="@layout/pub_line_hor" />
+
+</LinearLayout>

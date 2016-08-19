@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/color_ripple">
+    <!--<item>-->
+        <!--<selector>-->
+            <!--<item android:state_enabled="false">-->
+                <!--<shape android:shape="rectangle">-->
+                    <!--<corners android:radius="@dimen/abc_control_corner_material" />-->
+                    <!--<solid android:color="?android:attr/colorButtonNormal" />-->
+                <!--</shape>-->
+            <!--</item>-->
+
+            <!--<item>-->
+                <!--<shape android:shape="oval">-->
+                    <!--<corners android:radius="@dimen/card_corners_radius" />-->
+                    <!--<solid android:color="@color/app_while" />-->
+                <!--</shape>-->
+            <!--</item>-->
+        <!--</selector>-->
+    <!--</item>-->
+</ripple>

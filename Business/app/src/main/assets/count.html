@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="百企力合,电子商务,购物,快消品,新货郎"/>
+    <meta name="description"
+          content="新货郎电子商务有限公司旗下百企力合电子商务平台，专注于快消品传统零售市场，利用强大的互联网、云计算和大数据技术，构建高效的互联网商品托管服务体系，实现渠道资源优化整合和数据化运营，弘扬体验式购物文化，立志成为大数据时代中国优秀的快消品渠道运营电子商务平台。"/>
+    <title>百企力合APP订单统计页面</title>
+    <script type="text/javascript" src="http://hm.baidu.com/hm.js?b38492d3821ee16ccadb5eae949e5f5c"></script>
+    <script>
+
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?b38492d3821ee16ccadb5eae949e5f5c";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+
+        function  pushToBaidu(data){
+
+            var orderList = data.orderList;
+            for(var i=0;i<orderList.length;i++){
+
+                var orderInfo = {
+                    "orderId": orderList[i].storeOrderCode,
+                    "orderTotal": orderList[i].orderMoney,
+                    "item": []
+                };
+                var orderDetailList = orderList[i].orderDetailList;
+                for(var j=0;j<orderDetailList.length;j++){
+                    orderInfo.item.push({
+                        "skuId": orderDetailList[j].skuCode,
+                        "skuName": orderDetailList[j].skuName,
+                        "category": orderDetailList[j].categoryName,
+                        "Price": orderDetailList[j].unitPrice,
+                        "Quantity": orderDetailList[j].num
+                    });
+                }
+
+                _hmt.push(['_trackOrder', orderInfo]);
+            }
+        }
+
+    </script>
+</head>
+<body>
+</body>
+</html>

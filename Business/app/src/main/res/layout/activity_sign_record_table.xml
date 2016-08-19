@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/pub_app_bar" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/pub_dimen_16dp"
+        android:layout_marginLeft="@dimen/pub_dimen_16dp"
+        android:layout_marginRight="@dimen/pub_dimen_16dp"
+        android:layout_marginTop="@dimen/pub_dimen_24dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_while"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:orientation="vertical"
+                android:paddingBottom="18dp"
+                android:paddingLeft="@dimen/pub_dimen_16dp"
+                android:paddingRight="@dimen/pub_dimen_16dp"
+                android:paddingTop="18dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_work_late_hint"
+                        style="@style/style_attendance_table_num_hint"
+                        android:drawableLeft="@drawable/ic_sign_state_late"
+                        android:drawableStart="@drawable/ic_sign_state_late"
+                        android:paddingLeft="@dimen/pub_dimen_8dp"
+                        android:text="@string/attendance_late" />
+
+                    <TextView
+                        android:id="@+id/tv_work_early_hint"
+                        style="@style/style_attendance_table_num_hint"
+                        android:drawableLeft="@drawable/ic_sign_state_early"
+                        android:drawableStart="@drawable/ic_sign_state_early"
+                        android:paddingLeft="@dimen/pub_dimen_8dp"
+                        android:text="@string/attendance_early" />
+
+                    <TextView
+                        android:id="@+id/tv_work_null_hint"
+                        style="@style/style_attendance_table_num_hint"
+                        android:drawableLeft="@drawable/ic_sign_state_null"
+                        android:drawableStart="@drawable/ic_sign_state_null"
+                        android:text="@string/attendance_null" />
+
+                    <TextView
+                        android:id="@+id/tv_work_warm_hint"
+                        style="@style/style_attendance_table_num_hint"
+                        android:drawableLeft="@drawable/ic_sign_state_warn"
+                        android:drawableStart="@drawable/ic_sign_state_warn"
+                        android:text="@string/attendance_warn" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pub_dimen_8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_work_late"
+                        style="@style/style_attendance_table_num" />
+
+                    <TextView
+                        android:id="@+id/tv_work_early"
+                        style="@style/style_attendance_table_num" />
+
+                    <TextView
+                        android:id="@+id/tv_work_null"
+                        style="@style/style_attendance_table_num" />
+
+                    <TextView
+                        android:id="@+id/tv_work_warn"
+                        style="@style/style_attendance_table_num" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:gravity="center"
+                android:textColor="@color/colorAccent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.6dp"
+                android:background="@color/app_light_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pub_dimen_48dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/style_attendance_table_day"
+                    android:text="日" />
+
+                <TextView
+                    style="@style/style_attendance_table_day"
+                    android:text="一" />
+
+                <TextView
+                    style="@style/style_attendance_table_day"
+                    android:text="二" />
+
+                <TextView
+                    style="@style/style_attendance_table_day"
+                    android:text="三" />
+
+                <TextView
+                    style="@style/style_attendance_table_day"
+                    android:text="四" />
+
+                <TextView
+                    style="@style/style_attendance_table_day"
+                    android:text="五" />
+
+                <TextView
+                    style="@style/style_attendance_table_day"
+                    android:text="六" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.6dp"
+                android:background="@color/app_light_grey" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@id/recycler_view"
+                style="@style/style_base_recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:paddingBottom="@dimen/pub_dimen_8dp"
+                android:paddingTop="@dimen/pub_dimen_8dp" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

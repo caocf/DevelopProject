@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/pub_dimen_16dp"
+        android:paddingRight="@dimen/pub_dimen_16dp"
+        android:paddingTop="@dimen/pub_dimen_16dp">
+
+        <TextView
+            android:layout_width="@dimen/pub_dimen_72dp"
+            android:layout_height="wrap_content"
+            android:text="商品原价"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="@dimen/pub_text_16sp" />
+
+        <TextView
+            android:id="@+id/tv_origin_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:textColor="@color/app_price_color"
+            android:textSize="@dimen/pub_text_16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/pub_dimen_16dp"
+        android:paddingLeft="@dimen/pub_dimen_16dp"
+        android:paddingRight="@dimen/pub_dimen_16dp"
+        android:paddingTop="@dimen/pub_dimen_16dp">
+
+        <TextView
+            android:layout_width="@dimen/pub_dimen_72dp"
+            android:layout_height="wrap_content"
+            android:text="商品单价"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="@dimen/pub_text_16sp" />
+
+        <EditText
+            android:id="@+id/ed_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/code_dialog_input"
+            android:inputType="number|numberDecimal"
+            android:hint="请输入新的商品单价"
+            android:paddingLeft="@dimen/pub_dimen_8dp"
+            android:textColor="@color/app_price_color"
+            android:textSize="@dimen/pub_text_16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

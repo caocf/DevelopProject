@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="@dimen/pub_dimen_16dp"
+        android:gravity="center"
+        android:text="请选择门店纠错类型" />
+
+    <include layout="@layout/pub_line_hor" />
+
+    <TextView
+        android:id="@+id/btn_shop_info_error"
+        style="@style/style_ripple"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pub_dimen_48dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="信息有误"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/pub_text_16sp" />
+
+    <include layout="@layout/pub_line_hor" />
+
+    <TextView
+        android:id="@+id/btn_shop_close"
+        style="@style/style_ripple"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pub_dimen_48dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/menu_shop_close"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/pub_text_16sp" />
+
+    <include layout="@layout/pub_line_hor" />
+
+    <TextView
+        android:id="@+id/btn_dialog_close"
+        style="@style/style_ripple"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pub_dimen_48dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/dialog_cancel"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/pub_text_16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

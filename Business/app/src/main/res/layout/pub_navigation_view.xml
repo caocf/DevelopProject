@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.NavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_view"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#333133"
+    android:layout_gravity="start"
+    android:fitsSystemWindows="true"
+    app:itemTextColor="@color/app_nav_text_color"
+    app:headerLayout="@layout/nav_header_main"
+    app:itemTextAppearance="@style/main_menu"
+    app:menu="@menu/user_drawer_main">
+
+    <TextView
+        android:id="@+id/user_exit_t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:textColor="@color/app_while"
+        android:gravity="center_vertical"
+        android:layout_marginRight="@dimen/pub_dimen_16dp"
+        android:layout_marginEnd="@dimen/pub_dimen_16dp"
+        android:layout_marginBottom="@dimen/pub_dimen_16dp"
+        android:drawableLeft="@drawable/ic_action_exit_app"
+        android:drawableStart="@drawable/ic_action_exit_app"
+        android:drawablePadding="@dimen/pub_dimen_4dp"
+        android:text="退出" />
+
+</android.support.design.widget.NavigationView>

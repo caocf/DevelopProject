@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/icon_shop_bg"
+    android:orientation="horizontal"
+    android:padding="@dimen/px_dimen_20">
+
+
+    <LinearLayout
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_shop_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/app_while"
+                android:textSize="@dimen/px_dimen_30" />
+
+            <ImageView
+                android:id="@+id/iv_shop_state"
+                android:layout_width="@dimen/px_dimen_28"
+                android:layout_height="@dimen/px_dimen_28"
+                android:layout_marginLeft="@dimen/px_dimen_16"
+                android:layout_marginStart="@dimen/px_dimen_16"
+                android:src="@drawable/icon_shop_bao" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_shop_i_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_dimen_20"
+            android:text="@string/shop_i_name"
+            android:textColor="@color/app_while"
+            android:textSize="@dimen/px_dimen_22" />
+
+        <TextView
+            android:id="@+id/tv_shop_i_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_dimen_8"
+            android:autoLink="phone"
+            android:text="@string/shop_i_phone"
+            android:textColor="@color/app_while"
+            android:textSize="@dimen/px_dimen_22" />
+
+        <TextView
+            android:id="@+id/tv_shop_i_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_dimen_8"
+            android:text="@string/shop_i_money"
+            android:textColor="@color/app_while"
+            android:textSize="@dimen/px_dimen_22" />
+
+        <TextView
+            android:id="@+id/tv_shop_i_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_dimen_8"
+            android:text="@string/shop_i_area"
+            android:textColor="@color/app_while"
+            android:textSize="@dimen/px_dimen_22" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/px_dimen_20"
+        android:layout_marginRight="@dimen/px_dimen_20"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/px_dimen_20">
+
+
+        <TextView
+            android:id="@+id/tv_shop_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/code_corner_red"
+            android:paddingBottom="@dimen/px_dimen_8"
+            android:paddingLeft="@dimen/px_dimen_14"
+            android:paddingRight="@dimen/px_dimen_14"
+            android:paddingTop="@dimen/px_dimen_8"
+            android:text="收藏店铺"
+            android:textColor="@color/app_while"
+            android:textSize="@dimen/px_dimen_22" />
+
+        <TextView
+            android:id="@+id/tv_shop_collect_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/px_dimen_22"
+            android:text="@string/shop_i_collection"
+            android:textColor="@color/app_while"
+            android:textSize="@dimen/px_dimen_26" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

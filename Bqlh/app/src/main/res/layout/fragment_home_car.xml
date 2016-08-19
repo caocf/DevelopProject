@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_content">
+
+    <include layout="@layout/pub_title_bar_back" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/fragment_home_car_content" />
+
+        <LinearLayout
+            android:id="@+id/rl_null_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_shopping_null_hint"
+                android:textColor="@color/app_grey"
+                android:textSize="@dimen/px_dimen_26" />
+
+            <TextView
+                android:id="@+id/btn_go"
+                android:layout_width="300px"
+                android:layout_height="70px"
+                android:layout_marginTop="@dimen/px_dimen_24"
+                android:background="@drawable/code_bg_line_translate"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/my_shopping_go" />
+        </LinearLayout>
+
+        <ViewStub style="@style/base_network_error" />
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_content">
+
+    <include layout="@layout/pub_title_bar_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="50px"
+        android:text="请设置你的新密码" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="172px"
+        android:layout_marginTop="@dimen/px_dimen_34"
+        android:background="@drawable/code_bg_line_while"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90px">
+
+
+            <EditText
+                android:id="@+id/ed_input_pwd"
+                style="@style/base_edit_input"
+                android:layout_centerVertical="true"
+                android:hint="设置密码"
+                android:inputType="textPassword" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/line_hor"
+            android:layout_marginLeft="@dimen/px_dimen_20"
+            android:layout_marginRight="@dimen/px_dimen_20" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90px">
+
+
+            <EditText
+                android:id="@+id/ed_input_pwd_again"
+                style="@style/base_edit_input"
+                android:layout_centerVertical="true"
+                android:hint="确认密码"
+                android:inputType="textPassword" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/base_ripple_button"
+        android:layout_marginLeft="@dimen/px_dimen_20"
+        android:layout_marginRight="@dimen/px_dimen_20"
+        android:layout_marginTop="@dimen/px_dimen_20"
+        android:text="提交" />
+</LinearLayout>

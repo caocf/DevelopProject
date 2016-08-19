@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/pub_app_bar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/app_while">
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/pub_dimen_8dp"
+                android:paddingTop="@dimen/pub_dimen_8dp">
+
+                <com.xhl.bqlh.business.view.ui.bar.OrderBar
+                    android:id="@+id/order_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    style="@style/line_hor"
+                    android:layout_marginLeft="@dimen/pub_dimen_24dp"
+                    android:layout_marginStart="@dimen/pub_dimen_24dp" />
+
+                <TextView
+                    android:id="@+id/tv_order_people"
+                    style="@style/style_order_user_info_text"
+                    android:layout_marginTop="@dimen/pub_dimen_8dp" />
+
+                <TextView
+                    android:id="@+id/tv_order_location"
+                    style="@style/style_order_user_info_text"
+                    android:layout_marginTop="@dimen/pub_dimen_4dp"
+                    android:ellipsize="end"
+                    android:maxLines="2" />
+
+                <TextView
+                    android:id="@+id/tv_order_phone"
+                    style="@style/style_order_user_info_text"
+                    android:layout_marginTop="@dimen/pub_dimen_4dp"
+                    android:autoLink="phone" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pub_dimen_8dp"
+                android:background="@color/app_light_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/pub_dimen_8dp"
+                        android:paddingLeft="@dimen/pub_dimen_16dp"
+                        android:paddingRight="@dimen/pub_dimen_16dp"
+                        android:paddingTop="@dimen/pub_dimen_8dp"
+                        android:text="@string/order_details_product"
+                        android:textColor="@color/base_dark_text_color"
+                        android:textSize="@dimen/pub_text_16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_return_product"
+                        android:layout_width="0dp"
+                        android:gravity="end"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="@dimen/pub_dimen_8dp"
+                        android:paddingLeft="@dimen/pub_dimen_16dp"
+                        android:paddingRight="@dimen/pub_dimen_16dp"
+                        android:paddingTop="@dimen/pub_dimen_8dp"
+                        android:clickable="true"
+                        android:text="@string/order_details_return"
+                        android:textColor="@color/base_light_text_color"
+                        android:textSize="@dimen/pub_text_14sp" />
+
+                </LinearLayout>
+
+                <View style="@style/line_hor" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@id/recycler_view"
+                    style="@style/style_base_recycle_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"
+                    android:paddingTop="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+
+        <TextView
+            android:id="@+id/tv_order_pay_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/order_details_pay"
+            android:textColor="@color/base_light_text_color"
+            android:textSize="@dimen/pub_text_16sp" />
+
+        <TextView
+            android:id="@+id/tv_order_lost_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/order_details_lost_money"
+            android:textColor="@color/app_orange"
+            android:textSize="@dimen/pub_text_16sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_clear"
+        style="@style/button_default"
+        android:background="@drawable/code_btn_orange"
+        android:text="@string/order_details_pay_lost" />
+
+
+</LinearLayout>

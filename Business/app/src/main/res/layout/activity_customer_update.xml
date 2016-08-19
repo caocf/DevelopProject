@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/pub_app_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_while"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/pub_dimen_16dp"
+                android:paddingTop="@dimen/pub_dimen_16dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_add_ic_shop"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.xhl.bqlh.business.view.custom.LifeCycleImageView
+                        android:id="@+id/iv_pic_shop"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_new_cus_add" />
+
+                    <TextView
+                        style="@style/style_customer_text"
+                        android:layout_marginTop="@dimen/pub_dimen_8dp"
+                        android:text="@string/customer_shop_icon"
+                        android:textSize="@dimen/pub_text_14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_add_ic_license"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.xhl.bqlh.business.view.custom.LifeCycleImageView
+                        android:id="@+id/iv_pic_license"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_new_cus_add" />
+
+                    <TextView
+                        style="@style/style_customer_text"
+                        android:layout_marginTop="@dimen/pub_dimen_8dp"
+                        android:text="@string/customer_shop_license"
+                        android:textSize="@dimen/pub_text_14sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/pub_dimen_16dp"
+                android:background="@color/app_while"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/pub_dimen_16dp"
+                android:paddingLeft="@dimen/pub_dimen_16dp"
+                android:paddingRight="@dimen/pub_dimen_16dp">
+
+
+                <LinearLayout style="@style/style_customer_item">
+
+                    <TextView
+                        style="@style/style_customer_text"
+                        android:text="@string/customer_shop_name" />
+
+                    <TextView
+                        android:id="@+id/tv_input_shop_name"
+                        style="@style/style_customer_hint_text" />
+
+                    <ImageView style="@style/arrow_right" />
+                </LinearLayout>
+
+                <include layout="@layout/pub_line_hor" />
+
+                <LinearLayout style="@style/style_customer_item">
+
+                    <TextView
+                        style="@style/style_customer_text"
+                        android:text="@string/customer_shop_user" />
+
+                    <TextView
+                        android:id="@+id/tv_input_user"
+                        style="@style/style_customer_hint_text" />
+
+                    <ImageView style="@style/arrow_right" />
+                </LinearLayout>
+
+                <include layout="@layout/pub_line_hor" />
+
+                <LinearLayout style="@style/style_customer_item">
+
+                    <TextView
+                        style="@style/style_customer_text"
+                        android:text="@string/customer_shop_phone" />
+
+                    <TextView
+                        android:id="@+id/tv_input_phone"
+                        style="@style/style_customer_hint_text" />
+
+                    <ImageView style="@style/arrow_right" />
+                </LinearLayout>
+
+                <include layout="@layout/pub_line_hor" />
+
+                <LinearLayout style="@style/style_customer_item">
+
+                    <TextView
+                        style="@style/style_customer_text"
+                        android:text="@string/customer_shop_license_id" />
+
+                    <TextView
+                        android:id="@+id/tv_input_license_id"
+                        style="@style/style_customer_hint_text" />
+
+                    <ImageView style="@style/arrow_right" />
+                </LinearLayout>
+
+                <include layout="@layout/pub_line_hor" />
+
+                <LinearLayout style="@style/style_customer_item">
+
+                    <TextView
+                        style="@style/style_customer_text"
+                        android:text="@string/customer_shop_location" />
+
+                    <TextView
+                        android:id="@+id/tv_input_maker_location"
+                        style="@style/style_customer_hint_text"
+                        android:text="@string/customer_shop_location_mark" />
+
+                    <ImageView style="@style/arrow_right" />
+                </LinearLayout>
+
+                <include layout="@layout/pub_line_hor" />
+
+                <LinearLayout style="@style/style_customer_item">
+
+                    <TextView
+                        style="@style/style_customer_text"
+                        android:text="@string/customer_shop_location_text" />
+
+                    <TextView
+                        android:id="@+id/tv_input_address"
+                        style="@style/style_customer_hint_text" />
+
+                    <ImageView style="@style/arrow_right" />
+                </LinearLayout>
+
+                <include layout="@layout/pub_line_hor" />
+
+                <LinearLayout style="@style/style_customer_item">
+
+                    <TextView
+                        style="@style/style_customer_text"
+                        android:text="@string/customer_shop_address" />
+
+                    <TextView
+                        android:id="@+id/tv_input_details_address"
+                        style="@style/style_customer_hint_text" />
+
+                    <ImageView style="@style/arrow_right" />
+                </LinearLayout>
+
+                <include layout="@layout/pub_line_hor" />
+
+                <LinearLayout style="@style/style_customer_item">
+
+                    <TextView
+                        style="@style/style_customer_text"
+                        android:text="@string/customer_shop_type" />
+
+                    <TextView
+                        android:id="@+id/tv_input_shop_type"
+                        style="@style/style_customer_hint_text"
+                        android:text="请选择" />
+
+                    <ImageView style="@style/arrow_right" />
+                </LinearLayout>
+
+                <include layout="@layout/pub_line_hor" />
+
+                <LinearLayout style="@style/style_customer_item">
+
+                    <TextView
+                        style="@style/style_customer_text"
+                        android:text="@string/customer_shop_login_name" />
+
+                    <TextView
+                        android:id="@+id/tv_input_login_name"
+                        style="@style/style_customer_hint_text" />
+
+                    <ImageView style="@style/arrow_right" />
+                </LinearLayout>
+
+
+                <include layout="@layout/pub_line_hor" />
+
+                <Button
+                    android:id="@+id/btn_confirm"
+                    style="@style/button_default"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/pub_dimen_16dp"
+                    android:text="修改信息" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

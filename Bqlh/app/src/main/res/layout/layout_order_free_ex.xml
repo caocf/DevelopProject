@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/px_dimen_20"
+    android:background="@color/app_while"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ripple_select_coupon"
+        style="@style/base_bg_ripple_rectangle"
+        android:paddingLeft="@dimen/px_dimen_20"
+        android:paddingRight="@dimen/px_dimen_20"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/pay_coupon"
+            android:textColor="@color/text_dark_color"
+            android:textSize="@dimen/px_dimen_28" />
+
+        <TextView
+            android:id="@+id/tv_order_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_right_2"
+            android:paddingLeft="@dimen/px_dimen_10"
+            android:paddingRight="@dimen/px_dimen_10"
+            android:textSize="@dimen/px_dimen_26" />
+
+        <ImageView
+            android:id="@+id/iv_right_2"
+            style="@style/base_arrow_image" />
+    </RelativeLayout>
+
+    <View
+        style="@style/line_hor"
+        android:layout_marginLeft="@dimen/px_dimen_20"
+        android:layout_marginRight="@dimen/px_dimen_20"
+        android:visibility="visible" />
+
+    <com.xhl.xhl_library.ui.view.RippleView
+        android:id="@+id/ripple_select_jf"
+        style="@style/base_bg_ripple_rectangle"
+        android:paddingLeft="@dimen/px_dimen_20"
+        android:paddingRight="@dimen/px_dimen_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/pay_score"
+            android:textColor="@color/text_dark_color"
+            android:textSize="@dimen/px_dimen_28" />
+
+        <TextView
+            android:id="@+id/tv_order_jf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_right_3"
+            android:paddingLeft="@dimen/px_dimen_10"
+            android:paddingRight="@dimen/px_dimen_10"
+            android:textSize="@dimen/px_dimen_26" />
+
+        <ImageView
+            android:id="@+id/iv_right_3"
+            style="@style/base_arrow_image" />
+    </com.xhl.xhl_library.ui.view.RippleView>
+</LinearLayout>

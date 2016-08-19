@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/style_ripple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/pub_dimen_16dp"
+        android:paddingRight="@dimen/pub_dimen_16dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="@dimen/pub_text_16sp" />
+
+        <TextView
+            android:id="@+id/tv_shop_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_shop_name"
+            android:layout_marginTop="@dimen/pub_dimen_8dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxWidth="260dp"
+            android:textColor="@color/base_light_text_color"
+            android:textSize="@dimen/pub_text_14sp" />
+
+        <TextView
+            android:id="@+id/tv_shop_type_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_shop_location"
+            android:layout_marginTop="@dimen/pub_dimen_4dp"
+            android:textColor="@color/base_light_text_color"
+            android:textSize="@dimen/pub_text_14sp" />
+
+        <com.xhl.bqlh.business.view.ui.bar.ShopStateBar
+            android:id="@+id/shop_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/tv_shop_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/shop_state"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/ic_map_distance"
+            android:drawablePadding="@dimen/pub_dimen_4dp"
+            android:drawableStart="@drawable/ic_map_distance"
+            android:textColor="@color/base_light_text_color"
+            android:textSize="@dimen/pub_text_12sp" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/pub_line_hor" />
+</LinearLayout>

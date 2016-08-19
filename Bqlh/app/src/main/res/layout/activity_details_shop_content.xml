@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_content">
+
+    <LinearLayout style="@style/title_bg">
+
+        <FrameLayout style="@style/title_button">
+
+            <ImageView
+                style="@style/title_button_image"
+                android:layout_width="@dimen/px_dimen_20"
+                android:layout_height="@dimen/px_dimen_34" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/app_while"
+            android:textSize="@dimen/px_dimen_28" />
+
+        <FrameLayout
+            android:id="@+id/fl_car"
+            style="@style/title_button">
+
+            <ImageView
+                android:id="@+id/iv_car"
+                android:layout_width="@dimen/px_dimen_40"
+                android:layout_height="@dimen/px_dimen_40"
+                style="@style/title_button_image"
+                android:src="@drawable/icon_home_b_car" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.xhl.xhl_library.ui.SwipeRefresh.SwipeRefreshLayout style="@style/base_swipe_refresh">
+
+        <android.support.v7.widget.RecyclerView style="@style/base_recycle_view" />
+
+    </com.xhl.xhl_library.ui.SwipeRefresh.SwipeRefreshLayout>
+
+
+</LinearLayout>

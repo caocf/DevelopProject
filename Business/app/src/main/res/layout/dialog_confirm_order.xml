@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pub_dimen_48dp"
+        android:text="提交订单"
+        android:gravity="center"
+        android:textColor="@color/base_dark_text_color"
+        android:textSize="20sp" />
+
+    <include layout="@layout/pub_line_hor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/pub_dimen_16dp"
+        android:paddingRight="@dimen/pub_dimen_16dp"
+        android:paddingTop="@dimen/pub_dimen_16dp">
+
+        <TextView
+            android:layout_width="@dimen/pub_dimen_72dp"
+            android:layout_height="wrap_content"
+            android:text="订单金额"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="@dimen/pub_text_16sp" />
+
+        <TextView
+            android:id="@+id/tv_order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:textColor="@color/app_price_color"
+            android:textSize="@dimen/pub_text_16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/pub_dimen_16dp"
+        android:paddingRight="@dimen/pub_dimen_16dp"
+        android:paddingTop="@dimen/pub_dimen_16dp">
+
+        <TextView
+            android:layout_width="@dimen/pub_dimen_72dp"
+            android:layout_height="wrap_content"
+            android:text="优惠金额"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="@dimen/pub_text_16sp" />
+
+        <TextView
+            android:id="@+id/tv_discount_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:textColor="@color/app_price_color"
+            android:textSize="@dimen/pub_text_16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pub_dimen_8dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/pub_dimen_16dp"
+        android:paddingRight="@dimen/pub_dimen_16dp">
+
+        <TextView
+            android:layout_width="@dimen/pub_dimen_72dp"
+            android:layout_height="wrap_content"
+            android:text="实收金额"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="@dimen/pub_text_16sp" />
+
+        <EditText
+            android:id="@+id/ed_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/code_dialog_input"
+            android:hint="订单实际收款金额"
+            android:inputType="number|numberDecimal"
+            android:paddingLeft="@dimen/pub_dimen_8dp"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="@dimen/pub_text_16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

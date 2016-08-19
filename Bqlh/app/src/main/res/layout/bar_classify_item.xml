@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/classify_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/px_dimen_10"
+        android:paddingTop="@dimen/px_dimen_16"
+        android:textSize="@dimen/px_dimen_24"
+        android:textColor="@color/text_dark_color" />
+
+    <android.support.v7.widget.RecyclerView
+        style="@style/base_recycle_view"
+        android:padding="@dimen/px_dimen_16"
+        android:background="@color/app_while"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+
+</LinearLayout>
+

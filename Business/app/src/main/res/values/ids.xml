@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="toolbar" type="id" />
+    <item name="toolbar_layout" type="id" />
+    <item name="app_toolbar_layout" type="id" />
+    <item name="view_pager" type="id" />
+    <item name="bd_map" type="id" />
+    <item name="recycler_view" type="id" />
+    <item name="swipe_refresh_layout" type="id" />
+    <item name="tab_layout" type="id" />
+    <item name="tv_text_null" type="id" />
+    <!--内容全局容器-->
+    <item name="main_content" type="id" />
+    <item name="main_drawer_layout" type="id" />
+
+</resources>

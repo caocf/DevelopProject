@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <uk.co.senab.photoview.PhotoView
+            android:id="@+id/photo_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_black"
+            android:scaleType="fitCenter" />
+
+        <android.support.v4.widget.ContentLoadingProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/pub_dimen_56dp"
+            android:layout_height="@dimen/pub_dimen_56dp" />
+
+        <ImageButton
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/pub_dimen_56dp"
+            android:layout_height="@dimen/pub_dimen_56dp"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_action_back" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_black"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/pub_dimen_16dp"
+        android:paddingLeft="@dimen/pub_dimen_16dp"
+        android:paddingRight="@dimen/pub_dimen_16dp"
+        android:paddingTop="@dimen/pub_dimen_8dp">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_while"
+            android:textSize="@dimen/pub_text_12sp" />
+
+        <TextView
+            android:id="@+id/tv_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pub_dimen_4dp"
+            android:textColor="@color/app_while"
+            android:textSize="@dimen/pub_text_14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

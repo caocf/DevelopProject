@@ -1,0 +1,13 @@
+*.iml
+.gradle
+.idea
+*.apk
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+xhl_library/libs/
+xhl_library/src/androidTest/
+xhl_library/src/test/

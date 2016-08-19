@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/dialog_main_show_amination</item>
+        <item name="android:windowExitAnimation">@anim/dialog_main_hide_amination</item>
+    </style>
+
+    <style name="dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--Material Text Style-->
+    <style name="Material_Text_Regular">
+        <item name="Material_Typeface">Roboto_Regular</item>
+    </style>
+
+    <style name="Material_Text_Medium">
+        <item name="Material_Typeface">Roboto_Medium</item>
+    </style>
+
+    <!--Medium 字体-->
+    <style name="Material_Text_Medium.Title">
+        <item name="android:textSize">@dimen/text_Title_m</item>
+        <item name="android:textColor">@color/body_text_87</item>
+    </style>
+
+    <style name="Material_Text_Medium.Body2">
+        <item name="android:textSize">@dimen/text_Body2_m</item>
+        <item name="android:textColor">@color/body_text_87</item>
+        <item name="android:lineSpacingExtra">@dimen/text_Body2_lead</item>
+    </style>
+
+    <style name="Material_Text_Medium.Menu">
+        <item name="android:textSize">@dimen/text_Menu_m</item>
+        <item name="android:textColor">@color/body_text_87</item>
+    </style>
+
+    <style name="Material_Text_Medium.Button">
+        <item name="android:textSize">@dimen/text_Button_m</item>
+        <item name="android:textColor">@color/body_text_87</item>
+    </style>
+
+    <!--Regular 字体-->
+    <style name="Material_Text_Regular.Display3" parent="Material_Text_Regular">
+        <item name="android:textSize">@dimen/text_display3_r</item>
+        <item name="android:textColor">@color/body_text_54</item>
+    </style>
+
+    <style name="Material_Text_Regular.Display2">
+        <item name="android:textSize">@dimen/text_display2_r</item>
+        <item name="android:textColor">@color/body_text_54</item>
+        <item name="android:lineSpacingExtra">@dimen/text_Display2_lead</item>
+    </style>
+
+    <style name="Material_Text_Regular.Display1">
+        <item name="android:textSize">@dimen/text_display1_r</item>
+        <item name="android:textColor">@color/body_text_54</item>
+        <item name="android:lineSpacingExtra">@dimen/text_Display1_lead</item>
+    </style>
+
+    <style name="Material_Text_Regular.Headline">
+        <item name="android:textSize">@dimen/text_headline_r</item>
+        <item name="android:textColor">@color/body_text_87</item>
+        <item name="android:lineSpacingExtra">@dimen/text_Headline_lead</item>
+    </style>
+
+    <style name="Material_Text_Regular.Subhead">
+        <item name="android:textSize">@dimen/text_Subhead_r</item>
+        <item name="android:textColor">@color/body_text_87</item>
+        <item name="android:lineSpacingExtra">@dimen/text_Subhead_lead</item>
+    </style>
+
+    <style name="Material_Text_Regular.Body1">
+        <item name="android:textSize">@dimen/text_Body1_r</item>
+        <item name="android:textColor">@color/body_text_87</item>
+        <item name="android:lineSpacingExtra">@dimen/text_Body1_lead</item>
+    </style>
+
+    <style name="Material_Text_Regular.Caption">
+        <item name="android:textSize">@dimen/text_Caption_r</item>
+        <item name="android:textColor">@color/body_text_54</item>
+    </style>
+
+
+</resources>

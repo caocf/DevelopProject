@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/style_ripple"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/task_item_height"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_task_shop_index"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="0.6dp"
+            android:layout_height="16dp"
+            android:background="@color/deliver_line" />
+
+        <ImageView
+            android:id="@+id/iv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/ic_task_state" />
+
+        <View
+            android:layout_width="0.6dp"
+            android:layout_height="match_parent"
+            android:background="@color/deliver_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/pub_dimen_8dp"
+        android:layout_marginStart="@dimen/pub_dimen_8dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="14dp"
+            android:paddingRight="@dimen/pub_dimen_16dp"
+            android:paddingTop="14dp">
+
+            <LinearLayout
+                android:id="@+id/ll_task_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/iv_shop"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:src="@drawable/ic_shop"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_task_shop_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/base_dark_text_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_task_shop_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_task_shop_name"
+                android:layout_marginTop="6dp"
+                android:maxWidth="230dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/base_light_text_color"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_task_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/iv_state_finish"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_task_finish" />
+
+                <TextView
+                    android:id="@+id/tv_task_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_task_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/ll_task_shop_name"
+                android:layout_marginLeft="@dimen/pub_dimen_4dp"
+                android:layout_marginStart="@dimen/pub_dimen_4dp"
+                android:layout_toEndOf="@+id/ll_task_shop_name"
+                android:layout_toRightOf="@+id/ll_task_shop_name"
+                android:background="@drawable/code_task_state"
+                android:gravity="center"
+                android:paddingBottom="1dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="1dp"
+                android:text="临时"
+                android:textColor="@color/app_while"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="0.6dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/pub_dimen_16dp"
+                android:layout_toLeftOf="@+id/ll_task_state"
+                android:background="@color/base_disable_text_color" />
+
+        </RelativeLayout>
+
+        <View style="@style/line_hor" />
+
+    </LinearLayout>
+</LinearLayout>

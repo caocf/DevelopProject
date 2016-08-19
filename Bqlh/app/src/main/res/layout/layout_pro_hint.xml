@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/px_dimen_20"
+    tools:showIn="@layout/fragment_product_info">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="服务承诺:"
+        android:textColor="@color/text_dark_color"
+        android:textSize="@dimen/px_dimen_26" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_dimen_16"
+        android:text="@string/product_hint1"
+        android:textColor="@color/text_light_color"
+        android:textSize="@dimen/px_dimen_24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_dimen_16"
+        android:text="@string/product_hint2"
+        android:textColor="@color/text_light_color"
+        android:textSize="@dimen/px_dimen_24" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_dimen_30"
+        android:text="版权声明:"
+        android:textColor="@color/app_red"
+        android:textSize="@dimen/px_dimen_26" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_dimen_16"
+        android:text="@string/product_hint3"
+        android:textColor="@color/text_light_color"
+        android:textSize="@dimen/px_dimen_24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_dimen_16"
+        android:text="@string/product_hint4"
+        android:textColor="@color/text_light_color"
+        android:textSize="@dimen/px_dimen_24" />
+
+
+</LinearLayout>

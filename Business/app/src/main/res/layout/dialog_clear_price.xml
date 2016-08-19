@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pub_dimen_16dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/pub_dimen_16dp"
+        android:paddingRight="@dimen/pub_dimen_16dp">
+
+        <TextView
+            android:layout_width="@dimen/pub_dimen_72dp"
+            android:layout_height="wrap_content"
+            android:text="清欠金额"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="@dimen/pub_text_16sp" />
+
+        <EditText
+            android:id="@+id/ed_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/code_dialog_input"
+            android:inputType="number|numberDecimal"
+            android:lines="1"
+            android:hint="请输入清欠金额"
+            android:paddingLeft="@dimen/pub_dimen_8dp"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="@dimen/pub_text_16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pub_dimen_8dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/pub_dimen_16dp"
+        android:paddingRight="@dimen/pub_dimen_16dp">
+
+        <TextView
+            android:layout_width="@dimen/pub_dimen_72dp"
+            android:layout_height="wrap_content"
+            android:text="欠款金额"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="@dimen/pub_text_16sp" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pub_dimen_8dp"
+            android:text="@string/price"
+            android:textColor="@color/app_price_color"
+            android:textSize="@dimen/pub_text_16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pub_dimen_8dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/pub_dimen_16dp"
+        android:paddingRight="@dimen/pub_dimen_16dp">
+
+        <TextView
+            android:layout_width="@dimen/pub_dimen_72dp"
+            android:layout_height="wrap_content"
+            android:text="备注"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="@dimen/pub_text_16sp" />
+
+        <EditText
+            android:id="@+id/ed_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/code_dialog_input"
+            android:inputType="text"
+            android:hint="请输入清欠备注"
+            android:lines="1"
+            android:paddingLeft="@dimen/pub_dimen_8dp"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="@dimen/pub_text_16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

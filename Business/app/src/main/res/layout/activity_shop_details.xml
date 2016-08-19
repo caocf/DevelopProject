@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/pub_app_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/map_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/fl_target_location"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@color/app_while_60"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/pub_dimen_4dp"
+                android:paddingLeft="@dimen/pub_dimen_8dp"
+                android:paddingRight="@dimen/pub_dimen_16dp"
+                android:paddingTop="@dimen/pub_dimen_4dp">
+
+                <TextView
+                    android:id="@+id/tv_target_location"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_map_target"
+                    android:drawableStart="@drawable/ic_map_target"
+                    android:drawablePadding="@dimen/pub_dimen_4dp"
+                    android:text="@string/locating"
+                    android:textColor="@color/base_dark_text_color"
+                    android:textSize="@dimen/pub_text_14sp" />
+
+                <TextView
+                    android:id="@+id/tv_target_location_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="计算中"
+                    android:textColor="@color/app_red"
+                    android:textSize="@dimen/pub_text_12sp" />
+
+            </RelativeLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pub_dimen_4dp"
+                android:layout_marginLeft="@dimen/pub_dimen_16dp"
+                android:layout_marginRight="@dimen/pub_dimen_16dp"
+                android:src="@drawable/ic_fab_sign"
+                app:fabSize="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_operator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_toggle_operator"
+                android:layout_width="70dp"
+                android:layout_height="26dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@drawable/code_shop_detail_toggle"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/iv_toggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_shop_toggle" />
+
+            </FrameLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_while"
+                android:paddingBottom="@dimen/pub_dimen_24dp"
+                app:behavior_hideable="true"
+                app:layout_behavior="@string/bottom_sheet_behavior" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

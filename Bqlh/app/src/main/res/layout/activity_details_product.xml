@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/fl_content"
+    style="@style/base_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            style="@style/title_bg"
+            android:background="@color/app_while">
+
+            <FrameLayout style="@style/title_button">
+
+                <ImageView
+                    style="@style/title_button_image"
+                    android:layout_width="@dimen/px_dimen_20"
+                    android:layout_height="@dimen/px_dimen_34"
+                    android:tint="@color/app_grey" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@id/tab_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/app_while" />
+
+            </FrameLayout>
+
+            <View
+                style="@style/title_button"
+                android:background="@color/transparent" />
+
+        </LinearLayout>
+
+        <View style="@style/line_hor" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <include layout="@layout/layout_pro_operate" />
+            </LinearLayout>
+
+            <ViewStub style="@style/base_network_error" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

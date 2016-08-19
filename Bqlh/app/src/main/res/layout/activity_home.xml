@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <LinearLayout
+        android:id="@+id/main_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_while"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.xhl.bqlh.view.custom.MultiCheckBox
+            android:id="@+id/main_rb_home"
+            style="@style/style_multi_check_box"
+            app:drawableRes="@drawable/icon_home_b_home"
+            app:textRes="@string/main_home" />
+
+        <com.xhl.bqlh.view.custom.MultiCheckBox
+            android:id="@+id/main_rb_classify"
+            style="@style/style_multi_check_box"
+            app:drawableRes="@drawable/icon_home_b_classify"
+            app:textRes="@string/main_classify" />
+
+        <com.xhl.bqlh.view.custom.MultiCheckBox
+            android:id="@+id/main_rb_shopping"
+            style="@style/style_multi_check_box"
+            app:drawableRes="@drawable/icon_home_b_car"
+            app:textRes="@string/main_shopping" />
+
+        <com.xhl.bqlh.view.custom.MultiCheckBox
+            android:id="@+id/main_rb_my"
+            style="@style/style_multi_check_box"
+            app:drawableRes="@drawable/icon_home_b_my"
+            app:textRes="@string/main_my" />
+
+    </LinearLayout>
+
+</LinearLayout>

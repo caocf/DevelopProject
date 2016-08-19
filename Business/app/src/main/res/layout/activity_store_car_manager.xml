@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/pub_app_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.xhl.xhl_library.ui.SwipeRefresh.SwipeRefreshLayout
+            android:id="@id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                style="@style/style_base_recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.xhl.xhl_library.ui.SwipeRefresh.SwipeRefreshLayout>
+
+        <TextView
+            style="@style/style_null_hint_text"
+            android:text="暂无可退库商品" />
+
+    </FrameLayout>
+
+    <TextView
+        style="@style/style_hint_text"
+        android:text="@string/store_car_return_hint" />
+
+    <Button
+        android:id="@+id/btn_return"
+        style="@style/button_default"
+        android:text="@string/store_car_return" />
+</LinearLayout>

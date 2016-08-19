@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_content">
+
+    <include layout="@layout/pub_title_bar_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_while"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/px_dimen_20">
+
+        <EditText
+            android:id="@+id/ed_old_pwd"
+            style="@style/base_edit_input"
+            android:hint="旧密码"
+            android:inputType="textPassword" />
+
+        <View style="@style/line_hor" />
+
+        <EditText
+            android:id="@+id/ed_new_pwd"
+            style="@style/base_edit_input"
+            android:hint="新密码"
+            android:inputType="textPassword" />
+
+        <View style="@style/line_hor" />
+
+        <EditText
+            android:id="@+id/ed_new_pwd_again"
+            style="@style/base_edit_input"
+            android:hint="再次输入新密码"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <View style="@style/line_hor" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/base_ripple_button"
+        android:layout_marginLeft="@dimen/px_dimen_20"
+        android:layout_marginRight="@dimen/px_dimen_20"
+        android:layout_marginTop="@dimen/px_dimen_20"
+        android:text="提交" />
+</LinearLayout>

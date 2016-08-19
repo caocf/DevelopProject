@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dialog_padding_24">24dp</dimen>
+    <dimen name="dialog_padding_8">8dp</dimen>
+
+    <dimen name="dialog_btn_size">14sp</dimen>
+    <dimen name="dialog_title_size">18sp</dimen>
+    <dimen name="dialog_content_size">12sp</dimen>
+
+
+    <!--Material Design Text-->
+    <dimen name="text_display3_r">56sp</dimen>
+    <dimen name="text_display2_r">45sp</dimen>
+    <dimen name="text_display1_r">34sp</dimen>
+    <dimen name="text_headline_r">24sp</dimen>
+    <dimen name="text_Title_m">20sp</dimen>
+    <dimen name="text_Subhead_r">16sp</dimen>
+    <dimen name="text_Body2_m">14sp</dimen>
+    <dimen name="text_Body1_r">14sp</dimen>
+    <dimen name="text_Caption_r">12sp</dimen>
+    <dimen name="text_Menu_m">14sp</dimen>
+    <dimen name="text_Button_m">14sp</dimen>
+
+    <dimen name="text_Body1_lead">20pt</dimen>
+    <dimen name="text_Body2_lead">24pt</dimen>
+    <dimen name="text_Subhead_lead">24pt</dimen>
+    <dimen name="text_Headline_lead">32pt</dimen>
+    <dimen name="text_Display1_lead">40pt</dimen>
+    <dimen name="text_Display2_lead">48pt</dimen>
+
+
+</resources>

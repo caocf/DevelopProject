@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_content">
+
+    <include layout="@layout/pub_title_bar_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="172px"
+        android:layout_marginTop="@dimen/px_dimen_20"
+        android:background="@drawable/code_bg_line_while"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:gravity="center_vertical">
+
+
+            <EditText
+                android:id="@+id/ed_input_phone"
+                style="@style/base_edit_input"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="输入用户名" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40px"
+                android:layout_centerVertical="true"
+                android:background="#dbdbdb" />
+
+            <TextView
+                android:id="@+id/tv_get_verity"
+                android:layout_width="200px"
+                android:layout_height="80px"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textColor="@color/app_black"
+                android:textSize="@dimen/px_dimen_24" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/px_dimen_20"
+            android:layout_marginRight="@dimen/px_dimen_20"
+            android:background="@color/line_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90px">
+
+
+            <EditText
+                android:id="@+id/ed_input_verify"
+                style="@style/base_edit_input"
+                android:hint="请填写验证码"
+                android:inputType="number" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/base_ripple_button"
+        android:layout_marginLeft="@dimen/px_dimen_20"
+        android:layout_marginRight="@dimen/px_dimen_20"
+        android:layout_marginTop="@dimen/px_dimen_20"
+        android:text="下一步" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_shop_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/code_task_state"
+        android:clickable="true"
+        android:paddingBottom="@dimen/pub_dimen_4dp"
+        android:paddingLeft="@dimen/pub_dimen_8dp"
+        android:paddingRight="@dimen/pub_dimen_8dp"
+        android:paddingTop="@dimen/pub_dimen_4dp"
+        android:text="加入会员"
+        android:textColor="@color/app_while"
+        android:textSize="@dimen/pub_text_12sp" />
+
+
+</FrameLayout>

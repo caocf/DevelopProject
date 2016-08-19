@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_content">
+
+    <include layout="@layout/pub_title_bar_back" />
+
+    <LinearLayout
+        style="@style/base_bg_ripple_rectangle"
+        android:layout_height="80px"
+        android:background="@color/app_while"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_dimen_20"
+        android:paddingRight="@dimen/px_dimen_20">
+
+        <TextView
+            style="@style/user_info_text"
+            android:text="收款账户" />
+
+        <TextView
+            android:id="@+id/tv_user_account"
+            style="@style/user_info_text_msg" />
+
+    </LinearLayout>
+
+    <View style="@style/line_hor" />
+
+    <LinearLayout
+        style="@style/base_bg_ripple_rectangle"
+        android:background="@color/app_while"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_dimen_20"
+        android:paddingRight="@dimen/px_dimen_20">
+
+        <TextView
+            style="@style/user_info_text"
+            android:text="支付宝" />
+
+        <TextView
+            android:id="@+id/tv_user_zfb"
+            style="@style/user_info_text_msg" />
+
+    </LinearLayout>
+
+    <View style="@style/line_hor" />
+
+
+</LinearLayout>

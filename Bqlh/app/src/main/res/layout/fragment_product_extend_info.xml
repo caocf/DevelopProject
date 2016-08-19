@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_while"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="76px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="商品介绍"
+            android:textColor="@drawable/search_select_text_color"
+            android:textSize="@dimen/px_dimen_26" />
+
+        <View
+            style="@style/line_ver"
+            android:layout_width="1px"
+            android:layout_marginBottom="@dimen/px_dimen_20"
+            android:layout_marginTop="@dimen/px_dimen_20" />
+
+        <TextView
+            android:id="@+id/tv_sku"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="规格参数"
+            android:textColor="@drawable/search_select_text_color"
+            android:textSize="@dimen/px_dimen_26" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

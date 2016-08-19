@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/pub_app_bar" />
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pub_dimen_24dp"
+        android:orientation="vertical"
+        android:padding="@dimen/pub_dimen_16dp">
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="状态:没有连接设备"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/pub_text_16sp" />
+
+        <Button
+            android:id="@+id/btn_print"
+            style="@style/button_default"
+            android:layout_marginTop="@dimen/pub_dimen_16dp"
+            android:enabled="false"
+            android:text="@string/bluetooth_print" />
+
+        <Button
+            android:id="@+id/btn_un_connect"
+            style="@style/button_default"
+            android:layout_marginTop="@dimen/pub_dimen_16dp"
+            android:enabled="false"
+            android:text="@string/bluetooth_device_disconnect" />
+
+        <Button
+            android:id="@+id/btn_connect"
+            style="@style/button_default"
+            android:layout_marginTop="@dimen/pub_dimen_16dp"
+            android:text="@string/bluetooth_device_connect" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent" />
+    </ScrollView>
+
+</LinearLayout>

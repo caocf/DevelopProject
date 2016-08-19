@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/style_ripple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/pub_dimen_8dp"
+        android:paddingLeft="@dimen/pub_dimen_16dp"
+        android:paddingRight="@dimen/pub_dimen_16dp"
+        android:paddingTop="@dimen/pub_dimen_8dp">
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            style="@style/style_order_head_text"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp" />
+
+        <TextView
+            android:id="@+id/tv_apply_state"
+            style="@style/style_order_state_text" />
+
+        <TextView
+            android:id="@+id/tv_apply_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_shop_name"
+            android:layout_marginTop="@dimen/pub_dimen_8dp" />
+
+        <TextView
+            android:id="@+id/tv_apply_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_apply_time"
+            android:layout_marginTop="@dimen/pub_dimen_4dp"
+            android:lines="1" />
+
+    </RelativeLayout>
+
+    <View style="@style/line_hor" />
+
+</LinearLayout>

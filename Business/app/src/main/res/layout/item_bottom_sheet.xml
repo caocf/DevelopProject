@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/style_ripple"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/pub_dimen_16dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pub_dimen_16dp">
+
+
+        <ImageView
+            android:id="@+id/sheet_icon"
+            android:layout_width="48dp"
+            android:src="@drawable/ic_shop_account"
+            android:layout_height="48dp" />
+
+        <View
+            android:id="@+id/sheet_tint"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_gravity="end"
+            android:background="@drawable/ic_hint"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/sheet_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/base_dark_text_color" />
+
+</LinearLayout>

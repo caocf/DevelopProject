@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/pub_app_bar" />
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_while">
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/pub_dimen_8dp"
+                android:paddingLeft="@dimen/pub_dimen_16dp"
+                android:paddingRight="@dimen/pub_dimen_16dp"
+                android:paddingTop="@dimen/pub_dimen_8dp">
+
+                <TextView
+                    android:id="@+id/tv_shop_name"
+                    style="@style/style_order_head_text"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="0dp"
+                    android:text="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/tv_apply_state"
+                    style="@style/style_order_state_text" />
+
+                <TextView
+                    android:id="@+id/tv_apply_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_shop_name"
+                    android:layout_marginTop="@dimen/pub_dimen_8dp" />
+
+                <TextView
+                    android:id="@+id/tv_apply_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_apply_time"
+                    android:layout_marginTop="@dimen/pub_dimen_4dp" />
+
+            </RelativeLayout>
+
+            <View style="@style/line_hor" />
+
+            <TextView
+                android:id="@+id/tv_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/pub_dimen_8dp"
+                android:paddingLeft="@dimen/pub_dimen_16dp"
+                android:paddingRight="@dimen/pub_dimen_16dp"
+                android:paddingTop="@dimen/pub_dimen_8dp"
+                android:text="退货说明:" />
+
+            <View style="@style/line_hor" />
+
+            <TextView
+                android:id="@+id/tv_refuse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/pub_dimen_8dp"
+                android:paddingLeft="@dimen/pub_dimen_16dp"
+                android:paddingRight="@dimen/pub_dimen_16dp"
+                android:paddingTop="@dimen/pub_dimen_8dp"
+                android:text="审核说明:" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pub_dimen_8dp"
+                android:background="@color/app_background" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/pub_dimen_8dp"
+                        android:paddingLeft="@dimen/pub_dimen_16dp"
+                        android:paddingRight="@dimen/pub_dimen_16dp"
+                        android:paddingTop="@dimen/pub_dimen_8dp"
+                        android:text="商品清单"
+                        android:textColor="@color/base_dark_text_color"
+                        android:textSize="@dimen/pub_text_16sp" />
+
+
+                </LinearLayout>
+
+                <View style="@style/line_hor" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@id/recycler_view"
+                    style="@style/style_base_recycle_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"
+                    android:paddingBottom="@dimen/pub_dimen_8dp"
+                    android:paddingTop="4dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_return_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/pub_dimen_16dp"
+                android:textColor="@color/base_dark_text_color"
+                android:textSize="@dimen/pub_text_16sp" />
+
+            <TextView
+                android:id="@+id/tv_return_money_verify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/pub_dimen_16dp"
+                android:paddingLeft="@dimen/pub_dimen_16dp"
+                android:paddingRight="@dimen/pub_dimen_16dp"
+                android:textColor="@color/base_dark_text_color"
+                android:textSize="@dimen/pub_text_16sp" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

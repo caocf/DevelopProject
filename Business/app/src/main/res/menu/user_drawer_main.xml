@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_main"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/user_menu_home"
+            android:icon="@drawable/ic_nav_main"
+            android:orderInCategory="3"
+            android:title="@string/user_nav_main" />
+        <item
+            android:id="@+id/user_menu_attendance"
+            android:icon="@drawable/ic_nav_kq"
+            android:orderInCategory="1"
+            android:title="@string/user_nav_main_attendance" />
+        <item
+            android:id="@+id/user_menu_new_customer"
+            android:icon="@drawable/ic_nav_new_customer"
+            android:orderInCategory="4"
+            android:title="@string/user_nav_main_add_new_customer" />
+        <item
+            android:id="@+id/user_menu_store_manager"
+            android:icon="@drawable/ic_nav_car"
+            android:orderInCategory="2"
+            android:title="@string/user_nav_main_store_manager" />
+
+        <item
+            android:id="@+id/user_menu_order_manager"
+            android:icon="@drawable/ic_nav_order_all"
+            android:orderInCategory="5"
+            android:title="@string/user_nav_main_order_manager_all" />
+
+        <item
+            android:id="@+id/user_menu_order_statistics"
+            android:icon="@drawable/ic_nav_order_statistics"
+            android:orderInCategory="7"
+            android:title="@string/user_nav_main_order_statistics" />
+
+        <item
+            android:id="@+id/user_menu_order_account"
+            android:icon="@drawable/ic_nav_order_account"
+            android:orderInCategory="6"
+            android:title="@string/user_nav_main_order_account" />
+        <item
+            android:id="@+id/user_menu_order_return"
+            android:icon="@drawable/ic_nav_order_return"
+            android:orderInCategory="8"
+            android:title="@string/user_nav_main_order_return"
+            android:visible="true" />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_sub_other"
+        android:checkableBehavior="none"
+        android:visible="false">
+
+        <item
+            android:id="@+id/menu_6"
+            android:icon="@drawable/ic_nav_setting"
+            android:title="@string/user_nav_main_setting" />
+
+    </group>
+</menu>

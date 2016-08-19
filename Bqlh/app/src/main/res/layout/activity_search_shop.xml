@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_content">
+
+    <include layout="@layout/pub_title_bar_back" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.xhl.xhl_library.ui.SwipeRefresh.SwipeRefreshLayout style="@style/base_swipe_refresh">
+
+            <android.support.v7.widget.RecyclerView style="@style/base_recycle_view" />
+        </com.xhl.xhl_library.ui.SwipeRefresh.SwipeRefreshLayout>
+
+        <TextView
+            style="@style/style_null_hint_text"
+            android:text="未搜索到相关店铺" />
+    </FrameLayout>
+
+</LinearLayout>

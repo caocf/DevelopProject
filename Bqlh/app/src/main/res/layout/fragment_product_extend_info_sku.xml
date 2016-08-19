@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/style_pro_sku_hint"
+            android:text="条码" />
+
+        <TextView
+            android:id="@+id/tv_sku_1"
+            style="@style/style_pro_sku_hint_text"
+            android:text="13525657353" />
+
+    </LinearLayout>
+
+    <View style="@style/line_hor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/style_pro_sku_hint"
+            android:text="品牌" />
+
+        <TextView
+            android:id="@+id/tv_sku_3"
+            style="@style/style_pro_sku_hint_text" />
+
+    </LinearLayout>
+
+    <View style="@style/line_hor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/style_pro_sku_hint"
+            android:text="最小单位" />
+
+        <TextView
+            android:id="@+id/tv_sku_4"
+            style="@style/style_pro_sku_hint_text" />
+
+    </LinearLayout>
+
+    <View style="@style/line_hor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/style_pro_sku_hint"
+            android:text="保质期" />
+
+        <TextView
+            android:id="@+id/tv_sku_5"
+            style="@style/style_pro_sku_hint_text" />
+
+    </LinearLayout>
+
+    <View style="@style/line_hor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/style_pro_sku_hint"
+            android:text="包装信息" />
+
+        <TextView
+            android:id="@+id/tv_sku_6"
+            style="@style/style_pro_sku_hint_text" />
+
+    </LinearLayout>
+
+    <View style="@style/line_hor" />
+</LinearLayout>

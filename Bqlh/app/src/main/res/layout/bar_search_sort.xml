@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_dimen_72"
+    android:background="@color/app_while"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/rl_search_all"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/tv_search_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/search_details_by_all"
+            android:textColor="@drawable/search_select_text_color"
+            android:textSize="@dimen/px_dimen_26" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/rl_search_sale"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/tv_search_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/search_details_by_sale"
+            android:textColor="@drawable/search_select_text_color"
+            android:textSize="@dimen/px_dimen_26" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_search_price"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/tv_search_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/search_details_by_price"
+            android:textColor="@drawable/search_select_text_color"
+            android:textSize="@dimen/px_dimen_26" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_dimen_4"
+            android:layout_toRightOf="@+id/tv_search_price"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_search_up_price"
+                android:layout_width="20px"
+                android:layout_height="10px"
+                android:src="@drawable/icon_query_up_normal" />
+
+            <ImageView
+                android:id="@+id/iv_search_down_price"
+                android:layout_width="16px"
+                android:layout_marginLeft="2px"
+                android:layout_height="8px"
+                android:layout_marginTop="2px"
+                android:src="@drawable/icon_query_down_normal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/rl_search_filter"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/tv_search_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/search_details_filter"
+            android:textColor="@drawable/search_select_text_color"
+            android:textSize="@dimen/px_dimen_26" />
+
+    </FrameLayout>
+
+</LinearLayout>

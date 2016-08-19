@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_while"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/px_dimen_34"
+            android:layout_height="@dimen/px_dimen_34"
+            android:layout_marginLeft="@dimen/px_dimen_24"
+            android:src="@drawable/icon_shop_logo" />
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_dimen_8"
+            android:layout_marginStart="@dimen/px_dimen_8"
+            android:text="@string/app_name"
+            android:textColor="@color/text_light_color"
+            android:textSize="@dimen/px_dimen_28" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_order_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px_dimen_20"
+            android:text="@string/app_name"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/px_dimen_26" />
+
+    </LinearLayout>
+
+    <View style="@style/line_hor" />
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/px_dimen_20" />
+
+    <View style="@style/line_hor" />
+
+    <com.xhl.bqlh.view.ui.bar.OrderOperatorBar
+        android:id="@+id/op_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_remark"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pub_title_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_dimen_20"
+        android:paddingRight="@dimen/px_dimen_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="给卖家留言"
+            android:textSize="@dimen/px_dimen_24" />
+
+        <TextView
+            android:id="@+id/ed_remark"
+            style="@style/base_edit_input"
+            android:clickable="true"
+            android:hint=""
+            android:layout_height="50px"
+            android:layout_marginLeft="@dimen/px_dimen_8"
+            android:layout_marginStart="@dimen/px_dimen_8"
+            android:background="@drawable/code_bg_line_translate"
+            android:textSize="@dimen/px_dimen_20" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

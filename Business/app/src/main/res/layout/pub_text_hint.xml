@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="6dp"
+    android:paddingLeft="@dimen/pub_dimen_16dp"
+    android:paddingTop="6dp"
+    android:text="@string/app_name"
+    android:background="@color/app_light_grey"
+    android:textColor="@color/colorPrimary"
+    android:textSize="@dimen/pub_text_16sp" >
+
+
+
+</TextView>

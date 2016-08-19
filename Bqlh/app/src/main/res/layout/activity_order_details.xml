@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_content">
+
+    <include layout="@layout/pub_title_bar_back" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_root_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_while"
+                android:orientation="vertical"
+                android:padding="@dimen/px_dimen_20">
+
+                <TextView
+                    android:id="@+id/tv_r_user"
+                    style="@style/order_info_text"
+                    android:layout_marginTop="0dp" />
+
+                <TextView
+                    android:id="@+id/tv_r_phone"
+                    style="@style/order_info_text" />
+
+                <TextView
+                    android:id="@+id/tv_r_location"
+                    style="@style/order_info_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_dimen_20"
+                android:background="@color/app_while"
+                android:orientation="vertical"
+                android:padding="@dimen/px_dimen_20">
+
+                <TextView
+                    android:id="@+id/tv_s_user"
+                    style="@style/order_info_text"
+                    android:layout_marginTop="0dp" />
+
+                <TextView
+                    android:id="@+id/tv_s_phone"
+                    style="@style/order_info_text" />
+
+                <TextView
+                    android:id="@+id/tv_s_location"
+                    style="@style/order_info_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_dimen_20"
+                android:background="@color/app_while"
+                android:orientation="vertical"
+                android:padding="@dimen/px_dimen_20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/order_info_text"
+                        android:text="订单号:"
+                        android:textSize="@dimen/px_dimen_24" />
+
+                    <TextView
+                        android:id="@+id/tv_order_num"
+                        style="@style/order_info_text"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_light_color"
+                        android:textSize="@dimen/px_dimen_24" />
+
+                    <TextView
+                        android:id="@+id/tv_order_state"
+                        style="@style/order_info_text"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/px_dimen_24" />
+
+                </LinearLayout>
+
+                <View style="@style/line_hor" />
+
+                <TextView
+                    android:id="@+id/tv_order_time"
+                    style="@style/order_info_text"
+                    android:textColor="@color/text_light_color" />
+
+                <TextView
+                    android:id="@+id/tv_order_pay_time"
+                    style="@style/order_info_text"
+                    android:textColor="@color/text_light_color" />
+
+                <TextView
+                    android:id="@+id/tv_order_pay_type"
+                    style="@style/order_info_text"
+                    android:textColor="@color/text_light_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/px_dimen_20"
+                android:background="@color/app_while"
+                android:orientation="vertical"
+                android:padding="@dimen/px_dimen_20">
+
+                <TextView
+                    style="@style/order_info_text"
+                    android:text="商品清单"
+                    android:textColor="@color/text_dark_color"
+                    android:textSize="@dimen/px_dimen_28" />
+
+                <View
+                    style="@style/line_hor"
+                    android:layout_marginTop="@dimen/px_dimen_20" />
+
+                <LinearLayout
+                    android:id="@+id/ll_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_dimen_20"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/px_dimen_20" />
+
+
+            </LinearLayout>
+
+            <include layout="@layout/layout_order_free" />
+
+            <View style="@style/line_hor" />
+
+            <com.xhl.bqlh.view.ui.bar.OrderOperatorBar
+                android:id="@+id/op_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_while" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

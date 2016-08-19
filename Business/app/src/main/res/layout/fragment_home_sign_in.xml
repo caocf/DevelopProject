@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/pub_app_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/pub_dimen_16dp"
+                android:paddingTop="@dimen/pub_dimen_8dp">
+
+                <TextView
+                    android:id="@+id/tv_sign_start_time"
+                    style="@style/style_attendance_text" />
+
+                <TextView
+                    android:id="@+id/tv_sign_end_time"
+                    style="@style/style_attendance_text" />
+
+                <TextView
+                    android:id="@+id/tv_sign_location"
+                    style="@style/style_attendance_text" />
+
+                <TextView
+                    android:id="@+id/tv_sign_distance"
+                    style="@style/style_attendance_text" />
+
+                <include layout="@layout/pub_line_hor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pub_dimen_48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/pub_dimen_16dp"
+                android:paddingRight="@dimen/pub_dimen_16dp">
+
+                <TextView
+                    style="@style/style_attendance_text"
+                    android:text="@string/attendance_location_cur" />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    style="@style/style_customer_hint_text"
+                    android:text="定位中" />
+
+                <ImageView style="@style/arrow_right" />
+
+            </LinearLayout>
+
+            <include layout="@layout/pub_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/pub_dimen_16dp"
+                android:layout_marginRight="@dimen/pub_dimen_16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/btn_qd_start"
+                        style="@style/style_attendance_btn"
+                        android:background="@drawable/code_oval_primary"
+                        android:text="@string/attendance_start" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/btn_qd_end"
+                        style="@style/style_attendance_btn"
+                        android:background="@drawable/code_oval_end"
+                        android:text="@string/attendance_end" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_record"
+                style="@style/button_default"
+                android:layout_gravity="bottom"
+                android:background="@drawable/code_btn_grey"
+                android:text="@string/attendance_record"
+                android:textColor="@color/base_light_text_color" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/style_null_hint_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_while"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="管理员未配置考勤信息"
+            android:visibility="gone" />
+
+    </FrameLayout>
+</LinearLayout>
