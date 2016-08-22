@@ -91,7 +91,7 @@ public class CollectionFragment extends BaseAppFragment implements RecycleViewCa
     }
 
     private void loadProduct() {
-        ApiControl.getApi().collectQueryProduct(getPageSize(),getPageIndex(),new DefaultCallback<ResponseModel<GarbageModel<ProductModel>>>() {
+        ApiControl.getApi().collectQueryProduct(getPageSize(), getPageIndex(), new DefaultCallback<ResponseModel<GarbageModel<ProductModel>>>() {
             @Override
             public void success(ResponseModel<GarbageModel<ProductModel>> result) {
                 List<ProductModel> list = result.getObj().getList();
@@ -126,12 +126,15 @@ public class CollectionFragment extends BaseAppFragment implements RecycleViewCa
         for (ProductModel pro : data) {
             ho.add(new CollectionProductDataHolder(pro, this));
         }
-
-        mAdapter.setDataHolders(ho);
+        if (getPageIndex() > 1) {
+            mAdapter.addDataHolder(ho);
+        } else {
+            mAdapter.setDataHolders(ho);
+        }
     }
 
     private void loadShop() {
-        ApiControl.getApi().collectQueryShop(getPageSize(),getPageIndex(),new DefaultCallback<ResponseModel<GarbageModel<ShopModel>>>() {
+        ApiControl.getApi().collectQueryShop(getPageSize(), getPageIndex(), new DefaultCallback<ResponseModel<GarbageModel<ShopModel>>>() {
             @Override
             public void success(ResponseModel<GarbageModel<ShopModel>> result) {
                 List<ShopModel> list = result.getObj().getList();

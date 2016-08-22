@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 
 import com.xhl.bqlh.R;
 import com.xhl.bqlh.model.ClassifyModel;
+import com.xhl.bqlh.utils.ToastUtil;
 import com.xhl.bqlh.view.base.BaseAppFragment;
 import com.xhl.bqlh.view.ui.recyclerHolder.ClassifyChildDataHolder;
 import com.xhl.xhl_library.ui.recyclerview.RecyclerAdapter;
@@ -32,13 +33,16 @@ public class HomeClassifyChildFragment extends BaseAppFragment {
 
         List<RecyclerDataHolder> holders = new ArrayList<>();
         int index = 0;
-        for (ClassifyModel classify : data) {
-            int size = classify.getChildren().size();
-            if (size > 0) {
-                index++;
-                holders.add(new ClassifyChildDataHolder(classify, index));
-                recycler_view.getRecycledViewPool().setMaxRecycledViews(index, 20);
+        if (data != null) {
+            for (ClassifyModel classify : data) {
+                int size = classify.getChildren().size();
+                if (size > 0) {
+                    index++;
+                    holders.add(new ClassifyChildDataHolder(classify, index));
+                }
             }
+        }else {
+            ToastUtil.showToastLong(R.string.data_error);
         }
 
         recycler_view.setLayoutManager(new LinearLayoutManager(getContext()));

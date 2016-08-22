@@ -19,6 +19,7 @@ import com.xhl.xhl_library.ui.recyclerview.RecyclerAdapter;
 import com.xhl.xhl_library.ui.recyclerview.RecyclerDataHolder;
 import com.xhl.xhl_library.ui.recyclerview.RecyclerViewHolder;
 import com.xhl.xhl_library.ui.recyclerview.layoutManager.FullGridViewManager;
+import com.xhl.xhl_library.utils.NumberUtil;
 
 import org.xutils.view.annotation.Event;
 import org.xutils.view.annotation.ViewInject;
@@ -45,6 +46,9 @@ public class CarItemBar extends BaseBar {
     @ViewInject(R.id.tv_active_hint)
     private TextView tv_active_hint;
 
+    @ViewInject(R.id.tv_item_money)
+    private TextView tv_item_money;
+
     @ViewInject(R.id.tv_shop_name)
     private TextView tv_shop_name;
 
@@ -69,8 +73,7 @@ public class CarItemBar extends BaseBar {
             }
             mAdapter.notifyDataSetChanged();
         }
-        //刷新父状态
-        updateParent();
+        updateSelectState();
     }
 
     private RecycleViewCallBack mCallback;
@@ -93,12 +96,15 @@ public class CarItemBar extends BaseBar {
     //更新状态
     public void updateSelectState() {
         boolean selectAll = true;
+        float itemMoney = 0;
         for (CarModel car : mData) {
             if (!car.isChecked) {
                 selectAll = false;
-                break;
+            } else {
+                itemMoney += car.getProductPrice() * car.mCurNum;
             }
         }
+        tv_item_money.setText(mContext.getString(R.string.my_shopping_count_item, NumberUtil.getDouble(itemMoney)));
         rb_parent_check_all.setChecked(selectAll);
         updateParent();
     }
@@ -141,7 +147,7 @@ public class CarItemBar extends BaseBar {
         return R.layout.bar_car_item;
     }
 
-    public void setmCallback(RecycleViewCallBack mCallback) {
+    public void setCallback(RecycleViewCallBack mCallback) {
         this.mCallback = mCallback;
     }
 

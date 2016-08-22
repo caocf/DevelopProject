@@ -13,6 +13,7 @@ import com.xhl.bqlh.R;
 import com.xhl.bqlh.model.ClassifyModel;
 import com.xhl.bqlh.model.GarbageModel;
 import com.xhl.bqlh.model.base.ResponseModel;
+import com.xhl.bqlh.model.event.CommonEvent;
 import com.xhl.bqlh.utils.ToastUtil;
 import com.xhl.bqlh.utils.barcode.ui.CaptureActivity;
 import com.xhl.bqlh.view.base.BaseAppFragment;
@@ -46,6 +47,12 @@ public class HomeClassifyFragment extends BaseAppFragment implements RecycleView
     private void onScanClick(View view) {
         startActivity(new Intent(getContext(), CaptureActivity.class));
     }
+
+    @Override
+    protected boolean isNeedRegisterEventBus() {
+        return true;
+    }
+
     @ViewInject(R.id.recycler_view)
     private RecyclerView mRecycleView;
 
@@ -150,5 +157,13 @@ public class HomeClassifyFragment extends BaseAppFragment implements RecycleView
     public void onItemClick(int position, ClassifyModel classifyModel) {
         mRecyclerAdapter.setSelectPosition(position);
         mFragmentCacheManager.setCurrentFragment(position);
+    }
+
+    @Override
+    public void onEvent(CommonEvent event) {
+        super.onEvent(event);
+        if (event.getEventTag() == CommonEvent.ET_RELOAD_USER_INFO) {
+            onRefreshLoadData();
+        }
     }
 }

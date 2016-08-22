@@ -2,9 +2,11 @@ package com.xhl.bqlh.view.ui.fragment;
 
 import android.text.TextUtils;
 import android.view.View;
+import android.webkit.CookieManager;
 import android.widget.EditText;
 
 import com.xhl.bqlh.Api.ApiControl;
+import com.xhl.bqlh.AppConfig.NetWorkConfig;
 import com.xhl.bqlh.AppDelegate;
 import com.xhl.bqlh.R;
 import com.xhl.bqlh.data.PreferenceData;
@@ -86,8 +88,11 @@ public class UserLoginFragment extends BaseAppFragment {
         PreferenceData.getInstance().setLoginPhone(name);
         //保存到本地数据
         AppDelegate.appContext.saveLoginInfo(userInfo);
+        //设置area
+        AppDelegate.appContext.setArea(userInfo.areaId);
         //save cookie
         saveCookie();
+
         EventHelper.postCommonEvent(CommonEvent.ET_RELOAD_USER_INFO);
         getActivity().finish();
     }
@@ -104,6 +109,14 @@ public class UserLoginFragment extends BaseAppFragment {
             //保存Cookie
             AppDelegate.appContext.setCookie(cookie);
             AppDelegate.appContext.mCookie = cookie;
+
+            //保存到浏览器中
+            CookieManager cookieManager = CookieManager.getInstance();
+            cookieManager.removeAllCookie();
+            cookieManager.setAcceptCookie(true);
+            String area = AppDelegate.appContext.mArea;
+            cookieManager.setCookie(NetWorkConfig.generalHost, cookie);
+            cookieManager.setCookie(NetWorkConfig.generalHost, area);
         }
     }
 
@@ -114,6 +127,9 @@ public class UserLoginFragment extends BaseAppFragment {
 
     @Override
     protected void initParams() {
-
+        String loginPhone = PreferenceData.getInstance().getLoginPhone();
+        if (!TextUtils.isEmpty(loginPhone)) {
+            ed_input_name.setText(loginPhone);
+        }
     }
 }

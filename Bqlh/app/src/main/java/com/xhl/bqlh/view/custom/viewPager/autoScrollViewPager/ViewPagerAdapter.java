@@ -43,7 +43,11 @@ public class ViewPagerAdapter extends PagerAdapter
     @Override
     public void destroyItem(View arg0, int arg1, Object arg2)
     {
-        ((ViewPager) arg0).removeView(pageViews.get(arg1));
+        try {
+            ((ViewPager) arg0).removeView(pageViews.get(arg1));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     /***

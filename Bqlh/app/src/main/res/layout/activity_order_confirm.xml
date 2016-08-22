@@ -51,7 +51,7 @@
                     android:layout_marginRight="@dimen/px_dimen_20"
                     android:layout_toLeftOf="@+id/iv_right_1"
                     android:layout_toStartOf="@+id/iv_right_1"
-                    android:text="在线支付"
+                    android:text="@string/pay_1"
                     android:textColor="@color/text_light_color"
                     android:textSize="@dimen/px_dimen_28" />
 

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -16,6 +17,7 @@ import com.xhl.bqlh.view.base.Common.DefaultCallback;
 import com.xhl.bqlh.view.custom.RoundedImageView;
 import com.xhl.bqlh.view.helper.DialogMaker;
 import com.xhl.bqlh.view.helper.EventHelper;
+import com.xhl.bqlh.view.helper.ViewHelper;
 import com.xhl.bqlh.view.helper.pub.Callback.RecycleViewCallBack;
 import com.xhl.xhl_library.ui.recyclerview.RecyclerDataHolder;
 import com.xhl.xhl_library.ui.recyclerview.RecyclerViewHolder;
@@ -61,11 +63,14 @@ public class CollectionProductDataHolder extends RecyclerDataHolder<ProductModel
 
         private TextView tv_product_price;
 
+        private TextView tv_product_b_price;
+
         public Product(View view) {
             super(view);
             iv_product_image = (RoundedImageView) view.findViewById(R.id.iv_product_image);
             tv_product_name = (TextView) view.findViewById(R.id.tv_product_name);
             tv_product_price = (TextView) view.findViewById(R.id.tv_product_price);
+            tv_product_b_price = (TextView) view.findViewById(R.id.tv_product_b_price);
             view.setOnClickListener(this);
             view.setOnLongClickListener(new View.OnLongClickListener() {
                 @Override
@@ -81,6 +86,14 @@ public class CollectionProductDataHolder extends RecyclerDataHolder<ProductModel
             iv_product_image.LoadDrawable(data.getProductPic());
             tv_product_name.setText(data.getProductName());
             tv_product_price.setText(mContext.getString(R.string.price_s, data.getProductPrice()));
+
+            String bussinessPrice = data.getBussinessPrice();
+            if (!TextUtils.isEmpty(bussinessPrice)) {
+                ViewHelper.setViewVisible(tv_product_b_price, true);
+                tv_product_b_price.setText(mContext.getString(R.string.price_b, bussinessPrice));
+            } else {
+                ViewHelper.setViewVisible(tv_product_b_price, false);
+            }
         }
 
         @Override

@@ -64,7 +64,7 @@ public class CarItemProductBar extends BaseBar implements Callback.CommonCallbac
 
     @Event(R.id.btn_child_reduce)
     private void onReduceGoodsClick(View view) {
-        if (mCar.mCurNum >mMinNum) {
+        if (mCar.mCurNum > mMinNum) {
             mCurFixNum = -1;
             fixNum();
         } else {
@@ -117,7 +117,8 @@ public class CarItemProductBar extends BaseBar implements Callback.CommonCallbac
     }
 
     public void onBindData(CarModel data) {
-        if (data == null) {
+        if (mCar == data) {
+            rb_check_child.setChecked(data.isChecked);
             return;
         }
         mCar = data;
@@ -161,6 +162,8 @@ public class CarItemProductBar extends BaseBar implements Callback.CommonCallbac
         //勾选时通知总金额刷新
         if (mCar.isChecked) {
             EventHelper.postCommonEvent(CommonEvent.ET_RELOAD_CAR_MONEY);
+            //通知刷新
+            mParent.updateSelectState();
         }
     }
 

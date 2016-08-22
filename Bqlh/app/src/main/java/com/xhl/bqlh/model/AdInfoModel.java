@@ -19,6 +19,7 @@ public class AdInfoModel extends ImageModel  implements Serializable{
     private String adLocationName;
     private String linkType;
     private String retailPrice;
+    private String bussinessPrice;
     private String productName;
 
     public String getAdName() {

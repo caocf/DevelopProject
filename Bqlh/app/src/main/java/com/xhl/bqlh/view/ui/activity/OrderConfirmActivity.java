@@ -90,11 +90,11 @@ public class OrderConfirmActivity extends BaseAppActivity {
             public void onClick(DialogInterface dialog, int which) {
                 switch (which) {
                     case 0:
-                        tv_order_pay_type.setText("在线支付");
+                        tv_order_pay_type.setText(R.string.pay_1);
                         mPayId = 4;
                         break;
                     case 1:
-                        tv_order_pay_type.setText("货到付款");
+                        tv_order_pay_type.setText(R.string.pay_2);
                         mPayId = 0;
                         break;
                 }

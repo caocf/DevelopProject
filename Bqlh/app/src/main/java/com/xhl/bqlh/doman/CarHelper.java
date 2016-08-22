@@ -19,6 +19,7 @@ import com.xhl.bqlh.view.helper.pub.Callback.RecycleViewCallBack;
 import com.xhl.bqlh.view.ui.activity.OrderConfirmActivity;
 import com.xhl.bqlh.view.ui.recyclerHolder.CarInfoDataHolder;
 import com.xhl.xhl_library.ui.recyclerview.RecyclerDataHolder;
+import com.xhl.xhl_library.utils.NumberUtil;
 import com.xhl.xhl_library.utils.log.Logger;
 
 import org.json.JSONArray;
@@ -343,7 +344,7 @@ public class CarHelper extends BaseValue implements RecycleViewCallBack {
 
         //更新数据显示
         showValue(TYPE_RES_ORDER_NUM, String.valueOf(inCarNum));
-        showValue(TYPE_RES_ORDER_ALL_MONEY, String.valueOf(inCarMoney));
+        showValue(TYPE_RES_ORDER_ALL_MONEY, NumberUtil.getDouble(inCarMoney));
 
     }
 

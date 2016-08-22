@@ -41,6 +41,8 @@ public class WebPageActivity extends BaseAppActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_webpage);
 
+        setCookie();
+
         url = getIntent().getStringExtra(TAG_URL);
 
         String title = getIntent().getStringExtra(TAG_TITLE);
@@ -48,17 +50,18 @@ public class WebPageActivity extends BaseAppActivity {
         super.initBackBar(title, true, false);
 
         initView();
-
-        setCookie();
     }
 
     private void setCookie() {
         //保存到浏览器中
         CookieManager cookieManager = CookieManager.getInstance();
+        cookieManager.removeAllCookie();
         cookieManager.setAcceptCookie(true);
+
         String cookie = AppDelegate.appContext.mCookie;
         String area = AppDelegate.appContext.mArea;
-        cookieManager.setCookie(NetWorkConfig.generalHost,  cookie + ";" + area);
+        cookieManager.setCookie(NetWorkConfig.generalHost, cookie);
+        cookieManager.setCookie(NetWorkConfig.generalHost, area);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             cookieManager.flush();
@@ -78,7 +81,7 @@ public class WebPageActivity extends BaseAppActivity {
                 WebPageActivity.this, mWebView, url), "js_appInvoke");
 
         final WebSettings localWebSettings = this.mWebView.getSettings();
-        localWebSettings.setSupportZoom(true);
+        localWebSettings.setSupportZoom(false);
         localWebSettings.setBuiltInZoomControls(true);
         localWebSettings.setJavaScriptEnabled(true);
         localWebSettings.setLoadsImagesAutomatically(true);
@@ -119,8 +122,8 @@ public class WebPageActivity extends BaseAppActivity {
             }
 
         });
-
         mWebView.loadUrl(url);
+
         //webView 调用js方法
         // mWebView.loadUrl("javascript:funFromjs()");
     }
@@ -134,10 +137,9 @@ public class WebPageActivity extends BaseAppActivity {
     @Override
     protected void onDestroy() {
         mWebView.stopLoading();
-
         mWebView.destroy();
-
         super.onDestroy();
+        mWebView = null;
     }
 
     @Override

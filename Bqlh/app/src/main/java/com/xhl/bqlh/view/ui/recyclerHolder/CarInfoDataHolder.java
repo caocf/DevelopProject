@@ -39,7 +39,7 @@ public class CarInfoDataHolder extends RecyclerDataHolder<List<CarModel>> {
     public void onBindViewHolder(Context context, int position, RecyclerView.ViewHolder vHolder, List<CarModel> data) {
         CarItemBar bar = (CarItemBar) vHolder.itemView;
         bar.onBindData(data);
-        bar.setmCallback(callBack);
+        bar.setCallback(callBack);
     }
 
     public void setCallBack(RecycleViewCallBack callBack) {

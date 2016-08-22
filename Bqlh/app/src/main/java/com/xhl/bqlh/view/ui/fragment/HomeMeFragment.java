@@ -135,7 +135,7 @@ public class HomeMeFragment extends BaseAppFragment {
 
             @Override
             public void finish() {
-
+                mNeedRefreshOrderNum = false;
             }
         });
     }
@@ -219,11 +219,17 @@ public class HomeMeFragment extends BaseAppFragment {
         }
     };
 
+    private boolean mNeedRefreshOrderNum = false;
+
     @Override
     public void onResume() {
         super.onResume();
+        if (mNeedRefreshOrderNum) {
+            loadOrderNum();
+        }
         my_info_bar.refreshUserInfo();
     }
+
 
     @Override
     public void onEvent(CommonEvent event) {
@@ -233,7 +239,7 @@ public class HomeMeFragment extends BaseAppFragment {
             my_info_bar.refreshUserCollection();
             loadOrderNum();
         } else if (event.getEventTag() == CommonEvent.ET_RELOAD_ORDER_NUM) {
-            loadOrderNum();
+            mNeedRefreshOrderNum = true;
         } else if (event.getEventTag() == CommonEvent.ET_RELOAD_COLLECTION_NUM) {//刷新收藏数量
             my_info_bar.refreshUserCollection();
         } else if (event.getEventTag() == CommonEvent.ET_RELOGIN) {//重新登录

@@ -32,10 +32,23 @@
         android:layout_marginBottom="@dimen/px_dimen_8"
         android:layout_marginLeft="@dimen/px_dimen_20"
         android:layout_marginRight="@dimen/px_dimen_20"
+        android:text="2222"
         android:layout_toEndOf="@+id/iv_product_image"
         android:layout_toRightOf="@+id/iv_product_image"
-        android:textColor="@color/app_price_color"
+        android:textColor="@color/text_light_color"
         android:textSize="@dimen/px_dimen_24" />
+
+    <TextView
+        android:id="@+id/tv_product_b_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="465363"
+        android:layout_above="@+id/tv_product_price"
+        android:layout_alignLeft="@+id/tv_product_price"
+        android:layout_alignStart="@+id/tv_product_price"
+        android:layout_marginBottom="@dimen/px_dimen_4"
+        android:textColor="@color/app_price_color"
+        android:textSize="@dimen/px_dimen_22" />
 
     <View style="@style/line_hor"
         android:layout_alignParentBottom="true"/>

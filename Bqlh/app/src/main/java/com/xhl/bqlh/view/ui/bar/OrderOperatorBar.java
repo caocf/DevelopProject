@@ -221,5 +221,7 @@ public class OrderOperatorBar extends BaseBar {
         event.refresh_order_view = mOrder.getViewType();
         event.setEventTag(CommonEvent.ET_RELOAD_ORDER_INFO);
         EventHelper.postDefaultEvent(event);
+
+        EventHelper.postReLoadOrderNumEvent();
     }
 }

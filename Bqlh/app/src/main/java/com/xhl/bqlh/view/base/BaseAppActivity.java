@@ -28,7 +28,6 @@ import com.xhl.bqlh.view.base.Common.ActivePresent;
 import com.xhl.bqlh.view.base.Common.ActivePresentActivity;
 import com.xhl.bqlh.view.base.Common.RefreshLoadListener;
 import com.xhl.bqlh.view.custom.BadgeView;
-import com.xhl.bqlh.view.helper.FragmentContainerHelper;
 import com.xhl.bqlh.view.helper.GlobalCarInfo;
 import com.xhl.bqlh.view.helper.PhotoHelper;
 import com.xhl.bqlh.view.helper.ViewHelper;
@@ -382,7 +381,7 @@ public abstract class BaseAppActivity extends SumFragmentActivity implements Con
             //清理缓存
             GlobalCarInfo.instance().clear();
             //登陆的Fragment
-            FragmentContainerHelper.startFragment(this, FragmentContainerHelper.fragment_login);
+//            FragmentContainerHelper.startFragment(this, FragmentContainerHelper.fragment_login);
         }
     }
 }

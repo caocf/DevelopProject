@@ -108,6 +108,7 @@
     <string name="my_shopping_delete">删除</string>
     <string name="my_shopping_collection">移入收藏夹</string>
     <string name="my_shopping_count">结算(%s)</string>
+    <string name="my_shopping_count_item">小计:￥%s</string>
     <string name="my_shopping_yf">不含邮费</string>
     <string name="my_shopping_count_null_hint">亲,请选择您的结算商品哦!</string>
     <string name="my_shopping_null_hint">亲,订物车空空耶~ 赶紧去订货吧</string>
@@ -124,9 +125,12 @@
     <string name="pay_now">立即下单</string>
     <string name="pay_money">合计:￥%s</string>
 
+    <string name="pay_1">支付宝付款</string>
+    <string name="pay_2">货到付款</string>
+
     <string-array name="pay_array">
-        <item>在线支付</item>
-        <item>货到付款</item>
+        <item>@string/pay_1</item>
+        <item>@string/pay_2</item>
     </string-array>
 
     <string-array name="sex">

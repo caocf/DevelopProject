@@ -92,6 +92,6 @@
         android:padding="@dimen/pub_dimen_16dp"
         android:text="找回密码"
         android:textColor="@color/app_while"
-        android:visibility="gone" />
+        android:visibility="visible" />
 
 </LinearLayout>

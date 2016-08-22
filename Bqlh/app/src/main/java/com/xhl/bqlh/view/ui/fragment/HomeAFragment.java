@@ -120,6 +120,7 @@ public class HomeAFragment extends BaseAppFragment {
         boolean login = AppDelegate.appContext.isLogin();
         if (login) {
             tv_bar_location.setVisibility(View.GONE);
+            getAppApplication().setArea(AppDelegate.appContext.getUserInfo().areaId);
         } else {
             //读取区域信息
             String areaId = PreferenceData.getInstance().areaId();
