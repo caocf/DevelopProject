@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <View style="@style/style_base_ver_line" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_dimen_20"
+                android:background="@color/app_while"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_dimen_30"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px_dimen_30"
+                        android:text="商品描述："
+                        android:textColor="@color/base_dark_text_color"
+                        android:textSize="@dimen/px_text_28" />
+
+                    <RatingBar
+                        android:id="@+id/rating_bar_product"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:numStars="5"
+                        android:progressDrawable="@drawable/rating_bar"
+                        android:rating="0"
+                        android:stepSize="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_dimen_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px_dimen_30"
+                        android:text="卖家服务："
+                        android:textColor="@color/base_dark_text_color"
+                        android:textSize="@dimen/px_text_28" />
+
+                    <RatingBar
+                        android:id="@+id/rating_bar_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:numStars="5"
+                        android:progressDrawable="@drawable/rating_bar"
+                        android:rating="0"
+                        android:stepSize="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_dimen_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px_dimen_30"
+                        android:text="物流服务："
+                        android:textColor="@color/base_dark_text_color"
+                        android:textSize="@dimen/px_text_28" />
+
+                    <RatingBar
+                        android:id="@+id/rating_bar_logistics"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:numStars="5"
+                        android:progressDrawable="@drawable/rating_bar"
+                        android:rating="0"
+                        android:stepSize="1" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/px_dimen_30"
+                    android:layout_marginLeft="@dimen/px_dimen_30"
+                    android:layout_marginRight="@dimen/px_dimen_30"
+                    android:layout_marginTop="@dimen/px_dimen_20"
+                    android:background="@drawable/code_bg_line_translate">
+
+                    <EditText
+                        android:id="@+id/ed_judge_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/px_dimen_30"
+                        android:layout_marginLeft="@dimen/px_dimen_20"
+                        android:layout_marginRight="@dimen/px_dimen_20"
+                        android:layout_marginTop="@dimen/px_dimen_30"
+                        android:background="@android:color/transparent"
+                        android:gravity="top|start"
+                        android:hint="@string/judge_explain"
+                        android:inputType="textMultiLine"
+                        android:scrollHorizontally="false"
+                        android:singleLine="false"
+                        android:textColor="@color/base_dark_text_color"
+                        android:textColorHint="@color/base_light_text_color"
+                        android:textSize="@dimen/px_text_26" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180px"
+                android:layout_marginTop="@dimen/px_dimen_20"
+                android:background="@color/app_while"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_add_image_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="104px"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/px_dimen_30"
+                    android:paddingRight="@dimen/px_dimen_30" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_add_image"
+                    style="@style/button_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="104px"
+                    android:background="@color/app_light_grey"
+                    android:clickable="true">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_above="@+id/text">
+
+                        <ImageView
+                            android:layout_width="35px"
+                            android:layout_gravity="center"
+                            android:layout_height="35px"
+                            android:src="@drawable/icon_null_add" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="8px"
+                        android:layout_marginLeft="6px"
+                        android:layout_marginRight="6px"
+                        android:text="图片上传"
+                        android:textColor="@color/base_light_text_color"
+                        android:textSize="@dimen/px_text_24" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.xhl.xhl_library.ui.view.RippleView
+                android:id="@+id/ripple_commit"
+                style="@style/style_ripple_button"
+                android:layout_marginBottom="@dimen/px_dimen_30"
+                android:layout_marginLeft="@dimen/px_dimen_20"
+                android:layout_marginRight="@dimen/px_dimen_20"
+                android:layout_marginTop="@dimen/px_dimen_30">
+
+                <TextView
+                    style="@style/style_ripple_button_text"
+                    android:text="提交评价" />
+
+            </com.xhl.xhl_library.ui.view.RippleView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

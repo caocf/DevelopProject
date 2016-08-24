@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <View style="@style/style_base_ver_line" />
+
+    <View
+        style="@style/style_base_ver_line"
+        android:layout_marginTop="@dimen/px_dimen_20" />
+
+    <com.xhl.xhl_library.ui.view.RippleView
+        android:visibility="gone"
+        android:id="@+id/ripple_setting_msg"
+        style="@style/style_ripple_while_button"
+        android:layout_height="@dimen/pub_button_height"
+        android:background="@color/app_while">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_dimen_30"
+            android:text="消息设置"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="@dimen/px_text_32" />
+
+        <ImageView style="@style/AppTheme_my_func_arrow_image" />
+    </com.xhl.xhl_library.ui.view.RippleView>
+
+    <!--<View style="@style/style_base_ver_line" />-->
+
+    <com.xhl.xhl_library.ui.view.RippleView
+        android:id="@+id/ripple_setting_clear"
+        style="@style/style_ripple_while_button"
+        android:layout_height="@dimen/pub_button_height"
+        android:background="@color/app_while">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_dimen_30"
+            android:text="清理缓存"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="@dimen/px_text_28" />
+
+        <TextView
+            android:id="@+id/tv_cache_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_dimen_30"
+            android:text="32MB"
+            android:textColor="@color/base_light_text_color"
+            android:textSize="@dimen/px_text_24" />
+
+    </com.xhl.xhl_library.ui.view.RippleView>
+
+    <View style="@style/style_base_ver_line" />
+
+    <com.xhl.xhl_library.ui.view.RippleView
+        android:id="@+id/ripple_setting_check_version"
+        style="@style/style_ripple_while_button"
+        android:layout_height="@dimen/pub_button_height"
+        android:background="@color/app_while">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_dimen_30"
+            android:text="版本检测"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="@dimen/px_text_28" />
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="当前版本 V1.1.0"
+            android:layout_marginRight="@dimen/px_dimen_30"
+            android:textColor="@color/base_light_text_color"
+            android:textSize="@dimen/px_text_24" />
+    </com.xhl.xhl_library.ui.view.RippleView>
+
+    <View style="@style/style_base_ver_line" />
+
+    <Button
+        android:id="@+id/btn_log_out"
+        android:layout_width="match_parent"
+        android:layout_height="84px"
+        android:layout_marginLeft="@dimen/px_dimen_20"
+        android:layout_marginRight="@dimen/px_dimen_20"
+        android:background="@drawable/code_rectangle_red"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/px_dimen_46"
+        android:text="退出登陆"
+        android:textColor="@color/app_while"
+        android:textSize="@dimen/px_text_28" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/btn_search_res"
+        android:layout_width="wrap_content"
+        android:layout_height="60px"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/px_dimen_30"
+        android:text="@string/app_name"
+        android:textColor="@color/base_light_text_color" />
+
+    <View style="@style/style_base_ver_line" />
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:id="@+id/main_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_while"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.xhl.world.ui.view.MultiCheckBox
+                android:id="@+id/main_rb_home"
+                style="@style/style_multi_check_box"
+                app:drawable="@drawable/icon_main_rb_home_normal"
+                app:text="@string/main_home" />
+
+            <com.xhl.world.ui.view.MultiCheckBox
+                android:id="@+id/main_rb_classify"
+                style="@style/style_multi_check_box"
+                app:drawable="@drawable/icon_main_rb_classify_normal"
+                app:text="@string/main_classify" />
+
+            <com.xhl.world.ui.view.MultiCheckBox
+                android:id="@+id/main_rb_shopping"
+                style="@style/style_multi_check_box"
+                app:drawable="@drawable/icon_main_rb_shopping_normal"
+                app:text="@string/main_shopping" />
+
+            <com.xhl.world.ui.view.MultiCheckBox
+                android:id="@+id/main_rb_my"
+                style="@style/style_multi_check_box"
+                app:drawable="@drawable/icon_main_rb_my_normal"
+                app:text="@string/main_my" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

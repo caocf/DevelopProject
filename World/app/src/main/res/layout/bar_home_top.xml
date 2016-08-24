@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/pub_top_bar_height"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal">
+
+    <com.xhl.xhl_library.ui.view.RippleView
+        android:id="@+id/ripple_bar_home_top_scan"
+        style="@style/AppTheme_home_top_btn">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/input_left_icon"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:src="@drawable/icon_scan" />
+
+            <TextView
+                android:id="@+id/input_left_text"
+                style="@style/AppTheme_home_top_btn_text"
+                android:text="@string/bar_home_top_scan" />
+        </LinearLayout>
+    </com.xhl.xhl_library.ui.view.RippleView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_app" />
+
+        <TextView
+            android:id="@+id/tv_bar_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:clickable="true"
+            android:gravity="center"
+            android:visibility="gone"
+            android:padding="@dimen/px_dimen_8"
+            android:text="淮北市"
+            android:textColor="@color/app_while"
+            android:textSize="@dimen/px_dimen_20" />
+
+    </LinearLayout>
+
+    <com.xhl.xhl_library.ui.view.RippleView
+        android:id="@+id/ripple_bar_home_top_search"
+        android:clickable="false"
+        style="@style/AppTheme_home_top_btn">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/input_right_icon"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:src="@drawable/icon_search" />
+
+            <TextView
+                android:id="@+id/input_right_text"
+                style="@style/AppTheme_home_top_btn_text"
+                android:text="@string/bar_home_top_message" />
+        </LinearLayout>
+
+
+    </com.xhl.xhl_library.ui.view.RippleView>
+
+</LinearLayout>

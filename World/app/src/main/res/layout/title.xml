@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/pub_top_bar_height"
+    android:background="@color/app_bar_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.xhl.xhl_library.ui.view.RippleView
+        android:id="@+id/title_back"
+        style="@style/AppTheme_home_top_btn"
+        app:rv_rippleDuration="120">
+
+        <ImageView
+            android:layout_width="20px"
+            android:layout_height="36px"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_back" />
+
+    </com.xhl.xhl_library.ui.view.RippleView>
+
+
+    <TextView
+        android:id="@+id/title_name"
+        style="@style/AppTheme_title_text" />
+
+    <View
+        android:layout_width="@dimen/pub_button_width"
+        android:layout_height="@dimen/pub_button_height" />
+</LinearLayout>

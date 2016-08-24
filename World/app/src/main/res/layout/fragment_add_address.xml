@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_with_button" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="76px"
+            android:layout_marginTop="@dimen/px_dimen_20"
+            android:background="@color/app_while"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_address_hint_text"
+                android:text="联系人" />
+
+            <EditText
+                android:id="@+id/ed_address_username"
+                style="@style/style_base_input"
+                android:hint="收货人姓名"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/px_dimen_20"
+            android:background="@color/line_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="76px"
+            android:background="@color/app_while"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_address_hint_text"
+                android:text="手机号码" />
+
+            <EditText
+                android:id="@+id/ed_address_phone"
+                style="@style/style_base_input"
+                android:hint="收货人手机号"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/px_dimen_20"
+            android:background="@color/line_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="76px"
+            android:background="@color/app_while"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_address_hint_text"
+                android:text="身份证号" />
+
+            <EditText
+                android:id="@+id/ed_address_user_cardId"
+                style="@style/style_base_input"
+                android:hint="请输入收货人身份证号码"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/px_dimen_20"
+            android:background="@color/line_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="76px"
+            android:background="@color/app_while"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_address_hint_text"
+                android:text="所在地区" />
+
+            <TextView
+                android:id="@+id/ed_address_city"
+                style="@style/style_base_input"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:hint="请选择您所在城市和区域" />
+
+            <ImageView style="@style/AppTheme_my_func_arrow_image" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/px_dimen_20"
+            android:background="@color/line_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="76px"
+            android:background="@color/app_while"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_address_hint_text"
+                android:text="邮政编码" />
+
+            <EditText
+                android:id="@+id/ed_address_num"
+                style="@style/style_base_input"
+                android:hint="如果您不清楚您的区域号，请填写000000"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/px_dimen_20"
+            android:background="@color/line_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="76px"
+            android:background="@color/app_while"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_address_hint_text"
+                android:text="详细地址" />
+
+            <EditText
+                android:id="@+id/ed_address_address_details"
+                style="@style/style_base_input"
+                android:hint="请输入您所在的详细地址 如街道，小区等"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/px_dimen_20"
+            android:layout_marginRight="@dimen/px_dimen_20"
+            android:background="@color/line_color" />
+
+    </LinearLayout>
+
+</LinearLayout>

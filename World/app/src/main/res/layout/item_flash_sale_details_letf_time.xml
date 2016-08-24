@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_light_grey">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60px"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_left_time_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/false_sale_left_time"
+            android:textColor="@color/app_dark_grey"
+            android:textSize="@dimen/px_text_26" />
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_dimen_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_hour"
+                style="@style/AppTheme_flash_sale_details_time_text"
+                android:text="08" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_dimen_8"
+                android:layout_marginRight="@dimen/px_dimen_8"
+                android:text=":"
+                android:textColor="@color/app_light_red"
+                android:textSize="@dimen/px_text_20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_min"
+                style="@style/AppTheme_flash_sale_details_time_text"
+                android:text="27" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_dimen_8"
+                android:layout_marginRight="@dimen/px_dimen_8"
+                android:text=":"
+                android:textColor="@color/app_light_red"
+                android:textSize="@dimen/px_text_20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_sec"
+                style="@style/AppTheme_flash_sale_details_time_text"
+                android:text="49" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

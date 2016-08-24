@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:clickable="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="230px">
+
+        <ImageView
+            android:layout_width="410px"
+            android:layout_height="90px"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_login_" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="172px"
+        android:layout_marginLeft="@dimen/px_dimen_20"
+        android:layout_marginRight="@dimen/px_dimen_20"
+        android:background="@drawable/code_bg_line_while"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="85px">
+
+            <ImageView
+                android:id="@+id/iv_phone"
+                android:layout_width="28px"
+                android:layout_height="32px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_dimen_20"
+                android:src="@drawable/icon_edit_phone" />
+
+            <EditText
+                android:id="@+id/ed_input_phone"
+                style="@style/style_base_input"
+                android:layout_toRightOf="@+id/iv_phone"
+                android:hint="请输入11位手机号"
+                android:inputType="phone" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/px_dimen_20"
+            android:layout_marginRight="@dimen/px_dimen_20"
+            android:background="@color/line_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="85px">
+
+            <ImageView
+                android:id="@+id/iv_pwd"
+                android:layout_width="28px"
+                android:layout_height="32px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_dimen_20"
+                android:src="@drawable/icon_edit_pwd" />
+
+            <EditText
+                android:id="@+id/ed_input_pwd"
+                style="@style/style_base_input"
+                android:layout_toRightOf="@+id/iv_pwd"
+                android:hint="请输入密码"
+                android:inputType="textPassword" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.xhl.xhl_library.ui.view.RippleView
+        android:id="@+id/ripple_login"
+        style="@style/style_ripple_button"
+        android:layout_marginLeft="@dimen/px_dimen_20"
+        android:layout_marginRight="@dimen/px_dimen_20"
+        android:layout_marginTop="@dimen/px_dimen_30">
+
+        <TextView
+            style="@style/style_ripple_button_text"
+            android:text="登 陆" />
+
+    </com.xhl.xhl_library.ui.view.RippleView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_dimen_20"
+        android:layout_marginRight="@dimen/px_dimen_20"
+        android:layout_marginTop="@dimen/px_dimen_15">
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_dimen_72"
+            android:text="手机快速注册>>"
+            android:textColor="?attr/main_theme_color"
+            android:textSize="@dimen/px_text_22" />
+
+        <TextView
+            android:id="@+id/tv_forget_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_dimen_72"
+            android:layout_alignParentRight="true"
+            android:text="找回密码"
+            android:textColor="@color/app_dark_grey"
+            android:textSize="@dimen/px_text_22" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_other_login"
+            android:layout_marginBottom="46px"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="220px"
+                android:layout_height="@dimen/base_line_dimen"
+                android:background="@color/line_color" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_dimen_20"
+                android:layout_marginRight="@dimen/px_dimen_20"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="其他登陆方式"
+                android:textSize="@dimen/px_text_22" />
+
+            <View
+                android:layout_width="220px"
+                android:layout_height="@dimen/base_line_dimen"
+                android:background="@color/line_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_other_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_login_by_qq"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:clickable="true"
+                android:src="@drawable/icon_login_qq" />
+
+            <ImageView
+                android:id="@+id/iv_login_by_wx"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:layout_marginLeft="@dimen/px_dimen_30"
+                android:clickable="true"
+                android:src="@drawable/icon_login_chat" />
+
+            <ImageView
+                android:id="@+id/iv_login_by_wb"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:clickable="true"
+                android:src="@drawable/icon_login_sina"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/px_dimen_20"
+    android:background="@color/app_while"
+    android:orientation="vertical">
+
+    <com.xhl.xhl_library.ui.view.RippleView
+        android:id="@+id/rl_shop"
+        style="@style/style_ripple_while_button"
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_dimen_20"
+        android:paddingRight="@dimen/px_dimen_20">
+
+        <com.xhl.world.ui.view.RoundedImageView
+            android:id="@+id/iv_shop_logo"
+            android:layout_width="62px"
+            android:layout_height="62px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_net_error_show"
+            app:corner_radius="45dp" />
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_dimen_20"
+            android:layout_toRightOf="@+id/iv_shop_logo"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="@dimen/px_text_28" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_right1"
+            android:layout_toStartOf="@+id/iv_right1"
+            android:text="@string/product_shop_in"
+            android:textColor="#9b9b9b"
+            android:textSize="@dimen/px_text_24" />
+
+        <ImageView
+            android:id="@+id/iv_right1"
+            style="@style/AppTheme_order_arrow_image" />
+    </com.xhl.xhl_library.ui.view.RippleView>
+
+    <View style="@style/style_base_ver_line" />
+
+    <com.xhl.xhl_library.ui.view.RippleView
+        android:id="@+id/rl_judge"
+        style="@style/style_ripple_while_button"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:clickable="true"
+        android:paddingLeft="@dimen/px_dimen_20"
+        android:paddingRight="@dimen/px_dimen_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/product_judge"
+            android:textColor="#9b9b9b"
+            android:textSize="@dimen/px_text_26" />
+
+        <TextView
+            android:id="@+id/tv_judge_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_right"
+            android:layout_toStartOf="@+id/iv_right"
+            android:text="@string/product_judge_num"
+            android:textColor="#9b9b9b"
+            android:textSize="@dimen/px_text_24" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            style="@style/AppTheme_order_arrow_image" />
+
+    </com.xhl.xhl_library.ui.view.RippleView>
+
+</LinearLayout>

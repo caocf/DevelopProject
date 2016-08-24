@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/my_top_login_height"
+    android:background="@drawable/icon_my_top_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.xhl.world.ui.view.RoundedImageView
+            android:id="@+id/iv_my_pic"
+            style="@style/style_user_face"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_my_login" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_top_login_bottom_height"
+        android:background="@color/translate_50"
+        android:orientation="horizontal">
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/ripple_care_goods"
+            style="@style/style_base_ripple"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_care_goods_count"
+                    style="@style/AppTheme_my_while_text"
+                    android:textSize="@dimen/px_text_20"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_care_goods"
+                    style="@style/AppTheme_my_while_text"
+                    android:layout_marginTop="@dimen/px_dimen_4"
+                    android:text="@string/my_care_goods" />
+
+            </LinearLayout>
+
+        </com.xhl.xhl_library.ui.view.RippleView>
+
+        <View
+            android:layout_width="@dimen/base_line_dimen"
+            android:layout_height="@dimen/px_dimen_46"
+            android:layout_gravity="center"
+            android:background="@color/app_dark_grey" />
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/ripple_care_store"
+            style="@style/style_base_ripple"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_care_store_count"
+                    style="@style/AppTheme_my_while_text"
+                    android:textSize="@dimen/px_text_20"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_care_store"
+                    style="@style/AppTheme_my_while_text"
+                    android:layout_marginTop="@dimen/px_dimen_4"
+                    android:text="@string/my_care_store" />
+
+            </LinearLayout>
+
+        </com.xhl.xhl_library.ui.view.RippleView>
+
+        <View
+            android:layout_width="@dimen/base_line_dimen"
+            android:layout_height="@dimen/px_dimen_46"
+            android:layout_gravity="center"
+            android:background="@color/app_dark_grey" />
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/ripple_care_history"
+            style="@style/style_base_ripple"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_care_history_count"
+                    style="@style/AppTheme_my_while_text"
+                    android:textSize="@dimen/px_text_20"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_care_history"
+                    style="@style/AppTheme_my_while_text"
+                    android:layout_marginTop="@dimen/px_dimen_4"
+                    android:text="@string/my_watch_history" />
+
+            </LinearLayout>
+
+        </com.xhl.xhl_library.ui.view.RippleView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

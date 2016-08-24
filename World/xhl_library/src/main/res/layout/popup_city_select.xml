@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="170dp"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <com.xhl.xhl_library.ui.view.widget.wheel.WheelView
+            android:id="@+id/wheel_left"
+            android:layout_width="match_parent"
+            android:layout_height="140dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center">
+
+        <com.xhl.xhl_library.ui.view.widget.wheel.WheelView
+            android:id="@+id/wheel_center"
+            android:layout_width="match_parent"
+            android:layout_height="140dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical">
+
+        <com.xhl.xhl_library.ui.view.widget.wheel.WheelView
+            android:id="@+id/wheel_right"
+            android:layout_width="match_parent"
+            android:layout_height="140dp" />
+    </RelativeLayout>
+</LinearLayout>

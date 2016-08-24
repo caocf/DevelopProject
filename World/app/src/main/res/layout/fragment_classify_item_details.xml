@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xhl.xhl_library.ui.swipyrefresh.SwipyRefreshLayout
+        android:id="@+id/swipy_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/bar_classify_item_details_recycler_view"
+            style="@style/style_base_recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/px_dimen_35" />
+
+    </com.xhl.xhl_library.ui.swipyrefresh.SwipyRefreshLayout>
+
+</FrameLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_dimen_40"
+        android:paddingLeft="@dimen/px_dimen_20"
+        android:text="快速注册"
+        android:textColor="@color/base_dark_text_color"
+        android:textSize="@dimen/px_text_26" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_dimen_20"
+        android:background="@drawable/code_bg_line_while_rectangle"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90px">
+
+
+            <EditText
+                android:id="@+id/ed_input_phone"
+                style="@style/style_base_input"
+                android:hint="请输入手机号"
+                android:inputType="phone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/px_dimen_20"
+            android:layout_marginRight="@dimen/px_dimen_20"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:gravity="center_vertical">
+
+
+            <EditText
+                android:id="@+id/ed_input_verify"
+                style="@style/style_base_input"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="输入短信验证码"
+                android:inputType="number|text" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40px"
+                android:layout_centerVertical="true"
+                android:background="#dbdbdb" />
+
+            <TextView
+                android:id="@+id/tv_get_verity"
+                android:layout_width="200px"
+                android:layout_height="80px"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textColor="@color/black"
+                android:textSize="@dimen/px_text_24" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/px_dimen_20"
+            android:layout_marginRight="@dimen/px_dimen_20"
+            android:background="@color/line_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90px">
+
+
+            <EditText
+                android:id="@+id/ed_input_pwd"
+                style="@style/style_base_input"
+                android:hint="请设置6-20位登陆密码"
+                android:inputType="text" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_dimen_40"
+        android:paddingLeft="@dimen/px_dimen_20"
+        android:text="@string/bind_register_hint"
+        android:textColor="@color/base_light_text_color"
+        android:textSize="@dimen/px_text_26" />
+
+    <com.xhl.xhl_library.ui.view.RippleView
+        android:id="@+id/ripple_register"
+        style="@style/style_ripple_button"
+        android:layout_marginLeft="@dimen/px_dimen_20"
+        android:layout_marginRight="@dimen/px_dimen_20"
+        android:layout_marginTop="@dimen/px_dimen_10">
+
+        <TextView
+            style="@style/style_ripple_button_text"
+            android:text="注 册" />
+
+    </com.xhl.xhl_library.ui.view.RippleView>
+
+    <LinearLayout
+        android:id="@+id/ll_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_dimen_20"
+        android:layout_marginRight="@dimen/px_dimen_20"
+        android:layout_marginTop="@dimen/px_dimen_30"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册视为同意"
+            android:textColor="#b0b0b0"
+            android:textSize="@dimen/px_text_22" />
+
+        <TextView
+            android:id="@+id/tv_service"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_dimen_72"
+            android:layout_marginLeft="@dimen/px_dimen_15"
+            android:text="空港跨进服务条款"
+            android:textColor="?attr/main_theme_color"
+            android:textSize="@dimen/px_text_22" />
+    </LinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

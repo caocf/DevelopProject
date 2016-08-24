@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/switch_on"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:background="@drawable/check_box_left"
+            android:gravity="center"
+            android:paddingLeft="@dimen/px_dimen_24"
+            android:paddingRight="@dimen/px_dimen_24"
+            android:text="商品"
+            android:textColor="@drawable/check_box_text"
+            android:textSize="@dimen/px_text_26" />
+
+        <TextView
+            android:id="@+id/switch_off"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:background="@drawable/check_box_right"
+            android:gravity="center"
+            android:paddingLeft="@dimen/px_dimen_24"
+            android:paddingRight="@dimen/px_dimen_24"
+            android:text="店铺"
+            android:textColor="@drawable/check_box_text"
+            android:textSize="@dimen/px_text_26" />
+
+    </LinearLayout>
+</merge>

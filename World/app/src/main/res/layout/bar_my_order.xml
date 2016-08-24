@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/px_dimen_20"
+    android:background="@color/app_while"
+    android:orientation="vertical"
+    tools:showIn="@layout/fragment_my">
+
+    <com.xhl.xhl_library.ui.view.RippleView
+        android:id="@+id/ripple_all_my_order"
+        style="@style/AppTheme_my_item"
+        android:paddingLeft="0px">
+
+        <ImageView
+            android:id="@+id/iv_my_order"
+            style="@style/AppTheme_my_func_image"
+            android:layout_marginLeft="20px"
+            android:src="@drawable/icon_my_order" />
+
+        <TextView
+            style="@style/AppTheme_my_black_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_dimen_20"
+            android:layout_toRightOf="@+id/iv_my_order"
+            android:text="@string/order_my"
+            android:textSize="28px" />
+
+        <TextView
+            style="@style/AppTheme_my_grey_text"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_dimen_15"
+            android:layout_toLeftOf="@+id/iv_right"
+            android:layout_toStartOf="@+id/iv_right"
+            android:text="@string/order_my_query" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            style="@style/AppTheme_my_func_arrow_image" />
+    </com.xhl.xhl_library.ui.view.RippleView>
+
+    <View
+        style="@style/AppTheme_my_item_line"
+        android:layout_marginLeft="0px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="108px"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/rl_order_wait_for_pay"
+            style="@style/style_base_ripple"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="46px"
+                    android:layout_height="40px"
+                    android:src="@drawable/icon_order_wait_for_pay" />
+
+                <TextView
+                    style="@style/AppTheme_my_grey_text"
+                    android:text="@string/order_my_wait_for_pay" />
+
+
+            </LinearLayout>
+        </com.xhl.xhl_library.ui.view.RippleView>
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/rl_order_wait_for_sender"
+            style="@style/style_base_ripple"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="46px"
+                    android:layout_height="40px"
+                    android:src="@drawable/icon_order_wait_for_sender" />
+
+                <TextView
+                    style="@style/AppTheme_my_grey_text"
+                    android:text="@string/order_my_wait_for_sender" />
+
+
+            </LinearLayout>
+        </com.xhl.xhl_library.ui.view.RippleView>
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/rl_order_wait_for_take"
+            style="@style/style_base_ripple"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="46px"
+                    android:layout_height="40px"
+                    android:src="@drawable/icon_order_wait_for_take" />
+
+                <TextView
+                    style="@style/AppTheme_my_grey_text"
+                    android:text="@string/order_my_wait_for_take" />
+
+
+            </LinearLayout>
+        </com.xhl.xhl_library.ui.view.RippleView>
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/rl_order_wait_for_judge"
+            style="@style/style_base_ripple"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="46px"
+                    android:layout_height="40px"
+                    android:src="@drawable/icon_order_wait_for_judge" />
+
+                <TextView
+                    style="@style/AppTheme_my_grey_text"
+                    android:text="@string/order_my_wait_for_judge" />
+
+
+            </LinearLayout>
+        </com.xhl.xhl_library.ui.view.RippleView>
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/rl_order_return_goods"
+            style="@style/style_base_ripple"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="46px"
+                    android:layout_height="40px"
+                    android:src="@drawable/icon_order_return" />
+
+                <TextView
+                    style="@style/AppTheme_my_grey_text"
+                    android:text="@string/order_my_return_goods" />
+
+
+            </LinearLayout>
+        </com.xhl.xhl_library.ui.view.RippleView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_line_dimen"
+        android:background="@color/line_color" />
+
+
+</LinearLayout>

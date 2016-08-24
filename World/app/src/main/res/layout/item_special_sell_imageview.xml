@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/special_sale_image_view_height"
+    android:orientation="horizontal">
+
+    <com.xhl.world.ui.view.LifeCycleImageView
+        android:id="@+id/iv_special_sell"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/special_sale_image_view_height"
+        android:scaleType="fitXY" />
+
+</LinearLayout>

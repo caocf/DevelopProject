@@ -1,0 +1,9 @@
+密度分类	密度值范围	代表分辨率	Logo图标尺寸	    图片比例
+mdpi	120~160dpi	320x480px	48x48px	    1
+hdpi	160~240dpi	480x800px	72x72px	    1.5
+xhdpi	240~320dpi	720x1280px	96x96px	    2
+xxhdpi	320~480dpi	1080x1920px	144x144px	3
+xxxhdpi	480~640dpi	1440x2560px	192x192px	4
+
+//Android Logo 设计尺寸
+48x48px	72x72px	96x96px	144x144px 192x192px

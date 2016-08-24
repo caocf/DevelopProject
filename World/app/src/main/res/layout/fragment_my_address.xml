@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <View style="@style/style_base_ver_line" />
+
+    <com.xhl.xhl_library.ui.swipyrefresh.SwipyRefreshLayout
+        android:id="@+id/swipy_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/address_recycler_view"
+            style="@style/style_base_recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.xhl.xhl_library.ui.swipyrefresh.SwipyRefreshLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_while">
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/ripple_add_address"
+            style="@style/style_ripple_button"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/px_dimen_20">
+
+            <TextView
+                style="@style/style_ripple_button_text"
+                android:text="+ 添加收货地址" />
+
+        </com.xhl.xhl_library.ui.view.RippleView>
+    </FrameLayout>
+</LinearLayout>

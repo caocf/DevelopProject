@@ -1,0 +1,84 @@
+<resources>
+
+    <!--<dimen name="main_bottom_height">56dp</dimen>-->
+    <!-- 统一title bar高度-->
+    <dimen name="pub_top_bar_height">88px</dimen>
+
+    <dimen name="pub_input_margin">11dp</dimen>
+
+    <dimen name="pub_btn_corners">2dp</dimen>
+    <dimen name="pub_input_corners">3dp</dimen>
+
+    <!-- 统一button的宽度-->
+    <dimen name="pub_button_width">90px</dimen>
+    <dimen name="pub_button_height">90px</dimen>
+
+    <dimen name="base_line_dimen">0.8dp</dimen>
+    <dimen name="seoul_image_view_height">244px</dimen>
+    <dimen name="special_sale_image_view_height">260px</dimen>
+
+    <dimen name="item_guess_you_like_imageView_height">360px</dimen>
+
+    <dimen name="item_order_height">140px</dimen>
+
+    <!--抢购详情页-->
+    <dimen name="item_flash_sale_details_time_height">100px</dimen>
+    <dimen name="item_flash_sale_details_time_width">130px</dimen>
+
+    <!-- 首页部分固定布局的高度-->
+    <dimen name="fragment_home_top_scrollview_height">300px</dimen>
+    <dimen name="fragment_home_second_scrollview_height">160px</dimen>
+    <dimen name="fragment_home_false_sale_height">200dp</dimen>
+    <dimen name="fragment_home_brand_height">370dp</dimen>
+
+    <!-- 我的界面高度-->
+    <dimen name="my_top_login_height">280px</dimen>
+    <dimen name="my_top_login_bottom_height">80px</dimen>
+
+
+    <!--统一间距范围-->
+    <dimen name="px_dimen_72">72px</dimen>
+    <dimen name="px_dimen_46">46px</dimen>
+    <dimen name="px_dimen_40">40px</dimen>
+    <dimen name="px_dimen_35">35px</dimen>
+    <dimen name="px_dimen_30">30px</dimen>
+    <dimen name="px_dimen_24">24px</dimen>
+    <dimen name="px_dimen_20">20px</dimen>
+    <dimen name="px_dimen_15">15px</dimen>
+    <dimen name="px_dimen_10">10px</dimen>
+    <dimen name="px_dimen_8">8px</dimen>
+    <dimen name="px_dimen_4">4px</dimen>
+
+    <!--统一字体大小范围-->
+    <dimen name="px_text_32">32px</dimen>
+    <dimen name="px_text_30">30px</dimen>
+    <dimen name="px_text_28">28px</dimen>
+    <dimen name="px_text_26">26px</dimen>
+    <dimen name="px_text_24">24px</dimen>
+    <dimen name="px_text_22">22px</dimen>
+    <dimen name="px_text_20">20px</dimen>
+    <dimen name="px_text_18">18px</dimen>
+    <dimen name="px_text_16">16px</dimen>
+    <dimen name="px_text_14">14px</dimen>
+
+
+    <!--DP-->
+    <!-- 统一间距范围-->
+    <dimen name="pub_dimen_16dp">16dp</dimen>
+    <dimen name="pub_dimen_8dp">8dp</dimen>
+    <dimen name="pub_dimen_4dp">4dp</dimen>
+    <dimen name="pub_dimen_24dp">24dp</dimen>
+    <dimen name="pub_dimen_56dp">56dp</dimen>
+    <dimen name="pub_dimen_72dp">72dp</dimen>
+    <!--SP-->
+    <!--统一字体范围 -->
+    <dimen name="pub_text_45sp">45sp</dimen>
+    <dimen name="pub_text_34sp">34sp</dimen>
+    <dimen name="pub_text_24sp">24sp</dimen>
+    <dimen name="pub_text_22sp">22sp</dimen>
+    <dimen name="pub_text_19sp">19sp</dimen>
+    <dimen name="pub_text_16sp">16sp</dimen>
+    <dimen name="pub_text_14sp">14sp</dimen>
+    <dimen name="pub_text_12sp">12sp</dimen>
+
+</resources>

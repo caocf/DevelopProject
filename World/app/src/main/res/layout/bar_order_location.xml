@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="172px"
+    android:orientation="vertical">
+
+    <com.xhl.xhl_library.ui.view.RippleView
+        android:id="@+id/ripple_select_address"
+        style="@style/style_ripple_while_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/px_dimen_30"
+        android:paddingLeft="@dimen/px_dimen_20"
+        android:paddingRight="@dimen/px_dimen_20"
+        android:paddingTop="@dimen/px_dimen_30">
+
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_width="34px"
+            android:layout_height="44px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_location" />
+
+        <RelativeLayout
+            android:id="@+id/rl_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_dimen_20"
+            android:layout_toLeftOf="@+id/iv_right"
+            android:layout_toRightOf="@+id/iv_location">
+
+            <TextView
+                android:id="@+id/tv_location_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/base_dark_text_color"
+                android:textSize="@dimen/px_text_32" />
+
+            <TextView
+                android:id="@+id/tv_location_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/base_dark_text_color"
+                android:textSize="@dimen/px_text_32" />
+
+            <TextView
+                android:id="@+id/tv_location_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_location_people"
+                android:layout_marginTop="@dimen/px_dimen_10"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColor="@color/base_light_text_color"
+                android:textSize="@dimen/px_text_24" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_right"
+            style="@style/AppTheme_order_arrow_image" />
+
+        <ViewStub
+            android:id="@+id/vs_location_null_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/layout_null_location" />
+
+    </com.xhl.xhl_library.ui.view.RippleView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_location_line" />
+
+</LinearLayout>

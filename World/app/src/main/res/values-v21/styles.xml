@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="style_multi_check_box">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="check_color">@color/main_check_color</item>
+        <item name="default_text_color">@color/main_check_normal_color</item>
+        <item name="android:background">@drawable/ripple_oval_color</item>
+    </style>
+
+    <style name="style_base_ripple">
+        <!--关闭自带Ripple效果-->
+        <item name="rv_need_show">false</item>
+        <item name="android:background">@drawable/ripple_oval_color</item>
+    </style>
+
+    <style name="style_ripple_button" parent="style_base_ripple">
+        <item name="android:background">@drawable/ripple_rectangle_accent_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80px</item>
+    </style>
+
+    <style name="style_ripple_while_button" parent="style_base_ripple">
+        <item name="android:background">@drawable/ripple_recatngle_while_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80px</item>
+    </style>
+
+
+    <style name="button_style">
+        <item name="android:background">@drawable/ripple_oval_color</item>
+        <item name="android:textColor">@color/base_light_text_color</item>
+    </style>
+
+    <style name="shopping_style_check_box">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:checked">false</item>
+        <item name="android:layout_marginRight">@dimen/px_dimen_20</item>
+        <item name="android:layout_marginLeft">@dimen/px_dimen_20</item>
+    </style>
+
+</resources>

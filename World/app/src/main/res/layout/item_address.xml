@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_select"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:background="@color/app_while"
+        android:clickable="true"
+        android:paddingBottom="26px"
+        android:paddingLeft="@dimen/px_dimen_20"
+        android:paddingRight="@dimen/px_dimen_20"
+        android:paddingTop="26px">
+
+        <TextView
+            android:id="@+id/tv_location_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收货人"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="@dimen/px_text_28" />
+
+        <TextView
+            android:id="@+id/tv_location_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_toEndOf="@+id/tv_location_people"
+            android:layout_toRightOf="@+id/tv_location_people"
+            android:text="156655478747"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="@dimen/px_text_28" />
+
+        <TextView
+            android:id="@+id/tv_location_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_location_people"
+            android:layout_marginTop="@dimen/px_dimen_8"
+            android:lines="1"
+            android:text="江苏蓝南京雨花台数据产业园江苏蓝南京雨花台数据产业园江苏蓝南京雨花台数据产业园"
+            android:textColor="@color/base_light_text_color"
+            android:textSize="@dimen/px_text_24" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/check_default_address"
+            style="@style/shopping_style_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认地址" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:id="@+id/ripple_delete"
+            style="@style/style_base_ripple"
+            android:layout_width="130px"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="26px"
+                android:layout_height="26px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6px"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_address_delete" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="删除"
+                android:textColor="@color/base_light_text_color"
+                android:textSize="@dimen/px_text_24" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ripple_edit"
+            style="@style/style_base_ripple"
+            android:layout_width="130px"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerVertical="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_address_edit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="编辑"
+                android:textColor="@color/base_light_text_color"
+                android:textSize="@dimen/px_text_24" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pub_top_bar_height"
+            android:background="@color/app_bar_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/title_back"
+                style="@style/AppTheme_home_top_btn">
+
+                <ImageView
+                    android:layout_width="20px"
+                    android:layout_height="36px"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/icon_back" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/title_name"
+                style="@style/AppTheme_title_text"
+                android:text="@string/product_details" />
+
+            <RelativeLayout
+                android:id="@+id/iv_share"
+                style="@style/AppTheme_home_top_btn">
+
+                <ImageView
+                    android:layout_width="42px"
+                    android:layout_height="35px"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/icon_share" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View style="@style/style_base_ver_line" />
+
+        <com.xhl.world.ui.view.LazyScrollView
+            android:id="@+id/lazy_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:descendantFocusability="blocksDescendants">
+
+            <LinearLayout
+                android:id="@+id/ll_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="530px">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/goods_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_while" />
+
+                    <FrameLayout
+                        android:id="@+id/fl_goods_image_num"
+                        android:layout_width="70px"
+                        android:layout_height="70px"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginBottom="70px"
+                        android:layout_marginRight="20px"
+                        android:background="@drawable/code_oval_grey"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_num_cur"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="3"
+                                android:textColor="@color/app_while"
+                                android:textSize="30px" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2px"
+                                android:layout_marginRight="2px"
+                                android:text="/"
+                                android:textColor="@color/app_while"
+                                android:textSize="30px" />
+
+                            <TextView
+                                android:id="@+id/tv_num_max"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="7"
+                                android:textColor="@color/app_while"
+                                android:textSize="26px" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/px_dimen_8">
+
+                    <TextView
+                        android:id="@+id/tv_product_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="@dimen/px_dimen_20"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginRight="@dimen/px_dimen_20"
+                        android:layout_marginStart="20px"
+                        android:layout_marginTop="@dimen/px_dimen_20"
+                        android:ellipsize="end"
+                        android:lineSpacingMultiplier="1.3"
+                        android:maxLines="2"
+                        android:paddingBottom="@dimen/px_dimen_4"
+                        android:paddingLeft="@dimen/px_dimen_8"
+                        android:paddingRight="@dimen/px_dimen_8"
+                        android:paddingTop="@dimen/px_dimen_4"
+                        android:textColor="@color/base_dark_text_color"
+                        android:textSize="@dimen/px_text_26" />
+
+                    <TextView
+                        android:id="@+id/tv_product_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_product_name"
+                        android:layout_marginLeft="@dimen/px_dimen_20"
+                        android:layout_marginTop="@dimen/px_dimen_8"
+                        android:textColor="@color/app_red"
+                        android:textSize="@dimen/px_text_28" />
+
+                    <TextView
+                        android:id="@+id/tv_product_origin_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="12px"
+                        android:layout_marginLeft="@dimen/px_dimen_24"
+                        android:layout_toRightOf="@+id/tv_product_price"
+                        android:textColor="@color/base_light_text_color"
+                        android:textSize="@dimen/px_text_24" />
+
+                    <TextView
+                        android:id="@+id/tv_product_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px_dimen_20"
+                        android:layout_marginTop="@dimen/px_dimen_20"
+                        android:background="@drawable/code_btn_orange_bg"
+                        android:paddingBottom="@dimen/px_dimen_4"
+                        android:paddingLeft="@dimen/px_dimen_8"
+                        android:paddingRight="@dimen/px_dimen_8"
+                        android:paddingTop="@dimen/px_dimen_4"
+                        android:text="@string/product_type1"
+                        android:textColor="@color/app_while"
+                        android:textSize="@dimen/px_text_24" />
+                </RelativeLayout>
+
+                <include layout="@layout/bar_product_msg" />
+
+                <include layout="@layout/bar_product_msg_about" />
+
+                <TextView
+                    android:id="@+id/tv_scroll_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="76px"
+                    android:gravity="center"
+                    android:text="@string/product_desc"
+                    android:textColor="@color/base_light_text_color"
+                    android:textSize="@dimen/px_text_24" />
+
+            </LinearLayout>
+        </com.xhl.world.ui.view.LazyScrollView>
+
+        <include layout="@layout/bar_product_operate" />
+    </LinearLayout>
+</FrameLayout>

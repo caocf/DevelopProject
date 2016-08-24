@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="172px"
+        android:layout_marginTop="@dimen/px_dimen_20"
+        android:background="@drawable/code_bg_line_while_rectangle"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:gravity="center_vertical">
+
+
+            <EditText
+                android:id="@+id/ed_input_phone"
+                style="@style/style_base_input"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="输入11位手机号"
+                android:inputType="number" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40px"
+                android:layout_centerVertical="true"
+                android:background="#dbdbdb" />
+
+            <TextView
+                android:id="@+id/tv_get_verity"
+                android:layout_width="200px"
+                android:layout_height="80px"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textColor="@color/black"
+                android:textSize="@dimen/px_text_24" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/px_dimen_20"
+            android:layout_marginRight="@dimen/px_dimen_20"
+            android:background="@color/line_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90px">
+
+
+            <EditText
+                android:id="@+id/ed_input_verify"
+                style="@style/style_base_input"
+                android:hint="请填写验证码"
+                android:inputType="number" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.xhl.xhl_library.ui.view.RippleView
+        android:id="@+id/ripple_next"
+        style="@style/style_ripple_button"
+        android:layout_marginLeft="@dimen/px_dimen_20"
+        android:layout_marginRight="@dimen/px_dimen_20"
+        android:layout_marginTop="@dimen/px_dimen_30">
+
+        <TextView
+            style="@style/style_ripple_button_text"
+            android:text="下一步" />
+
+    </com.xhl.xhl_library.ui.view.RippleView>
+
+    <LinearLayout
+        android:id="@+id/ll_other_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_dimen_20"
+        android:layout_marginRight="@dimen/px_dimen_20"
+        android:layout_marginTop="50px"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已有账户?"
+            android:textColor="#b0b0b0"
+            android:textSize="@dimen/px_text_22" />
+
+        <TextView
+            android:id="@+id/tv_service"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_dimen_72"
+            android:layout_marginLeft="@dimen/px_dimen_15"
+            android:text="去登陆"
+            android:textColor="?attr/main_theme_color"
+            android:textSize="@dimen/px_text_22" />
+    </LinearLayout>
+
+</LinearLayout>

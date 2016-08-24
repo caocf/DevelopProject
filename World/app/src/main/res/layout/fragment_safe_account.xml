@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <View style="@style/style_base_ver_line" />
+
+    <com.xhl.xhl_library.ui.view.RippleView
+        android:id="@+id/ripple_user_pwd"
+        style="@style/style_base_ripple"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:background="@color/app_while">
+
+        <TextView
+            android:id="@+id/tv_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_dimen_30"
+            android:layout_marginTop="@dimen/px_dimen_30"
+            android:text="修改密码"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="@dimen/px_text_28" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_pwd"
+            android:layout_marginLeft="@dimen/px_dimen_30"
+            android:layout_marginTop="@dimen/px_dimen_10"
+            android:text="为了保障账户安全,建议您定期更换密码"
+            android:textColor="@color/base_light_text_color"
+            android:textSize="@dimen/px_text_24" />
+
+        <ImageView style="@style/AppTheme_my_func_arrow_image" />
+
+    </com.xhl.xhl_library.ui.view.RippleView>
+
+    <View style="@style/style_base_ver_line" />
+
+    <com.xhl.xhl_library.ui.view.RippleView
+        android:id="@+id/ripple_user_id"
+        style="@style/style_base_ripple"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:background="@color/app_while">
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_dimen_30"
+            android:layout_marginTop="@dimen/px_dimen_30"
+            android:text="实名认证"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="@dimen/px_text_28" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_id"
+            android:layout_marginLeft="@dimen/px_dimen_30"
+            android:layout_marginTop="@dimen/px_dimen_10"
+            android:text="实名认证,保障账户安全"
+            android:textColor="@color/base_light_text_color"
+            android:textSize="@dimen/px_text_24" />
+
+        <TextView
+            android:id="@+id/tv_verity_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px_dimen_72"
+            android:layout_marginTop="@dimen/px_dimen_30"
+            android:text="未认证"
+            android:textColor="@color/app_orange"
+            android:textSize="@dimen/px_text_24" />
+
+
+        <ImageView style="@style/AppTheme_my_func_arrow_image" />
+
+    </com.xhl.xhl_library.ui.view.RippleView>
+
+</LinearLayout>

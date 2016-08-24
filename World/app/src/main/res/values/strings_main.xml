@@ -1,0 +1,123 @@
+<resources>
+    <!--  首页-->
+    <string name="bar_home_top_scan">扫一扫</string>
+    <string name="bar_home_top_message">搜索</string>
+
+    <string name="home_classify_qqjpg">全球精品馆</string>
+    <string name="home_classify_qqsj">全球商家</string>
+    <string name="home_classify_qd">签到</string>
+    <string name="home_classify_yhq">优惠券</string>
+    <string name="home_classify_5">1</string>
+    <string name="home_classify_6">2</string>
+    <string name="home_classify_7">3</string>
+    <string name="home_classify_8">4</string>
+
+    <string name="home_false_sale">限时特卖</string>
+    <string name="home_false_sale_money">￥%s</string>
+    <string name="home_false_sale_money_per">%s折</string>
+    <string name="home_false_sale_more">更多</string>
+
+    <string name="false_sale_left_time">距离本场结束 </string>
+    <string name="false_sale_start_time">距离本场开始 </string>
+    <string name="false_sale_left_time_null">抢购结束</string>
+    <string name="false_sale_buy">马上抢</string>
+    <string name="false_sale_more_policy">更多优惠</string>
+
+    <string name="home_brand">品牌街</string>
+    <string name="home_brand_all">全部品牌</string>
+    <string name="home_seoul">首尔站</string>
+    <string name="home_special_sell">今日特卖</string>
+    <string name="home_guess_you_like">猜你喜欢</string>
+
+
+    <!--购物中心-->
+    <string name="my_shopping_car">我的购物车</string>
+    <string name="my_shopping_go">去逛逛</string>
+    <string name="my_shopping_edit">编辑</string>
+    <string name="my_shopping_select_all">全选</string>
+    <string name="my_shopping_delete">删除</string>
+    <string name="my_shopping_collection">移入收藏夹</string>
+    <string name="my_shopping_count">结算(%s)</string>
+    <string name="my_shopping_yf">不含邮费</string>
+    <string name="my_shopping_count_null_hint">亲,请选择您的结算商品哦!</string>
+    <string name="my_shopping_null_hint">亲,购物车空空耶~ 赶紧去挑喜欢的吧</string>
+
+    <string name="shop_all_goods_count">合计：￥%s</string>
+    <string name="shop_goods_count">小计：￥%s</string>
+    <string name="shop_goods_postal">运费：￥%s</string>
+    <string name="shop_goods_revenue">关税：￥%s</string>
+    <string name="shop_delete_goods_tips">您确定要删除这%s件商品吗？</string>
+    <string name="shop_collection_goods_tips">确定要收藏选中商品吗？</string>
+
+    <!--确认订单-->
+    <string name="confirm_order">确认订单</string>
+    <string name="order_people">收货人：</string>
+    <string name="pay_orders">商品清单</string>
+    <string name="pay_type">支付方式</string>
+    <string name="pay_coupon">优惠券</string>
+    <string name="pay_score">积分</string>
+
+    <string name="order_price">商品金额</string>
+    <string name="order_price_need_pay">应付金额</string>
+    <string name="order_price_real_pay">实付金额</string>
+    <string name="order_revenue">关税</string>
+    <string name="order_integral">积分</string>
+    <string name="order_postal">配送方式</string>
+
+    <string name="address_user">收货人:%s</string>
+
+    <!--我的-->
+    <string name="my_account">我的账号</string>
+    <string name="my_title">我的空港</string>
+    <string name="my_care_goods">关注的商品</string>
+    <string name="my_care_store">关注的店铺</string>
+    <string name="my_watch_history">浏览纪录</string>
+
+    <string name="order_my">我的订单</string>
+    <string name="order_null">您暂时还没有订单</string>
+    <string name="order_my_query">查看全部订单</string>
+    <string name="order_all">全部</string>
+    <string name="order_my_wait_for_pay">待付款</string>
+    <string name="order_my_wait_for_sender">待发货</string>
+    <string name="order_my_wait_for_take">待收货</string>
+    <string name="order_my_wait_for_judge">待评价</string>
+    <string name="order_cancel">交易取消</string>
+    <string name="order_finish">交易完成</string>
+
+    <string name="order_my_return_goods">退货管理</string>
+    <string name="order_return_apply">申请中(%d)</string>
+    <string name="order_return_doing">处理中(%d)</string>
+    <string name="order_return_refuse">已拒绝(%d)</string>
+    <string name="order_return_finish">完成(%d)</string>
+
+    <string name="order_info">订单信息</string>
+    <string name="order_info_id">订单号:%s</string>
+    <string name="order_info_time_xd">下单时间：%s</string>
+    <string name="order_info_time_fk">付款时间：%s</string>
+    <string name="order_info_time_fh">发货时间：%s</string>
+
+    <string name="order_logistics_state">物流状态</string>
+    <string name="order_logistics_num">快递单号：%s</string>
+    <string name="order_logistics_company">承运公司：%s</string>
+
+    <string name="my_sign_in">我的优惠券</string>
+    <string name="my_sc">我的收藏</string>
+    <string name="my_jf">我的积分</string>
+    <string name="my_yq">邀请小伙伴</string>
+    <string name="my_kf">空港客服</string>
+    <string name="my_fk">意见反馈</string>
+    <string name="my_about">关于空港</string>
+
+    <string name="coupon_condition">关于空港</string>
+    <string name="coupon_use_time">有效期: %1$s至%2$s</string>
+    <string name="coupon_use_range">使用范围: %s</string>
+
+
+    <string name="register_protocol">空港跨进服务条款</string>
+
+    <string name="bind_hint">为了给您提供更好的服务,请关联一个空港跨境的账号</string>
+
+    <string name="bind_login_hint">关联后,您的%s账号和空港跨境账号都可以登陆</string>
+    <string name="bind_register_hint">注册后,您的%s账号和空港跨境账号都可以登陆</string>
+
+</resources>

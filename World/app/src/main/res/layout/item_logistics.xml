@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_while"
+    android:minHeight="80dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_dimen_30"
+        android:minHeight="79dp">
+
+        <View
+            android:id="@+id/view_logistics_line"
+            style="@style/style_base_hor_line"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/iv_logistics_pass"
+            android:layout_width="@dimen/px_dimen_20"
+            android:layout_height="@dimen/px_dimen_20"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px_dimen_30"
+            android:src="@drawable/code_logistics_oval_grey" />
+
+        <ImageView
+            android:id="@+id/iv_logistics_cur"
+            android:layout_width="@dimen/px_dimen_30"
+            android:layout_height="@dimen/px_dimen_30"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px_dimen_30"
+            android:src="@drawable/code_logistics_oval_green" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_dimen_46"
+        android:layout_marginTop="28px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_logistics_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015-11-14 14:10:00" />
+
+        <TextView
+            android:id="@+id/tv_logistics_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px_dimen_46"
+            android:layout_marginTop="@dimen/px_dimen_4"
+            android:autoLink="email|phone|web"
+            android:lines="2"
+            android:text="商品已发货"
+            android:textSize="@dimen/px_dimen_24" />
+
+        <View
+            style="@style/style_base_ver_line"
+            android:layout_marginTop="@dimen/px_dimen_20" />
+    </LinearLayout>
+</LinearLayout>

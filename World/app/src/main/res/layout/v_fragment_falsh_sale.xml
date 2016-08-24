@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.xhl.world.ui.view.LifeCycleImageView
+            android:id="@+id/iv_flash_sale_i1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="@dimen/base_line_dimen"
+            android:layout_height="130px"
+            android:layout_gravity="center"
+            android:background="@color/light_line_color" />
+
+        <com.xhl.world.ui.view.LifeCycleImageView
+            android:id="@+id/iv_flash_sale_i2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="@dimen/base_line_dimen"
+            android:layout_height="130px"
+            android:layout_gravity="center"
+            android:background="@color/light_line_color" />
+
+        <com.xhl.world.ui.view.LifeCycleImageView
+            android:id="@+id/iv_flash_sale_i3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_dimen_30"
+        android:layout_marginTop="@dimen/px_dimen_20"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_flash_sale__l1_money"
+                style="@style/AppTheme_home_flash_sale_money" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/icon_flash_sale_per_bg" />
+
+            <TextView
+                android:id="@+id/tv_flash_sale__l1_money_per"
+                style="@style/AppTheme_home_flash_sale_money_per" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_flash_sale__l2_money"
+                style="@style/AppTheme_home_flash_sale_money" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/icon_flash_sale_per_bg" />
+
+            <TextView
+                android:id="@+id/tv_flash_sale__l2_money_per"
+                style="@style/AppTheme_home_flash_sale_money_per" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_flash_sale__l3_money"
+                style="@style/AppTheme_home_flash_sale_money" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/icon_flash_sale_per_bg" />
+
+            <TextView
+                android:id="@+id/tv_flash_sale__l3_money_per"
+                style="@style/AppTheme_home_flash_sale_money_per" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

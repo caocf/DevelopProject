@@ -1,0 +1,386 @@
+<resources>
+
+    <style name="BaseTheme" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--按钮控件基本样式-->
+        <item name="drawerArrowStyle">@style/Widget.AppCompat.DrawerArrowToggle</item>
+        <item name="checkboxStyle">@style/Widget.AppCompat.CompoundButton.CheckBox</item>
+        <item name="radioButtonStyle">@style/Widget.AppCompat.CompoundButton.RadioButton</item>
+        <item name="switchStyle">@style/Widget.AppCompat.CompoundButton.Switch</item>
+        <item name="ratingBarStyle">@style/Widget.AppCompat.RatingBar</item>
+    </style>
+
+    <style name="AppTheme" parent="BaseTheme">
+        <!-- 主题色-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- 主题深色-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- 强调色-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--背景颜色null减少一次绘制-->
+        <item name="android:windowBackground">@null</item>
+        <!--主题色-->
+        <item name="main_theme_color">@color/default_theme_color</item>
+        <!--强调色-->
+        <item name="main_theme_accent_color">@color/default_theme_accent_color</item>
+        <!--水波色-->
+        <item name="main_theme_ripple_color">@color/default_theme_ripple_color</item>
+
+        <item name="main_button_style">@style/button_style</item>
+
+    </style>
+
+    <style name="button_style">
+        <item name="android:background">@drawable/default_normal_button_bg</item>
+        <item name="android:textColor">@color/base_light_text_color</item>
+    </style>
+
+    <style name="style_multi_check_box">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="default_text_color">@color/main_check_normal_color</item>
+    </style>
+
+    <style name="style_base_scroll_top" parent="style_base_ripple">
+        <item name="android:id">@id/ripple_scroll_to_top</item>
+        <item name="android:layout_width">80px</item>
+        <item name="android:layout_height">80px</item>
+        <item name="android:layout_gravity">bottom|right</item>
+        <item name="android:layout_marginBottom">@dimen/px_dimen_24</item>
+        <item name="android:layout_marginRight">@dimen/px_dimen_24</item>
+        <item name="android:background">@drawable/icon_scroll_top</item>
+        <item name="android:visibility">gone</item>
+        <item name="rv_centered">true</item>
+        <item name="rv_rippleDuration">120</item>
+    </style>
+
+    <style name="style_base_ver_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/line_color</item>
+        <item name="android:layout_height">@dimen/base_line_dimen</item>
+    </style>
+
+    <style name="style_base_hor_line">
+        <item name="android:layout_width">@dimen/base_line_dimen</item>
+        <item name="android:background">@color/line_color</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="style_base_ripple">
+        <item name="rv_rippleDuration">200</item>
+        <item name="rv_color">@color/base_ripple_color</item>
+        <item name="rv_alpha">100</item>
+        <item name="rv_ripplePadding">4dp</item>
+        <item name="rv_type">simpleRipple</item>
+        <item name="rv_centered">false</item>
+        <item name="rv_framerate">10</item>
+    </style>
+
+    <style name="style_ripple_button" parent="style_base_ripple">
+        <item name="android:background">@drawable/default_accent_button_bg</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80px</item>
+    </style>
+
+    <style name="style_ripple_while_button" parent="style_base_ripple">
+        <item name="android:background">@color/app_while</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80px</item>
+    </style>
+
+
+    <style name="style_base_recycle_view">
+        <item name="android:scrollbars">none</item>
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:overScrollMode">ifContentScrolls</item>
+    </style>
+
+    <style name="style_base_grey_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/px_text_22</item>
+        <item name="android:textColor">@color/app_grey</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="AppTheme_home_top_btn" parent="@style/style_base_ripple">
+        <item name="android:layout_width">@dimen/pub_button_width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="rv_need_show">false</item>
+        <item name="rv_rippleDuration">120</item>
+    </style>
+
+    <style name="AppTheme_home_top_btn_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/px_text_18</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme_home_top_hint_text" parent="style_base_grey_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_toRightOf">@id/iv_bar_search</item>
+        <item name="android:layout_marginLeft">@dimen/px_dimen_15</item>
+        <item name="android:text">@string/bar_input_hint</item>
+    </style>
+
+    <style name="AppTheme_home_classify_item" parent="style_base_ripple">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">@dimen/px_text_18</item>
+        <item name="android:paddingBottom">@dimen/px_text_18</item>
+    </style>
+
+    <style name="AppTheme_home_classify_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/px_text_22</item>
+        <item name="android:textColor">@color/base_light_text_color</item>
+        <item name="android:layout_marginTop">@dimen/px_dimen_10</item>
+    </style>
+
+
+    <style name="AppTheme_home_flash_sale_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/icon_time_bg</item>
+        <item name="android:textSize">@dimen/px_text_22</item>
+        <item name="android:textColor">@color/base_light_text_color</item>
+    </style>
+
+    <style name="AppTheme_flash_sale_details_time_text" parent="AppTheme_home_flash_sale_text">
+        <item name="android:textColor">@color/app_light_red</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme_home_flash_sale_money">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/px_text_20</item>
+        <item name="android:textColor">@color/app_light_red</item>
+    </style>
+
+    <style name="AppTheme_home_flash_sale_money_per">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/px_dimen_15</item>
+        <item name="android:paddingRight">@dimen/px_dimen_15</item>
+        <item name="android:background">@drawable/code_corner_light_red_bg</item>
+        <item name="android:textSize">@dimen/px_text_20</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme_home_l_title_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/px_text_26</item>
+        <item name="android:textColor">@color/base_dark_text_color</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme_home_l_title_text_with_left" parent="AppTheme_home_l_title_text">
+        <!--<item name="android:drawablePadding">@dimen/pub_dimen_8dp</item>-->
+        <!--<item name="android:paddingBottom">@dimen/pub_dimen_8dp</item>-->
+        <!--<item name="android:drawableLeft">@drawable/icon_item_left_tag</item>-->
+    </style>
+
+    <style name="AppTheme_classify_details_title_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/px_text_24</item>
+        <item name="android:layout_marginLeft">26px</item>
+        <item name="android:textColor">@color/base_dark_text_color</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme_my_while_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/px_text_24</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme_my_black_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/px_text_26</item>
+        <item name="android:textColor">@color/base_dark_text_color</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme_my_grey_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/px_text_24</item>
+        <item name="android:layout_marginTop">@dimen/px_dimen_8</item>
+        <item name="android:textColor">@color/body_text_disable</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme_my_func_image">
+        <item name="android:layout_width">38px</item>
+        <item name="android:layout_height">38px</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="AppTheme_my_func_arrow_image">
+        <item name="android:layout_width">10px</item>
+        <item name="android:layout_height">20px</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/px_dimen_20</item>
+        <item name="android:src">@drawable/icon_right2</item>
+    </style>
+
+    <style name="AppTheme_order_arrow_image">
+        <item name="android:layout_width">10px</item>
+        <item name="android:layout_height">20px</item>
+        <item name="android:layout_marginLeft">@dimen/px_dimen_20</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/icon_right2</item>
+    </style>
+
+    <style name="AppTheme_my_item" parent="style_ripple_while_button">
+        <item name="android:paddingLeft">@dimen/px_dimen_20</item>
+    </style>
+
+    <style name="AppTheme_my_item_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/base_line_dimen</item>
+        <item name="android:layout_marginLeft">@dimen/px_dimen_20</item>
+        <item name="android:background">@color/line_color</item>
+    </style>
+
+
+    <style name="AppTheme_title_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/px_text_30</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/base_dark_text_color</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="style_base_input">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">70px</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/px_text_24</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/base_dark_text_color</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textColorHint">@color/base_disable_text_color</item>
+        <item name="android:layout_marginLeft">@dimen/px_dimen_20</item>
+        <item name="android:layout_marginRight">@dimen/px_dimen_20</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="shopping_style_check_box">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:checked">false</item>
+        <item name="android:textSize">@dimen/px_text_28</item>
+        <item name="android:textColor">@color/base_dark_text_color</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_marginRight">@dimen/px_dimen_20</item>
+        <item name="android:layout_marginLeft">@dimen/px_dimen_20</item>
+    </style>
+
+    <style name="style_user_face">
+        <item name="android:layout_width">132px</item>
+        <item name="android:layout_height">132px</item>
+        <item name="android:clickable">true</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/icon_user_no_head</item>
+        <item name="border_color">@color/app_light_grey</item>
+        <item name="border_width">2dp</item>
+        <item name="corner_radius">45dp</item>
+    </style>
+
+    <style name="style_address_hint_text">
+        <item name="android:layout_width">120px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/px_dimen_20</item>
+        <item name="android:textColor">@color/base_dark_text_color</item>
+        <item name="android:textSize">@dimen/px_text_26</item>
+    </style>
+
+    <style name="tab_check_box">
+        <item name="android:layout_width">74dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/px_text_32</item>
+        <item name="android:textColor">@drawable/check_box_text</item>
+    </style>
+
+    <style name="order_op_button">
+        <item name="android:layout_width">140px</item>
+        <item name="android:layout_height">50px</item>
+        <item name="android:layout_marginTop">25px</item>
+        <item name="android:layout_marginBottom">25px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/code_order_btn</item>
+        <item name="android:text">@string/app_name</item>
+        <item name="android:textSize">@dimen/px_text_26</item>
+        <item name="android:textColor">@drawable/code_order_btn_text</item>
+    </style>
+
+    <!--大按钮的中字头样式-->
+    <style name="style_ripple_button_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:text">@string/app_name</item>
+        <item name="android:textSize">@dimen/px_text_30</item>
+        <item name="android:textColor">@color/app_while</item>
+    </style>
+
+    <style name="style_null_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textSize">@dimen/px_text_28</item>
+        <item name="android:textColor">@color/base_light_text_color</item>
+    </style>
+
+    <style name="style_null_image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:textSize">@dimen/px_text_30</item>
+        <item name="android:layout_marginBottom">30px</item>
+    </style>
+
+</resources>

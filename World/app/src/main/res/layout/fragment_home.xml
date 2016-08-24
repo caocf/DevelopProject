@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <com.xhl.world.ui.main.home.bar.HomeTopBar
+        android:id="@+id/bar_home_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/layout_network_error" />
+
+        <com.xhl.world.ui.view.mySwipyRefreshLayout
+            android:id="@+id/swipy_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/home_root_recyclerView"
+                style="@style/style_base_recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.xhl.world.ui.view.mySwipyRefreshLayout>
+
+        <com.xhl.xhl_library.ui.view.RippleView style="@style/style_base_scroll_top" />
+    </FrameLayout>
+</LinearLayout>
+
+

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_my_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pub_top_bar_height"
+        android:background="@color/app_bar_bg"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/ripple_bar_my_setting"
+            style="@style/AppTheme_home_top_btn">
+
+            <ImageView
+                android:layout_width="36px"
+                android:layout_height="36px"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_my_setting" />
+        </com.xhl.xhl_library.ui.view.RippleView>
+
+        <RelativeLayout
+            android:id="@+id/ripple_bar_home_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_home_top_search_hint"
+                style="@style/AppTheme_title_text"
+                android:layout_centerInParent="true"
+                android:text="@string/my_title" />
+        </RelativeLayout>
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/ripple_bar_my_msg"
+            android:visibility="invisible"
+            android:clickable="false"
+            style="@style/AppTheme_home_top_btn">
+
+            <ImageView
+                android:layout_width="36px"
+                android:layout_height="36px"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_message1" />
+
+        </com.xhl.xhl_library.ui.view.RippleView>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/my_top_line"
+        style="@style/style_base_ver_line"
+        android:layout_below="@+id/ll_my_top" />
+
+    <com.xhl.world.ui.view.LazyScrollView
+        android:id="@+id/lazy_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/my_top_line">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.xhl.world.ui.main.my.myTopLoginBar
+                android:id="@+id/bar_my_top_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include layout="@layout/bar_my_order" />
+
+            <include layout="@layout/bar_my_func" />
+
+            <include layout="@layout/bar_my_service" />
+        </LinearLayout>
+
+    </com.xhl.world.ui.view.LazyScrollView>
+
+
+</RelativeLayout>

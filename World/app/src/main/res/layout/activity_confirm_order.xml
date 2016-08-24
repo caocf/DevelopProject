@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xhl.world.ui.view.myLoadRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_load_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/title" />
+
+        <View style="@style/style_base_ver_line" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/px_dimen_20"
+                android:orientation="vertical">
+
+                <include layout="@layout/bar_order_location" />
+
+                <LinearLayout
+                    android:id="@+id/ll_order_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <com.xhl.xhl_library.ui.view.RippleView
+                    android:id="@+id/ripple_select_pay_type"
+                    style="@style/style_ripple_while_button"
+                    android:layout_marginTop="@dimen/px_dimen_20"
+                    android:paddingLeft="@dimen/px_dimen_20"
+                    android:paddingRight="@dimen/px_dimen_20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/pay_type"
+                        android:textColor="@color/base_dark_text_color"
+                        android:textSize="@dimen/px_text_30" />
+
+                    <TextView
+                        android:id="@+id/tv_order_pay_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/iv_right_1"
+                        android:text="支付宝支付"
+                        android:textColor="@color/base_light_text_color"
+                        android:textSize="@dimen/px_text_28" />
+
+                    <ImageView
+                        android:id="@+id/iv_right_1"
+                        android:visibility="invisible"
+                        style="@style/AppTheme_order_arrow_image" />
+                </com.xhl.xhl_library.ui.view.RippleView>
+
+                <include layout="@layout/bar_order_replace_fee" />
+
+                <include layout="@layout/bar_order_total_fee" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_dimen_20"
+                    android:background="@color/app_while"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <View style="@style/style_base_ver_line" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/pub_button_height"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/check_separate_price"
+                                style="@style/shopping_style_check_box"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="分单价"
+                                android:textSize="@dimen/px_text_28" />
+
+
+                            <TextView
+                                android:id="@+id/tv_separate_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/px_dimen_20"
+                                android:text="@string/price"
+                                android:textColor="@color/app_red"
+                                android:textSize="@dimen/px_text_30" />
+
+                        </LinearLayout>
+
+                        <View
+                            style="@style/style_base_ver_line"
+                            android:layout_marginLeft="@dimen/px_dimen_20" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/pub_button_height"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/check_un_separate_price"
+                                style="@style/shopping_style_check_box"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="未分单价"
+                                android:textSize="@dimen/px_text_28" />
+
+                            <TextView
+                                android:id="@+id/tv_un_separate_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/px_dimen_20"
+                                android:text="@string/price"
+                                android:textColor="@color/app_red"
+                                android:textSize="@dimen/px_text_30" />
+                        </LinearLayout>
+
+                        <View style="@style/style_base_ver_line" />
+                    </LinearLayout>
+
+                    <com.xhl.xhl_library.ui.view.RippleView
+                        android:id="@+id/ripple_confirm_orders"
+                        style="@style/style_ripple_button"
+                        android:layout_margin="@dimen/px_dimen_20">
+
+                        <TextView
+                            style="@style/style_ripple_button_text"
+                            android:text="提交订单" />
+
+                    </com.xhl.xhl_library.ui.view.RippleView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</com.xhl.world.ui.view.myLoadRelativeLayout>

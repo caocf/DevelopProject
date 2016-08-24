@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_null_show"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical"
+    android:requiresFadingEdge="horizontal"
+    android:clickable="true"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/iv_null_ic"
+        android:layout_width="116px"
+        android:layout_height="116px"
+        android:layout_above="@+id/tv_null_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:src="@drawable/icon_network_error" />
+
+    <TextView
+        android:id="@+id/tv_null_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/network_error_text"
+        android:textColor="@color/base_disable_text_color"
+        android:textSize="@dimen/px_text_28" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

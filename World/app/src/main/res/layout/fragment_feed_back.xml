@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <View style="@style/style_base_ver_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_dimen_20"
+        android:background="@color/app_while"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="76px"
+            android:layout_marginLeft="@dimen/px_dimen_20"
+            android:gravity="left|center_vertical"
+            android:text="选择您要反馈的问题类型"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="@dimen/px_text_28" />
+
+        <View
+            style="@style/style_base_ver_line"
+            android:layout_marginLeft="@dimen/px_dimen_20"
+            android:layout_marginRight="@dimen/px_dimen_20" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_marginTop="@dimen/px_dimen_30"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/px_dimen_20"
+            android:paddingRight="@dimen/px_dimen_20">
+
+            <LinearLayout
+                android:id="@+id/ll_fd_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_fb_goods"
+                    android:layout_width="72px"
+                    android:layout_height="72px"
+                    android:src="@drawable/icon_fb_goods" />
+
+                <TextView
+                    android:id="@+id/tv_fb_goods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_dimen_10"
+                    android:text="商品问题"
+                    android:textColor="@drawable/search_select_text_color"
+                    android:textSize="@dimen/px_text_26" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_fd_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_fb_order"
+                    android:layout_width="72px"
+                    android:layout_height="72px"
+                    android:src="@drawable/icon_fb_order" />
+
+                <TextView
+                    android:id="@+id/tv_fb_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_dimen_10"
+                    android:text="订单问题"
+                    android:textColor="@drawable/search_select_text_color"
+                    android:textSize="@dimen/px_text_26" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_fd_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_fb_wl"
+                    android:layout_width="72px"
+                    android:layout_height="72px"
+                    android:src="@drawable/icon_fb_wl" />
+
+                <TextView
+                    android:id="@+id/tv_fb_wl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_dimen_10"
+                    android:text="物流问题"
+                    android:textColor="@drawable/search_select_text_color"
+                    android:textSize="@dimen/px_text_26" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_marginBottom="@dimen/px_dimen_30"
+            android:layout_marginTop="@dimen/px_dimen_24"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/px_dimen_20"
+            android:paddingRight="@dimen/px_dimen_20">
+
+            <LinearLayout
+                android:id="@+id/ll_fd_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_fb_service"
+                    android:layout_width="72px"
+                    android:layout_height="72px"
+                    android:src="@drawable/icon_fb_service" />
+
+                <TextView
+                    android:id="@+id/tv_fb_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_dimen_10"
+                    android:text="售后问题"
+                    android:textColor="@drawable/search_select_text_color"
+                    android:textSize="@dimen/px_text_26" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_fd_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_fb_other"
+                    android:layout_width="72px"
+                    android:layout_height="72px"
+                    android:src="@drawable/icon_fb_other" />
+
+                <TextView
+                    android:id="@+id/tv_fb_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_dimen_10"
+                    android:text="其他与建议"
+                    android:textColor="@drawable/search_select_text_color"
+                    android:textSize="@dimen/px_text_26" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/ed_fb_content"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_marginTop="20px"
+        android:background="@color/app_while"
+        android:gravity="top|start"
+        android:hint="请输入您的意见，我们将不断优化体验哟"
+        android:inputType="textMultiLine"
+        android:padding="@dimen/px_dimen_20"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:textColor="@color/base_dark_text_color"
+        android:textColorHint="@color/base_disable_text_color"
+        android:textSize="@dimen/px_text_26" />
+
+    <EditText
+        android:id="@+id/ed_fb_phone"
+        android:layout_width="match_parent"
+        android:layout_height="76px"
+        android:layout_marginTop="20px"
+        android:background="@color/app_while"
+        android:hint="输入您的手机号(选填)"
+        android:inputType="number"
+        android:paddingLeft="@dimen/px_dimen_20"
+        android:textColor="@color/base_dark_text_color"
+        android:textColorHint="@color/base_disable_text_color"
+        android:textSize="@dimen/px_text_26" />
+
+    <com.xhl.xhl_library.ui.view.RippleView
+        android:id="@+id/ripple_fb_confirm"
+        style="@style/style_ripple_button"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/px_dimen_20">
+
+        <TextView
+            style="@style/style_ripple_button_text"
+            android:text="反 馈" />
+
+    </com.xhl.xhl_library.ui.view.RippleView>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ChatPlayBtn">
+        <attr name="left" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="corner_radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="mutate_background" format="boolean" />
+        <attr name="oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+    <declare-styleable name="EmptyView">
+        <attr name="loadingDrawable" format="reference|color" />
+        <attr name="emptyDrawable" format="reference|color" />
+        <attr name="failDrawable" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="MultiCheckBox">
+        <attr name="check_color" format="color" />
+        <attr name="text" format="reference|string" />
+        <attr name="default_text_color" format="color" />
+        <attr name="drawable" format="reference" />
+    </declare-styleable>
+
+
+    <attr name="main_button_style" format="reference" />
+    <attr name="main_theme_color" format="color" />
+    <attr name="main_theme_accent_color" format="color" />
+    <attr name="main_theme_ripple_color" format="color" />
+</resources>

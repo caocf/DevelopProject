@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/title" />
+
+        <View style="@style/style_base_ver_line" />
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/ripple_user_head"
+            style="@style/style_base_ripple"
+            android:layout_width="match_parent"
+            android:layout_height="160px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_dimen_30"
+                android:text="头像"
+                android:textColor="@color/app_black"
+                android:textSize="@dimen/px_text_30" />
+
+            <com.xhl.world.ui.view.RoundedImageView
+                android:id="@+id/iv_my_pic"
+                style="@style/style_user_face"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/px_dimen_30" />
+        </com.xhl.xhl_library.ui.view.RippleView>
+
+        <View style="@style/style_base_ver_line" />
+
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/ripple_user_name"
+            style="@style/style_ripple_while_button">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_dimen_30"
+                android:text="用户名"
+                android:textColor="@color/app_black"
+                android:textSize="@dimen/px_text_28" />
+
+            <TextView
+                android:id="@+id/tv_user_names"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50px"
+                android:textColor="@color/base_light_text_color"
+                android:textSize="@dimen/px_text_26" />
+
+            <ImageView style="@style/AppTheme_my_func_arrow_image" android:visibility="invisible"/>
+        </com.xhl.xhl_library.ui.view.RippleView>
+
+        <View style="@style/style_base_ver_line" />
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/ripple_user_sex"
+            style="@style/style_ripple_while_button">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_dimen_30"
+                android:text="性别"
+                android:textColor="@color/app_black"
+                android:textSize="@dimen/px_text_28" />
+
+            <TextView
+                android:id="@+id/tv_user_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50px"
+                android:textColor="@color/base_light_text_color"
+                android:textSize="@dimen/px_text_26" />
+
+            <ImageView style="@style/AppTheme_my_func_arrow_image" />
+        </com.xhl.xhl_library.ui.view.RippleView>
+
+        <View style="@style/style_base_ver_line" />
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/ripple_user_birthday"
+            style="@style/style_ripple_while_button">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_dimen_30"
+                android:text="出生日期"
+                android:textColor="@color/app_black"
+                android:textSize="@dimen/px_text_28" />
+
+            <TextView
+                android:id="@+id/tv_user_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50px"
+                android:textColor="@color/base_light_text_color"
+                android:textSize="@dimen/px_text_26" />
+
+            <ImageView style="@style/AppTheme_my_func_arrow_image" />
+        </com.xhl.xhl_library.ui.view.RippleView>
+
+        <View style="@style/style_base_ver_line" />
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/ripple_user_area"
+            style="@style/style_ripple_while_button">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_dimen_30"
+                android:text="区域"
+                android:textColor="@color/app_black"
+                android:textSize="@dimen/px_text_28" />
+
+            <TextView
+                android:id="@+id/tv_user_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50px"
+                android:textColor="@color/base_light_text_color"
+                android:textSize="@dimen/px_text_26" />
+
+            <ImageView style="@style/AppTheme_my_func_arrow_image" />
+        </com.xhl.xhl_library.ui.view.RippleView>
+
+        <View style="@style/style_base_ver_line" />
+
+
+        <View
+            style="@style/style_base_ver_line"
+            android:layout_marginTop="@dimen/px_dimen_30" />
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/ripple_user_pwd"
+            style="@style/style_ripple_while_button">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_dimen_30"
+                android:text="账户安全"
+                android:textColor="@color/app_black"
+                android:textSize="@dimen/px_text_28" />
+
+            <ImageView style="@style/AppTheme_my_func_arrow_image" />
+        </com.xhl.xhl_library.ui.view.RippleView>
+
+        <View style="@style/style_base_ver_line" />
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/ripple_user_address"
+            style="@style/style_ripple_while_button">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_dimen_30"
+                android:text="收货地址管理"
+                android:textColor="@color/app_black"
+                android:textSize="@dimen/px_text_30" />
+
+            <ImageView style="@style/AppTheme_my_func_arrow_image" />
+        </com.xhl.xhl_library.ui.view.RippleView>
+
+
+        <View style="@style/style_base_ver_line" />
+
+    </LinearLayout>
+</com.zhy.autolayout.AutoFrameLayout>

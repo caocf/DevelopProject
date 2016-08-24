@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_while"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
+        android:layout_marginLeft="@dimen/px_dimen_20"
+        android:layout_marginTop="24px"
+        android:orientation="horizontal">
+
+        <!--<world.LifeCycleImageView
+            android:id="@+id/iv_item_shop_icon"
+            android:layout_width="60px"
+            android:layout_height="42px" />-->
+
+        <TextView
+            android:id="@+id/tv_item_parent_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_dimen_10"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="@dimen/px_text_30" />
+    </LinearLayout>
+
+    <View style="@style/style_base_ver_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_item_child_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/chat_conversation_item_height"
+    android:background="@color/chat_common_white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/chat_conversation_padding"
+    android:paddingRight="@dimen/chat_conversation_padding"
+    android:paddingTop="@dimen/chat_conversation_padding">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:id="@+id/fl_avatar"
+            android:layout_width="70px"
+            android:layout_height="64px"
+            android:layout_centerVertical="true">
+
+            <com.xhl.world.ui.view.LifeCycleImageView
+                android:id="@+id/iv_recent_avatar"
+                style="@style/chat_avatar"
+                android:layout_gravity="center"
+                android:src="@drawable/chat_default_user_avatar" />
+
+            <TextView
+                android:id="@+id/recent_unread"
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:layout_gravity="top|right"
+                android:background="@drawable/chat_msg_tips"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="10.0px"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/recent_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/fl_avatar"
+            android:layout_marginLeft="14px"
+            android:layout_marginStart="14px"
+            android:layout_toEndOf="@+id/fl_avatar"
+            android:layout_toRightOf="@+id/fl_avatar"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/chat_text_dark"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/recent_msg_text"
+            android:layout_width="wrap_content"
+            android:layout_height="30px"
+            android:layout_alignBottom="@+id/fl_avatar"
+            android:layout_alignLeft="@+id/recent_time_text"
+            android:layout_alignStart="@+id/recent_time_text"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/chat_text_light"
+            android:textSize="22px" />
+
+        <TextView
+            android:id="@+id/recent_teim_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/recent_time_text"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/chat_text_light"
+            android:textSize="18px" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="20px">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="4px"
+            android:background="@color/chat_line_color" />
+    </FrameLayout>
+</LinearLayout>

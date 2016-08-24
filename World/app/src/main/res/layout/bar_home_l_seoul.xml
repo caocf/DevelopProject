@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/px_dimen_20">
+
+    <TextView
+        android:id="@+id/bar_home_seoul_title"
+        style="@style/AppTheme_home_l_title_text_with_left"
+        android:text="@string/home_seoul" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/px_dimen_15"
+        android:background="@drawable/code_bg_line_while_rectangle"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/bar_home_seoul_recycler_view"
+            style="@style/style_base_recycle_view"
+            android:layout_width="match_parent"
+            android:layout_margin="1dp"
+            android:overScrollMode="never"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+</LinearLayout>
+

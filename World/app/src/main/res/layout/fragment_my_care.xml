@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pub_top_bar_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/title_back"
+            style="@style/AppTheme_home_top_btn">
+
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="36px"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_back" />
+
+        </com.xhl.xhl_library.ui.view.RippleView>
+
+        <LinearLayout
+            android:id="@+id/rg_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1" />
+
+            <com.xhl.world.ui.view.SwitchButton
+                android:id="@+id/switch_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/pub_button_width"
+            android:layout_height="@dimen/pub_button_height" />
+    </LinearLayout>
+
+    <View style="@style/style_base_ver_line" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

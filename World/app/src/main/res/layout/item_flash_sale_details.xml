@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220px"
+    android:background="@color/app_while"
+    android:orientation="vertical">
+
+    <com.xhl.world.ui.view.LifeCycleImageView
+        android:id="@+id/iv_item_search_icon"
+        android:layout_width="220px"
+        android:layout_height="220px"
+       />
+
+    <TextView
+        android:id="@+id/tv_item_search_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_dimen_20"
+        android:layout_marginRight="26px"
+        android:layout_marginTop="36px"
+        android:layout_toRightOf="@+id/iv_item_search_icon"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="#787878"
+        android:textSize="@dimen/px_text_26" />
+
+
+    <TextView
+        android:id="@+id/tv_item_search_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_search_title"
+        android:layout_marginLeft="@dimen/px_dimen_20"
+        android:layout_marginTop="@dimen/px_dimen_15"
+        android:layout_toRightOf="@+id/iv_item_search_icon"
+        android:text="@string/price"
+        android:textColor="@color/red"
+        android:textSize="26px" />
+
+    <TextView
+        android:id="@+id/tv_item_search_price_old"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_item_search_price"
+        android:layout_below="@+id/tv_item_search_title"
+        android:layout_marginLeft="@dimen/px_dimen_8"
+        android:layout_marginTop="@dimen/px_dimen_15"
+        android:layout_toRightOf="@+id/tv_item_search_price"
+        android:text="@string/price"
+        android:textColor="@color/app_dark_grey"
+        android:textSize="22px" />
+
+
+    <com.xhl.world.ui.view.LifeCycleImageView
+        android:id="@+id/iv_item_search_country_icon"
+        android:layout_width="30px"
+        android:layout_height="30px"
+        android:layout_below="@+id/tv_item_search_price"
+        android:layout_marginLeft="@dimen/px_dimen_20"
+        android:layout_marginTop="@dimen/px_dimen_15"
+        android:layout_toRightOf="@+id/iv_item_search_icon"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_search_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_search_price"
+        android:layout_marginLeft="@dimen/px_dimen_20"
+        android:layout_marginTop="@dimen/px_dimen_15"
+        android:layout_toRightOf="@+id/iv_item_search_country_icon"
+        android:text="美国"
+        android:textColor="@color/app_grey"
+        android:textSize="24px" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line_color" />
+
+    <TextView
+        android:id="@+id/tv_goods_details"
+        android:layout_width="140px"
+        android:layout_height="50px"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/tv_item_search_country"
+        android:layout_marginRight="26px"
+        android:gravity="center"
+        android:background="@drawable/code_btn_light_red_bg"
+        android:layout_marginTop="@dimen/px_dimen_46"
+        android:text="@string/false_sale_buy"
+        android:textColor="@color/app_while"
+        android:textSize="@dimen/px_text_24" />
+
+    <ProgressBar
+        android:id="@+id/sale_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="160px"
+        android:layout_height="@dimen/px_dimen_15"
+        android:layout_alignLeft="@+id/iv_item_search_country_icon"
+        android:layout_alignStart="@+id/iv_item_search_country_icon"
+        android:layout_below="@+id/iv_item_search_country_icon"
+        android:layout_marginTop="@dimen/px_dimen_8"
+        android:max="100"
+        android:progress="50"
+        android:progressDrawable="@drawable/code_progressbar_bg" />
+</com.zhy.autolayout.AutoRelativeLayout>

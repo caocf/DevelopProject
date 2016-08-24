@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pub_top_bar_height"
+        android:orientation="horizontal">
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/ripple_bar_home_search"
+            style="@style/AppTheme_home_top_btn"
+            android:layout_marginBottom="@dimen/px_dimen_15"
+            android:layout_marginLeft="@dimen/px_dimen_40"
+            android:layout_marginRight="@dimen/px_dimen_40"
+            android:layout_marginTop="@dimen/px_dimen_15"
+            android:layout_weight="1"
+            android:background="@drawable/code_bg_line_while">
+
+            <ImageView
+                android:id="@id/iv_bar_search"
+                style="@style/AppTheme_home_top_btn_text"
+                android:layout_width="32px"
+                android:layout_height="32px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="false"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_dimen_20"
+                android:src="@drawable/icon_search" />
+
+            <TextView
+                android:id="@+id/tv_home_top_search_hint"
+                style="@style/AppTheme_home_top_hint_text" />
+        </com.xhl.xhl_library.ui.view.RippleView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="160px"
+            android:layout_height="match_parent"
+            android:background="@color/app_light_grey"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/bar_classify_item_recycler_view"
+                style="@style/style_base_recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@id/fl_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white" />
+    </LinearLayout>
+</LinearLayout>

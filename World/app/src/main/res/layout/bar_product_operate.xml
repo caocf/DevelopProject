@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_dark_blue"
+    android:orientation="horizontal">
+
+    <com.xhl.world.ui.view.MultiCheckBox
+        android:id="@+id/btn_op_1"
+        style="@style/style_multi_check_box"
+        android:clickable="true"
+        app:drawable="@drawable/icon_main_rb_home_normal"
+        app:text="@string/main_home" />
+
+    <com.xhl.world.ui.view.MultiCheckBox
+        android:id="@+id/btn_op_2"
+        style="@style/style_multi_check_box"
+        android:clickable="true"
+        app:drawable="@drawable/icon_product_collection"
+        app:text="@string/product_op_add_collection" />
+
+    <com.xhl.world.ui.view.MultiCheckBox
+        android:id="@+id/btn_op_3"
+        style="@style/style_multi_check_box"
+        android:clickable="true"
+        app:drawable="@drawable/icon_product_car"
+        app:text="@string/product_op_shopping" />
+
+    <Button
+        android:id="@+id/btn_op_4"
+        android:layout_width="180px"
+        android:layout_height="match_parent"
+        android:background="@drawable/code_rectangle_red"
+        android:gravity="center"
+        android:text="@string/product_op_add_shopping"
+        android:textColor="@color/app_while"
+        android:textSize="@dimen/px_text_24" />
+
+</com.zhy.autolayout.AutoLinearLayout>

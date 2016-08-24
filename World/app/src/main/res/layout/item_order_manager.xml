@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_while"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_dimen_30"
+            android:text="@string/app_name"
+            android:textColor="@color/base_light_text_color"
+            android:textSize="@dimen/px_text_28" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_order_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px_dimen_20"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/px_text_26" />
+
+    </LinearLayout>
+
+    <View style="@style/style_base_ver_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="vertical" />
+
+    <View style="@style/style_base_ver_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_1"
+            style="@style/order_op_button"
+            android:layout_marginRight="@dimen/px_dimen_24"
+            android:background="@drawable/code_btn_black_bg_line"
+            android:textColor="@color/base_light_text_color" />
+
+        <Button
+            android:id="@+id/button_2"
+            style="@style/order_op_button"
+            android:layout_marginRight="@dimen/px_dimen_24"
+            android:background="@drawable/code_btn_black_bg_line"
+            android:textColor="@color/base_light_text_color" />
+
+        <Button
+            android:id="@+id/button_3"
+            style="@style/order_op_button"
+            android:layout_marginRight="@dimen/px_dimen_30" />
+    </LinearLayout>
+
+    <View style="@style/style_base_ver_line" />
+</LinearLayout>

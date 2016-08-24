@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <View style="@style/style_base_ver_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66px"
+        android:background="@color/app_while"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150px"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="变动原因"
+            android:textColor="#3e3e3e"
+            android:textSize="@dimen/px_text_26" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="150px"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="积分数量"
+            android:textColor="#3e3e3e"
+            android:textSize="@dimen/px_text_26" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="150px"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="积分余额"
+            android:textColor="#3e3e3e"
+            android:textSize="@dimen/px_text_26" />
+
+    </LinearLayout>
+
+    <View style="@style/style_base_ver_line" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/score_recycler_view"
+        style="@style/style_base_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

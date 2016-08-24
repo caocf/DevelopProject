@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="50px"
+        android:text="请设置你的密码" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="172px"
+        android:layout_marginTop="@dimen/px_dimen_35"
+        android:background="@drawable/code_bg_line_while_rectangle"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90px">
+
+
+            <EditText
+                android:id="@+id/ed_input_pwd"
+                style="@style/style_base_input"
+                android:hint="设置密码"
+                android:inputType="textPassword" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_line_dimen"
+            android:layout_marginLeft="@dimen/px_dimen_20"
+            android:layout_marginRight="@dimen/px_dimen_20"
+            android:background="@color/line_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90px">
+
+
+            <EditText
+                android:id="@+id/ed_input_pwd_again"
+                style="@style/style_base_input"
+                android:hint="确认密码"
+                android:inputType="textPassword" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.xhl.xhl_library.ui.view.RippleView
+        android:id="@+id/ripple_submit"
+        style="@style/style_ripple_button"
+        android:layout_marginLeft="@dimen/px_dimen_20"
+        android:layout_marginRight="@dimen/px_dimen_20"
+        android:layout_marginTop="@dimen/px_dimen_30">
+
+        <TextView
+            android:id="@+id/tv_submit"
+            style="@style/style_ripple_button_text"
+            android:text="注 册" />
+
+    </com.xhl.xhl_library.ui.view.RippleView>
+
+    <LinearLayout
+        android:id="@+id/ll_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_dimen_20"
+        android:layout_marginRight="@dimen/px_dimen_20"
+        android:layout_marginTop="@dimen/px_dimen_30"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册视为同意"
+            android:textColor="#b0b0b0"
+            android:textSize="@dimen/px_text_22" />
+
+        <TextView
+            android:id="@+id/tv_service"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_dimen_72"
+            android:layout_marginLeft="@dimen/px_dimen_15"
+            android:text="空港跨进服务条款"
+            android:textColor="?attr/main_theme_color"
+            android:textSize="@dimen/px_text_22" />
+    </LinearLayout>
+
+</LinearLayout>

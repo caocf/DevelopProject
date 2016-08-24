@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/input_ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/pub_top_bar_height"
+    android:background="@color/app_bar_bg"
+    android:orientation="horizontal">
+
+    <com.xhl.xhl_library.ui.view.RippleView
+        android:id="@+id/ripple_bar_back"
+        style="@style/AppTheme_home_top_btn">
+
+        <ImageView
+            android:layout_width="20px"
+            android:layout_height="36px"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_back" />
+
+    </com.xhl.xhl_library.ui.view.RippleView>
+
+
+    <RelativeLayout
+        android:id="@+id/ripple_bar_home_search"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/px_dimen_15"
+        android:layout_marginTop="@dimen/px_dimen_15"
+        android:layout_weight="1"
+        android:background="@drawable/code_bg_line_while">
+
+        <ImageView
+            android:id="@id/iv_bar_search"
+            style="@style/AppTheme_home_top_btn_text"
+            android:layout_width="32px"
+            android:layout_height="32px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="false"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_dimen_20"
+            android:src="@drawable/icon_search" />
+
+        <TextView
+            android:id="@+id/tv_home_top_search_hint"
+            style="@style/AppTheme_home_top_hint_text" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/pub_button_width"
+        android:layout_height="@dimen/pub_button_height"
+        android:clickable="false" />
+</LinearLayout>

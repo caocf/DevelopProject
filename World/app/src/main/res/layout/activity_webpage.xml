@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pub_top_bar_height"
+        android:background="@color/app_bar_bg"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/title_back"
+            style="@style/AppTheme_home_top_btn"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="36px"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_back" />
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/title_name"
+            style="@style/AppTheme_title_text" />
+
+        <FrameLayout
+            android:id="@+id/title_quit"
+            style="@style/AppTheme_home_top_btn"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/title_right_icon"
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_close" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.xhl.world.ui.webUi.ProgressWebView
+        android:id="@+id/web_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarStyle="outsideOverlay" />
+
+</LinearLayout>

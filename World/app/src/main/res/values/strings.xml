@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">汇鸿中锦</string>
+    <string name="barcode_tips">将二维码/条码放入框内，即可自动扫描</string>
+    <string name="price">￥%s</string>
+    <string name="price_origin">海外原价￥%s</string>
+    <string name="num">x %s</string>
+    <string name="bar_input_hint">请输入商品、品牌</string>
+
+    <string name="fun_building">敬请期待</string>
+
+
+    <string name="main_home">首页</string>
+    <string name="main_classify">分类</string>
+    <string name="main_my">我的</string>
+    <string name="main_shopping">购物车</string>
+
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_title">温馨提示</string>
+
+    <string name="create_pay_order">正在提交支付订单，请稍后&#8230;</string>
+    <string name="pay_order_failed">付款失败</string>
+    <string name="pay_order_success">付款成功</string>
+
+    <string name="search_details_by_all">综合排序</string>
+    <string name="search_details_by_sale">销量优先</string>
+    <string name="search_details_by_price">价格</string>
+    <string name="search_details_filter">筛选</string>
+
+    <string name="empty_phone_hint">手机号不能为空</string>
+    <string name="phone_error">手机号格式错误</string>
+    <string name="verify_error">验证码格式有误</string>
+    <string name="empty_pwd_hint">密码不能为空</string>
+    <string name="send_sms_success">获取成功,请注意查收短信</string>
+
+    <string name="network_error">网络链接异常</string>
+    <string name="network_error_text">网络连接异常,下拉试试看吧</string>
+    <string name="bottom_tip">已经到底啦</string>
+
+    <string name="login_time_out">登陆过期,请重新登陆</string>
+
+    <string name="return_explain">请详细说明您的退货原因呦~</string>
+    <string name="judge_explain">长度在10-500字之间\n写下购买体会和使用过程中带来的帮助等\n可以给小伙伴提供参考哦！</string>
+
+    <string name="score_explain">1.订单成功后，立即获得等额积分数量，如果订单发送退款，则该积分将会从您的积分中扣除。\n
+        2.积分可再付款时直接抵扣现金，100积分=1元现金，如果发生退款，改部分积分将会退还。\n
+        3.未来空港将推出更多获得积分的途径和积分兑换的服务。
+    </string>
+
+
+    <string name="return_res1">货品数量不对</string>
+    <string name="return_res2">货品损坏</string>
+    <string name="return_res3">货品型号不对</string>
+    <string name="return_res4">其他</string>
+
+    <string name="product_details">商品详情</string>
+    <string name="product_type1">行邮商品</string>
+    <string name="product_type2">大贸商品</string>
+    <string name="product_type3">直邮商品</string>
+    <string name="product_yf">包邮政策：</string>
+    <string name="product_service">服务承诺：</string>
+    <string name="product_pay_type">支付方式：</string>
+    <string name="product_tip">温馨提示</string>
+
+    <string name="product_judge">商品评价</string>
+    <string name="product_judge_num">评价人%s</string>
+    <string name="product_judge_state_1">全部(%s)</string>
+    <string name="product_judge_state_2">晒图(%s)</string>
+    <string name="product_shop_in">进入店铺</string>
+    <string name="product_stock">库存%s件</string>
+    <string name="product_desc">继续拖动，查看商品信息</string>
+
+    <string name="product_op_add_shopping">加入购物车</string>
+    <string name="product_op_shopping">购物车</string>
+    <string name="product_op_add_collection">关注</string>
+    <string name="product_op_add_collectioned">已关注</string>
+    <string name="collection_finish">已加入收藏</string>
+    <string name="collection_success">收藏成功</string>
+    <string name="product_op_service">客服</string>
+
+    <string name="product_tip_msg">本商品为汇鸿中锦进口商品（或者“本网站注明为汇鸿中锦进口的商品”），依据中华人民共和国海关总署公告2010年第43号，
+        2014年第56号、57号以及相关文件要求，仅供个人消费者购买，个人消费者购买商品应以“个人自用、合理数量”为原则， 每次购买限值为1000元人民币（单次购买仅有一件商品且不可分割的除外）
+        ，超出规定限值的，应按照货物规定办理通关手续。 商品以实际销售价格作为完税价格，按照行邮税税率办理进境商品税收征免手续，
+        应征税款在50元（含50元）以下的，免予征收。 个人消费者在本网站购买进境商品的，应当提供个人真实姓名、身份证号码、收件地址和手机号码，
+        同意委托本电商企业或其代理企业代表个人消费者向海关办理通关申报和税款缴纳手续。个人消费者需正确填写订单信息，禁止虚假信息， 购买商品需符合个人自用合理数量，禁止用于销售、
+        加工生产或其他非个人自用用途。个人消费者购买本商品有违反海关监管规定等违法行为的， 将依法承担法律责任。国家对本商品有新的监管和税收政策规定的，从其规定。
+    </string>
+
+    <string name="pub_null_location">新增收货地址</string>
+
+</resources>

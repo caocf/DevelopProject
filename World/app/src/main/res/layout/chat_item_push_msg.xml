@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_while"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/px_dimen_15"
+        android:paddingLeft="@dimen/px_dimen_30"
+        android:paddingRight="@dimen/px_dimen_30"
+        android:paddingTop="@dimen/px_dimen_15">
+
+
+        <TextView
+            android:id="@+id/tv_msg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_msg_time"
+            android:lines="1"
+            android:text="@string/app_name"
+            android:textColor="@color/base_dark_text_color"
+            android:textSize="@dimen/px_text_30" />
+
+
+        <TextView
+            android:id="@+id/tv_msg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="2015.14.22"
+            android:textColor="@color/base_light_text_color"
+            android:textSize="@dimen/px_text_26" />
+
+    </RelativeLayout>
+
+    <View style="@style/style_base_ver_line" />
+
+    <TextView
+        android:id="@+id/tv_msg_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/px_dimen_20"
+        android:paddingLeft="@dimen/px_dimen_30"
+        android:paddingRight="@dimen/px_dimen_30"
+        android:paddingTop="@dimen/px_dimen_20"
+        android:text="@string/app_name"
+        android:textColor="@color/base_light_text_color"
+        android:textSize="@dimen/px_text_28" />
+
+</LinearLayout>

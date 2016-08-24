@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="dialog_btn_color">#2fa5fa</color>
+    <color name="dialog_title_color">#000000</color>
+    <color name="dialog_bg">#ffffff</color>
+    <color name="dialog_content_color">#262626</color>
+    <color name="transparent">#00000000</color>
+    <color name="deliver_line">#ededed</color>
+
+
+    <color name="ripple_color">#15d5f2</color>
+    <color name="general_blue_color">#4fc7d8</color>
+    <drawable name="general_blue_color">#4fc7d8</drawable>
+    <color name="general_blue_select_color">#16b0c7</color>
+    <drawable name="general_blue_select_color">#16b0c7</drawable>
+
+</resources>

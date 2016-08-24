@@ -1,0 +1,15 @@
+<?xml version= "1.0" encoding= "utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:color="@color/app_while" android:state_selected="true">
+
+    </item>
+    <item android:color="#929495" android:state_selected="false">
+
+    </item>
+
+    <item android:color="#929495">
+
+    </item>
+
+</selector>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pub_top_bar_height"
+        android:background="@color/app_bar_bg"
+        android:orientation="horizontal">
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/ripple_back"
+            style="@style/AppTheme_home_top_btn">
+
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="36px"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_back" />
+
+        </com.xhl.xhl_library.ui.view.RippleView>
+
+
+        <LinearLayout
+            android:id="@+id/ripple_bar_home_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/px_dimen_15"
+            android:layout_marginLeft="@dimen/px_dimen_8"
+            android:layout_marginRight="@dimen/px_dimen_8"
+            android:layout_marginTop="@dimen/px_dimen_15"
+            android:layout_weight="1"
+            android:background="@drawable/code_bg_line_while">
+
+            <ImageView
+                android:id="@id/iv_bar_search"
+                style="@style/AppTheme_home_top_btn_text"
+                android:layout_width="32px"
+                android:layout_height="32px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px_dimen_20"
+                android:src="@drawable/icon_search" />
+
+            <EditText
+                android:id="@+id/ed_input_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/px_dimen_15"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="@string/bar_input_hint"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:textColor="@color/base_dark_text_color"
+                android:textSize="@dimen/px_text_22" />
+
+            <RelativeLayout
+                android:id="@+id/rl_input_clear"
+                android:layout_width="60px"
+                android:layout_height="match_parent"
+                android:clickable="true">
+
+                <ImageView
+                    style="@style/AppTheme_home_top_btn_text"
+                    android:layout_width="32px"
+                    android:layout_height="32px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px_dimen_20"
+                    android:src="@drawable/icon_clear" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_search"
+            style="@style/button_style"
+            android:layout_width="@dimen/pub_button_width"
+            android:layout_height="@dimen/pub_button_height"
+            android:text="搜索"
+            android:textSize="@dimen/px_text_24" />
+    </LinearLayout>
+
+    <View style="@style/style_base_ver_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/px_dimen_20"
+            android:paddingRight="@dimen/px_dimen_20">
+
+            <TextView
+                android:id="@+id/tv_hot_search_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="42px"
+                android:visibility="gone"
+                android:text="热门搜索"
+                android:textColor="@color/base_light_text_color"
+                android:textSize="@dimen/px_text_24" />
+
+            <com.xhl.world.ui.view.TagLayout
+                android:id="@+id/tag_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_dimen_20" />
+
+            <LinearLayout
+                android:id="@+id/ll_search_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60px"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="历史记录"
+                    android:textColor="@color/base_light_text_color"
+                    android:textSize="@dimen/px_text_24" />
+
+                <com.xhl.world.ui.view.TagLayout
+                    android:id="@+id/tag_history_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/px_dimen_20"
+                    android:layout_marginTop="@dimen/px_dimen_20" />
+
+                <Button
+                    android:id="@+id/btn_clear"
+                    android:layout_width="500px"
+                    android:layout_height="60px"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/code_bg_line_translate"
+                    android:text="清空历史记录"
+                    android:textColor="@color/base_light_text_color"
+                    android:textSize="@dimen/px_text_24" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

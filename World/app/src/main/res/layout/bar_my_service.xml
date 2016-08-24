@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/px_dimen_20"
+    android:background="@color/app_while"
+    android:orientation="vertical"
+    tools:showIn="@layout/fragment_my">
+
+
+    <View
+        style="@style/AppTheme_my_item_line"
+        android:layout_marginLeft="0px" />
+
+    <com.xhl.xhl_library.ui.view.RippleView
+        android:id="@+id/ripple_my_service"
+        style="@style/AppTheme_my_item">
+
+        <ImageView
+            android:id="@+id/iv_qd"
+            style="@style/AppTheme_my_func_image"
+            android:src="@drawable/icon_my_service1" />
+
+        <TextView
+            style="@style/AppTheme_my_black_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_dimen_20"
+            android:layout_toRightOf="@+id/iv_qd"
+            android:text="@string/my_kf" />
+
+        <TextView
+            android:id="@+id/tv_hing_qd"
+            style="@style/AppTheme_my_grey_text"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_dimen_15"
+            android:layout_toLeftOf="@+id/iv_right"
+            android:layout_toStartOf="@+id/iv_right"
+            android:text="在线客服" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            style="@style/AppTheme_my_func_arrow_image" />
+    </com.xhl.xhl_library.ui.view.RippleView>
+
+
+    <!--<View style="@style/AppTheme_my_item_line" />-->
+
+    <com.xhl.xhl_library.ui.view.RippleView
+        android:id="@+id/ripple_my_feedback"
+        style="@style/AppTheme_my_item">
+
+        <ImageView
+            android:id="@+id/iv_sc"
+            style="@style/AppTheme_my_func_image"
+            android:src="@drawable/icon_my_service2" />
+
+        <TextView
+            style="@style/AppTheme_my_black_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_dimen_20"
+            android:layout_toRightOf="@+id/iv_sc"
+            android:text="@string/my_fk" />
+
+        <TextView
+            android:id="@+id/tv_hint_sc"
+            style="@style/AppTheme_my_grey_text"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_dimen_15"
+            android:layout_toLeftOf="@+id/iv_right1"
+            android:layout_toStartOf="@+id/iv_right1"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/iv_right1"
+            style="@style/AppTheme_my_func_arrow_image" />
+    </com.xhl.xhl_library.ui.view.RippleView>
+
+
+    <View style="@style/AppTheme_my_item_line" />
+
+    <com.xhl.xhl_library.ui.view.RippleView
+        android:id="@+id/ripple_my_about"
+        style="@style/AppTheme_my_item">
+
+        <ImageView
+            android:id="@+id/iv_jf"
+            style="@style/AppTheme_my_func_image"
+            android:src="@drawable/icon_my_service3" />
+
+        <TextView
+            style="@style/AppTheme_my_black_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_dimen_20"
+            android:layout_toRightOf="@+id/iv_jf"
+            android:text="@string/my_about" />
+
+        <TextView
+            android:id="@+id/tv_hint_jf"
+            style="@style/AppTheme_my_grey_text"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_dimen_15"
+            android:layout_toLeftOf="@+id/iv_right2"
+            android:layout_toStartOf="@+id/iv_right2"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/iv_right2"
+            style="@style/AppTheme_my_func_arrow_image" />
+    </com.xhl.xhl_library.ui.view.RippleView>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version= "1.0" encoding= "utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle" android:useLevel="false">
+            <corners android:radius="@dimen/pub_btn_corners" />
+            <!-- 背景 -->
+            <solid android:color="@color/app_orange" />
+        </shape>
+    </item>
+
+</selector>

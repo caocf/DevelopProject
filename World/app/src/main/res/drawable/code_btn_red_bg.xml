@@ -1,0 +1,35 @@
+<?xml version= "1.0" encoding= "utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle" android:useLevel="false">
+            <corners android:radius="@dimen/pub_btn_corners" />
+            <!-- 背景 -->
+            <solid android:color="@color/base_disable_text_color" />
+        </shape>
+    </item>
+  <item android:state_pressed="true">
+        <shape android:shape="rectangle" android:useLevel="false">
+            <corners android:radius="@dimen/pub_btn_corners" />
+            <!-- 背景 -->
+            <solid android:color="#c41411" />
+        </shape>
+    </item>
+
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle" android:useLevel="false">
+            <corners android:radius="@dimen/pub_btn_corners" />
+            <!-- 背景 -->
+            <solid android:color="@color/app_red" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle" android:useLevel="false">
+            <corners android:radius="@dimen/pub_btn_corners" />
+            <!-- 背景 -->
+            <solid android:color="@color/app_red" />
+        </shape>
+    </item>
+
+</selector>

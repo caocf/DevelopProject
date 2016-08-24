@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xhl.world.ui.view.myLoadRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/load_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xhl.xhl_library.ui.swipyrefresh.SwipyRefreshLayout
+        android:id="@+id/swipy_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/order_recycler_view"
+            style="@style/style_base_recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.xhl.xhl_library.ui.swipyrefresh.SwipyRefreshLayout>
+
+    <include layout="@layout/layout_null_order" />
+
+</com.xhl.world.ui.view.myLoadRelativeLayout>

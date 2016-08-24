@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/px_dimen_20">
+
+    <TextView
+        android:id="@+id/bar_home_special_sell_title"
+        style="@style/AppTheme_home_l_title_text_with_left"
+        android:text="@string/home_special_sell" />
+
+
+    <LinearLayout
+        android:id="@+id/bar_home_special_sell_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/px_dimen_15"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+

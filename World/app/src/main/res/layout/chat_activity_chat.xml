@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/chat_op_head"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@color/app_bar_bg"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/title_back"
+            android:layout_width="90px"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="36px"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_back" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/title_name"
+                style="@style/AppTheme_title_text"
+                android:layout_centerInParent="true"
+                android:text="商铺" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/title_other"
+            android:layout_width="90px"
+            android:layout_height="match_parent"></RelativeLayout>
+
+    </LinearLayout>
+
+    <View style="@style/style_base_ver_line" />
+
+    <com.xhl.xhl_library.ui.swipyrefresh.SwipyRefreshLayout
+        android:id="@+id/chat_room_swiypRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chat_room_input"
+        android:layout_below="@+id/chat_op_head">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/chat_room_recyclerView"
+            style="@style/style_base_recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.xhl.xhl_library.ui.swipyrefresh.SwipyRefreshLayout>
+
+    <com.xhl.sum.chatlibrary.view.InputBottomBar
+        android:id="@+id/chat_room_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</com.zhy.autolayout.AutoRelativeLayout>

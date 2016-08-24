@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_null_show"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/iv_null_ic"
+        style="@style/style_null_image"
+        android:layout_above="@+id/tv_null_txt"
+        android:src="@drawable/icon_null_judge" />
+
+    <TextView
+        android:id="@+id/tv_null_txt"
+        android:text="该商品暂无评价,快来抢沙发吧~"
+        style="@style/style_null_text" />
+
+</com.zhy.autolayout.AutoRelativeLayout>
