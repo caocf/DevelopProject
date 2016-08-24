@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/px_dimen_16"
+        android:paddingLeft="@dimen/px_dimen_16"
+        android:paddingRight="@dimen/px_dimen_16"
+        android:text="@string/pay_type"
+        android:textColor="@color/text_light_color"
+        android:textSize="@dimen/px_dimen_26" />
+
+
+    <RadioGroup
+        android:id="@+id/rg_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_while"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/px_dimen_10"
+        android:paddingLeft="@dimen/px_dimen_20"
+        android:paddingRight="@dimen/px_dimen_20"
+        android:paddingTop="@dimen/px_dimen_10">
+
+        <LinearLayout
+            android:id="@+id/rb_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pub_button_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pay_1"
+                android:textColor="@drawable/code_cb_text"
+                android:textSize="@dimen/pub_text_16sp" />
+
+            <RadioButton
+                android:id="@+id/rb_pay_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rb_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pub_button_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pay_2"
+                android:textColor="@drawable/code_cb_text"
+                android:textSize="@dimen/pub_text_16sp" />
+
+            <RadioButton
+                android:id="@+id/rb_pay_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RadioGroup>
+
+
+</LinearLayout>
