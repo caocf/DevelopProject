@@ -12,6 +12,7 @@ import com.xhl.bqlh.model.event.CommonEvent;
 import com.xhl.bqlh.model.event.DetailsEvent;
 import com.xhl.bqlh.view.base.BaseAppActivity;
 import com.xhl.bqlh.view.custom.MultiCheckBox;
+import com.xhl.bqlh.view.custom.MultiRadioGroup;
 import com.xhl.bqlh.view.ui.activity.web.WebPageActivity;
 import com.xhl.bqlh.view.ui.fragment.HomeAFragment;
 import com.xhl.bqlh.view.ui.fragment.HomeCarFragment;
@@ -29,6 +30,9 @@ import org.xutils.view.annotation.ViewInject;
 @ContentView(R.layout.activity_home)
 public class HomeActivity extends BaseAppActivity {
 
+    @ViewInject(R.id.main_radio_group)
+    private MultiRadioGroup mGroup;
+
     @ViewInject(R.id.main_rb_home)
     private MultiCheckBox mCbHome;
 
@@ -43,20 +47,8 @@ public class HomeActivity extends BaseAppActivity {
 
     @Event(value = {R.id.main_rb_home, R.id.main_rb_classify, R.id.main_rb_shopping, R.id.main_rb_my})
     private void onCheckClick(View view) {
-        switch (view.getId()) {
-            case R.id.main_rb_home:
-                checkItem(1);
-                break;
-            case R.id.main_rb_classify:
-                checkItem(2);
-                break;
-            case R.id.main_rb_shopping:
-                checkItem(3);
-                break;
-            case R.id.main_rb_my:
-                checkItem(4);
-                break;
-        }
+        mGroup.check(view.getId());
+        fragmentCacheManager.setCurrentFragment(view);
     }
 
     private FragmentCacheManager fragmentCacheManager;
@@ -72,64 +64,37 @@ public class HomeActivity extends BaseAppActivity {
 
         fragmentCacheManager = new FragmentCacheManager();
         fragmentCacheManager.setUp(this, R.id.fl_content);
-        fragmentCacheManager.addFragmentToCache(1, HomeAFragment.class);
-        fragmentCacheManager.addFragmentToCache(2, HomeClassifyFragment.class);
-        fragmentCacheManager.addFragmentToCache(3, HomeCarFragment.class);
-        fragmentCacheManager.addFragmentToCache(4, HomeMeFragment.class);
+        fragmentCacheManager.addFragmentToCache(mCbHome, HomeAFragment.class);
+        fragmentCacheManager.addFragmentToCache(mCbClassify, HomeClassifyFragment.class);
+        fragmentCacheManager.addFragmentToCache(mCbShopping, HomeCarFragment.class);
+        fragmentCacheManager.addFragmentToCache(mCbMy, HomeMeFragment.class);
         fragmentCacheManager.setListener(new FragmentCacheManager.onBootCallBackListener() {
             @Override
             public void onBootCallBack() {
-                checkItem(1);
+                checkFirst();
             }
         });
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                checkItem(1);
+                checkFirst();
             }
         }, 10);
 
         new CheckServiceHelper(this).start();
     }
 
-    public void checkItem(int item) {
-
-        checkState(item);
-
-        fragmentCacheManager.setCurrentFragment(item);
-    }
-
-    private void checkState(int item) {
-
-        if (item == 1) {
-            mCbHome.setChecked(true);
-            mCbClassify.setChecked(false);
-            mCbShopping.setChecked(false);
-            mCbMy.setChecked(false);
-        } else if (item == 2) {
-            mCbHome.setChecked(false);
-            mCbClassify.setChecked(true);
-            mCbShopping.setChecked(false);
-            mCbMy.setChecked(false);
-        } else if (item == 3) {
-            mCbHome.setChecked(false);
-            mCbClassify.setChecked(false);
-            mCbShopping.setChecked(true);
-            mCbMy.setChecked(false);
-        } else if (item == 4) {
-            mCbHome.setChecked(false);
-            mCbClassify.setChecked(false);
-            mCbShopping.setChecked(false);
-            mCbMy.setChecked(true);
-        }
+    public void checkFirst() {
+        mGroup.check(mCbHome.getId());
+        fragmentCacheManager.setCurrentFragment(mCbHome);
     }
 
     public void onEvent(CommonEvent event) {
         super.onEvent(event);
         //切换到首页
         if (event.getEventTag() == CommonEvent.ET_MAIN) {
-            checkItem(1);
+            checkFirst();
         }
     }
 

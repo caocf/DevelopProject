@@ -123,7 +123,7 @@
     <string name="pay_coupon">优惠券</string>
     <string name="pay_score">积分</string>
     <string name="pay_now">立即下单</string>
-    <string name="pay_money">合计:￥%s</string>
+    <string name="pay_money">总金额:￥%s</string>
 
     <string name="pay_1">支付宝付款</string>
     <string name="pay_2">货到付款</string>

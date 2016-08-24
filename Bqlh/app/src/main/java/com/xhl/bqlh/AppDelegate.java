@@ -11,6 +11,7 @@ import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
 import com.xhl.bqlh.AppConfig.Constant;
 import com.xhl.bqlh.AppConfig.GlobalParams;
+import com.xhl.bqlh.AppConfig.NetWorkConfig;
 import com.xhl.bqlh.model.UserInfo;
 import com.xhl.bqlh.utils.ToastUtil;
 import com.xhl.bqlh.view.helper.FragmentContainerHelper;
@@ -152,8 +153,7 @@ public class AppDelegate extends BaseApplication {
         if (URLUtil.isNetworkUrl(mUser.headImage)) {
             return mUser.headImage;
         }
-//        url = NetWorkConfig.imageHost + mUser.headImage;
-        url = "http://dev.xhlbqlh.com/" + mUser.headImage;
+        url = NetWorkConfig.imageHost + mUser.headImage;
         return url;
     }
 

@@ -55,8 +55,11 @@ public class UserInfoFragment extends BaseAppFragment {
 
     @Event(R.id.iv_my_pic)
     private void onIvDetailsCkicl(View view) {
-        getSumContext().pushFragmentToBackStack(ImageDetailsFragment.class, AppDelegate.appContext.getUserFaceImage());
-//        takeCamera();
+        if (TextUtils.isEmpty(AppDelegate.appContext.getUserFaceImage())) {
+            takeCamera();
+        } else {
+            getSumContext().pushFragmentToBackStack(ImageDetailsFragment.class, AppDelegate.appContext.getUserFaceImage());
+        }
     }
 
     @Event(R.id.ll_user_face)

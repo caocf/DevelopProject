@@ -37,12 +37,12 @@ public class FragmentCacheManager {
     private onBootCallBackListener listener;
 
     //缓存的Fragment集合数据
-    private HashMap<Integer, FragmentInfo> mCacheFragment;
+    private HashMap<Object, FragmentInfo> mCacheFragment;
     public static boolean DEBUG = false;
 
     //当前展示的Fragment
     private Fragment mCurrentFragment;
-    private int mCurrentFragmentIndex = -1;
+    private Object mCurrentFragmentIndex = null;
 
     public void setUp(FragmentActivity activity, int containerId) {
         if (mFragment != null) {
@@ -71,8 +71,8 @@ public class FragmentCacheManager {
      */
     public List<Fragment> getAllCacheFragment() {
         ArrayList<Fragment> list = new ArrayList<>();
-        Set<Map.Entry<Integer, FragmentInfo>> entries = mCacheFragment.entrySet();
-        for (Map.Entry<Integer, FragmentInfo> entry : entries) {
+        Set<Map.Entry<Object, FragmentInfo>> entries = mCacheFragment.entrySet();
+        for (Map.Entry<Object, FragmentInfo> entry : entries) {
             FragmentInfo info = entry.getValue();
             if (info.fragment != null) {
                 list.add(info.fragment);
@@ -87,17 +87,9 @@ public class FragmentCacheManager {
      * @param index
      * @return
      */
-    public Fragment getCacheFragment(int index) {
-        if (index < 0) {
-            return null;
-        }
-        if (index >= mCacheFragment.size()) {
-            return null;
-        }
+    public Fragment getCacheFragment(Object index) {
 
-        FragmentInfo info = mCacheFragment.get(index);
-
-        return info.fragment;
+        return mCacheFragment.get(index).fragment;
     }
 
     /**
@@ -105,15 +97,9 @@ public class FragmentCacheManager {
      *
      * @param index
      */
-    public void setCurrentFragment(int index) {
-        if (index < 0) {
-            return;
-        }
+    public void setCurrentFragment(Object index) {
 
         if (index == mCurrentFragmentIndex) {
-            return;
-        }
-        if (index > mCacheFragment.size()) {
             return;
         }
         FragmentInfo info = mCacheFragment.get(index);
@@ -124,7 +110,7 @@ public class FragmentCacheManager {
     /**
      * @return 获取当前的Fragment的索引
      */
-    public int getCurrentIndex() {
+    public Object getCurrentIndex() {
         return mCurrentFragmentIndex;
     }
 
@@ -133,13 +119,13 @@ public class FragmentCacheManager {
      * 功能实现原理FragmentTabhost相同,注意hide和detach区别
      */
 
-    public void addFragmentToCache(int index, Class<?> clss) {
+    public void addFragmentToCache(Object index, Class<?> clss) {
 
         FragmentInfo info = createInfo(clss.getName(), clss, null);
         mCacheFragment.put(index, info);
     }
 
-    public void addFragmentToCache(int index, Class<?> clss, String tag) {
+    public void addFragmentToCache(Object index, Class<?> clss, String tag) {
         FragmentInfo info = createInfo(tag, clss, null);
         mCacheFragment.put(index, info);
     }
@@ -152,12 +138,12 @@ public class FragmentCacheManager {
      * @param tag   Fragment的唯一标示
      * @param args  Bundle 会传递给生产的Fragment对象，
      */
-    public void addFragmentToCache(int index, Class<?> clss, String tag, Bundle args) {
+    public void addFragmentToCache(Object index, Class<?> clss, String tag, Bundle args) {
         FragmentInfo info = createInfo(tag, clss, args);
         mCacheFragment.put(index, info);
     }
 
-    public void addFragmentToCache(int index, Class<?> clss, Bundle args) {
+    public void addFragmentToCache(Object index, Class<?> clss, Bundle args) {
         FragmentInfo info = createInfo(clss.getName(), clss, args);
         mCacheFragment.put(index, info);
     }

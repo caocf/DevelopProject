@@ -303,6 +303,8 @@ public class HomeAFragment extends BaseAppFragment {
                     onRefreshLoadData();
                 }
             }, 300);
+        } else if (event.getEventTag() == CommonEvent.ET_RELOGIN) {
+            loadArea();
         }
     }
 }

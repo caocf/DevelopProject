@@ -13,7 +13,7 @@
         android:layout_weight="1" />
 
 
-    <LinearLayout
+    <com.xhl.bqlh.view.custom.MultiRadioGroup
         android:id="@+id/main_radio_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -45,6 +45,6 @@
             app:drawableRes="@drawable/icon_home_b_my"
             app:textRes="@string/main_my" />
 
-    </LinearLayout>
+    </com.xhl.bqlh.view.custom.MultiRadioGroup>
 
 </LinearLayout>

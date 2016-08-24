@@ -935,7 +935,7 @@ public class OrderModel implements Serializable {
         if (payType.equals("1")) {
             return "在线支付";
         }
-        if (payType.equals("2")) {
+        if (payType.equals("2") || payType.equals("11") || payType.equals("12")) {
             return "货到付款";
         }
         return "其他付款";

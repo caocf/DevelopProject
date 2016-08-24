@@ -15,6 +15,7 @@
         <ImageView
             android:layout_width="@dimen/px_dimen_34"
             android:layout_height="@dimen/px_dimen_34"
+            android:tint="@color/app_order_btn"
             android:layout_marginLeft="@dimen/px_dimen_24"
             android:src="@drawable/icon_shop_logo" />
 

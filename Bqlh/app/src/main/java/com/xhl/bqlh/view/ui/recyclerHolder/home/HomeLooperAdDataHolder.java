@@ -13,6 +13,8 @@ import com.xhl.xhl_library.ui.recyclerview.RecyclerDataHolder;
 import com.xhl.xhl_library.ui.recyclerview.RecyclerViewHolder;
 import com.zhy.autolayout.utils.AutoUtils;
 
+import org.xutils.x;
+
 import java.util.List;
 
 
@@ -57,16 +59,23 @@ public class HomeLooperAdDataHolder extends RecyclerDataHolder<AdModel> {
             pageView = (ImagePageView) view;
         }
 
-        public void setData(AdModel data) {
+        public void setData(final AdModel data) {
             if (adModel == data) {
                 return;
             }
-            adModel = data;
-            List<AdInfoModel> advertList = data.getAdvertList();
-            pageView.setDataSource(advertList);
             pageView.setListener(this);
-            pageView.setInterVal(3000);
-            pageView.startScroll();
+
+            x.task().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    adModel = data;
+                    List<AdInfoModel> advertList = data.getAdvertList();
+                    pageView.setDataSource(advertList);
+                    pageView.setInterVal(3000);
+                    pageView.startScroll();
+                }
+            }, 100);
+
         }
 
         @Override

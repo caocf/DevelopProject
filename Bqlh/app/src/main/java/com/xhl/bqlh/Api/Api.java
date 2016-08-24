@@ -7,6 +7,7 @@ import com.xhl.bqlh.model.AShopDetails;
 import com.xhl.bqlh.model.AdModel;
 import com.xhl.bqlh.model.BrandModel;
 import com.xhl.bqlh.model.GarbageModel;
+import com.xhl.bqlh.model.OrderSaveModel;
 import com.xhl.bqlh.model.ProductModel;
 import com.xhl.bqlh.model.SearchFastModel;
 import com.xhl.bqlh.model.ShopModel;
@@ -239,7 +240,7 @@ public interface Api {
     /**
      * 订单保存
      */
-    Callback.Cancelable orderCreate(String attrJsonStr, Callback.CommonCallback<ResponseModel<HashMap<String,Object>>> callback);
+    Callback.Cancelable orderCreate(String attrJsonStr, Callback.CommonCallback<ResponseModel<OrderSaveModel>> callback);
 
     String orderCreate = "appOrder/saveAppConfirmOrder";
 

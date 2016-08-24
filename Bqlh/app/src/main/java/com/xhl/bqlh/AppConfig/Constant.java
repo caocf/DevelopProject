@@ -10,7 +10,7 @@ public class Constant {
     }
 
     //统计开关
-    public static final boolean openAnalytics = true;
+    public static final boolean openAnalytics = false;
     //异常上报
     public static final boolean openCrash = true;
 

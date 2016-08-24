@@ -1,101 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@id/fl_content"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_content">
+
+    <include layout="@layout/pub_title_bar_back" />
 
 
-    <LinearLayout style="@style/base_content">
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <include layout="@layout/pub_title_bar_back" />
+        <include layout="@layout/layout_user_location" />
 
-        <LinearLayout
-            android:id="@+id/ll_content"
+        <android.support.v7.widget.RecyclerView
+            style="@style/base_recycle_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingTop="@dimen/px_dimen_16" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_dimen_72"
+            android:background="@color/app_while"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/px_dimen_20"
+            android:paddingRight="@dimen/px_dimen_20"
+            android:text="@string/pay_type"
+            android:textColor="@color/text_light_color"
+            android:textSize="@dimen/px_dimen_26"
+            android:visibility="gone" />
+
+        <View style="@style/line_hor" />
+
+        <RadioGroup
+            android:id="@+id/rg_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_while"
+            android:checkedButton="@+id/rb_pay_1"
             android:orientation="vertical">
 
-            <include layout="@layout/layout_user_location" />
-
-            <android.support.v7.widget.RecyclerView
-                style="@style/base_recycle_view"
+            <LinearLayout
+                android:id="@+id/rb_1"
+                style="@style/base_bg_ripple_rectangle_translate"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:clipToPadding="false"
-                android:paddingTop="@dimen/px_dimen_22" />
-
-            <View style="@style/line_hor" />
-
-            <RelativeLayout
-                android:id="@+id/ripple_select_pay_type"
-                style="@style/base_bg_ripple_rectangle"
-                android:paddingLeft="@dimen/px_dimen_20"
-                android:paddingRight="@dimen/px_dimen_20">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:text="@string/pay_type"
-                    android:textColor="@color/text_dark_color"
-                    android:textSize="@dimen/px_dimen_30" />
-
-                <TextView
-                    android:id="@+id/tv_order_pay_type"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginEnd="@dimen/px_dimen_20"
-                    android:layout_marginRight="@dimen/px_dimen_20"
-                    android:layout_toLeftOf="@+id/iv_right_1"
-                    android:layout_toStartOf="@+id/iv_right_1"
-                    android:text="@string/pay_1"
-                    android:textColor="@color/text_light_color"
-                    android:textSize="@dimen/px_dimen_28" />
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/px_dimen_28"
+                android:paddingRight="@dimen/px_dimen_28">
 
                 <ImageView
-                    android:id="@+id/iv_right_1"
-                    style="@style/base_arrow_image"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true" />
-            </RelativeLayout>
-
-            <!--<include layout="@layout/layout_order_free_ex" />-->
-
-            <!--<include layout="@layout/layout_order_free" />-->
-
-            <View style="@style/line_hor" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/pub_title_height"
-                android:background="@color/shopping_operator_bg"
-                android:orientation="horizontal">
+                    android:layout_width="@dimen/px_dimen_40"
+                    android:layout_height="@dimen/px_dimen_40"
+                    android:layout_marginLeft="@dimen/px_dimen_16"
+                    android:src="@drawable/icon_pay1" />
 
                 <TextView
-                    android:id="@+id/tv_free_all_orders"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="@dimen/px_dimen_72"
+                    android:layout_marginLeft="@dimen/px_dimen_10"
                     android:layout_weight="1"
-                    android:gravity="center"
-                    android:textColor="@color/app_price_color"
-                    android:textSize="@dimen/px_dimen_30" />
+                    android:gravity="center_vertical"
+                    android:text="@string/pay_1"
+                    android:textColor="@color/text_dark_color"
+                    android:textSize="@dimen/px_dimen_24" />
 
-                <Button
-                    android:id="@+id/btn_confirm_orders"
-                    android:layout_width="190px"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/code_rectangle_red"
-                    android:text="@string/pay_now"
-                    android:textColor="@color/app_while"
-                    android:textSize="@dimen/px_dimen_30" />
+                <RadioButton
+                    android:id="@+id/rb_pay_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:duplicateParentState="true" />
 
             </LinearLayout>
 
-        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/rb_2"
+                style="@style/base_bg_ripple_rectangle_translate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/px_dimen_28"
+                android:paddingRight="@dimen/px_dimen_28">
 
+                <ImageView
+                    android:layout_width="@dimen/px_dimen_40"
+                    android:layout_height="@dimen/px_dimen_40"
+                    android:layout_marginLeft="@dimen/px_dimen_16"
+                    android:src="@drawable/icon_pay2" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/px_dimen_72"
+                    android:layout_marginLeft="@dimen/px_dimen_10"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/pay_2"
+                    android:textColor="@color/text_dark_color"
+                    android:textSize="@dimen/px_dimen_24" />
+
+                <RadioButton
+                    android:id="@+id/rb_pay_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:duplicateParentState="true" />
+
+            </LinearLayout>
+
+        </RadioGroup>
+
+        <View style="@style/line_hor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pub_button_height"
+            android:background="@color/shopping_operator_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_free_all_orders"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/app_price_color"
+                android:textSize="@dimen/px_dimen_30" />
+
+            <Button
+                android:id="@+id/btn_confirm_orders"
+                android:layout_width="190px"
+                android:layout_height="match_parent"
+                android:background="@drawable/code_rectangle_red"
+                android:text="@string/pay_now"
+                android:textColor="@color/app_while"
+                android:textSize="@dimen/px_dimen_30" />
+
+        </LinearLayout>
     </LinearLayout>
-</FrameLayout>
+
+</LinearLayout>

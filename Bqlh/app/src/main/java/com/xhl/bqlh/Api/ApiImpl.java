@@ -10,6 +10,7 @@ import com.xhl.bqlh.model.AShopDetails;
 import com.xhl.bqlh.model.AdModel;
 import com.xhl.bqlh.model.BrandModel;
 import com.xhl.bqlh.model.GarbageModel;
+import com.xhl.bqlh.model.OrderSaveModel;
 import com.xhl.bqlh.model.ProductModel;
 import com.xhl.bqlh.model.SearchFastModel;
 import com.xhl.bqlh.model.ShopModel;
@@ -356,7 +357,7 @@ public class ApiImpl extends BaseApi implements Api {
     }
 
     @Override
-    public Callback.Cancelable orderCreate(String attrJsonStr, Callback.CommonCallback<ResponseModel<HashMap<String, Object>>> callback) {
+    public Callback.Cancelable orderCreate(String attrJsonStr, Callback.CommonCallback<ResponseModel<OrderSaveModel>> callback) {
         String url = NetWorkConfig.generalHost + orderCreate;
         RequestParams params = new RequestParams(url);
         params.addBodyParameter("attrJsonStr", attrJsonStr);

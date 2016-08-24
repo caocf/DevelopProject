@@ -4,10 +4,10 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Rect;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.xhl.bqlh.Api.ApiControl;
@@ -15,6 +15,7 @@ import com.xhl.bqlh.R;
 import com.xhl.bqlh.model.AOrderInit;
 import com.xhl.bqlh.model.OrderDetail;
 import com.xhl.bqlh.model.OrderModel;
+import com.xhl.bqlh.model.OrderSaveModel;
 import com.xhl.bqlh.model.UserInfo;
 import com.xhl.bqlh.model.base.ResponseModel;
 import com.xhl.bqlh.utils.ToastUtil;
@@ -22,9 +23,11 @@ import com.xhl.bqlh.view.base.BaseAppActivity;
 import com.xhl.bqlh.view.base.Common.DefaultCallback;
 import com.xhl.bqlh.view.helper.DialogMaker;
 import com.xhl.bqlh.view.helper.EventHelper;
+import com.xhl.bqlh.view.helper.pay.PayHelper;
 import com.xhl.bqlh.view.ui.recyclerHolder.OrderItemProductDataHolder;
 import com.xhl.xhl_library.ui.recyclerview.RecyclerAdapter;
 import com.xhl.xhl_library.ui.recyclerview.RecyclerDataHolder;
+import com.xhl.xhl_library.ui.recyclerview.layoutManager.FullGridViewManager;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -35,7 +38,6 @@ import org.xutils.view.annotation.ViewInject;
 import org.xutils.x;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -58,58 +60,35 @@ public class OrderConfirmActivity extends BaseAppActivity {
     @ViewInject(R.id.tv_location_details)
     private TextView tv_location_details;//收件人地址
 
-    @ViewInject(R.id.tv_order_pay_type)
-    private TextView tv_order_pay_type;//支付方式提示
-
 //    @ViewInject(R.id.tv_order_coupon)
 //    private TextView tv_order_coupon;//优惠券使用提示
 //
 //    @ViewInject(R.id.tv_order_jf)
 //    private TextView tv_order_jf;//积分使用提示
 
-    @ViewInject(R.id.tv_price_order)
-    private TextView tv_price_order;
-
-    @ViewInject(R.id.tv_price_order_integral)
-    private TextView tv_price_order_integral;
-
-    @ViewInject(R.id.tv_price_real_pay)
-    private TextView tv_price_real_pay;
+//    @ViewInject(R.id.tv_price_order)
+//    private TextView tv_price_order;
+//
+//    @ViewInject(R.id.tv_price_order_integral)
+//    private TextView tv_price_order_integral;
+//
+//    @ViewInject(R.id.tv_price_real_pay)
+//    private TextView tv_price_real_pay;
 
     @ViewInject(R.id.tv_free_all_orders)
     private TextView tv_free_all_orders;
 
-    //支付方式
-    @Event(value = R.id.ripple_select_pay_type)
-    private void onSelectPayTypeClick(View view) {
+    @ViewInject(R.id.rg_pay)
+    private RadioGroup rg_pay;
 
-        AlertDialog.Builder dialog = DialogMaker.getDialog(this);
-        dialog.setTitle(R.string.pay_type);
-        dialog.setSingleChoiceItems(R.array.pay_array, 0, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                switch (which) {
-                    case 0:
-                        tv_order_pay_type.setText(R.string.pay_1);
-                        mPayId = 4;
-                        break;
-                    case 1:
-                        tv_order_pay_type.setText(R.string.pay_2);
-                        mPayId = 0;
-                        break;
-                }
-                mPayType = which + 1;
-            }
-        });
+    @Event(R.id.rb_1)
+    private void onC1(View view) {
+        rg_pay.check(R.id.rb_pay_1);
+    }
 
-        dialog.setPositiveButton(R.string.dialog_ok, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-            }
-        });
-        dialog.setCancelable(false);
-        dialog.show();
+    @Event(R.id.rb_2)
+    private void onC2(View view) {
+        rg_pay.check(R.id.rb_pay_2);
     }
 
     @Event(R.id.btn_confirm_orders)
@@ -133,7 +112,21 @@ public class OrderConfirmActivity extends BaseAppActivity {
             OrderConfirmActivity.this.finish();
             return;
         }
+
         loadInfo();
+
+        rg_pay.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                if (checkedId == R.id.rb_pay_1) {
+                    mPayId = 4;
+                    mPayType = 1;
+                } else if (checkedId == R.id.rb_pay_2) {
+                    mPayId = 0;
+                    mPayType = 2;
+                }
+            }
+        });
     }
 
     private void loadInfo() {
@@ -191,13 +184,13 @@ public class OrderConfirmActivity extends BaseAppActivity {
             holders.add(new OrderItemProductDataHolder(order, i++));
         }
         recyclerView.setAdapter(new RecyclerAdapter(this, holders));
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setLayoutManager(new FullGridViewManager(this, 1));
         recyclerView.setHasFixedSize(true);
         recyclerView.addItemDecoration(new RecyclerView.ItemDecoration() {
             @Override
             public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
                 super.getItemOffsets(outRect, view, parent, state);
-                outRect.bottom = 20;
+                outRect.bottom = 16;
             }
         });
     }
@@ -210,19 +203,18 @@ public class OrderConfirmActivity extends BaseAppActivity {
 
         JSONArray jsonArray = saveOrderToJson(orderList);
 
-        ApiControl.getApi().orderCreate(jsonArray.toString(), new DefaultCallback<ResponseModel<HashMap<String, Object>>>() {
+        ApiControl.getApi().orderCreate(jsonArray.toString(), new DefaultCallback<ResponseModel<OrderSaveModel>>() {
             @Override
-            public void success(ResponseModel<HashMap<String, Object>> result) {
-
-                HashMap<String, Object> res = result.getObj();
-                Double r = (Double) res.get("result");
+            public void success(ResponseModel<OrderSaveModel> result) {
+                int r = result.getObj().getResult();
                 if (r == 0) {
                     ToastUtil.showToastShort("提交订单异常");
                 } else {
                     EventHelper.postReLoadCarEvent();//刷新购物车
                     EventHelper.postReLoadOrderNumEvent();//刷新订单个数
+
                     if (mPayType != 2) {//非货到付款
-                        goPay();
+                        createPayOrder(result.getObj().getBlanketOrder().getOrderCode());
                     } else {
                         ToastUtil.showToastShort("下单成功");
                         x.task().postDelayed(new Runnable() {
@@ -242,11 +234,29 @@ public class OrderConfirmActivity extends BaseAppActivity {
         });
     }
 
+    //创建支付订单
+    private void createPayOrder(String orderCode) {
+
+        PayHelper payHelper = new PayHelper(this, new PayHelper.PayCallBack() {
+            @Override
+            public void success() {
+                ToastUtil.showToastLong(R.string.pay_order_success);
+                finish();
+            }
+
+            @Override
+            public void failed(String msg) {
+                ToastUtil.showToastLong(msg);
+                finish();
+            }
+        });
+        payHelper.payOrder(orderCode);
+    }
 
     private void goPay() {
         AlertDialog.Builder dialog = DialogMaker.getDialog(this);
         dialog.setTitle("下单成功");
-        dialog.setMessage("下单成功,是否立刻去支付？");
+        dialog.setMessage("下单成功,是否立刻支付？");
         dialog.setPositiveButton("支付", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -264,6 +274,10 @@ public class OrderConfirmActivity extends BaseAppActivity {
         });
         dialog.setCancelable(false);
         dialog.show();
+    }
+
+    private void pay() {
+
     }
 
 

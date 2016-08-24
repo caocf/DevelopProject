@@ -15,7 +15,7 @@ public class NetWorkConfig {
     private static final String generalHost_dev = "http://dev.xhlbqlh.com/";
     private static final String generalHost_test = "http://testenv.xhlbqlh.com/";
     private static final String generalHost_rel = "http://www.xhlbqlh.com/";
-    //    private static final String generalHost_local = "http://192.168.1.125:8080/BQLH/";
+//        private static final String generalHost_local = "http://192.168.1.111:8080/BQLH/";
     private static final String generalHost_local = "http://192.168.1.211:8080/bqlh-foreground/";
     //图片上传路径
     private static final String image_upload_path = "download/uploadImage";
@@ -29,7 +29,7 @@ public class NetWorkConfig {
         switch (Constant.API) {
             case LOCAL:
                 generalHost = generalHost_local;
-                imageHost = generalHost_dev;
+                imageHost = generalHost_rel;
                 break;
             case TEST:
                 generalHost = generalHost_test;
