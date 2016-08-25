@@ -32,9 +32,7 @@ public class GuessLikeTipDataHolder extends RecyclerDataHolder {
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(-1, -2);
         params.topMargin = marginTop;
         view.setLayoutParams(params);
-
         AutoUtils.auto(view);
-
         return new RecyclerViewHolder(view);
     }
 

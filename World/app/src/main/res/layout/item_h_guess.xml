@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_while"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/px_dimen_10"
+    android:paddingLeft="@dimen/px_dimen_20"
+    android:paddingRight="@dimen/px_dimen_20">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_guess_you_like_imageView_height"
+            android:background="@drawable/code_bg_line_while_rectangle">
+
+            <com.xhl.world.ui.view.LifeCycleImageView
+                android:id="@+id/iv_guess_you_like"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1px" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/px_dimen_4">
+
+            <TextView
+                android:id="@+id/tv_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/home_guess_you_like"
+                android:textColor="@color/app_dark_grey"
+                android:textSize="@dimen/px_text_24" />
+
+            <TextView
+                android:id="@+id/tv_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_dimen_8"
+                android:text="@string/home_false_sale_money"
+                android:textColor="@color/app_black"
+                android:textSize="@dimen/px_text_24" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_dimen_24"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_guess_you_like_imageView_height"
+            android:background="@drawable/code_bg_line_while_rectangle">
+
+            <com.xhl.world.ui.view.LifeCycleImageView
+                android:id="@+id/iv_guess_you_like2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1px" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/pub_dimen_4dp">
+
+            <TextView
+                android:id="@+id/tv_item_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/home_guess_you_like"
+                android:textColor="@color/app_dark_grey"
+                android:textSize="@dimen/px_text_24" />
+
+            <TextView
+                android:id="@+id/tv_item_price2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_dimen_8"
+                android:text="@string/home_false_sale_money"
+                android:textColor="@color/app_black"
+                android:textSize="@dimen/px_text_24" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

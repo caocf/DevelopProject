@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_while"
+    android:orientation="vertical">
+
+
+    <TextView
+        style="@style/home_new_bar_title"
+        android:text="茶饮果料" />
+
+    <View style="@style/style_base_ver_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/home_new_image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <ImageView
+                style="@style/home_new_image"
+                android:layout_width="match_parent"
+                android:layout_height="95dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:src="@drawable/a_bg" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -200,6 +200,38 @@
         <!--<item name="android:drawableLeft">@drawable/icon_item_left_tag</item>-->
     </style>
 
+    <style name="home_new_image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/a_bg</item>
+    </style>
+
+    <style name="home_new_bar_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">90px</item>
+        <item name="android:background">@color/app_while</item>
+        <item name="android:textSize">32px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/app_home_text_title</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="home_new_menu_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">24px</item>
+        <item name="android:textColor">@color/app_home_text_menu</item>
+        <item name="android:layout_marginTop">16px</item>
+    </style>
+
+    <style name="home_new_menu_image">
+        <item name="android:layout_width">90px</item>
+        <item name="android:layout_height">90px</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
     <style name="AppTheme_classify_details_title_text">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>

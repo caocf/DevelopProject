@@ -7,10 +7,15 @@
     <string name="home_classify_qqsj">全球商家</string>
     <string name="home_classify_qd">签到</string>
     <string name="home_classify_yhq">优惠券</string>
-    <string name="home_classify_5">1</string>
-    <string name="home_classify_6">2</string>
-    <string name="home_classify_7">3</string>
-    <string name="home_classify_8">4</string>
+
+    <string name="home_classify_1">悦食早餐</string>
+    <string name="home_classify_2">健康食品</string>
+    <string name="home_classify_3">保鲜到家</string>
+    <string name="home_classify_4">团购定制</string>
+    <string name="home_classify_5">会员专享</string>
+    <string name="home_classify_6">充值中心</string>
+    <string name="home_classify_7">摇一摇</string>
+    <string name="home_classify_8">今日签到</string>
 
     <string name="home_false_sale">限时特卖</string>
     <string name="home_false_sale_money">￥%s</string>
@@ -27,11 +32,11 @@
     <string name="home_brand_all">全部品牌</string>
     <string name="home_seoul">首尔站</string>
     <string name="home_special_sell">今日特卖</string>
-    <string name="home_guess_you_like">猜你喜欢</string>
+    <string name="home_guess_you_like">为您推荐</string>
 
 
     <!--购物中心-->
-    <string name="my_shopping_car">我的购物车</string>
+    <string name="my_shopping_car">购物车</string>
     <string name="my_shopping_go">去逛逛</string>
     <string name="my_shopping_edit">编辑</string>
     <string name="my_shopping_select_all">全选</string>
@@ -68,7 +73,7 @@
 
     <!--我的-->
     <string name="my_account">我的账号</string>
-    <string name="my_title">我的空港</string>
+    <string name="my_title">我的</string>
     <string name="my_care_goods">关注的商品</string>
     <string name="my_care_store">关注的店铺</string>
     <string name="my_watch_history">浏览纪录</string>
@@ -104,20 +109,20 @@
     <string name="my_sc">我的收藏</string>
     <string name="my_jf">我的积分</string>
     <string name="my_yq">邀请小伙伴</string>
-    <string name="my_kf">空港客服</string>
+    <string name="my_kf">汇鸿客服</string>
     <string name="my_fk">意见反馈</string>
-    <string name="my_about">关于空港</string>
+    <string name="my_about">关于汇鸿</string>
 
-    <string name="coupon_condition">关于空港</string>
+    <string name="coupon_condition">关于汇鸿</string>
     <string name="coupon_use_time">有效期: %1$s至%2$s</string>
     <string name="coupon_use_range">使用范围: %s</string>
 
 
-    <string name="register_protocol">空港跨进服务条款</string>
+    <string name="register_protocol">汇鸿服务条款</string>
 
-    <string name="bind_hint">为了给您提供更好的服务,请关联一个空港跨境的账号</string>
+    <string name="bind_hint">为了给您提供更好的服务,请关联一个汇鸿跨境的账号</string>
 
-    <string name="bind_login_hint">关联后,您的%s账号和空港跨境账号都可以登陆</string>
-    <string name="bind_register_hint">注册后,您的%s账号和空港跨境账号都可以登陆</string>
+    <string name="bind_login_hint">关联后,您的%s账号和汇鸿跨境账号都可以登陆</string>
+    <string name="bind_register_hint">注册后,您的%s账号和汇鸿跨境账号都可以登陆</string>
 
 </resources>

@@ -9,7 +9,6 @@ import android.widget.LinearLayout;
 import com.xhl.world.R;
 import com.xhl.world.model.AdvModel;
 import com.xhl.world.ui.event.EventBusHelper;
-import com.xhl.world.ui.main.home.HomeItemType;
 import com.xhl.xhl_library.ui.recyclerview.RecyclerDataHolder;
 import com.xhl.xhl_library.ui.recyclerview.RecyclerViewHolder;
 import com.xhl.xhl_library.ui.viewPager.ImageModel;
@@ -32,7 +31,7 @@ public class SecondAdvDataHolder extends RecyclerDataHolder {
 
     @Override
     public int getType() {
-        return HomeItemType.Type_Second_adv;
+        return 11;
     }
 
     @Override
@@ -69,11 +68,13 @@ public class SecondAdvDataHolder extends RecyclerDataHolder {
         }
 
         public void setData(List<? extends ImageModel> data) {
-            imagePageView.setDataSource(data);
-            imagePageView.setInterVal(12000);
-            imagePageView.setListener(this);
-            imagePageView.startScroll();
-            imagePageView.setListener(this);
+            if (data != null && data.size() >= 0) {
+                imagePageView.setDataSource(data);
+                imagePageView.setInterVal(12000);
+                imagePageView.setListener(this);
+                imagePageView.startScroll();
+                imagePageView.setListener(this);
+            }
         }
 
         @Override

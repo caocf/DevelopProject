@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 
 import com.xhl.world.model.AdvModel;
 import com.xhl.world.ui.event.EventBusHelper;
-import com.xhl.world.ui.main.home.HomeItemType;
 import com.xhl.xhl_library.ui.recyclerview.RecyclerDataHolder;
 import com.xhl.xhl_library.ui.recyclerview.RecyclerViewHolder;
 import com.xhl.xhl_library.ui.viewPager.ImageModel;
@@ -28,7 +27,7 @@ public class TopAdvDataHolder extends RecyclerDataHolder {
 
     @Override
     public int getType() {
-        return HomeItemType.Type_Top_adv;
+        return 12;
     }
 
     @Override

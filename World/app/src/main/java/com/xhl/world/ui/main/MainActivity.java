@@ -22,7 +22,7 @@ import com.xhl.world.ui.event.GlobalEvent;
 import com.xhl.world.ui.event.ProductDetailsEvent;
 import com.xhl.world.ui.event.ShopEvent;
 import com.xhl.world.ui.main.classify.ClassifyFragment;
-import com.xhl.world.ui.main.home.HomeFragment;
+import com.xhl.world.ui.main.home_new.Home2Fragment;
 import com.xhl.world.ui.main.my.MyFragment;
 import com.xhl.world.ui.main.shopping.ShoppingFragment;
 import com.xhl.world.ui.view.BadgeView;
@@ -88,7 +88,7 @@ public class MainActivity extends BaseAppActivity {
 
         fragmentCacheManager = new FragmentCacheManager();
         fragmentCacheManager.setUp(this, R.id.fl_content);
-        fragmentCacheManager.addFragmentToCache(1, HomeFragment.class);
+        fragmentCacheManager.addFragmentToCache(1, Home2Fragment.class);
         fragmentCacheManager.addFragmentToCache(2, ClassifyFragment.class);
         fragmentCacheManager.addFragmentToCache(3, ShoppingFragment.class);
         fragmentCacheManager.addFragmentToCache(4, MyFragment.class);

@@ -507,7 +507,7 @@ public class ProductDetailsActivity extends BaseAppActivity implements ProductOp
         if (mHasAddWebView) {
             return;
         }
-        webView();
+//        webView();
     }
 
     private void webView() {

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_while"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/px_dimen_10"
+    android:paddingLeft="@dimen/px_dimen_20"
+    android:paddingRight="@dimen/px_dimen_20"
+    android:paddingTop="@dimen/px_dimen_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/r1"
+            style="@style/AppTheme_home_classify_item">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/home_new_menu_image"
+                    android:src="@drawable/icon_home_1" />
+
+                <TextView
+                    style="@style/home_new_menu_text"
+                    android:text="@string/home_classify_1" />
+            </LinearLayout>
+        </com.xhl.xhl_library.ui.view.RippleView>
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/r2"
+            style="@style/AppTheme_home_classify_item">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/home_new_menu_image"
+                    android:src="@drawable/icon_home_2" />
+
+                <TextView
+                    style="@style/home_new_menu_text"
+                    android:text="@string/home_classify_2" />
+            </LinearLayout>
+        </com.xhl.xhl_library.ui.view.RippleView>
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/r3"
+            style="@style/AppTheme_home_classify_item">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/home_new_menu_image"
+                    android:src="@drawable/icon_home_3" />
+
+                <TextView
+                    style="@style/home_new_menu_text"
+                    android:text="@string/home_classify_3" />
+
+            </LinearLayout>
+        </com.xhl.xhl_library.ui.view.RippleView>
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/r4"
+            style="@style/AppTheme_home_classify_item">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    style="@style/home_new_menu_image"
+                    android:src="@drawable/icon_home_4" />
+
+                <TextView
+                    style="@style/home_new_menu_text"
+                    android:text="@string/home_classify_4" />
+            </LinearLayout>
+        </com.xhl.xhl_library.ui.view.RippleView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/r5"
+            style="@style/AppTheme_home_classify_item">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    style="@style/home_new_menu_image"
+                    android:src="@drawable/icon_home_5" />
+
+                <TextView
+                    style="@style/home_new_menu_text"
+                    android:text="@string/home_classify_5" />
+            </LinearLayout>
+        </com.xhl.xhl_library.ui.view.RippleView>
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/r6"
+            style="@style/AppTheme_home_classify_item">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    style="@style/home_new_menu_image"
+                    android:src="@drawable/icon_home_6" />
+
+                <TextView
+                    style="@style/home_new_menu_text"
+                    android:text="@string/home_classify_6" />
+            </LinearLayout>
+        </com.xhl.xhl_library.ui.view.RippleView>
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/r7"
+            style="@style/AppTheme_home_classify_item">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    style="@style/home_new_menu_image"
+                    android:src="@drawable/icon_home_7" />
+
+                <TextView
+                    style="@style/home_new_menu_text"
+                    android:text="@string/home_classify_7" />
+
+            </LinearLayout>
+        </com.xhl.xhl_library.ui.view.RippleView>
+
+        <com.xhl.xhl_library.ui.view.RippleView
+            android:id="@+id/r8"
+            style="@style/AppTheme_home_classify_item">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    style="@style/home_new_menu_image"
+                    android:src="@drawable/icon_home_8" />
+
+                <TextView
+                    style="@style/home_new_menu_text"
+                    android:text="@string/home_classify_8" />
+            </LinearLayout>
+        </com.xhl.xhl_library.ui.view.RippleView>
+    </LinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

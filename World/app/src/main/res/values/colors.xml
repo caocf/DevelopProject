@@ -23,6 +23,9 @@
 <!--#f8f8f8-->
     <color name="app_bar_bg">#f8f8f8</color>
 
+    <color name="app_home_text_title">#7b7b7b</color>
+    <color name="app_home_text_menu">#757575</color>
+
     <color name="app_grey">#9e9e9e</color>
     <color name="app_dark_grey">#666666</color>
     <color name="app_light_grey">#f3f3f3</color>

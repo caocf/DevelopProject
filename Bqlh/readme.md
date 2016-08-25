@@ -18,3 +18,4 @@
 #### 4.我的封装类
 **xhl_library**的使用
 如 `FragmentCacheManager`,`FragmentParam,ISumFragment,SumFragment,SumFragmentActivity`,`ui.recyclerView文件夹` 等类封装使用
+
