@@ -4,7 +4,7 @@
 #### 2.基本功能介绍
 
 | 界面  |  功能介绍/实现  |
-|---|
+|---| ---|
 | 引导页  | 图片 广告位设计 |
 | 首页  | 扫码 搜索 轮播 菜单模块 限时抢购 模块设计 猜你喜欢等  |
 | 分类  | Tab切换功能 扫码 搜索 |
@@ -26,3 +26,28 @@
 | 即使聊天  | 支持两个用户间实时聊天  |
 | 第三方统计  | 集成第三方统计 异常上报等  |
 | 支付  |  集成支付宝 微信支付 |
+
+## 3.代码封装
+```
+FragmentCacheManager  完成基础结构搭建，详情参考代码实现
+```
+
+```
+graph LR
+root[Activity/Fragment]
+a[FragmentCacheManager]
+f1[FragmentA]
+f2[FragmentB]
+f3[FragmentC]
+f4[FragmentD]
+root-->a
+a-->f1
+f1-->viewA
+a-->f2
+f2-->viewB
+a-->f3
+f3-->viewC
+a-->f4
+f4-->viewD
+
+```
