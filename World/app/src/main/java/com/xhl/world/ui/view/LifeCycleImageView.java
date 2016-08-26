@@ -11,7 +11,6 @@ import com.xhl.world.R;
 import com.xhl.xhl_library.network.ImageLoadManager;
 
 import org.xutils.common.Callback;
-import org.xutils.common.util.DensityUtil;
 import org.xutils.image.ImageOptions;
 import org.xutils.x;
 
@@ -25,11 +24,11 @@ public class LifeCycleImageView extends ImageView {
     private boolean mIsLoading;
     private ImageLoadListener mListener;
     private ImageOptions imageOptions = new ImageOptions.Builder()
-            .setSize(DensityUtil.dip2px(120), DensityUtil.dip2px(120))
-            .setRadius(DensityUtil.dip2px(5))
+//            .setSize(DensityUtil.dip2px(120), DensityUtil.dip2px(120))
+//            .setRadius(DensityUtil.dip2px(5))
             .setImageScaleType(ImageView.ScaleType.CENTER_CROP)
-            .setLoadingDrawableId(R.drawable.icon_net_error_show)
-            .setFailureDrawableId(R.drawable.icon_net_error_show)
+            .setLoadingDrawableId(R.drawable.icon_net_error_show3)
+            .setFailureDrawableId(R.drawable.icon_net_error_show3)
             .build();
     private int mImageLoadStartSrc = -1;
     private ImageLoadCallBack imageLoadCallBack = new ImageLoadCallBack();

@@ -11,6 +11,7 @@ import android.widget.RelativeLayout;
 
 import com.xhl.world.R;
 import com.xhl.world.api.ApiControl;
+import com.xhl.world.model.AdvHTest;
 import com.xhl.world.model.AdvListModel;
 import com.xhl.world.model.AdvModel;
 import com.xhl.world.model.Base.Response;
@@ -23,9 +24,9 @@ import com.xhl.world.ui.main.home.recyclerHolder.TopAdvDataHolder;
 import com.xhl.world.ui.main.home_new.holder.FreeDataHolder;
 import com.xhl.world.ui.main.home_new.holder.GuessDataHolder;
 import com.xhl.world.ui.main.home_new.holder.GuessTipDataHolder;
+import com.xhl.world.ui.main.home_new.holder.Lopper2DataHolder;
 import com.xhl.world.ui.main.home_new.holder.MenuDataHolder;
 import com.xhl.world.ui.main.home_new.holder.Null2DataHolder;
-import com.xhl.world.ui.main.home_new.holder.NullDataHolder;
 import com.xhl.world.ui.main.home_new.holder.ProductADataHolder;
 import com.xhl.world.ui.main.home_new.holder.ProductBDataHolder;
 import com.xhl.world.ui.main.home_new.holder.SeasonBuyDataHolder;
@@ -190,47 +191,52 @@ public class Home2Fragment extends BaseAppFragment implements Callback.CommonCal
 
         mDatas = new ArrayList<>();
         mHasAddGuessLike = false;
+
+        List<AdvHTest> adv = testInfo.getAdv();
+
         //轮播
-        mDatas.add(new TopAdvDataHolder(advs.getOne()));
+        mDatas.add(new TopAdvDataHolder(adv.get(0).getList()));
+//        mDatas.add(new LopperDataHolder(adv.get(0)));
         //菜单
         mDatas.add(new MenuDataHolder(null));
-        mDatas.add(new Null2DataHolder());
-       /* //轮播
-        mDatas.add(new SecondAdvDataHolder(advs.getTwo()));
-        addNull();*/
-        //门店体验
-        mDatas.add(new FreeDataHolder(null));
         addNull();
-        //新品上市
-        mDatas.add(new ProductADataHolder(null));
+        //轮播
+//        mDatas.add(new SecondAdvDataHolder(advs.getTwo()));
+        mDatas.add(new Lopper2DataHolder(adv.get(2)));
+        addNull();
+        //门店体验
+        mDatas.add(new FreeDataHolder(adv.get(3)));
+        addNull();
+        //汇买上新
+        mDatas.add(new ProductADataHolder(adv.get(4)));
         addNull();
         //限时购买
-        mDatas.add(new TimeBuyDataHolder(null));
+        mDatas.add(new TimeBuyDataHolder(adv.get(5)));
         addNull();
         //季节专项
-        mDatas.add(new SeasonBuyDataHolder(null));
-        addNull();
+        mDatas.add(new SeasonBuyDataHolder(adv.get(6)));
+//        addNull();
         //茶果饮料
-        mDatas.add(new ProductBDataHolder(null));
+        mDatas.add(new ProductBDataHolder(adv.get(7)));
         addNull();
         //坚果谷物
-        mDatas.add(new ProductADataHolder(null));
+        mDatas.add(new ProductADataHolder(adv.get(8)));
         addNull();
         //米面油脂
-        mDatas.add(new ProductADataHolder(null));
+        mDatas.add(new ProductADataHolder(adv.get(9)));
         addNull();
         //年份果酒
-        mDatas.add(new ProductBDataHolder(null));
+        mDatas.add(new ProductBDataHolder(adv.get(10)));
         addNull();
         //烘培烹饪
-        mDatas.add(new ProductADataHolder(null));
+        mDatas.add(new ProductADataHolder(adv.get(11)));
         addNull();
 
         mRecyclerAdapter.setDataHolders(mDatas);
     }
 
     private void addNull() {
-        mDatas.add(new NullDataHolder());
+        mDatas.add(new Null2DataHolder());
     }
 
     @Override

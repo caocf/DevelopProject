@@ -8,8 +8,7 @@
     <com.xhl.world.ui.view.LifeCycleImageView
         android:id="@+id/iv_item_search_icon"
         android:layout_width="220px"
-        android:layout_height="220px"
-        android:src="@drawable/icon_net_error_show2" />
+        android:layout_height="220px" />
 
     <TextView
         android:id="@+id/tv_item_search_title"
@@ -58,14 +57,14 @@
         android:id="@+id/tv_item_search_judge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/px_dimen_20"
         android:layout_alignBaseline="@+id/tv_item_search_country"
+        android:layout_marginLeft="@dimen/px_dimen_20"
         android:layout_marginTop="@dimen/px_dimen_15"
-        android:visibility="gone"
         android:layout_toRightOf="@+id/tv_item_search_country"
         android:text="99人评价"
         android:textColor="@color/app_grey"
-        android:textSize="24px" />
+        android:textSize="24px"
+        android:visibility="gone" />
 
 
     <View

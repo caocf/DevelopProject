@@ -5,7 +5,6 @@ import android.util.AttributeSet;
 import android.view.View;
 
 import com.xhl.world.R;
-import com.xhl.world.ui.activity.SearchActivity;
 import com.xhl.world.ui.utils.barcode.ui.CaptureActivity;
 import com.xhl.world.ui.view.pub.BaseBar;
 import com.xhl.xhl_library.ui.view.RippleView;
@@ -19,12 +18,13 @@ public class HomeTopBar extends BaseBar {
 
     @Event(value = R.id.ripple_bar_home_top_scan, type = RippleView.OnRippleCompleteListener.class)
     private void onScanClick(View view) {
-        startActivity(CaptureActivity.class);
+//        startActivity(CaptureActivity.class);
     }
 
     @Event(value = R.id.ripple_bar_home_top_search, type = RippleView.OnRippleCompleteListener.class)
     private void onSearchClick(View view) {
-        startActivity(SearchActivity.class);
+//        startActivity(SearchActivity.class);
+        startActivity(CaptureActivity.class);
     }
 
     public HomeTopBar(Context context) {
@@ -41,6 +41,6 @@ public class HomeTopBar extends BaseBar {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.bar_home_top;
+        return R.layout.bar_h_top;
     }
 }

@@ -128,7 +128,7 @@
                     android:layout_width="90px"
                     android:layout_height="90px"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/icon_home_5" />
+                    android:src="@drawable/icon_home5" />
 
                 <TextView
                     style="@style/AppTheme_home_classify_text"
@@ -151,7 +151,7 @@
                     android:layout_width="90px"
                     android:layout_height="90px"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/icon_home_6" />
+                    android:src="@drawable/icon_home6" />
 
                 <TextView
                     style="@style/AppTheme_home_classify_text"
@@ -174,7 +174,7 @@
                     android:layout_width="90px"
                     android:layout_height="90px"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/icon_home_7" />
+                    android:src="@drawable/icon_home7" />
 
                 <TextView
                     style="@style/AppTheme_home_classify_text"
@@ -198,7 +198,7 @@
                     android:layout_width="90px"
                     android:layout_height="90px"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/icon_home_8" />
+                    android:src="@drawable/icon_home8" />
 
                 <TextView
                     style="@style/AppTheme_home_classify_text"

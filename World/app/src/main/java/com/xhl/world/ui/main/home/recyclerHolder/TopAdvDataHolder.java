@@ -5,8 +5,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.xhl.world.R;
+import com.xhl.world.model.AdvHTest;
 import com.xhl.world.model.AdvModel;
 import com.xhl.world.ui.event.EventBusHelper;
+import com.xhl.world.ui.utils.ToastUtil;
 import com.xhl.xhl_library.ui.recyclerview.RecyclerDataHolder;
 import com.xhl.xhl_library.ui.recyclerview.RecyclerViewHolder;
 import com.xhl.xhl_library.ui.viewPager.ImageModel;
@@ -71,6 +74,8 @@ public class TopAdvDataHolder extends RecyclerDataHolder {
         public void onImagePageClick(ImageModel model) {
             if (model instanceof AdvModel) {
                 EventBusHelper.postAdv((AdvModel) model);
+            } else if (model instanceof AdvHTest) {
+                ToastUtil.showToastShort(R.string.fun_building);
             }
         }
     }

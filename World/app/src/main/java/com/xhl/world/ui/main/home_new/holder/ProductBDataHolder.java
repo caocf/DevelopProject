@@ -28,6 +28,7 @@ public class ProductBDataHolder extends RecyclerDataHolder {
 
     @Override
     public void onBindViewHolder(Context context, int position, RecyclerView.ViewHolder vHolder, Object data) {
-
+        ProductBBar bar = (ProductBBar) vHolder.itemView;
+        bar.onBindData(data);
     }
 }

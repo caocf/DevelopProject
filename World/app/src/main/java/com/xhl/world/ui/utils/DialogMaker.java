@@ -5,12 +5,10 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
-import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 import com.xhl.world.R;
 import com.xhl.xhl_library.ui.swipyrefresh.MaterialProgressDrawable;
@@ -58,13 +56,13 @@ public class DialogMaker {
         ImageView imageView = (ImageView) view.findViewById(R.id.loading);
         View viewParent = view.findViewById(R.id.load_content);
 
-        TextView tv = (TextView) view.findViewById(R.id.loading_hint);
+      /*  TextView tv = (TextView) view.findViewById(R.id.loading_hint);
         if (!TextUtils.isEmpty(content)) {
             tv.setText(content);
         } else {
             tv.setVisibility(View.GONE);
         }
-
+*/
         RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(-1, -1);
         view.setLayoutParams(params);
 

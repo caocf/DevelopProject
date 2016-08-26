@@ -136,8 +136,8 @@
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
-        <item name="android:paddingTop">@dimen/px_text_18</item>
-        <item name="android:paddingBottom">@dimen/px_text_18</item>
+        <item name="android:paddingTop">14px</item>
+        <item name="android:paddingBottom">14px</item>
     </style>
 
     <style name="AppTheme_home_classify_text">
@@ -204,13 +204,14 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/a_bg</item>
+        <item name="android:scaleType">fitXY</item>
     </style>
 
     <style name="home_new_bar_title">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">90px</item>
+        <item name="android:layout_height">84px</item>
         <item name="android:background">@color/app_while</item>
-        <item name="android:textSize">32px</item>
+        <item name="android:textSize">36px</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/app_home_text_title</item>
         <item name="android:textStyle">bold</item>
@@ -220,14 +221,14 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@android:color/transparent</item>
-        <item name="android:textSize">24px</item>
+        <item name="android:textSize">25px</item>
         <item name="android:textColor">@color/app_home_text_menu</item>
         <item name="android:layout_marginTop">16px</item>
     </style>
 
     <style name="home_new_menu_image">
-        <item name="android:layout_width">90px</item>
-        <item name="android:layout_height">90px</item>
+        <item name="android:layout_width">100px</item>
+        <item name="android:layout_height">100px</item>
         <item name="android:scaleType">fitCenter</item>
         <item name="android:background">@android:color/transparent</item>
     </style>

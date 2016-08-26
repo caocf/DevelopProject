@@ -28,6 +28,7 @@ public class TimeBuyDataHolder extends RecyclerDataHolder {
 
     @Override
     public void onBindViewHolder(Context context, int position, RecyclerView.ViewHolder vHolder, Object data) {
-
+        HomeTimeBuyBar bar = (HomeTimeBuyBar) vHolder.itemView;
+        bar.onBindData(data);
     }
 }

@@ -7,4 +7,8 @@ public abstract class ImageModel {
 
     public abstract String getImageUrl();
 
+    public int getImageRes() {
+        return -1;
+    }
+
 }

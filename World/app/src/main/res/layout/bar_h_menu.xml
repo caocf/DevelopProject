@@ -27,7 +27,7 @@
 
                 <ImageView
                     style="@style/home_new_menu_image"
-                    android:src="@drawable/icon_home_1" />
+                    android:src="@drawable/icon_home1" />
 
                 <TextView
                     style="@style/home_new_menu_text"
@@ -48,7 +48,7 @@
 
                 <ImageView
                     style="@style/home_new_menu_image"
-                    android:src="@drawable/icon_home_2" />
+                    android:src="@drawable/icon_home2" />
 
                 <TextView
                     style="@style/home_new_menu_text"
@@ -69,7 +69,7 @@
 
                 <ImageView
                     style="@style/home_new_menu_image"
-                    android:src="@drawable/icon_home_3" />
+                    android:src="@drawable/icon_home3" />
 
                 <TextView
                     style="@style/home_new_menu_text"
@@ -92,7 +92,7 @@
 
                 <ImageView
                     style="@style/home_new_menu_image"
-                    android:src="@drawable/icon_home_4" />
+                    android:src="@drawable/icon_home4" />
 
                 <TextView
                     style="@style/home_new_menu_text"
@@ -121,7 +121,7 @@
 
                 <ImageView
                     style="@style/home_new_menu_image"
-                    android:src="@drawable/icon_home_5" />
+                    android:src="@drawable/icon_home5" />
 
                 <TextView
                     style="@style/home_new_menu_text"
@@ -143,7 +143,7 @@
 
                 <ImageView
                     style="@style/home_new_menu_image"
-                    android:src="@drawable/icon_home_6" />
+                    android:src="@drawable/icon_home6" />
 
                 <TextView
                     style="@style/home_new_menu_text"
@@ -165,7 +165,7 @@
 
                 <ImageView
                     style="@style/home_new_menu_image"
-                    android:src="@drawable/icon_home_7" />
+                    android:src="@drawable/icon_home7" />
 
                 <TextView
                     style="@style/home_new_menu_text"
@@ -188,7 +188,7 @@
 
                 <ImageView
                     style="@style/home_new_menu_image"
-                    android:src="@drawable/icon_home_8" />
+                    android:src="@drawable/icon_home8" />
 
                 <TextView
                     style="@style/home_new_menu_text"

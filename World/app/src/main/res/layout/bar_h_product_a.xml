@@ -3,10 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/app_while"
+    android:paddingBottom="@dimen/px_dimen_20"
     android:orientation="vertical">
 
 
     <TextView
+        android:id="@+id/tv_title"
         style="@style/home_new_bar_title"
         android:text="汇买上新" />
 
@@ -14,22 +16,26 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="270px"
+        android:layout_height="260px"
         android:orientation="horizontal">
 
         <ImageView
+            android:id="@+id/iv1"
+            style="@style/home_new_image"
+            android:layout_width="0dp"
+            android:src="@drawable/ad_4_1"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/iv2"
             style="@style/home_new_image"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
 
         <ImageView
-            style="@style/home_new_image"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-        <ImageView
+            android:id="@+id/iv3"
             style="@style/home_new_image"
             android:layout_width="0dp"
             android:layout_height="match_parent"

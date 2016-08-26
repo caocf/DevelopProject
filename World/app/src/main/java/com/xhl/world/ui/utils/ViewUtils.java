@@ -20,7 +20,7 @@ public class ViewUtils {
             }
         } else {
             if (view.getVisibility() == View.VISIBLE) {
-                view.setVisibility(View.GONE);
+                view.setVisibility(View.INVISIBLE);
             }
         }
     }

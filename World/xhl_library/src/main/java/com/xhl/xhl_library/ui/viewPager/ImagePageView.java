@@ -68,7 +68,7 @@ public class ImagePageView extends AutoRelativeLayout
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();
-      //  onCreate();
+        //  onCreate();
     }
 
     private void onCreate() {
@@ -113,6 +113,7 @@ public class ImagePageView extends AutoRelativeLayout
 
         for (int i = 0; i < mDataList.size(); i++) {
             String url = mDataList.get(i).getImageUrl();
+
             ImageView imageView = new ImageView(mContext);
             imageView.setScaleType(ImageView.ScaleType.FIT_XY);
             if (!TextUtils.isEmpty(url)) {
@@ -122,12 +123,18 @@ public class ImagePageView extends AutoRelativeLayout
                 imageView.setOnClickListener(new ImageClickListener(i));
 
                 mPageViews.add(imageView);
+            } else if (mDataList.get(i).getImageRes() != -1) {
+                //绑定事件
+                imageView.setOnClickListener(new ImageClickListener(i));
+                imageView.setImageResource(mDataList.get(i).getImageRes());
+                mPageViews.add(imageView);
             }
         }
     }
 
     /**
      * 一次展示时间.
+     *
      * @param interVal
      */
     public void setInterVal(long interVal) {

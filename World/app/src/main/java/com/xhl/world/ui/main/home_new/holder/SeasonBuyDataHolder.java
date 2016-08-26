@@ -28,6 +28,7 @@ public class SeasonBuyDataHolder extends RecyclerDataHolder {
 
     @Override
     public void onBindViewHolder(Context context, int position, RecyclerView.ViewHolder vHolder, Object data) {
-
+        HomeSeasonBar bar = (HomeSeasonBar) vHolder.itemView;
+        bar.onBindData(data);
     }
 }
