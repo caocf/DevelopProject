@@ -21,8 +21,8 @@
             android:layout_width="62px"
             android:layout_height="62px"
             android:layout_centerVertical="true"
-            android:src="@drawable/icon_net_error_show"
             app:corner_radius="45dp" />
+
 
         <TextView
             android:id="@+id/tv_shop_name"

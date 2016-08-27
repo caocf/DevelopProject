@@ -14,7 +14,7 @@ public class NetWorkConfig {
     private static final String generalHost_dev = "http://58.213.106.92:8081/";
     //    private static final String generalHost_debug = "http://192.168.1.118:8081/";
 //    private static final String generalHost_debug = "http://192.168.1.101:8080/SHZC/";
-    private static final String generalHost_debug = "http://192.168.1.114:8080/SHZC/";
+    private static final String generalHost_debug = "http://test.xhlbqlh.com/";
     private static final String generalHost_local = "http://192.168.1.131:8080/SHZC/";
     private static final String generalHost_rel = "http://www.wawscm.com/";
 
@@ -38,7 +38,7 @@ public class NetWorkConfig {
                 uploadFilePath = generalHost + image_upload_path_dev;
                 imageHost = imageHost_dev;
                 break;
-            case DEBUG:
+            case TEST:
                 generalHost = generalHost_debug;
                 uploadFilePath = generalHost + image_upload_path_dev;
                 imageHost = imageHost_dev;

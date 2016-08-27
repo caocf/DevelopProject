@@ -1,17 +1,12 @@
 package com.xhl.world.ui.main.home_new.bar;
 
 import android.content.Context;
-import android.content.Intent;
 import android.support.design.widget.Snackbar;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.xhl.world.AppApplication;
 import com.xhl.world.R;
-import com.xhl.world.config.Constant;
-import com.xhl.world.config.NetWorkConfig;
 import com.xhl.world.ui.main.home.bar.BaseHomeBar;
-import com.xhl.world.ui.webUi.WebPageActivity;
 import com.xhl.xhl_library.ui.view.RippleView;
 
 import org.xutils.view.annotation.Event;
@@ -27,13 +22,15 @@ public class HomeMenuBar extends BaseHomeBar {
 
             case R.id.r1:
             case R.id.r2:
+            case R.id.r3:
+            case R.id.r4:
             case R.id.r5:
             case R.id.r6:
             case R.id.r7:
             case R.id.r8:
                 Snackbar.make(view, R.string.fun_building, Snackbar.LENGTH_SHORT).show();
                 break;
-
+/*
             case R.id.r3:
                 if (AppApplication.appContext.isLogin(getContext())) {
                     Intent intent = new Intent(mContext, WebPageActivity.class);
@@ -59,7 +56,7 @@ public class HomeMenuBar extends BaseHomeBar {
 
                 getContext().startActivity(intent);
 
-                break;
+                break;*/
         }
 
     }

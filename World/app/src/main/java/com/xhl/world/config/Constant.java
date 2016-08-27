@@ -6,12 +6,12 @@ package com.xhl.world.config;
 
 public class Constant {
     public enum Config {
-        LOCAL,DEBUG, DEV, RELEASE
+        LOCAL, TEST, DEV, RELEASE
     }
 
     public static final boolean isDebug = true;
 
-    public static final Config API = Config.DEV;//服务器配置数据
+    public static final Config API = Config.TEST;//服务器配置数据
 
     //关于空港
     public static final String URL_about = "http://www.wawscm.com/mobileWeb/appPage/about.html";
