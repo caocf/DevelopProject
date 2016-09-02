@@ -7,7 +7,11 @@
 
     <TextView
         android:id="@+id/bar_classify_title"
-        android:layout_marginTop="@dimen/px_dimen_35"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:layout_marginLeft="0dp"
+        android:gravity="center_vertical"
+        android:background="@color/app_light_grey"
         style="@style/AppTheme_classify_details_title_text" />
 
     <android.support.v7.widget.RecyclerView
@@ -15,9 +19,7 @@
         style="@style/style_base_recycle_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/px_dimen_15"
-        android:layout_marginRight="@dimen/px_dimen_15"
-        android:layout_marginBottom="5px"
+        android:layout_marginBottom="@dimen/px_dimen_20"
         android:overScrollMode="never" />
 
 </LinearLayout>

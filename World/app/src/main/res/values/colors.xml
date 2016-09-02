@@ -9,11 +9,9 @@
     <color name="yellow">#ffffff00</color>
     <color name="red">#ffff0033</color>
 
-    <!--<color name="colorPrimary">#03a9f4</color>-->
     <color name="colorPrimary">#f2ffda</color>
-    <!--<color name="colorPrimaryDark">#0288d1</color>-->
     <color name="colorPrimaryDark">#636363</color>
-    <color name="colorAccent">@color/app_green</color>
+    <color name="colorAccent">#00c641</color>
 
     <color name="colorBarBg">#636363</color>
     <!--a6dd28-->
@@ -63,6 +61,6 @@
     <!--app默认主题颜色-->
     <color name="default_theme_color">@color/colorPrimary</color>
     <color name="default_theme_accent_color">@color/colorAccent</color>
-    <color name="default_theme_ripple_color">#f2ffda</color>
+    <color name="default_theme_ripple_color">#00c641</color>
 
 </resources>

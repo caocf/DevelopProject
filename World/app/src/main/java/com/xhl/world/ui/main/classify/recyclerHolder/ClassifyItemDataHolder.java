@@ -21,9 +21,6 @@ import com.zhy.autolayout.utils.AutoUtils;
 public class ClassifyItemDataHolder extends RecyclerDataHolder {
 
     private RecycleViewCallBack mCallBack;
-    private int mBaseColor;
-    private int mGreenColor;
-    private int mBgSelect,mBgNor;
 
     public ClassifyItemDataHolder(ClassifyItemModel data) {
         super(data);
@@ -42,10 +39,7 @@ public class ClassifyItemDataHolder extends RecyclerDataHolder {
         RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(-1, -2);
 
         view.setLayoutParams(params);
-        mGreenColor = ContextCompat.getColor(context, R.color.app_green);
-        mBaseColor = ContextCompat.getColor(context, R.color.base_light_text_color);
-        mBgSelect = ContextCompat.getColor(context, R.color.app_while);
-        mBgNor = ContextCompat.getColor(context, R.color.app_light_grey);
+
 
         AutoUtils.autoSize(view);
 
@@ -59,14 +53,13 @@ public class ClassifyItemDataHolder extends RecyclerDataHolder {
         ClassifyItemModel mode = (ClassifyItemModel) data;
         //分类名称
         holder.tv_classify_item_name.setText(mode.getCategoryName());
-
         if (getHolderState() == HOLDER_SELECT) {
-            holder.tv_classify_item_name.setTextColor(mGreenColor);
-            holder.rl_content.setBackgroundColor(mBgSelect);
+            holder.tv_classify_item_name.setTextColor(ContextCompat.getColor(context, R.color.app_while));
+            holder.rl_content.setBackgroundColor( ContextCompat.getColor(context, R.color.colorAccent));
             ViewUtils.changeViewVisible(holder.line_hor,false);
         } else {
-            holder.rl_content.setBackgroundColor(mBgNor);
-            holder.tv_classify_item_name.setTextColor(mBaseColor);
+            holder.rl_content.setBackgroundColor(ContextCompat.getColor(context, R.color.app_while));
+            holder.tv_classify_item_name.setTextColor(ContextCompat.getColor(context, R.color.base_dark_text_color));
             ViewUtils.changeViewVisible(holder.line_hor,true);
         }
     }

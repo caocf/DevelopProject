@@ -44,7 +44,7 @@
     </com.xhl.xhl_library.ui.view.RippleView>
 
 
-    <!--<View style="@style/AppTheme_my_item_line" />-->
+    <View style="@style/AppTheme_my_item_line" />
 
     <com.xhl.xhl_library.ui.view.RippleView
         android:id="@+id/ripple_my_feedback"

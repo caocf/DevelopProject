@@ -42,12 +42,14 @@ android {
         abortOnError false
     }
     productFlavors {
-        xhl {
-        }
-        _360助手 {
-        }
-        应用宝 {
-        }
+        xhl {}
+        _360 {}
+        baidu {}
+        anzhi {}
+        wandoujia {}
+        yingyongbao {}
+        huawei {}
+        xiaomi {}
     }
     productFlavors.all { flavor ->
         flavor.manifestPlaceholders = [LEAN_CLOUD_CHANNEL: name]

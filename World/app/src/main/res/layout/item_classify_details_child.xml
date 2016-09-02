@@ -11,7 +11,7 @@
         android:layout_width="100px"
         android:layout_height="100px"
         android:scaleType="centerCrop"
-        android:src="@drawable/icon_net_error_show4" />
+        android:src="@drawable/icon_net_error_show3" />
 
     <TextView
         android:id="@+id/tv_classify_item_child_name"
@@ -20,6 +20,7 @@
         android:text="@string/app_name"
         android:layout_marginTop="6px"
         android:lines="1"
+        android:visibility="gone"
         android:ellipsize="none"
         android:textColor="@color/base_light_text_color"
         android:textSize="@dimen/px_text_18" />
