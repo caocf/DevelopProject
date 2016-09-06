@@ -15,7 +15,11 @@
 **Android适配问题，针对主流使用，完全废弃低端机适配，变革**
 **Google Fuchsia新系统的发展 Dart开发语言**
 
-#### 4.我的封装类
+#### 4.封装类
 **xhl_library**的使用
 如 `FragmentCacheManager`,`FragmentParam,ISumFragment,SumFragment,SumFragmentActivity`,`ui.recyclerView文件夹` 等类封装使用
+
+
+#### 5.WebView单进程优化使用,避免内存泄漏，JS通信,跨进程通信
+
 
