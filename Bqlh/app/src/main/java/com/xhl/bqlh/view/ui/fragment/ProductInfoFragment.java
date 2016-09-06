@@ -52,6 +52,9 @@ public class ProductInfoFragment extends BaseAppFragment {
     @ViewInject(R.id.tv_price_business)//商品价格
     private TextView tv_price_business;
 
+    @ViewInject(R.id.tv_product_type)
+    private TextView tv_product_type;
+
     @ViewInject(R.id.tv_min_num)//商品起定量
     private TextView tv_min_num;
 
@@ -164,6 +167,9 @@ public class ProductInfoFragment extends BaseAppFragment {
         //零售价
         tv_price_or.setText(getString(R.string.price, mProduct.getOriginalPrice()));
         //批发价
+        if (!TextUtils.isEmpty(mProduct.getMemberPrice())) {
+            tv_product_type.setText("会员价");
+        }
         tv_price_business.setText(getString(R.string.price, mProduct.getBussinessPrice()));
         //最小起定量
         tv_min_num.setText(getString(R.string.product_min_mun_text, mProduct.getOrderMinNum()));

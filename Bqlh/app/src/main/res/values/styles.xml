@@ -21,6 +21,8 @@
         <!--背景颜色null减少一次绘制-->
         <item name="android:windowBackground">@null</item>
 
+        <item name="android:windowIsTranslucent">true</item>
+
     </style>
 
     <style name="base_content">
@@ -214,10 +216,12 @@
         <item name="android:layout_width">170px</item>
         <item name="android:layout_height">170px</item>
         <item name="android:layout_centerVertical">true</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:background">@drawable/code_image_border</item>
         <item name="android:src">@drawable/icon_net_error_show</item>
-        <item name="border_width">1dp</item>
-        <item name="border_color">@color/app_light_grey</item>
-        <item name="corner_radius">@dimen/card_corners_radius</item>
+        <!--<item name="border_width">1dp</item>-->
+        <!--<item name="border_color">@color/app_light_grey</item>-->
+        <!--<item name="corner_radius">@dimen/card_corners_radius</item>-->
     </style>
 
     <style name="style_pro_add">

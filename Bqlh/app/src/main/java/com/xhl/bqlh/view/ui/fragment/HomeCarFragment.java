@@ -150,7 +150,9 @@ public class HomeCarFragment extends BaseAppFragment {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        mHelper.onDestroy();
+        if (mHelper != null) {
+            mHelper.onDestroy();
+        }
     }
 
     @Override
@@ -234,9 +236,11 @@ public class HomeCarFragment extends BaseAppFragment {
         if (event.getEventTag() == CommonEvent.ET_RELOAD_CAR) {
             mHelper.reLoadCar();
         } else if (event.getEventTag() == CommonEvent.ET_RELOGIN) {
-            mAdapter.setDataHolders(null);
+            if (mAdapter != null) {
+                mAdapter.setDataHolders(null);
+            }
             ViewHelper.setViewGone(rl_null_show, false);
-        }else if (event.getEventTag() == CommonEvent.ET_RELOAD_CAR_MONEY) {//重新计算总额
+        } else if (event.getEventTag() == CommonEvent.ET_RELOAD_CAR_MONEY) {//重新计算总额
             mHelper.countMoney();
         } else if (event.getEventTag() == CommonEvent.ET_RELOAD_USER_INFO) {
             mHelper.onRefreshLoadData();

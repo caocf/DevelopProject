@@ -74,4 +74,8 @@ public class AdInfoModel extends ImageModel  implements Serializable{
 
         EventHelper.postDefaultEvent(event);
     }
+
+    public String getBussinessPrice() {
+        return bussinessPrice;
+    }
 }

@@ -40,44 +40,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/app_while"
-            android:checkedButton="@+id/rb_pay_1"
+            android:checkedButton="@+id/rb_pay_2"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:id="@+id/rb_1"
-                style="@style/base_bg_ripple_rectangle_translate"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:paddingLeft="@dimen/px_dimen_28"
-                android:paddingRight="@dimen/px_dimen_28">
-
-                <ImageView
-                    android:layout_width="@dimen/px_dimen_40"
-                    android:layout_height="@dimen/px_dimen_40"
-                    android:layout_marginLeft="@dimen/px_dimen_16"
-                    android:src="@drawable/icon_pay1" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="@dimen/px_dimen_72"
-                    android:layout_marginLeft="@dimen/px_dimen_10"
-                    android:layout_weight="1"
-                    android:gravity="center_vertical"
-                    android:text="@string/pay_1"
-                    android:textColor="@color/text_dark_color"
-                    android:textSize="@dimen/px_dimen_24" />
-
-                <RadioButton
-                    android:id="@+id/rb_pay_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checked="true"
-                    android:clickable="false"
-                    android:duplicateParentState="true" />
-
-            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/rb_2"
@@ -107,6 +72,41 @@
 
                 <RadioButton
                     android:id="@+id/rb_pay_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:duplicateParentState="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rb_1"
+                style="@style/base_bg_ripple_rectangle_translate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/px_dimen_28"
+                android:paddingRight="@dimen/px_dimen_28">
+
+                <ImageView
+                    android:layout_width="@dimen/px_dimen_40"
+                    android:layout_height="@dimen/px_dimen_40"
+                    android:layout_marginLeft="@dimen/px_dimen_16"
+                    android:src="@drawable/icon_pay1" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/px_dimen_72"
+                    android:layout_marginLeft="@dimen/px_dimen_10"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/pay_1"
+                    android:textColor="@color/text_dark_color"
+                    android:textSize="@dimen/px_dimen_24" />
+
+                <RadioButton
+                    android:id="@+id/rb_pay_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:clickable="false"

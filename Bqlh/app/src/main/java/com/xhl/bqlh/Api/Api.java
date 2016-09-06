@@ -226,7 +226,7 @@ public interface Api {
     /**
      * 订单状态修改
      */
-    Callback.Cancelable orderUpdateType(int type, String storeOrderCode, Callback.CommonCallback<ResponseModel<Object>> callback);
+    Callback.Cancelable orderUpdateType(int type,String payMoney, String storeOrderCode, Callback.CommonCallback<ResponseModel<Object>> callback);
 
     String orderUpdateType = "appOrder/updateOrder";
 

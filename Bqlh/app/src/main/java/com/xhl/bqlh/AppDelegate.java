@@ -1,7 +1,7 @@
 package com.xhl.bqlh;
 
+import android.app.ActivityManager;
 import android.content.Context;
-import android.content.res.Configuration;
 import android.text.TextUtils;
 import android.webkit.URLUtil;
 
@@ -18,6 +18,7 @@ import com.xhl.bqlh.view.helper.FragmentContainerHelper;
 import com.xhl.xhl_library.Base.BaseApplication;
 import com.zhy.autolayout.config.AutoLayoutConifg;
 
+import java.util.List;
 import java.util.Properties;
 
 /**
@@ -25,6 +26,8 @@ import java.util.Properties;
  */
 public class AppDelegate extends BaseApplication {
 
+    private static final String pack = "com.xhl.bqlh";
+    private static int PID = -1;
     public static AppDelegate appContext;
     public RefWatcher watcher;
     private boolean mIsLogin = false;
@@ -35,6 +38,10 @@ public class AppDelegate extends BaseApplication {
     @Override
     public void onCreate() {
         super.onCreate();
+        if (PID != -1) {
+            return;
+        }
+        isProcessRunning(pack);
         AutoLayoutConifg.getInstance().useDeviceSize().init(this);
 
         appContext = this;
@@ -55,12 +62,29 @@ public class AppDelegate extends BaseApplication {
 
     //设置不同区域id
     public void setArea(String areaId) {
-        mArea = "cityId=" + areaId;
+        if (TextUtils.isEmpty(areaId)) {
+            mArea = null;
+        } else {
+            mArea = "cityId=" + areaId;
+        }
     }
 
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
+    public boolean isProcessRunning(String packName) {
+        boolean isRunning = false;
+        ActivityManager activityManager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+        List<ActivityManager.RunningAppProcessInfo> serviceList = activityManager.getRunningAppProcesses();
+        if (serviceList == null || serviceList.size() == 0) {
+            return false;
+        }
+        for (int i = 0; i < serviceList.size(); i++) {
+            ActivityManager.RunningAppProcessInfo processInfo = serviceList.get(i);
+            if (processInfo.processName.equals(packName)) {
+                isRunning = true;
+                PID = processInfo.pid;
+                break;
+            }
+        }
+        return isRunning;
     }
 
     public boolean isLogin(Context context) {

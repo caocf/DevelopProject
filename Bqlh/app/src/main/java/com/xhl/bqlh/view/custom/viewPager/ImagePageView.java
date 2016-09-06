@@ -1,7 +1,6 @@
 package com.xhl.bqlh.view.custom.viewPager;
 
 import android.content.Context;
-import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.text.TextUtils;
 import android.util.AttributeSet;
@@ -9,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.Scroller;
 
 import com.xhl.bqlh.R;
 import com.xhl.bqlh.view.custom.viewPager.autoScrollViewPager.AutoScrollViewPager;
@@ -19,7 +17,6 @@ import com.zhy.autolayout.AutoLinearLayout;
 import com.zhy.autolayout.AutoRelativeLayout;
 import com.zhy.autolayout.utils.AutoUtils;
 
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -87,8 +84,7 @@ public class ImagePageView extends AutoRelativeLayout
     }
 
     private void initView() {
-        LayoutInflater inflater = (LayoutInflater) mContext
-                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.pub_auto_view_pager, this, true);
 
         mViewPager = (AutoScrollViewPager) findViewById(R.id.image_auto_scroll);
@@ -120,55 +116,25 @@ public class ImagePageView extends AutoRelativeLayout
                 mPageViews.add(imageView);
             }
         }
+
+        mViewPager.setInterval(mInterVal == -1 ? 3000L : mInterVal);
+        mViewPager.setStopScrollWhenTouch(true);
     }
 
     public void setListener(ImagePageViewListener listener) {
         mListener = listener;
     }
 
-    /**
-     * 一次展示时间.
-     */
-    public void setInterVal(long interVal) {
-        mInterVal = interVal;
-        mViewPager.setInterval(interVal);
-    }
-
     public void startScroll() {
-        // set viewpage height
-        mViewPager.setInterval(mInterVal == -1 ? 3000L : mInterVal);
-        mViewPager.setStopScrollWhenTouch(true);
-        mViewPager.setCycle(true);
-        //延迟滚动
-        setViewPagerScrollDuration(mViewPager, 800);
+        mViewPager.startAutoScroll(1000);
     }
 
-    public static void setViewPagerScrollDuration(ViewPager paramViewPager,
-                                                  final int paramInt) {
-        try {
-            Field localField = ViewPager.class.getDeclaredField("mScroller");
-            localField.setAccessible(true);
-            localField.set(paramViewPager,
-                    new Scroller(paramViewPager.getContext()) {
-                        public void startScroll(int paramAnonymousInt1,
-                                                int paramAnonymousInt2, int paramAnonymousInt3,
-                                                int paramAnonymousInt4) {
-                            super.startScroll(paramAnonymousInt1,
-                                    paramAnonymousInt2, paramAnonymousInt3,
-                                    paramAnonymousInt4, paramInt);
-                        }
+    public void stopScroll(){
+        mViewPager.stopAutoScroll();
+    }
 
-                        public void startScroll(int paramAnonymousInt1,
-                                                int paramAnonymousInt2, int paramAnonymousInt3,
-                                                int paramAnonymousInt4, int paramAnonymousInt5) {
-                            super.startScroll(paramAnonymousInt1,
-                                    paramAnonymousInt2, paramAnonymousInt3,
-                                    paramAnonymousInt4, paramInt);
-                        }
-                    });
-            return;
-        } catch (Throwable localThrowable) {
-        }
+    public void destory(){
+        mViewPager.onDestory();
     }
 
     public class ImageClickListener implements OnClickListener {
@@ -192,6 +158,7 @@ public class ImagePageView extends AutoRelativeLayout
         }
 
         mPointViews.clear();
+
         mCursorLayout.removeAllViews();
 
         ImageView imageView;
@@ -208,9 +175,7 @@ public class ImagePageView extends AutoRelativeLayout
 
             mCursorLayout.addView(imageView);
             if (i == 0) {
-                imageView
-                        .setBackgroundResource(
-                                R.drawable.bg_blue_point);
+                imageView.setBackgroundResource( R.drawable.bg_blue_point);
             }
             mPointViews.add(imageView);
         }

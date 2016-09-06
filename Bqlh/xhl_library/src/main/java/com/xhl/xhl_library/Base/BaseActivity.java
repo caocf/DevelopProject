@@ -3,8 +3,6 @@ package com.xhl.xhl_library.Base;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.xhl.xhl_library.utils.AppManager;
-
 import org.xutils.x;
 
 /**
@@ -25,12 +23,12 @@ public abstract class BaseActivity extends AppCompatActivity {
             x.view().inject(this);
             initParams();
         }
-        AppManager.getAppManager().addActivity(this);
+//        AppManager.getAppManager().addActivity(this);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        AppManager.getAppManager().finishActivity(this);
+//        AppManager.getAppManager().finishActivity(this);
     }
 }

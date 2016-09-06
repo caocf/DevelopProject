@@ -6,7 +6,7 @@
     android:background="@color/app_while"
     android:orientation="vertical">
 
-    <com.xhl.bqlh.view.custom.RoundedImageView
+    <ImageView
         android:id="@+id/iv_product_image"
         style="@style/base_product_image"
         android:layout_marginStart="@dimen/px_dimen_20"

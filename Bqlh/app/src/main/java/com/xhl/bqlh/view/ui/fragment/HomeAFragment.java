@@ -58,12 +58,14 @@ public class HomeAFragment extends BaseAppFragment {
 
     @Event(R.id.iv_scroll_top)
     private void scrollTopClick(View v) {
-        if (mLayoutManager.findLastVisibleItemPosition() > 7) {
+      /*  if (mLayoutManager.findLastVisibleItemPosition() > 7) {
             mLayoutManager.scrollToPosition(2);
             mLayoutManager.smoothScrollToPosition(recycler_view, null, 0);
         } else {
             mLayoutManager.smoothScrollToPosition(recycler_view, null, 0);
-        }
+        }*/
+
+        mLayoutManager.scrollToPositionWithOffset(0, 1);
     }
 
     @Event(R.id.fl_scan)//扫码
@@ -89,6 +91,8 @@ public class HomeAFragment extends BaseAppFragment {
     private RecyclerAdapter mRecyclerAdapter;
     private LinearLayoutManager mLayoutManager;
 
+    private HomeLooperAdDataHolder mLopper;
+
     private boolean mIsLoading = false;
 
     @Override
@@ -104,7 +108,6 @@ public class HomeAFragment extends BaseAppFragment {
         PageScrollListener listener = new PageScrollListener(mLayoutManager);
         listener.setTopView(iv_scroll_top);
         recycler_view.addOnScrollListener(listener);
-        loadArea();
 
         swipe_refresh_layout.postDelayed(new Runnable() {
             @Override
@@ -113,11 +116,11 @@ public class HomeAFragment extends BaseAppFragment {
                 onRefreshLoadData();
             }
         }, 300);
+
+        loadArea(getAppApplication().isLogin());
     }
 
-    private void loadArea() {
-
-        boolean login = AppDelegate.appContext.isLogin();
+    private void loadArea(boolean login) {
         if (login) {
             tv_bar_location.setVisibility(View.GONE);
             getAppApplication().setArea(AppDelegate.appContext.getUserInfo().areaId);
@@ -130,6 +133,7 @@ public class HomeAFragment extends BaseAppFragment {
             if (TextUtils.isEmpty(areaName)) {
                 areaName = "淮北市";
             }
+            tv_bar_location.setVisibility(View.VISIBLE);
             tv_bar_location.setText(areaName);
         }
     }
@@ -169,10 +173,10 @@ public class HomeAFragment extends BaseAppFragment {
     public void loadAd(HashMap<String, AdModel> ads) {
 
         List<RecyclerDataHolder> holders = new ArrayList<>();
-
         //轮播位置
         AdModel adPositionId201001001 = ads.get("adPositionId201001001");
-        holders.add(new HomeLooperAdDataHolder(adPositionId201001001));
+        mLopper = new HomeLooperAdDataHolder(adPositionId201001001);
+        holders.add(mLopper);
 
         //菜单
         holders.add(new HomeMenuDataHolder(null));
@@ -291,11 +295,35 @@ public class HomeAFragment extends BaseAppFragment {
     }
 
     @Override
+    public void onResume() {
+        super.onResume();
+        if (mLopper != null) {
+            mLopper.startScroll();
+        }
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        if (mLopper != null) {
+            mLopper.stopScroll();
+        }
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (mLopper != null) {
+            mLopper.onDestroy();
+        }
+    }
+
+    @Override
     public void onEvent(CommonEvent event) {
         super.onEvent(event);
         if (event.getEventTag() == CommonEvent.ET_RELOAD_ADS ||
                 event.getEventTag() == CommonEvent.ET_RELOAD_USER_INFO) {
-            loadArea();
+            loadArea(AppDelegate.appContext.isLogin());
             swipe_refresh_layout.postDelayed(new Runnable() {
                 @Override
                 public void run() {
@@ -304,7 +332,6 @@ public class HomeAFragment extends BaseAppFragment {
                 }
             }, 300);
         } else if (event.getEventTag() == CommonEvent.ET_RELOGIN) {
-            loadArea();
         }
     }
 }

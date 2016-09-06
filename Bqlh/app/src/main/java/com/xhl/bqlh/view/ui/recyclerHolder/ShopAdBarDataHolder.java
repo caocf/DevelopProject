@@ -26,7 +26,7 @@ public class ShopAdBarDataHolder extends RecyclerDataHolder {
     public RecyclerView.ViewHolder onCreateViewHolder(Context context, ViewGroup parent, int position) {
 
         ShopAdBar bar = new ShopAdBar(context);
-        ViewGroup.MarginLayoutParams layoutParams = new ViewGroup.MarginLayoutParams(-1, 340);
+        ViewGroup.MarginLayoutParams layoutParams = new ViewGroup.MarginLayoutParams(-1, 300);
         layoutParams.topMargin = 20;
         layoutParams.bottomMargin = 20;
         bar.setLayoutParams(layoutParams);

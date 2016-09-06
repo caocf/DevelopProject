@@ -8,8 +8,10 @@ import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.xhl.bqlh.AppConfig.GlobalParams;
 import com.xhl.bqlh.R;
 import com.xhl.bqlh.model.ClassifyModel;
 import com.xhl.bqlh.view.base.BaseBar;
@@ -79,7 +81,7 @@ public class ClassifyItemBar extends BaseBar {
         List<RecyclerDataHolder> holders = new ArrayList<>();
         for (int i = 0; i < children.size(); i++) {
             ClassifyModel model = children.get(i);
-
+            model.shopId = classify.shopId;
             holders.add(new ItemProductDataHolder(model, i));
         }
         mRecyclerAdapter.setDataHolders(holders);
@@ -121,13 +123,13 @@ public class ClassifyItemBar extends BaseBar {
 
         static class IProductView extends RecyclerViewHolder implements OnClickListener {
 
-            private LifeCycleImageView image;
+            private ImageView image;
             private TextView name;
             ClassifyModel mC;
 
             public IProductView(View view) {
                 super(view);
-                image = (LifeCycleImageView) view.findViewById(R.id.iv_image);
+                image = (ImageView) view.findViewById(R.id.iv_image);
                 view.setOnClickListener(this);
                 image.setOnClickListener(this);
                 name = (TextView) view.findViewById(R.id.tv_name);
@@ -135,7 +137,8 @@ public class ClassifyItemBar extends BaseBar {
 
             public void onBindData(ClassifyModel data) {
                 mC = data;
-                image.bindImageUrl(data.getImgUrl());
+//                image.bindImageUrl(data.getImgUrl());
+                LifeCycleImageView.LoadImageView(image, data.getImgUrl());
                 if (!TextUtils.isEmpty(data.getCategoryAppName())) {
                     name.setText(data.getCategoryAppName());
                 }
@@ -147,6 +150,7 @@ public class ClassifyItemBar extends BaseBar {
                     Intent intent = new Intent(mContext, SearchProductResActivity.class);
                     intent.putExtra(SearchProductResActivity.SEARCH_TYPE, SearchProductResActivity.SEARCH_TYPE_CATEGORY);
                     intent.putExtra(SearchProductResActivity.SEARCH_PARAMS, mC.getId());
+                    intent.putExtra(GlobalParams.Intent_shop_id, mC.shopId);
                     mContext.startActivity(intent);
                 }
             }

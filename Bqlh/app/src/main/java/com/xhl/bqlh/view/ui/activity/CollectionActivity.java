@@ -6,12 +6,14 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
+import android.view.View;
 
 import com.xhl.bqlh.R;
 import com.xhl.bqlh.view.base.BaseAppActivity;
 import com.xhl.bqlh.view.ui.fragment.CollectionFragment;
 
 import org.xutils.view.annotation.ContentView;
+import org.xutils.view.annotation.Event;
 import org.xutils.view.annotation.ViewInject;
 
 import java.util.ArrayList;
@@ -33,11 +35,15 @@ public class CollectionActivity extends BaseAppActivity {
     @ViewInject(R.id.view_pager)
     private ViewPager view_pager;
 
+    @Event(R.id.fl_back)
+    private void onBackClick(View view) {
+        finish();
+    }
+
     private List<Fragment> mFragments;
 
     @Override
     protected void initParams() {
-
         int colorNor = ContextCompat.getColor(this, R.color.main_check_color_nor);
         int colorSelect = ContextCompat.getColor(this, R.color.main_check_color_select);
 

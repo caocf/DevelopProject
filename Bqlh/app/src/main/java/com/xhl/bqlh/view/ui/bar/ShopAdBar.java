@@ -1,9 +1,8 @@
 package com.xhl.bqlh.view.ui.bar;
 
 import android.content.Context;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
+import android.widget.ImageView;
 
 import com.xhl.bqlh.Api.ApiControl;
 import com.xhl.bqlh.R;
@@ -12,16 +11,15 @@ import com.xhl.bqlh.model.AdInfoModel;
 import com.xhl.bqlh.model.base.ResponseModel;
 import com.xhl.bqlh.view.base.BaseBar;
 import com.xhl.bqlh.view.base.Common.DefaultCallback;
-import com.xhl.bqlh.view.ui.adapter.FragmentViewPagerAdapter;
-import com.xhl.bqlh.view.ui.fragment.ShopAdImageFragment;
 
-import java.util.ArrayList;
+import org.xutils.x;
+
 import java.util.List;
 
 /**
  * Created by Sum on 16/7/11.
  */
-public class ShopAdBar extends BaseBar{
+public class ShopAdBar extends BaseBar {
 
     public ShopAdBar(Context context) {
         super(context);
@@ -33,11 +31,13 @@ public class ShopAdBar extends BaseBar{
     }
 
     private ViewPager pageView;
+    private ImageView image;
     private boolean mLoadSuccess = false;
 
     @Override
     protected void initParams() {
-        pageView = _findViewById(R.id.ad_image);
+//        pageView = _findViewById(R.id.ad_image);
+        image = _findViewById(R.id.image);
     }
 
     public void onBindData(String shopId) {
@@ -74,19 +74,14 @@ public class ShopAdBar extends BaseBar{
         setLayoutParams(layoutParams);
     }
 
-
     private void loadData(List<AdInfoModel> data) {
 
         try {
-            List<Fragment> images = new ArrayList<>();
+            String url = null;
             for (AdInfoModel ads : data) {
-                images.add(ShopAdImageFragment.instance(ads));
+                url = ads.getImageUrl();
             }
-            Context context = getContext();
-            FragmentActivity activity = (FragmentActivity) context;
-            FragmentViewPagerAdapter adapter = new FragmentViewPagerAdapter(activity.getSupportFragmentManager());
-            adapter.setFragments(images);
-            pageView.setAdapter(adapter);
+            x.image().bind(image, url);
         } catch (Exception e) {
             e.printStackTrace();
         }

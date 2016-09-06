@@ -3,6 +3,7 @@ package com.xhl.bqlh.model;
 import android.text.TextUtils;
 
 import com.xhl.bqlh.AppConfig.NetWorkConfig;
+import com.xhl.bqlh.R;
 
 import java.io.Serializable;
 import java.util.List;
@@ -32,6 +33,10 @@ public class ProductModel implements Serializable {
     private String sku;
     private String productDesc;
     private List<ProductAttachModel> attachmentList;
+
+    public String getMemberPrice() {
+        return memberPrice;
+    }
 
     public String getId() {
         return id;
@@ -64,12 +69,22 @@ public class ProductModel implements Serializable {
     public String getPromiseTime() {
         return promiseTime;
     }
+
     //登录后优先显示会员价
     public String getBussinessPrice() {
         if (!TextUtils.isEmpty(memberPrice)) {
             return memberPrice;
         }
         return bussinessPrice;
+    }
+
+    public int priceId() {
+        if (!TextUtils.isEmpty(memberPrice)) {
+            return R.string.price_m;
+        } else if (!TextUtils.isEmpty(bussinessPrice)) {
+            return R.string.price_b;
+        }
+        return R.string.price_s;
     }
 
     public int getOrderMinNum() {

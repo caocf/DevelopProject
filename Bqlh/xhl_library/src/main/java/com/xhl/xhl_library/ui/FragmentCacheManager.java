@@ -98,7 +98,6 @@ public class FragmentCacheManager {
      * @param index
      */
     public void setCurrentFragment(Object index) {
-
         if (index == mCurrentFragmentIndex) {
             return;
         }

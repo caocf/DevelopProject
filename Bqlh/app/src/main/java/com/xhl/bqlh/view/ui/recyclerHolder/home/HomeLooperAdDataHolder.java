@@ -13,15 +13,13 @@ import com.xhl.xhl_library.ui.recyclerview.RecyclerDataHolder;
 import com.xhl.xhl_library.ui.recyclerview.RecyclerViewHolder;
 import com.zhy.autolayout.utils.AutoUtils;
 
-import org.xutils.x;
-
-import java.util.List;
-
 
 /**
  * 顶部轮播
  */
 public class HomeLooperAdDataHolder extends RecyclerDataHolder<AdModel> {
+
+    ImagePageView mPageView;
 
     public HomeLooperAdDataHolder(AdModel data) {
         super(data);
@@ -33,6 +31,7 @@ public class HomeLooperAdDataHolder extends RecyclerDataHolder<AdModel> {
         ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(-1, 300);
         pageView.setLayoutParams(params);
         AutoUtils.auto(pageView);
+        mPageView = pageView;
         return new TopAdvViewHolder(pageView);
     }
 
@@ -46,6 +45,24 @@ public class HomeLooperAdDataHolder extends RecyclerDataHolder<AdModel> {
     public void onBindViewHolder(Context context, int position, RecyclerView.ViewHolder vHolder, AdModel data) {
         TopAdvViewHolder holder = (TopAdvViewHolder) vHolder;
         holder.setData(data);
+    }
+
+    public void startScroll() {
+        if (mPageView != null) {
+            mPageView.startScroll();
+        }
+    }
+
+    public void stopScroll() {
+        if (mPageView != null) {
+            mPageView.stopScroll();
+        }
+    }
+
+    public void onDestroy() {
+        if (mPageView != null) {
+            mPageView.destory();
+        }
     }
 
     static class TopAdvViewHolder extends RecyclerViewHolder implements ImagePageView.ImagePageViewListener {
@@ -64,18 +81,9 @@ public class HomeLooperAdDataHolder extends RecyclerDataHolder<AdModel> {
                 return;
             }
             pageView.setListener(this);
-
-            x.task().postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    adModel = data;
-                    List<AdInfoModel> advertList = data.getAdvertList();
-                    pageView.setDataSource(advertList);
-                    pageView.setInterVal(3000);
-                    pageView.startScroll();
-                }
-            }, 100);
-
+            adModel = data;
+            pageView.setDataSource(data.getAdvertList());
+            pageView.startScroll();
         }
 
         @Override

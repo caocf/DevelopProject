@@ -7,6 +7,7 @@
     <string name="price_c">%s元</string>
     <string name="price_s">建议零售价:￥%s</string>
     <string name="price_b">批发价:￥%s</string>
+    <string name="price_m">会员价:￥%s</string>
     <string name="product_stock">库存:%s</string>
     <string name="product_min_mun">最小起订量:%s</string>
     <string name="product_min_mun_text">≥ %s</string>

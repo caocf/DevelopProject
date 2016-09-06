@@ -9,6 +9,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.xhl.bqlh.Api.ApiControl;
@@ -57,7 +58,7 @@ public class CarItemProductBar extends BaseBar implements Callback.CommonCallbac
     private TextView tv_goods_old_price;
 
     @ViewInject(R.id.iv_child_goods_icon)
-    private LifeCycleImageView iv_goods_icon;
+    private ImageView iv_goods_icon;
 
     @ViewInject(R.id.rb_child_check_all)
     private CheckBox rb_check_child;
@@ -131,7 +132,8 @@ public class CarItemProductBar extends BaseBar implements Callback.CommonCallbac
         rb_check_child.setChecked(data.isChecked);
         tv_goods_count.setText(String.valueOf(data.mCurNum));
         tv_goods_title.setText(product.getProductName());
-        iv_goods_icon.LoadDrawable(product.getProductPic());
+//        iv_goods_icon.LoadDrawable(product.getProductPic());
+        LifeCycleImageView.LoadImageView(iv_goods_icon, product.getProductPic());
         tv_goods_old_price.setText(getResources().getString(R.string.price, product.getOriginalPrice()));
         tv_goods_price.setText(getResources().getString(R.string.price, data.getProductPrice()));
         if (!TextUtils.isEmpty(data.getPromoteRemark())) {

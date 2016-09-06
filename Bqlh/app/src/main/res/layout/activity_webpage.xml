@@ -4,10 +4,22 @@
 
     <include layout="@layout/pub_title_bar_back" />
 
-    <com.xhl.bqlh.view.ui.activity.web.ProgressWebView
-        android:id="@+id/web_view"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbarStyle="outsideOverlay" />
+        android:layout_height="match_parent">
 
+        <FrameLayout
+            android:id="@+id/fl_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:max="100"
+            android:progressDrawable="@drawable/code_progressbar_bg" />
+
+    </FrameLayout>
 </LinearLayout>

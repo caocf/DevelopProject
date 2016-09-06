@@ -10,6 +10,8 @@ import java.util.ArrayList;
  */
 public class ClassifyModel implements Serializable{
 
+    public String shopId;
+
     private String id;
 
     private String parentId;

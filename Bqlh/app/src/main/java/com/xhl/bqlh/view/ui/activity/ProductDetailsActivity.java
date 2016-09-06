@@ -114,6 +114,9 @@ public class ProductDetailsActivity extends BaseAppActivity implements ProductOp
 
     @Event(R.id.btn_op_1)
     private void onHomeClick(View view) {
+        if (mDetails == null) {
+            return;
+        }
         String storeId = mDetails.getStoreId();
         if (!TextUtils.isEmpty(storeId)) {
             Intent intent = new Intent(this, ShopDetailsActivity.class);
@@ -140,6 +143,12 @@ public class ProductDetailsActivity extends BaseAppActivity implements ProductOp
     @Override
     protected void initParams() {
         mProductId = getIntent().getStringExtra("id");
+        if (TextUtils.isEmpty(mProductId)) {
+            ToastUtil.showToastLong("产品数据异常");
+            finish();
+            return;
+        }
+
         super.initBadgeView(btn_op_3);
 
         onRefreshLoadData();

@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="170px"
+    android:layout_height="wrap_content"
     android:background="@color/app_while"
     android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/ripple_select_address"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:paddingBottom="@dimen/px_dimen_30"
         android:paddingLeft="@dimen/px_dimen_20"
         android:paddingRight="@dimen/px_dimen_20"
@@ -29,7 +28,6 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/px_dimen_20"
             android:orientation="vertical"
-            android:layout_toLeftOf="@+id/iv_right"
             android:layout_toRightOf="@+id/iv_location">
 
             <TextView
@@ -58,13 +56,6 @@
                 android:textSize="@dimen/px_dimen_24" />
 
         </LinearLayout>
-
-        <ImageView
-            android:id="@+id/iv_right"
-            style="@style/base_arrow_image"
-            android:visibility="invisible"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true" />
 
     </RelativeLayout>
 

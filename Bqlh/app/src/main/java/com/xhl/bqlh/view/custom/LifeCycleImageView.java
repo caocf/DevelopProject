@@ -11,7 +11,6 @@ import com.xhl.bqlh.R;
 import com.xhl.xhl_library.network.ImageLoadManager;
 
 import org.xutils.common.Callback;
-import org.xutils.common.util.DensityUtil;
 import org.xutils.image.ImageOptions;
 import org.xutils.x;
 
@@ -20,17 +19,23 @@ import org.xutils.x;
  */
 public class LifeCycleImageView extends ImageView {
 
-    private String mUrl;//图片下载地址
+    private String mUrl;//图   片下载地址
     private boolean mIsLoadSuccess;//加载是否成功
     private boolean mIsLoading;
     private ImageLoadListener mListener;
-    public static ImageOptions imageOptions = new ImageOptions.Builder()
-//            .setSize(DensityUtil.dip2px(120), DensityUtil.dip2px(120))
-            .setRadius(DensityUtil.dip2px(1))
+    public static final ImageOptions imageOptions = new ImageOptions.Builder()
+//            .setSize(100, 100)
+//            .setRadius(DensityUtil.dip2px(1))
             .setImageScaleType(ScaleType.FIT_XY)
             .setLoadingDrawableId(R.drawable.icon_net_error_show)
             .setFailureDrawableId(R.drawable.icon_net_error_show)
             .build();
+
+    public static  void LoadImageView(ImageView image, String url) {
+        x.image().bind(image, url, imageOptions);
+    }
+
+
     private ImageLoadCallBack imageLoadCallBack = new ImageLoadCallBack();
     private boolean mIsLoadImage = false;
 
@@ -93,10 +98,6 @@ public class LifeCycleImageView extends ImageView {
 
     public void setListener(ImageLoadListener mListener) {
         this.mListener = mListener;
-    }
-
-    public void setImageOptions(ImageOptions imageOptions) {
-        this.imageOptions = imageOptions;
     }
 
     public interface ImageLoadListener {

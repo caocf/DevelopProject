@@ -24,11 +24,23 @@ public abstract class BaseApi {
 
         String cookie = AppDelegate.appContext.mCookie;
         String area = AppDelegate.appContext.mArea;
+        String header = "";
         if (!TextUtils.isEmpty(cookie)) {
-            params.setHeader("Cookie", cookie + ";" + area);
+            header = cookie;
+            if (!TextUtils.isEmpty(area)) {
+                header = cookie + ";" + area;
+            }
+        } else {
+            if (!TextUtils.isEmpty(area)) {
+                header = area;
+            }
+        }
+
+        if (!TextUtils.isEmpty(header)) {
+            params.setHeader("Cookie", header);
         }
         if (Constant.isDebug) {
-            Logger.v("req url:" + params.getUri() + " Cookie:" + cookie + ";" + area);
+            Logger.v("req url:" + params.getUri() + " Head:" + header);
         }
         print(params);
     }

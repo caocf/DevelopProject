@@ -37,9 +37,9 @@ public class CheckServiceHelper {
 
     public void start() {
         //版本检测
-//        checkVersion();
+        checkVersion();
         //购物车
-        carUpdate();
+//        carUpdate();
     }
 
     public void checkVersion() {

@@ -35,7 +35,7 @@ public class HomeLDataHolder extends RecyclerDataHolder<List<AdInfoModel>> {
     @Override
     public int getType() {
 //        return type + 10;
-    return 99;
+        return 99;
     }
 
     @Override
@@ -135,13 +135,12 @@ public class HomeLDataHolder extends RecyclerDataHolder<List<AdInfoModel>> {
             x.image().bind(pic, ad.getImageUrl(), LifeCycleImageView.imageOptions);
             //名称
             name.setText(ad.getAdName());
-            if (TextUtils.isEmpty(ad.getRetailPrice())) {
-                price.setVisibility(View.GONE);
-            } else {
-                //价格
-                price.setVisibility(View.VISIBLE);
+            if (!TextUtils.isEmpty(ad.getBussinessPrice())) {
+                price.setText(mContext.getString(R.string.price_b, ad.getBussinessPrice()));
+            } else if (!TextUtils.isEmpty(ad.getRetailPrice())) {
                 price.setText(mContext.getString(R.string.price_s, ad.getRetailPrice()));
             }
+
 
             pic.setTag(ad);
             pic.setOnClickListener(new View.OnClickListener() {

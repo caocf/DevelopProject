@@ -66,7 +66,7 @@ public abstract class BaseAppActivity extends SumFragmentActivity implements Con
         mBadgeView = new BadgeView(this);
         mBadgeView.setTargetView(view);
         mBadgeView.setTextSize(8);
-        mBadgeView.setBadgeMargin(0, 4, 14, 0);
+        mBadgeView.setBadgeMargin(0, 3, 16, 0);
 
         GlobalCarInfo.instance().addBadgeView(mBadgeView);
     }

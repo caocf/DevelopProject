@@ -198,7 +198,7 @@ public class OrderOperatorBar extends BaseBar {
     }
 
     private void onOpClick(final int type) {
-        ApiControl.getApi().orderUpdateType(type, mOrder.getStoreOrderCode(), new DefaultCallback<ResponseModel<Object>>() {
+        ApiControl.getApi().orderUpdateType(type,mOrder.getOrderMoney(), mOrder.getStoreOrderCode(), new DefaultCallback<ResponseModel<Object>>() {
             @Override
             public void success(ResponseModel<Object> result) {
                 refresh(type);

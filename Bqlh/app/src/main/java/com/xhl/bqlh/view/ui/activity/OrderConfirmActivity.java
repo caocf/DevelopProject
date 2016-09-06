@@ -96,7 +96,7 @@ public class OrderConfirmActivity extends BaseAppActivity {
         saveOrder();
     }
 
-    private int mPayType = 1;//默认在线支付方式
+    private int mPayType = 2;//默认在线支付方式
     private int mPayId = 4;//支付包支付
 
     private String mOrderInfo;

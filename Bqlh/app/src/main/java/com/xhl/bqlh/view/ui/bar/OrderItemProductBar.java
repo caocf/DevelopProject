@@ -4,12 +4,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.xhl.bqlh.R;
 import com.xhl.bqlh.model.OrderDetail;
 import com.xhl.bqlh.view.base.BaseBar;
-import com.xhl.bqlh.view.custom.RoundedImageView;
+import com.xhl.bqlh.view.custom.LifeCycleImageView;
 import com.xhl.bqlh.view.ui.activity.ProductDetailsActivity;
 
 import org.xutils.view.annotation.Event;
@@ -25,7 +26,7 @@ public class OrderItemProductBar extends BaseBar {
     }
 
     @ViewInject(R.id.iv_product_image)
-    private RoundedImageView imageView;
+    private ImageView imageView;
 
     @ViewInject(R.id.tv_product_name)
     private TextView tv_product_name;
@@ -62,8 +63,7 @@ public class OrderItemProductBar extends BaseBar {
     public void bindInfo(OrderDetail pro) {
         if (pro != null) {
             mProductId = pro.getGoodId();
-
-            imageView.LoadDrawable(pro.getProductPic());
+            LifeCycleImageView.LoadImageView(imageView, pro.getProductPic());
             tv_product_name.setText(pro.getProductName());
             tv_product_price.setText(getResources().getString(R.string.price, pro.getUnitPrice()));
             tv_product_num.setText("x" + pro.getNum());

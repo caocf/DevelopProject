@@ -1,10 +1,10 @@
 package com.xhl.bqlh.view.ui.fragment;
 
 import android.content.Context;
-import android.graphics.drawable.Drawable;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.text.TextUtils;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -18,12 +18,9 @@ import com.xhl.xhl_library.Base.Anim.AnimType;
 import com.xhl.xhl_library.ui.recyclerview.RecyclerAdapter;
 import com.xhl.xhl_library.ui.recyclerview.RecyclerDataHolder;
 import com.xhl.xhl_library.ui.recyclerview.RecyclerViewHolder;
-import com.zhy.autolayout.config.AutoLayoutConifg;
 
-import org.xutils.common.Callback;
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
-import org.xutils.x;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -88,7 +85,8 @@ public class ProductExInfoImageFragment extends BaseAppFragment {
 
         @Override
         public RecyclerView.ViewHolder onCreateViewHolder(Context context, ViewGroup parent, int position) {
-            return new ImageViewHolder(View.inflate(context, R.layout.item_ex_product_image, null));
+            View inflate = LayoutInflater.from(context).inflate(R.layout.item_ex_product_image, parent, false);
+            return new ImageViewHolder(inflate);
         }
 
         @Override
@@ -117,7 +115,10 @@ public class ProductExInfoImageFragment extends BaseAppFragment {
             public void onBind(String url) {
                 if (TextUtils.isEmpty(mUrl)) {
                     mUrl = url;
-                    x.image().loadDrawable(url, LifeCycleImageView.imageOptions, new Callback.CommonCallback<Drawable>() {
+
+                    LifeCycleImageView.LoadImageView(imageView,url);
+
+                  /*  x.image().loadDrawable(url, LifeCycleImageView.imageOptions, new Callback.CommonCallback<Drawable>() {
                         @Override
                         public void onSuccess(Drawable result) {
                             if (result != null) {
@@ -149,7 +150,7 @@ public class ProductExInfoImageFragment extends BaseAppFragment {
                         public void onFinished() {
 
                         }
-                    });
+                    });*/
                 }
             }
         }

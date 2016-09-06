@@ -79,7 +79,7 @@ public class UserSettingFragment extends BaseAppFragment {
 
         AppDelegate.appContext.mCookie = null;
 
-        AppDelegate.appContext.exitApp();
+//        AppDelegate.appContext.exitApp();
 
         GlobalCarInfo.instance().clear();
 

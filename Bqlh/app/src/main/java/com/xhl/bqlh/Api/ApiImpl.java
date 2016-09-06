@@ -225,6 +225,7 @@ public class ApiImpl extends BaseApi implements Api {
     public Callback.Cancelable searchProductBrand(SearchParams searchParams, Callback.CommonCallback<ResponseModel<List<BrandModel>>> callback) {
         String url = NetWorkConfig.generalHost + searchProductBrand;//搜索品牌
         RequestParams params = new RequestParams(url);
+        params.addBodyParameter("shopId", searchParams.shopId);
         params.addBodyParameter("productName", searchParams.productName);
         params.addBodyParameter("categoryId", searchParams.categoryId);
         params.addBodyParameter("sku", searchParams.sku);
@@ -336,11 +337,12 @@ public class ApiImpl extends BaseApi implements Api {
     }
 
     @Override
-    public Callback.Cancelable orderUpdateType(int type, String storeOrderCode, Callback.CommonCallback<ResponseModel<Object>> callback) {
+    public Callback.Cancelable orderUpdateType(int type,String payMoney, String storeOrderCode, Callback.CommonCallback<ResponseModel<Object>> callback) {
         String url = NetWorkConfig.generalHost + orderUpdateType;
         RequestParams params = new RequestParams(url);
         params.addBodyParameter("storeOrderCode", storeOrderCode);
         params.addBodyParameter("type", String.valueOf(type));
+        params.addBodyParameter("payMoney", payMoney);
         addExtendParams(params);
 
         return x.http().post(params, callback);

@@ -8,6 +8,7 @@ import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.xhl.bqlh.Api.ApiControl;
@@ -43,7 +44,7 @@ public class SearchItemBar extends BaseBar implements Callback.CommonCallback<Re
     }
 
     @ViewInject(R.id.iv_product_image)
-    private LifeCycleImageView iv_product_image;
+    private ImageView iv_product_image;
 
     @ViewInject(R.id.tv_product_active)
     private TextView tv_product_active;
@@ -95,7 +96,7 @@ public class SearchItemBar extends BaseBar implements Callback.CommonCallback<Re
         if (containsId) {
             mCurFixNum = 1;
         } else if (mItemData.mCurNum == 0) {
-            mCurFixNum =  mItemData.getOrderMinNum();
+            mCurFixNum = mItemData.getOrderMinNum();
         }
         fixNum();
     }
@@ -156,7 +157,9 @@ public class SearchItemBar extends BaseBar implements Callback.CommonCallback<Re
         }
 
         //信息显示
-        iv_product_image.LoadDrawable(product.getProductPic());
+//        iv_product_image.LoadDrawable(product.getProductPic());
+        LifeCycleImageView.LoadImageView(iv_product_image, product.getProductPic());
+
         tv_product_name.setText(product.getProductName());
         //活动
         String productActive = product.getProductActive();
@@ -170,7 +173,7 @@ public class SearchItemBar extends BaseBar implements Callback.CommonCallback<Re
         String bussinessPrice = product.getBussinessPrice();
         if (!TextUtils.isEmpty(bussinessPrice)) {
             ViewHelper.setViewVisible(tv_product_b_price, true);
-            tv_product_b_price.setText(mContext.getString(R.string.price_b, bussinessPrice));
+            tv_product_b_price.setText(mContext.getString(mItemData.priceId(), bussinessPrice));
         } else {
             ViewHelper.setViewVisible(tv_product_b_price, false);
         }

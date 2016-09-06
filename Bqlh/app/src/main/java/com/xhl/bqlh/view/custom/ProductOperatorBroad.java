@@ -8,6 +8,7 @@ import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.xhl.bqlh.R;
@@ -43,14 +44,15 @@ public class ProductOperatorBroad {
 
         AutoUtils.auto(rootView);
 
-        LifeCycleImageView pic = _findViewById(rootView, R.id.iv_product_pic);
-        pic.bindImageUrl(mProduct.getProductPic());
+        ImageView pic = _findViewById(rootView, R.id.iv_product_pic);
+//        pic.bindImageUrl(mProduct.getProductPic());
+        LifeCycleImageView.LoadImageView(pic, mProduct.getProductPic());
 
         TextView name = _findViewById(rootView, R.id.tv_product_name);//名称
         name.setText(mProduct.getProductName());
 
         TextView price = _findViewById(rootView, R.id.tv_product_price);//价格
-        price.setText(mContext.getString(R.string.price_b, mProduct.getBussinessPrice()));
+        price.setText(mContext.getString(mProduct.priceId(), mProduct.getBussinessPrice()));
 
         TextView stock = _findViewById(rootView, R.id.tv_product_stock);//库存
         stock.setText(mContext.getString(R.string.product_stock, mProduct.getStock()));
@@ -121,7 +123,7 @@ public class ProductOperatorBroad {
     }
 
     public void show() {
-        if (mSheetDialog != null) {
+        if (mSheetDialog != null && !mContext.isFinishing()) {
             mSheetDialog.show();
         }
     }

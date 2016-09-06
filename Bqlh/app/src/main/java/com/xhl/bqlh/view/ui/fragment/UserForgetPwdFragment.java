@@ -93,7 +93,7 @@ public class UserForgetPwdFragment extends BaseAppFragment {
     private void getSms() {
         final String phone = ed_input_phone.getText().toString().trim();
         if (TextUtils.isEmpty(phone)) {
-            ToastUtil.showToastShort("用户名不能为空");
+            ToastUtil.showToastShort("手机号不能为空");
             return;
         }
 

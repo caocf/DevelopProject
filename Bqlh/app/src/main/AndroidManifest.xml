@@ -80,6 +80,7 @@
         <activity
             android:name=".view.ui.activity.ShopDetailsActivity"
             android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
             android:name=".view.ui.activity.OrderQueryActivity"
@@ -97,8 +98,10 @@
             android:name=".view.ui.activity.SearchShopResActivity"
             android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".view.ui.activity.web.WebPageActivity"
+            android:process=":webView"
             android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
             android:screenOrientation="portrait" />
 

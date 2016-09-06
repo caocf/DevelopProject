@@ -48,7 +48,7 @@ public class HomeActivity extends BaseAppActivity {
     @Event(value = {R.id.main_rb_home, R.id.main_rb_classify, R.id.main_rb_shopping, R.id.main_rb_my})
     private void onCheckClick(View view) {
         mGroup.check(view.getId());
-        fragmentCacheManager.setCurrentFragment(view);
+        fragmentCacheManager.setCurrentFragment(view.getId());
     }
 
     private FragmentCacheManager fragmentCacheManager;
@@ -64,10 +64,10 @@ public class HomeActivity extends BaseAppActivity {
 
         fragmentCacheManager = new FragmentCacheManager();
         fragmentCacheManager.setUp(this, R.id.fl_content);
-        fragmentCacheManager.addFragmentToCache(mCbHome, HomeAFragment.class);
-        fragmentCacheManager.addFragmentToCache(mCbClassify, HomeClassifyFragment.class);
-        fragmentCacheManager.addFragmentToCache(mCbShopping, HomeCarFragment.class);
-        fragmentCacheManager.addFragmentToCache(mCbMy, HomeMeFragment.class);
+        fragmentCacheManager.addFragmentToCache(mCbHome.getId(), HomeAFragment.class);
+        fragmentCacheManager.addFragmentToCache(mCbClassify.getId(), HomeClassifyFragment.class);
+        fragmentCacheManager.addFragmentToCache(mCbShopping.getId(), HomeCarFragment.class);
+        fragmentCacheManager.addFragmentToCache(mCbMy.getId(), HomeMeFragment.class);
         fragmentCacheManager.setListener(new FragmentCacheManager.onBootCallBackListener() {
             @Override
             public void onBootCallBack() {
@@ -87,7 +87,13 @@ public class HomeActivity extends BaseAppActivity {
 
     public void checkFirst() {
         mGroup.check(mCbHome.getId());
-        fragmentCacheManager.setCurrentFragment(mCbHome);
+        fragmentCacheManager.setCurrentFragment(mCbHome.getId());
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        System.exit(0);
     }
 
     public void onEvent(CommonEvent event) {
@@ -121,6 +127,8 @@ public class HomeActivity extends BaseAppActivity {
                     intent = new Intent(this, WebPageActivity.class);
                     intent.putExtra(WebPageActivity.TAG_URL, event.data);
                     intent.putExtra(WebPageActivity.TAG_TITLE, event.title);
+                    intent.putExtra(WebPageActivity.TAG_COOKIE, getAppApplication().mCookie);
+                    intent.putExtra(WebPageActivity.TAG_AREA, getAppApplication().mArea);
                     startActivity(intent);
                 }
                 break;

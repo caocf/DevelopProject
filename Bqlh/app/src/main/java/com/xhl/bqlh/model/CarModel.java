@@ -19,6 +19,7 @@ public class CarModel {
     private float minOrderPrice;//起订金额
     private String promoteRemark;//活动提示
     private ProductModel product;
+    private float memberPrice;
     private float productPrice;//商品价格
     private int orderMinNum;//商品最小起定量
     private int purchaseQuantity;//商品最数量
@@ -63,6 +64,9 @@ public class CarModel {
     }
 
     public float getProductPrice() {
+        if (memberPrice != 0) {
+            return memberPrice;
+        }
         return productPrice;
     }
 

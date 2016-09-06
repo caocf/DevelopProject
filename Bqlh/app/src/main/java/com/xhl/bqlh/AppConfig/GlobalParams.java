@@ -6,10 +6,8 @@ package com.xhl.bqlh.AppConfig;
  */
 public class GlobalParams {
 
-    //    public static final String LeanCloud_id = "EOqGTo6y7v6igwKuyxdYgrFU-gzGzoHsz";
-//    public static final String LeanCloud_key = "8gWNeUqyfH7vynJRlWDAmkTV";
-    public static final String LeanCloud_id = "4ux8eoWgL2EbLWUwLUW6u2Y2";
-    public static final String LeanCloud_key = "KRPNljIgzS5zCjUt0JVYSvz7";
+    public static final String LeanCloud_id = "oONLs4PSK0wMJtR2rmh1D5w2-gzGzoHsz";
+    public static final String LeanCloud_key = "65yy0T48PWEE2NxXd1x3U2ot";
 
 
     //Intent

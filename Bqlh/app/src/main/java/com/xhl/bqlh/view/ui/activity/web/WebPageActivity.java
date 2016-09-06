@@ -1,18 +1,18 @@
 package com.xhl.bqlh.view.ui.activity.web;
 
 import android.annotation.SuppressLint;
-import android.graphics.Bitmap;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.text.TextUtils;
+import android.view.View;
 import android.webkit.CookieManager;
+import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.FrameLayout;
+import android.widget.ProgressBar;
 
 import com.xhl.bqlh.AppConfig.NetWorkConfig;
-import com.xhl.bqlh.AppDelegate;
 import com.xhl.bqlh.R;
 import com.xhl.bqlh.view.base.BaseAppActivity;
 
@@ -22,6 +22,8 @@ public class WebPageActivity extends BaseAppActivity {
 
     public static final String TAG_URL = "url";
     public static final String TAG_TITLE = "title";
+    public static final String TAG_COOKIE = "cookie";
+    public static final String TAG_AREA = "area";
 
     @Override
     public boolean isNeedInject() {
@@ -34,32 +36,31 @@ public class WebPageActivity extends BaseAppActivity {
     }
 
     private WebView mWebView;
-
+    private ProgressBar mBar;
+    private FrameLayout fl_content;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_webpage);
 
-        setCookie();
 
         url = getIntent().getStringExtra(TAG_URL);
 
         String title = getIntent().getStringExtra(TAG_TITLE);
+
+        setCookie(getIntent().getStringExtra(TAG_COOKIE), getIntent().getStringExtra(TAG_AREA));
 
         super.initBackBar(title, true, false);
 
         initView();
     }
 
-    private void setCookie() {
+    private void setCookie(String cookie, String area) {
         //保存到浏览器中
         CookieManager cookieManager = CookieManager.getInstance();
         cookieManager.removeAllCookie();
         cookieManager.setAcceptCookie(true);
-
-        String cookie = AppDelegate.appContext.mCookie;
-        String area = AppDelegate.appContext.mArea;
         cookieManager.setCookie(NetWorkConfig.generalHost, cookie);
         cookieManager.setCookie(NetWorkConfig.generalHost, area);
 
@@ -69,7 +70,12 @@ public class WebPageActivity extends BaseAppActivity {
     }
 
     private void initView() {
-        mWebView = (WebView) this.findViewById(R.id.web_view);
+        mBar = _findViewById(R.id.progress_bar);
+        fl_content = _findViewById(R.id.fl_content);
+
+        mWebView = new WebView(getApplicationContext());
+
+        fl_content.addView(mWebView);
 
         initWebView();
     }
@@ -77,55 +83,30 @@ public class WebPageActivity extends BaseAppActivity {
     @SuppressLint({"JavascriptInterface", "SetJavaScriptEnabled"})
     private void initWebView() {
 
-        this.mWebView.addJavascriptInterface(new RemoteInvokeService(
-                WebPageActivity.this, mWebView, url), "js_appInvoke");
+        this.mWebView.addJavascriptInterface(new RemoteInvokeService(this), "js_appInvoke");
 
         final WebSettings localWebSettings = this.mWebView.getSettings();
         localWebSettings.setSupportZoom(false);
-        localWebSettings.setBuiltInZoomControls(true);
+        localWebSettings.setBuiltInZoomControls(false);
+        localWebSettings.setDisplayZoomControls(false);
         localWebSettings.setJavaScriptEnabled(true);
         localWebSettings.setLoadsImagesAutomatically(true);
         localWebSettings.setDomStorageEnabled(true); // 开启DOM Storage api功能
-
-        localWebSettings.setAllowFileAccess(true);
+        localWebSettings.setAppCacheEnabled(true);//H5缓存打开
+        localWebSettings.setUseWideViewPort(true);//自适应屏幕大小
         localWebSettings.setLoadWithOverviewMode(true);
 
         localWebSettings.setCacheMode(WebSettings.LOAD_DEFAULT);
 
-        localWebSettings.setDisplayZoomControls(false);
-        this.mWebView.setOverScrollMode(2);
-        this.mWebView.setWebViewClient(new WebViewClient() {
-            public void onPageFinished(WebView paramAnonymousWebView,
-                                       String paramAnonymousString) {
-                setTitle(paramAnonymousWebView.getTitle());
-                if (!localWebSettings.getLoadsImagesAutomatically()) {
-                    localWebSettings.setLoadsImagesAutomatically(true);
-                }
-            }
+        mWebView.setOverScrollMode(2);
 
-            public void onPageStarted(WebView paramAnonymousWebView,
-                                      String paramAnonymousString, Bitmap paramAnonymousBitmap) {
-                super.onPageStarted(paramAnonymousWebView,
-                        paramAnonymousString, paramAnonymousBitmap);
-            }
+        mWebView.setWebChromeClient(chromeClient);
+        mWebView.setWebViewClient(client);
 
-            public boolean shouldOverrideUrlLoading(
-                    WebView paramAnonymousWebView, String paramAnonymousString) {
-                Uri localUri = Uri.parse(paramAnonymousString);
-                String str = localUri.getScheme();
-                if ((TextUtils.isEmpty(str)) || ("http".equals(str))
-                        || ("https".equals(str))) {
-                    mWebView.loadUrl(paramAnonymousString);
-                    return false;
-                }
-                return true;
-            }
-
-        });
         mWebView.loadUrl(url);
 
         //webView 调用js方法
-        // mWebView.loadUrl("javascript:funFromjs()");
+//         mWebView.loadUrl("javascript:funFromjs()");
     }
 
     @Override
@@ -135,11 +116,49 @@ public class WebPageActivity extends BaseAppActivity {
     }
 
     @Override
+    protected void onPause() {
+        super.onPause();
+        mWebView.onPause();
+    }
+
+    private WebChromeClient chromeClient = new WebChromeClient() {
+
+        @Override
+        public void onProgressChanged(WebView view, int newProgress) {
+            super.onProgressChanged(view, newProgress);
+            mBar.setProgress(newProgress);
+            if (newProgress == 100) {
+                mBar.setVisibility(View.GONE);
+            }
+        }
+    };
+
+    private WebViewClient client = new WebViewClient() {
+        @Override
+        public void onPageFinished(WebView view, String url) {
+            super.onPageFinished(view, url);
+            setTitle(view.getTitle());
+        }
+    };
+
+    @Override
     protected void onDestroy() {
-        mWebView.stopLoading();
-        mWebView.destroy();
+        try {
+            mWebView.stopLoading();
+            mWebView.removeAllViews();
+            mWebView.setWebChromeClient(null);
+            mWebView.setWebViewClient(null);
+
+            mWebView.destroy();
+            mWebView = null;
+
+            fl_content.removeAllViews();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         super.onDestroy();
-        mWebView = null;
+
+        System.exit(0);
     }
 
     @Override

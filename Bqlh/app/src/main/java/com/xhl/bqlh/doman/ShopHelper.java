@@ -33,6 +33,8 @@ public class ShopHelper extends BaseValue implements Callback.CommonCallback<Res
     //获取店铺id
     public static final int TYPE_GET_SHOP_ID = 1;
 
+    public static final int TYPE_GET_BRAND_ID = 8;
+
     public static final int TYPE_RES_ALL_DATA = 2;//店铺数据
 
     public static final int TYPE_RES_ALL_DATA_MORE = 7;//店铺数据
@@ -63,6 +65,7 @@ public class ShopHelper extends BaseValue implements Callback.CommonCallback<Res
         mShopId = (String) mValue.getValue(TYPE_GET_SHOP_ID);
         mCondition = new SearchParams();
         mCondition.shopId = mShopId;
+        mCondition.brandId = (String) mValue.getValue(TYPE_GET_BRAND_ID);
         loadShopInfo();
     }
 
@@ -117,7 +120,7 @@ public class ShopHelper extends BaseValue implements Callback.CommonCallback<Res
                 } else {
                     toastShow(result.getMessage());
                     dialogHide();
-                    showValue(TYPE_RES_HIED_LOADING,null);
+                    showValue(TYPE_RES_HIED_LOADING, null);
                 }
             }
 
@@ -126,7 +129,7 @@ public class ShopHelper extends BaseValue implements Callback.CommonCallback<Res
                 toastShow(ex.getMessage());
                 Logger.v(ex.getMessage());
                 dialogHide();
-                showValue(TYPE_RES_HIED_LOADING,null);
+                showValue(TYPE_RES_HIED_LOADING, null);
             }
 
             @Override
@@ -227,6 +230,7 @@ public class ShopHelper extends BaseValue implements Callback.CommonCallback<Res
             int size = classify.getChildren().size();
             if (size > 0) {
                 index++;
+                classify.shopId = mShopId;
                 holders.add(new ClassifyChildDataHolder(classify, index));
             }
         }
@@ -280,6 +284,6 @@ public class ShopHelper extends BaseValue implements Callback.CommonCallback<Res
     @Override
     public void onFinished() {
         dialogHide();
-        showValue(TYPE_RES_HIED_LOADING,null);
+        showValue(TYPE_RES_HIED_LOADING, null);
     }
 }

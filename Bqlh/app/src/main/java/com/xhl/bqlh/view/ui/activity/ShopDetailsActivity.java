@@ -71,6 +71,12 @@ public class ShopDetailsActivity extends BaseAppActivity {
     private ShopHelper mHelper;
 
     @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        handIntent();
+    }
+
+    @Override
     protected void initParams() {
 
         super.initBackBar("店铺详情", true);
@@ -89,6 +95,11 @@ public class ShopDetailsActivity extends BaseAppActivity {
         recycler_view_filter.setLayoutManager(new GridLayoutManager(this, 3));
         recycler_view_filter.setAdapter(mFilterAdapter);
 
+        handIntent();
+    }
+
+    private void handIntent() {
+        mShopId = getIntent().getStringExtra("id");
         mHelper = new ShopHelper(this);
         mHelper.onCreate();
     }
@@ -96,8 +107,10 @@ public class ShopDetailsActivity extends BaseAppActivity {
     @Override
     public Object getValue(int type) {
         if (type == ShopHelper.TYPE_GET_SHOP_ID) {
-            mShopId = getIntent().getStringExtra("id");
             return mShopId;
+        }
+        if (type == ShopHelper.TYPE_GET_BRAND_ID) {
+            return getIntent().getStringExtra("brandId");
         }
         return super.getValue(type);
     }
@@ -208,12 +221,13 @@ public class ShopDetailsActivity extends BaseAppActivity {
             intent.putExtra(SearchProductResActivity.SEARCH_PARAMS, event.filterId);
             intent.putExtra(GlobalParams.Intent_shop_id, mShopId);
             startActivity(intent);
-        } else if (event.getTag() == ShopEvent.TAG_SEARCH_CATEGORY) {
+        }
+        /*else if (event.getTag() == ShopEvent.TAG_SEARCH_CATEGORY) {
             Intent intent = new Intent(this, SearchProductResActivity.class);
             intent.putExtra(SearchProductResActivity.SEARCH_TYPE, SearchProductResActivity.SEARCH_TYPE_CATEGORY);
             intent.putExtra(SearchProductResActivity.SEARCH_PARAMS, event.filterId);
             intent.putExtra(GlobalParams.Intent_shop_id, mShopId);
             startActivity(intent);
-        }
+        }*/
     }
 }

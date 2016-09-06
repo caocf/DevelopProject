@@ -16,7 +16,7 @@
             style="@style/shopping_style_check_box"
             android:layout_marginLeft="0px" />
 
-        <com.xhl.bqlh.view.custom.RoundedImageView
+        <ImageView
             android:id="@+id/iv_child_goods_icon"
             style="@style/base_product_image"
             android:layout_width="160px"
