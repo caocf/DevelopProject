@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg_color"
+    android:orientation="vertical" >
+
+    <com.moge.ebox.phone.ui.customview.Head
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/rl_zfb_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:paddingLeft="20dp" >
+
+        <ImageView
+            android:id="@+id/iv_zfb_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_agree" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/iv_zfb_state"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_zfb_state"
+            android:text="支付宝"
+            android:textSize="@dimen/text_size_20" />
+
+        <EditText
+            android:id="@+id/ed_zfb_money"
+            style="@style/text_login_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="right|center_vertical"
+            android:hint="充值金额(整数金额)"
+            android:inputType="number"
+            android:maxLength="5"
+            android:paddingRight="8dp"
+            android:textSize="@dimen/text_size_18" />
+    </RelativeLayout>
+
+    <View style="@style/style_home_line_ver" />
+
+    <RelativeLayout
+        android:id="@+id/rl_wx_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:paddingLeft="20dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_wx_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_disagree" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/iv_wx_state"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_wx_state"
+            android:text="微信"
+            android:textSize="@dimen/text_size_20" />
+
+        <EditText
+            android:id="@+id/ed_wx_money"
+            style="@style/text_login_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="right|center_vertical"
+            android:hint="充值金额(整数金额)"
+            android:inputType="number"
+            android:paddingRight="8dp"
+            android:textSize="@dimen/text_size_20" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_btn_login"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="充 值"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_22" />
+
+    <FrameLayout
+        android:id="@+id/fl_active"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp" >
+    </FrameLayout>
+
+</LinearLayout>

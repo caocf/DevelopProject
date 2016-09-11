@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <EditText
+	    android:id="@+id/titleEdit"
+	    android:layout_width="match_parent"
+	    android:layout_height="45dp"
+	    android:hint="@string/title"
+	    android:nextFocusDown="@+id/contentEdit"
+	    android:singleLine="true"
+	    style="@style/text_login_edit" >
+    </EditText>
+    
+    <View
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="@color/line_color"/>
+    
+   	<com.moge.gege.util.widget.chat.EmoticonEditText
+	    android:id="@+id/contentEdit"
+	    android:layout_width="match_parent"
+	    android:layout_height="100dp"
+	    android:layout_marginTop="10dp"
+	    android:gravity="top"
+	    android:hint="@string/content"
+	    style="@style/text_publish_content" />
+
+</merge>

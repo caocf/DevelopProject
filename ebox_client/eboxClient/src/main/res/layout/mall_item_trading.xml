@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="?attr/pub_top_nag_page"
+    android:background="@drawable/mall_bg_avatar_corner">
+
+    <LinearLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:orientation="horizontal"
+        android:padding="2px">
+
+        <com.ebox.pub.ui.customview.RoundedImageView
+            android:id="@+id/tradingImage"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:scaleType="fitXY"
+            app:corner_radius="5px" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150px"
+        android:layout_alignTop="@id/imageLayout"
+        android:layout_marginLeft="30px"
+        android:layout_toRightOf="@id/imageLayout">
+
+        <TextView
+            android:id="@+id/titleText"
+            style="@style/pub_text_trading_title_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:maxWidth="400px" />
+
+        <LinearLayout
+            android:id="@+id/ll_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_sale1"
+            android:layout_marginBottom="4px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/oldPriceTextv"
+                style="@style/pub_text_gray_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/mall_olderprice" />
+
+            <TextView
+                android:id="@+id/oldPriceText"
+                style="@style/pub_text_gray_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sale1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/PriceTextv"
+                style="@style/pub_text_gray_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/mall_saleprice" />
+
+            <TextView
+                android:id="@+id/newPriceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/pub_red"
+                android:textSize="@dimen/pub_text_size_28_px" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

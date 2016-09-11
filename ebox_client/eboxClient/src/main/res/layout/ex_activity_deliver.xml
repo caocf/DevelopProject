@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    style="?attr/pub_top_nag_page"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="260px"
+        android:layout_marginTop="40px">
+
+        <LinearLayout
+            android:id="@+id/rl_barcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="66px"
+                android:src="@drawable/ex_icon_barcode"/>
+
+            <TextView
+                style="@style/pub_text_white_size_50_px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:gravity="center_vertical"
+                android:text="@string/ex_barcode"
+                android:textSize="@dimen/pub_text_size_38_px"/>
+
+            <TextView
+                android:id="@+id/et_barcode"
+                style="@style/pub_text_black_size_60_px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4px"
+                android:gravity="center_vertical"
+                android:textColor="@color/pub_orange_number"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_prompt"
+            style="@style/ex_text_top_blue_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_barcode"
+            android:layout_marginTop="24px"
+            android:text="@string/ex_deliver_prompt"/>
+
+
+        <EditText
+            android:id="@+id/et_telephone"
+            style="?attr/input_normal"
+            android:layout_below="@+id/tv_prompt"
+            android:layout_marginTop="30px"
+            android:hint="@string/ex_telephone"
+            android:inputType="numberDecimal"
+            android:textStyle="normal"
+            />
+
+
+        <EditText
+            android:id="@+id/et_telephone_again"
+            style="?attr/input_normal"
+            android:layout_below="@+id/et_telephone"
+            android:layout_marginTop="24px"
+            android:hint="@string/ex_telephone_again"
+            android:inputType="numberDecimal"
+            android:textStyle="normal"
+            />
+
+        <Button
+            android:id="@+id/bt_box"
+            style="?attr/button_normal"
+            android:layout_below="@+id/et_telephone_again"
+            android:layout_marginTop="24px"
+            android:gravity="center"
+            android:padding="10px"
+            android:text="@string/ex_select_box"/>
+
+        <Button
+            android:id="@+id/bt_put_item"
+            style="?attr/button_big"
+            android:layout_below="@+id/bt_box"
+            android:layout_marginTop="42px"
+            android:padding="20px"
+            android:text="@string/ex_confirm_open_door"/>
+
+    </RelativeLayout>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        style="?attr/keyboard_style"
+        android:layout_width="@dimen/key_board_width"
+        android:layout_height="@dimen/key_board_height"/>
+</RelativeLayout>

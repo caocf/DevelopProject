@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/loadview"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/life_group_bg_color">
+
+    <include layout="@layout/general_header"/>
+
+    <LinearLayout
+            android:id="@+id/inputCouponLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:visibility="gone">
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:paddingLeft="18dp"
+                      android:paddingRight="10dp">
+
+            <EditText android:id="@+id/couponCodeEdit"
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:paddingLeft="5dp"
+                      style="@style/coupon_code_edit"
+                      android:hint="@string/input_coupon_code"
+                    />
+
+            <TextView android:id="@+id/couponFeeText"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="10dp"
+                      android:textSize="@dimen/text_size_12"
+                      android:textColor="@color/text_666_color"
+                    />
+
+        </LinearLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
+
+            <Button
+                    android:id="@+id/cancelCouponBtn"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="8dip"
+                    android:background="@drawable/bg_btn_gray"
+                    android:text="@string/cancel_coupon"
+                    style="@style/text_white_18"/>
+
+            <Button
+                    android:id="@+id/useCouponBtn"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dip"
+                    android:background="@drawable/bg_btn_orange"
+                    android:text="@string/use_coupon"
+                    style="@style/text_white_18"/>
+        </RelativeLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="10dp"
+              android:background="@color/life_group_bg_color"/>
+
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/couponList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="true"
+            android:background="@color/white"
+            android:divider="@color/line_color"
+            android:dividerHeight="5dp"
+            android:listSelector="@drawable/bg_listview"
+            android:scrollbars="none"
+            android:descendantFocusability="afterDescendants"
+            app:ptrAnimationStyle="flip"/>
+
+    <include layout="@layout/empty_view"/>
+
+</LinearLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/rt_trade"
+        android:layout_width="800px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="140dip"
+        android:layout_marginTop="70dip"
+        android:descendantFocusability="blocksDescendants">
+
+        <LinearLayout
+            android:id="@+id/imageLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/mall_bg_avatar_corner"
+            android:padding="2dp">
+
+            <com.ebox.pub.ui.customview.RoundedImageView
+                android:id="@+id/tradingImage"
+                android:layout_width="180px"
+                android:layout_height="180px"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/numLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="6px"
+            android:layout_toRightOf="@id/imageLayout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleText"
+                style="@style/pub_text_black_size_34_px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pub_white" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px">
+
+                <TextView
+                    android:id="@+id/singal_price_text"
+                    style="@style/pub_text_gray_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mall_singalPrice" />
+
+                <TextView
+                    android:id="@+id/singal_price"
+                    style="@style/pub_text_gray_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:layout_toRightOf="@+id/singal_price_text"
+                    android:text="@string/mall_singalPrice" />
+
+                <TextView
+                    android:id="@+id/buyNumText_text"
+                    style="@style/pub_text_gray_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/singal_price"
+                    android:text="@string/mall_buyNum" />
+
+                <TextView
+                    android:id="@+id/buyNumText"
+                    style="@style/pub_text_gray_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:layout_toRightOf="@+id/buyNumText_text" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px">
+
+                <TextView
+                    android:id="@+id/ShippingFeeText_text"
+                    style="@style/pub_text_gray_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/mall_ship_fee" />
+
+                <TextView
+                    android:id="@+id/ShippingFeeText"
+                    style="@style/pub_text_gray_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@+id/ShippingFeeText_text" />
+
+                <TextView
+                    android:id="@+id/total_fee_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10px"
+                    android:layout_toLeftOf="@+id/total_fee"
+                    android:text="@string/mall_good_money"
+                    android:textColor="@color/pub_red"
+                    android:textSize="@dimen/pub_text_size_60_px" />
+
+                <TextView
+                    android:id="@+id/total_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dip"
+                    android:textColor="@color/pub_red"
+                    android:textSize="@dimen/pub_text_size_60_px" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/rt_view"
+        android:layout_width="800px"
+        android:layout_height="1px"
+        android:layout_below="@+id/rt_trade"
+        android:layout_marginLeft="140px"
+        android:layout_marginTop="34px"
+        android:background="@color/pub_line_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_send_addr"
+        android:layout_width="800px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rt_view"
+        android:layout_marginLeft="140px"
+        android:layout_marginTop="34px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/addr_send"
+            style="@style/pub_text_black_size_32_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20px"
+            android:text="@string/mall_addr_send"
+            android:textColor="@color/pub_white" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="46dip"
+            android:layout_marginLeft="20dip"
+            android:background="#7Aa0a0a0" />
+
+        <TextView
+            android:id="@+id/addr"
+            style="@style/pub_text_black_size_32_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20px"
+            android:textColor="@color/pub_white" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_telephone"
+        style="?attr/input_big"
+        android:layout_below="@+id/ll_send_addr"
+        android:layout_marginLeft="140px"
+        android:layout_marginTop="34px"
+        android:hint="@string/pub_inputTel"
+        android:inputType="numberDecimal"
+        android:padding="20px" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        style="?attr/button_big"
+        android:layout_below="@+id/et_telephone"
+        android:layout_marginLeft="140px"
+        android:layout_marginTop="34px"
+        android:text="@string/mall_unipay" />
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        style="?attr/keyboard_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

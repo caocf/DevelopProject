@@ -1,0 +1,13 @@
+<?xml version= "1.0" encoding= "utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <size android:width="300px" android:height="132px" />
+
+            <!-- 背景 -->
+            <solid android:color="@color/ex_top_btn_pressed" />
+        </shape>
+    </item>
+
+</selector>

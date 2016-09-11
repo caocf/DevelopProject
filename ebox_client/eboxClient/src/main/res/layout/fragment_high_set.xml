@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20px">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20px">
+
+                <com.ebox.pub.ui.customview.view.MaterialButton
+                    android:id="@+id/mgt_bt_fhs_restart"
+                    style="@style/bt_fragment_test"
+                    android:layout_width="0px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="10px"
+                    android:layout_weight="1"
+                    android:text="重启apk" />
+
+                <com.ebox.pub.ui.customview.view.MaterialButton
+                    android:id="@+id/mgt_bt_fhs_restartos"
+                    style="@style/bt_fragment_test"
+                    android:layout_width="0px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="10px"
+                    android:layout_weight="1"
+                    android:text="重启os" />
+
+                <com.ebox.pub.ui.customview.view.MaterialButton
+                    android:id="@+id/mgt_bt_fhs_sysset"
+                    style="@style/bt_fragment_test"
+                    android:layout_width="0px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="10px"
+                    android:layout_weight="1"
+                    android:text="系统设置" />
+
+                <com.ebox.pub.ui.customview.view.MaterialButton
+                    android:id="@+id/mgt_bt_fhs_led"
+                    style="@style/bt_fragment_test"
+                    android:layout_width="0px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:text="LED测试" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20px">
+
+                <com.ebox.pub.ui.customview.view.MaterialButton
+                    android:id="@+id/mgt_bt_fhs_boxtest"
+                    style="@style/bt_fragment_test"
+                    android:layout_width="0px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="10px"
+                    android:layout_weight="1"
+                    android:text="箱门测试" />
+
+                <com.ebox.pub.ui.customview.view.MaterialButton
+                    android:id="@+id/mgt_bt_fhs_sdcard"
+                    style="@style/bt_fragment_test"
+                    android:layout_width="0px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="10px"
+                    android:layout_weight="1"
+                    android:text="SD卡空间" />
+
+                <com.ebox.pub.ui.customview.view.MaterialButton
+                    android:id="@+id/mgt_bt_fhs_read"
+                    style="@style/bt_fragment_test"
+                    android:layout_width="0px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="10px"
+                    android:layout_weight="1"
+                    android:text="数据重读" />
+
+
+                <com.ebox.pub.ui.customview.view.MaterialButton
+                    android:id="@+id/bt_querySqlite"
+                    style="@style/bt_fragment_test"
+                    android:layout_width="0px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:text="@string/mgt_query_sqlite" />
+
+                <com.ebox.pub.ui.customview.view.MaterialButton
+                    style="@style/bt_fragment_test"
+                    android:layout_width="0px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <GridView
+        android:id="@+id/apps_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30px"
+        android:numColumns="5"></GridView>
+
+
+</LinearLayout>
+
+

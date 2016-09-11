@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- common -->
+    <string name="network_error">网络异常，请重试</string>
+    <string name="network_exception">网络异常，请检查网络连接!</string>
+    <string name="data_exception">数据异常，请稍后重试</string>
+    <string name="app_name">格格快递</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="loading">正在加载,请稍等 &#8230;</string>
+    <string name="retry">重&#160;试</string>
+    <string name="cancel">取&#160;消</string>
+    <string name="back">返&#160;回</string>
+    <string name="ok">确&#160;认</string>
+    <string name="moge_company">南京魔格信息科技有限公司</string>
+    <!-- 时间 -->
+    <string name="common_mon">周一</string>
+    <string name="common_tus">周二</string>
+    <string name="common_wed">周三</string>
+    <string name="common_thu">周四</string>
+    <string name="common_fri">周五</string>
+    <string name="common_sat">周六</string>
+    <string name="common_sun">周日</string>
+    <string name="back_to_today">回今天</string>
+    <string name="today_str">今天</string>
+    <string name="hour_of">%s时</string>
+    <string name="minute_of">%s分</string>
+    <string name="date_time_ctrl_format_str" formatted="false">%1$s%2$s日 %3$s</string>
+    <string name="today">今天</string>
+
+    <!-- 用户登录注册 -->
+    <string name="login">登&#160;录</string>
+    <string name="register">注&#160;册</string>
+    <string name="register_create">创建账号</string>
+    <string name="confim_tack_pic_reset">重 &#160;&#160;拍</string>
+    <string name="confim_tack_pic">拍 &#160;&#160;照</string>
+    <string name="step_next">下一步</string>
+    <string name="confim_register_pre">提 &#160;&#160;交</string>
+    <string name="register_pre">完善资料</string>
+    <string name="photo_hint">为了帮助您快速通过审核，请参照以下示意图拍摄您手持身份证照片</string>
+    <string name="camera_catch">拍&#160;照</string>
+    <string name="login_ing">正在登陆&#8230;</string>
+    <string name="phone_number">手机号码</string>
+    <string name="register_phone_number">请输入手机号码</string>
+    <string name="register_check_number">请输入验证码</string>
+    <string name="register_pwd">请输入新密码</string>
+    <string name="register_pwd_again">请确入新密码</string>
+    <string name="pwd">密&#160;码</string>
+    <string name="name">姓&#160;名</string>
+    <string name="site_name">站点名称</string>
+    <string name="site_loc">站点位置</string>
+    <string name="id_card">身份证号</string>
+    <string name="pwd_again">请再次输入密码</string>
+    <string name="two_pwd_error">两次输入密码不一致</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="find_forget_pwd">找回密码</string>
+    <string name="get_check_code">获取验证码</string>
+    <string name="retry_get_checkcode">重新获取</string>
+    <string name="send_checkcode_success">验证码发送成功</string>
+    <string name="mobile_empty">请输入手机号码</string>
+    <string name="pwd_empty">请输入密码</string>
+    <string name="mobile_format_error">请输入正确的手机号码</string>
+    <string name="checkcode_empty">请输入验证码</string>
+    <string name="checkcode_error">验证码错误</string>
+    <string name="location_a">所在地区</string>
+    <string name="kd_company">快递公司</string>
+    <string name="choose_kd_company">选择快递公司</string>
+    <string name="choose_kd_area">选择所在区域</string>
+    <!-- 主页 -->
+    <string name="home">主页</string>
+    <string name="home_balance">余额 :</string>
+    <string name="home_count">已派件 :</string>
+    <!-- 超时查询 -->
+    <string name="time_out_kd">超期快递</string>
+    <string name="send_time">投放时间</string>
+    <string name="track_number">运单号</string>
+    <string name="phone">手机</string>
+    <string name="community">小 区</string>
+
+    <!-- 快递查询 -->
+    <string name="fast_query_deatils">订单详情</string>
+    <string name="fast_query">快递查询</string>
+    <string name="query">查&#160;询</string>
+    <string name="query_hint">请输入运单号/手机号</string>
+    <string name="query_hint1">请输入运单号或者手机号</string>
+    <string name="express_id">运单号</string>
+    <string name="express_name">收件人姓名</string>
+    <string name="express_phone">收件人手机号</string>
+    <string name="express_state">运单状态</string>
+
+    <!-- 快速充值 -->
+    <string name="fast_recharege">快速充值</string>
+    <string name="fast_recharege_hint">请输入充值金额</string>
+
+    <!-- 空箱查询 -->
+    <string name="empty_query">空箱查询</string>
+    <string name="small_box">小号</string>
+    <string name="medium_box">中号</string>
+    <string name="big_box">大号</string>
+    <string name="box">空 箱</string>
+
+    <!-- 扫码派件 -->
+    <string name="scand_send">扫码派件</string>
+
+    <!-- 历史派件 -->
+    <string name="history_send">历史派件</string>
+    <string name="start_time">开始日期</string>
+    <string name="choose_start_time">点击选择开始日期</string>
+    <string name="end_time">结束日期</string>
+    <string name="choose_end_time">点击选择结束日期</string>
+    <string name="choose_state">订单状态选择</string>
+
+    <!-- 实时抢单 -->
+    <string name="ssqd">实时枪单</string>
+
+    <!-- 设置 -->
+    <string name="setting">设置</string>
+    <string name="persional_center">个人中心</string>
+    <string name="persional_center_balance">余 额</string>
+    <string name="persional_center_phone">手机号</string>
+    <string name="check_version">版本更新</string>
+    <string name="about">关于平台</string>
+    <string name="contact">联系我们</string>
+    <string name="weixin">微信号</string>
+    <string name="phone_contact_num"><u>17701583467</u></string>
+    <string name="weixin_contact_num">gegekuaidi</string>
+    <string name="feed_back">意见反馈</string>
+    <string name="exit">退&#160;出</string>
+    <string name="confim">提&#160;&#160;交</string>
+    <string name="confim_exit">您确认要退出登录？</string>
+    <string name="exit_title">温馨提示</string>
+    <string name="feed_hint">欢迎反馈</string>
+    <string name="cancle">取消</string>
+    <string name="sure">确定</string>
+    <string name="clearwords">清空字符</string>
+    <string name="progress_message">数据加载中...</string>
+    <string name="title_activity_select_area">SelectAreaActivity</string>
+    <string name="title_activity_select_company">SelectCompanyActivity</string>
+
+</resources>

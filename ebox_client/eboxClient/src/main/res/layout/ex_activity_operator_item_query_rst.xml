@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/rl_rst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_bottom_op"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="30px">
+
+        <LinearLayout
+            android:id="@+id/iv_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/ex_text_table_title"
+                android:text="@string/ex_deliver_time" />
+
+            <TextView
+                android:id="@+id/tv_barcode"
+                style="@style/ex_text_table_title"
+                android:text="@string/ex_deliver_barcode" />
+
+            <TextView
+                android:id="@+id/tv_telephone"
+                style="@style/ex_text_table_title"
+                android:text="@string/ex_deliver_telephone" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                style="@style/ex_text_table_title"
+                android:focusable="false"
+                android:text="@string/ex_status" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/item_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_top"
+            android:cacheColorHint="#000000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom_op"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16px">
+
+        <Button
+            android:id="@+id/bt_last"
+            style="@style/pub_text_white_size_42_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="70px"
+            android:layout_toLeftOf="@+id/tv_page"
+            android:background="@drawable/pub_code_btn_orange"
+            android:text="@string/ex_last_page" />
+
+        <TextView
+            android:id="@+id/tv_page"
+            style="@style/pub_text_white_size_36_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20px"
+            android:visibility="invisible"
+            android:text="@string/ex_start_date" />
+
+        <Button
+            android:id="@+id/bt_next"
+            style="@style/pub_text_white_size_42_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70px"
+            android:layout_toRightOf="@+id/tv_page"
+            android:background="@drawable/pub_code_btn_orange"
+            android:text="@string/ex_next_page" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ebox.mgt.ui.fragment.FragmentUpdateSet">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_box_seq_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:textColor="@color/pub_blue"
+            android:textSize="@dimen/pub_text_size_26_px"
+            android:text="@string/mgt_box_sequence"
+            />
+
+        <EditText
+            android:id="@+id/et_box_seq"
+            style="@style/mgt_et_style"
+            android:hint="@string/mgt_box_sequence"
+            />
+
+        <TextView
+            android:id="@+id/tv_box_cnt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="20px"
+            android:text="@string/mgt_box_cnt"
+
+            android:textColor="@color/pub_blue"
+            android:textSize="@dimen/pub_text_size_26_px" />
+
+        <EditText
+            android:id="@+id/et_box_cnt"
+            style="@style/mgt_et_style"
+            android:hint="@string/mgt_box_cnt"
+            android:inputType="number"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_dot_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="20px"
+            android:text="@string/mgt_box_dot"
+            android:textColor="@color/pub_blue"
+            android:textSize="@dimen/pub_text_size_26_px" />
+
+        <EditText
+            android:id="@+id/et_dot"
+            style="@style/mgt_et_style"
+            android:hint="@string/mgt_box_dot"
+            android:inputType="number"
+           />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

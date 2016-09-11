@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loadview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/life_group_bg_color">
+    
+    <include layout="@layout/general_header"/>
+    
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:paddingLeft="10dp"
+    	android:layout_marginTop="10dp"
+    	android:background="@drawable/white"
+    	android:orientation="vertical">
+
+      	<EditText
+            android:id="@+id/nameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical|left"
+            android:hint="@string/consignee"
+            android:nextFocusDown="@id/phoneEdit"
+            style="@style/text_login_edit" 
+            android:textSize="@dimen/text_size_14">
+        </EditText>
+        
+      	<View
+      	    android:layout_width="match_parent"
+      	    android:layout_height="1dp"
+      	    android:background="@color/line_color"/>
+        
+      	<EditText
+            android:id="@+id/phoneEdit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical|left"
+            android:hint="@string/phone_number"
+            android:inputType="number"
+            android:maxLength="11"
+            style="@style/text_login_edit" 
+            android:textSize="@dimen/text_size_14">
+        </EditText>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="10dp" 
+    	android:paddingLeft="10dp"
+    	android:paddingRight="10dp"
+    	android:background="@color/white"
+    	android:orientation="vertical">
+    	
+        <TextView 
+            android:id="@+id/districtText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical|left"
+            android:drawableRight="@drawable/icon_right_small"
+            android:text="@string/select_district"
+            android:textSize="@dimen/text_size_14"/>
+        
+        <View
+      	    android:layout_width="match_parent"
+      	    android:layout_height="1dp"
+      	    android:background="@color/line_color"/>
+
+      	<EditText
+            android:id="@+id/detailAddressEdit"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingTop="5dp"
+            android:gravity="left|top"
+            android:hint="@string/detail_address_hint"
+            android:text=""
+            style="@style/text_login_edit"
+            android:singleLine="false"
+            android:textSize="@dimen/text_size_14">
+            
+        </EditText>
+
+    </LinearLayout>
+
+</LinearLayout>

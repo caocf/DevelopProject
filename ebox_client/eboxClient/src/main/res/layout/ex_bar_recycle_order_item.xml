@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebox.pub.ui.customview.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_query_item"
+    android:layout_width="match_parent"
+    android:layout_height="98px"
+    android:layout_gravity="center_vertical"
+    android:background="@color/pub_light_grey"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="10%" />
+
+    <com.ebox.pub.ui.customview.PercentLinearLayout
+        android:layout_width="140px"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_widthPercent="13%">
+
+        <TextView
+            android:id="@+id/tv_time1"
+            style="@style/ex_recycle_table_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0px" />
+
+        <TextView
+            android:id="@+id/tv_time2"
+            style="@style/ex_recycle_table_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0px"
+            android:textColor="@color/ex_light_blue" />
+    </com.ebox.pub.ui.customview.PercentLinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_item_id"
+        style="@style/ex_recycle_table_item"
+        android:layout_width="220px"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="24%" />
+
+
+    <TextView
+        android:id="@+id/tv_customer"
+        style="@style/ex_recycle_table_item"
+        android:layout_width="180px"
+        android:layout_height="match_parent"
+        android:layout_weight="1.6"
+        app:layout_widthPercent="18%" />
+
+
+    <LinearLayout
+        android:layout_width="124px"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_widthPercent="13%">
+
+        <TextView
+            android:id="@+id/tv_state"
+            style="@style/ex_recycle_table_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ex_red" />
+
+        <TextView
+            android:id="@+id/tv_state_time1"
+            style="@style/ex_recycle_table_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_state_time2"
+            style="@style/ex_recycle_table_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ex_light_blue"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="260px"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+    <View
+            android:id="@+id/v_send_null"
+            android:layout_width="100px"
+            android:layout_height="6px"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@color/ex_grey"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/bt_send_sms"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:background="@drawable/ex_code_green_corner"
+                android:padding="16px"
+                android:scaleType="fitXY"
+                android:src="@drawable/duanxin" />
+
+            <ImageButton
+                android:id="@+id/bt_send_phone"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_marginLeft="30px"
+                android:background="@drawable/ex_code_blue_corner"
+                android:padding="16px"
+                android:scaleType="fitXY"
+                android:src="@drawable/yuyin" />
+        </LinearLayout>
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/fl_recycle"
+        android:layout_width="170px"
+        app:layout_widthPercent="19%"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/tv_recycle"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10px"
+            android:layout_marginTop="10px"
+            android:background="@drawable/ex_code_red_corner"
+            android:text="回收"
+            android:textColor="@color/ex_while"
+            android:textSize="@dimen/pub_text_size_24_px" />
+    </android.support.percent.PercentRelativeLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="3%" />
+</com.ebox.pub.ui.customview.PercentLinearLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/style_head">
+
+        <TextView
+            android:id="@+id/header_title"
+            style="@style/head_title"
+            android:text="@string/home" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:baselineAligned="true"
+        android:paddingBottom="14dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="14dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_balance"
+                    android:textColor="@color/head_bg_color"
+                    android:textSize="@dimen/home_top_text" />
+
+                <TextView
+                    android:id="@+id/tv_account_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/head_bg_color"
+                    android:textSize="@dimen/home_top_text" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:id="@+id/tv_express_count_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_count"
+                    android:textColor="@color/home_count_color"
+                    android:textSize="@dimen/home_top_text" />
+
+                <TextView
+                    android:id="@+id/tv_express_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/home_count_color"
+                    android:textSize="@dimen/home_top_text" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="6dp"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_item_big"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_order_query"
+                    style="@style/style_home_item">
+
+                    <TextView
+                        style="@style/style_home_item_text"
+                        android:drawableTop="@drawable/icon_home_scand"
+                        android:text="@string/fast_query" />
+                </RelativeLayout>
+
+                <View style="@style/style_home_line_hor" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_empty_query"
+                    style="@style/style_home_item">
+
+                    <TextView
+                        style="@style/style_home_item_text"
+                        android:drawableTop="@drawable/icon_home_empty"
+                        android:text="@string/empty_query" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/style_home_line_ver"
+                android:layout_height="6dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_item_samll"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_delivery_query"
+                    style="@style/style_home_item">
+
+                    <TextView
+                        style="@style/style_home_item_text"
+                        android:drawableTop="@drawable/icon_home_time_out"
+                        android:text="@string/time_out_kd" />
+
+                    <TextView
+                        android:id="@+id/tv_time_out_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="@dimen/space_10"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:background="@drawable/code_bg_num"
+                        android:gravity="center"
+                        android:visibility="invisible"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_18" />
+                </RelativeLayout>
+
+                <View style="@style/style_home_line_hor" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_history_send"
+                    style="@style/style_home_item">
+
+                    <TextView
+                        style="@style/style_home_item_text"
+                        android:drawableTop="@drawable/icon_home_ssqd"
+                        android:text="@string/history_send" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/style_home_line_ver" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_item_samll"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_quick_recharge"
+                    style="@style/style_home_item">
+
+                    <TextView
+                        style="@style/style_home_item_text"
+                        android:drawableTop="@drawable/icon_home_recharge"
+                        android:text="@string/fast_recharege" />
+
+                </RelativeLayout>
+
+                <View style="@style/style_home_line_hor" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_setting"
+                    style="@style/style_home_item">
+
+                    <TextView
+                        style="@style/style_home_item_text"
+                        android:drawableTop="@drawable/icon_home_setting"
+                        android:text="@string/setting" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/style_home_line_ver" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_item_samll"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/rl_ssqd"
+                    style="@style/style_home_item"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/style_home_item_text"
+                        android:drawableTop="@drawable/icon_home_ssqd"
+                        android:text="@string/ssqd" />
+                </RelativeLayout>
+
+                <View style="@style/style_home_line_hor" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_scand_send"
+                    style="@style/style_home_item"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/style_home_item_text"
+                        android:text="@string/scand_send" />
+                </RelativeLayout>
+
+                <View style="@style/style_home_line_hor" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

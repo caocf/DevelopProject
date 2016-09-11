@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rootView"
+    style="?attr/pub_top_nag_page"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/no"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:background="@color/pub_shop_bg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/tl_pic"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="80px"
+            android:layout_marginLeft="70px"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="80px"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400px"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/switcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/pub_image_desc"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:layout_marginTop="20px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/pub_image_desc"
+                    android:src="@drawable/mall_trade_imag_left"/>
+
+                <Gallery
+                    android:id="@+id/gallery"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:spacing="18px"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/pub_image_desc"
+                    android:src="@drawable/mall_trade_image_right"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/info_top"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="70px"
+            android:layout_marginTop="80px"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/info_top_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/info_bottom"
+                android:layout_alignRight="@+id/info_bottom"
+                android:background="@color/pub_white"
+                android:orientation="vertical"
+                android:padding="50px">
+
+                <TextView
+                    android:id="@+id/titleText"
+                    style="@style/pub_text_black_size_34_px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:maxWidth="700px"
+                    android:text="title"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_sale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titleText"
+                    android:layout_marginTop="10px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/oldPriceTextv"
+                        style="@style/pub_text_gray_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mall_olderprice"/>
+
+                    <TextView
+                        android:id="@+id/oldPriceText"
+                        style="@style/pub_text_gray_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_sale1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_sale"
+                    android:layout_marginTop="10px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/PriceTextv"
+                        style="@style/pub_text_black_size_32_px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mall_preferential_price"/>
+
+                    <TextView
+                        android:id="@+id/newPriceText"
+                        style="@style/pub_text_black_size_32_px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6px"
+                        android:textColor="@color/pub_red"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/sell_count"
+                    style="@style/pub_text_black_size_32_px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_sale1"
+                    android:layout_marginTop="10px"
+                    android:gravity="center"
+                    android:text="@string/mall_sell_count"/>
+
+                <TextView
+                    android:id="@+id/goodsleft"
+                    style="@style/pub_text_black_size_32_px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sell_count"
+                    android:layout_marginTop="10px"
+                    android:gravity="center"
+                    android:text="@string/mall_goodsleft"/>
+
+                <RelativeLayout
+                    android:id="@+id/qrcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/titleText">
+
+                    <ImageView
+                        android:id="@+id/appImage"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:contentDescription="@string/pub_image_desc"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/mall_erweima"/>
+
+                    <TextView
+                        android:id="@+id/app"
+                        style="@style/pub_text_black_size_32_px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/appImage"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/mall_app_buy"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/info_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/info_top_rl"
+                android:layout_marginTop="60px"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pub_white"
+                    android:padding="40px">
+
+                    <TextView
+                        android:id="@+id/buyNum"
+                        style="@style/pub_text_black_size_32_px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40px"
+                        android:text="@string/mall_buyNum"/>
+
+                    <Button
+                        android:id="@+id/product_num_del"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:layout_marginTop="20px"
+                        android:layout_toRightOf="@+id/buyNum"
+                        android:background="@drawable/mall_edit_product_num_des_selector"/>
+
+                    <TextView
+                        android:id="@+id/et_num"
+                        style="@style/pub_text_black_size_32_px"
+                        android:layout_width="120px"
+                        android:layout_height="60px"
+                        android:layout_marginLeft="6px"
+                        android:layout_marginRight="6px"
+                        android:layout_marginTop="20px"
+                        android:layout_toRightOf="@+id/product_num_del"
+                        android:background="@drawable/pub_code_bg_while_corner"
+                        android:gravity="center"/>
+
+                    <Button
+                        android:id="@+id/product_num_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:layout_toRightOf="@+id/et_num"
+                        android:background="@drawable/mall_edit_product_num_add_selector"/>
+
+                    <TextView
+                        android:id="@+id/total_text"
+                        style="@style/pub_text_black_size_32_px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/buyNum"
+                        android:layout_marginTop="40px"
+                        android:text="@string/mall_total_text"/>
+
+                    <TextView
+                        android:id="@+id/total_price"
+                        style="@style/pub_text_black_size_32_px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/buyNum"
+                        android:layout_marginTop="40px"
+                        android:layout_toRightOf="@+id/total_text"
+                        android:textColor="@color/pub_red"/>
+
+                    <Button
+                        android:id="@+id/btn_buy"
+                        style="?attr/button_normal"
+                        android:layout_width="300px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="120px"
+                        android:text="@string/mall_buy_now"
+                        android:textSize="@dimen/pub_text_size_52_px"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

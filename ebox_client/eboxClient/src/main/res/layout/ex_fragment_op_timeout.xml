@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/rb_no_time_out"
+            android:layout_width="wrap_content"
+            android:layout_height="106px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60px"
+            android:background="@color/pub_transparent"
+            android:gravity="center"
+            android:text="查看未超期"
+            android:textColor="@color/ex_red_2"
+            android:textSize="@dimen/pub_text_size_30_px" />
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="106px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6px"
+            android:gravity="center"
+            android:text="请先处理超期快件，在进行派件!"
+            android:textColor="@color/ex_black"
+            android:textSize="@dimen/pub_text_size_40_px"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <com.ebox.ex.ui.bar.RecycleOrderBar
+        android:id="@+id/recycle_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_header" />
+
+    <com.ebox.ex.ui.bar.Logo style="@style/ex_logo" />
+</RelativeLayout>

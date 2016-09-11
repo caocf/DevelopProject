@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="1000dp"
+    android:background="@color/life_group_bg_color"
+    android:orientation="vertical">
+    
+    <TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginTop="10dp"
+	    android:textColor="@color/service_text_color"
+	    android:textSize="@dimen/text_size_15"
+	    android:gravity="center_vertical"
+	    android:text="@string/share_to"/>
+    
+    <com.moge.gege.util.widget.horizontalListview.widget.HListView
+        android:id="@+id/shareListView"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="80dp"
+        android:listSelector="@drawable/bg_listview"
+        app:hlv_dividerWidth="10dp" 
+        android:fadingEdge="none"
+        android:overScrollMode="never"/>
+    
+    <View                                                                
+       	android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/share_small_divider_color"/>
+    
+    <com.moge.gege.util.widget.horizontalListview.widget.HListView
+        android:id="@+id/otherListView"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="80dp"
+        android:listSelector="@drawable/bg_listview"
+        app:hlv_dividerWidth="10dp"
+        android:fadingEdge="none"
+        android:overScrollMode="never"/>
+    
+    <View                                                                
+       	android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/share_big_divider_color" />
+
+	<TextView 
+	    android:id="@+id/cancelText"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:textColor="@color/service_text_color"
+	    android:textSize="@dimen/text_size_15"
+	    android:gravity="center"
+	    android:text="@string/share_cancel"
+	    android:background="@drawable/bg_listview"/>
+</LinearLayout>

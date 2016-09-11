@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/st_deliver_layout_root">
+
+
+    <TextView
+        android:id="@+id/tv_prompt"
+        style="@style/pub_text_white_size_60_px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="216px"
+        android:layout_marginTop="104px"
+        android:gravity="center"
+        android:text="@string/st_barcode" />
+
+    <RelativeLayout
+        android:id="@+id/rl_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_prompt"
+        android:layout_marginLeft="216px"
+        android:layout_marginTop="20px"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/et_barcode"
+            style="@style/pub_text_white_size_60_px"
+            android:layout_width="755px"
+            android:layout_height="136px"
+            android:background="@drawable/pub_code_input"
+            android:inputType="numberDecimal|text"
+            android:padding="10px" />
+    </RelativeLayout>
+    
+
+    <Button
+        android:id="@+id/bt_ok"
+        style="@style/pub_text_white_size_60_px"
+        android:layout_width="755px"
+        android:layout_height="136px"
+        android:layout_below="@+id/rl_tel"
+        android:layout_marginLeft="216px"
+        android:layout_marginTop="58px"
+        android:background="@drawable/pub_code_btn_green"
+        android:text="@string/ex_confirm" />
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        style="?attr/keyboard_style"
+        android:layout_width="560px"
+        android:layout_height="720px"
+        android:layout_marginTop="104px"/>
+
+</RelativeLayout>

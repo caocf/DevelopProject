@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+        <EditText
+            android:id="@+id/et_telephone"
+            style="?attr/input_big"
+            android:hint="@string/pub_username"
+            android:padding="20px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100px"/>
+
+        <EditText
+            android:id="@+id/et_verify"
+            style="?attr/input_big"
+            android:layout_marginTop="10px"
+            android:hint="@string/pub_password"
+            android:inputType="textPassword"
+            android:padding="20px"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/bt_ok"
+            style="?attr/button_big"
+            android:layout_marginTop="20px"
+            android:padding="20px"
+            android:text="@string/ex_login" 
+            android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

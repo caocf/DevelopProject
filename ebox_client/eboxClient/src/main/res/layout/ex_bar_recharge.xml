@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_active"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="28px">
+
+    <TextView
+        style="@style/ex_text_normal"
+        android:text="@string/ex_recharge_number" />
+
+    <TextView
+        android:id="@+id/tv_pay_account"
+        style="@style/ex_text_normal"
+        android:textSize="@dimen/pub_text_size_36_px" />
+
+    <TextView
+        style="@style/ex_text_normal"
+        android:layout_marginTop="@dimen/pub_text_size_40_px"
+        android:text="@string/ex_rechage_dnomi" />
+
+    <GridView
+        android:id="@+id/GridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:gravity="center"
+        android:horizontalSpacing="30px"
+        android:listSelector="#00000000"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="10px" />
+
+    <TextView
+        style="@style/ex_text_normal"
+        android:layout_marginTop="16px"
+        android:text="@string/ex_pay_type" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pub_text_size_30_px"
+        android:layout_marginTop="@dimen/pub_text_size_30_px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_weixin"
+                android:layout_width="@dimen/pub_text_size_26_px"
+                android:layout_height="@dimen/pub_text_size_26_px"
+                android:background="@drawable/ex_code_pay_check"
+                android:button="@null" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5px"
+                android:src="@drawable/ex_icon_weixin" />
+
+            <TextView
+                style="@style/ex_text_normal"
+                android:layout_marginLeft="5px"
+                android:text="@string/ex_weixin_pay" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_alipay"
+                android:layout_width="@dimen/pub_text_size_26_px"
+                android:layout_height="@dimen/pub_text_size_26_px"
+                android:background="@drawable/ex_code_pay_check"
+                android:button="@null" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5px"
+                android:src="@drawable/ex_icon_alipay" />
+
+            <TextView
+                style="@style/ex_text_normal"
+                android:layout_marginLeft="5px"
+                android:text="@string/ex_ali_pay" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_recharge"
+        style="?attr/button_normal"
+        android:layout_height="85px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/pub_text_size_45_px"
+        android:background="@drawable/ex_code_red"
+        android:gravity="center"
+        android:text="@string/ex_recharge"
+        android:textSize="@dimen/pub_text_size_28_px" />
+
+
+</LinearLayout>

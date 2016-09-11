@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/ll_op"
+        style="?attr/pub_op_main_left_bg"
+        android:layout_width="206px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RadioButton
+            android:id="@+id/rb_deliver"
+            style="@style/ex_style_operator_left_tab"
+            android:drawableLeft="@drawable/ex_pub_delivery"
+            android:text="@string/ex_op_delivery" />
+
+        <RadioButton
+            android:id="@+id/rb_time_out"
+            style="@style/ex_style_operator_left_tab"
+            android:drawableLeft="@drawable/ex_pub_recycle"
+            android:text="@string/ex_op_withdraw" />
+
+        <RadioButton
+            android:id="@+id/rb_history_order"
+            style="@style/ex_style_operator_left_tab"
+            android:drawableLeft="@drawable/ex_input_item_id"
+            android:text="@string/ex_op_history_order" />
+
+        <RadioButton
+            android:id="@+id/rb_recharge"
+            style="@style/ex_style_operator_left_tab"
+            android:drawableLeft="@drawable/ex_pub_pay"
+            android:text="@string/ex_op_recharge" />
+
+        <RadioButton
+            android:id="@+id/rb_change_pwd"
+            style="@style/ex_style_operator_left_tab"
+            android:drawableLeft="@drawable/ex_pub_changep"
+            android:text="@string/ex_op_change_pwd" />
+
+        <RadioButton
+            android:id="@+id/rb_download"
+            style="@style/ex_style_operator_left_tab"
+            android:drawableLeft="@drawable/ex_pub_download"
+            android:text="@string/ex_op_down_app" />
+
+        <RadioButton
+            android:id="@+id/rb_help"
+            style="@style/ex_style_operator_left_tab"
+            android:drawableLeft="@drawable/ex_pub_help"
+            android:text="@string/ex_op_help" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="206px"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_op"
+        android:background="@color/ex_light_blue">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ex_op_balance"
+                android:drawablePadding="6px"
+                android:text="@string/ex_op_balance"
+                android:textColor="@color/pub_white"
+                android:textSize="@dimen/pub_text_size_20_px" />
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8px"
+                android:drawableLeft="@drawable/ex_op_state"
+                android:drawablePadding="6px"
+                android:text="@string/ex_op_state"
+                android:textColor="@color/pub_white"
+                android:textSize="@dimen/pub_text_size_20_px" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/ll_op" />
+
+</RelativeLayout>

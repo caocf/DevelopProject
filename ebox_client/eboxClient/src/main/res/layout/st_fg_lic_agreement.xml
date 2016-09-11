@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	 style="?attr/pub_top_nag_page"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+	 android:id="@+id/rootView">
+     
+     <com.ebox.pub.ui.customview.Title android:id="@+id/title"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+	<RelativeLayout
+        android:id="@+id/tv_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			style="@style/pub_text_white_size_60_px"
+			android:text="请准备好以下材料开始办理：\n 1.身份证和户口本\n 2.居住证\n 3.照片回执"
+			android:layout_gravity="center_horizontal"
+			android:id="@+id/tv_agreement"
+			android:layout_marginLeft="336px"
+			android:layout_marginTop="120px" />
+		<Button
+			android:id="@+id/btn_ok"
+			style="@style/pub_text_white_size_60_px"
+			android:layout_width="1240px"
+			android:layout_height="276px"
+			android:layout_marginTop="38px"
+			android:layout_marginLeft="336px"
+			android:layout_below="@+id/tv_agreement"
+			android:background="@drawable/pub_code_btn_green"
+			android:text="开始办理"/>
+	    
+	</RelativeLayout>
+
+</LinearLayout>

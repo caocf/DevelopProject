@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_marginBottom="104px"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:layout_marginTop="114px"
+        android:layout_toLeftOf="@+id/btn_right"
+        android:layout_toRightOf="@+id/btn_left"
+        android:background="@color/pub_white">
+
+        <TextView
+            android:id="@+id/tv_wi_name"
+            style="@style/yc_title_size_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70px"
+            android:layout_marginTop="20px"
+            android:gravity="center_vertical" />
+
+        <View
+            android:id="@+id/vw_line"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_below="@+id/tv_wi_name"
+            android:layout_marginTop="6px"
+            android:background="@color/pub_grey" />
+
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/wilist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/vw_line"
+            android:layout_marginBottom="40px"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="40px"
+            android:cacheColorHint="#000000"
+            android:divider="@color/transparent"
+            android:padding="18px"
+            android:scrollbars="none"
+            android:verticalSpacing="28px" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="26px"
+        android:background="@drawable/yc_btn_left" />
+
+    <Button
+        android:id="@+id/btn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="26px"
+        android:background="@drawable/yc_btn_right" />
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_sc_pic"
+        android:layout_width="272px"
+        android:layout_height="272px"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:contentDescription="@null" />
+
+    <ImageView
+        android:id="@+id/iv_sc_pic_big"
+        android:layout_width="282px"
+        android:layout_height="194px"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/tv_sc_name"
+        style="@style/pub_text_black_size_32_px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_sc_pic"
+        android:layout_centerHorizontal="true"
+        android:text="@string/ums_water_charge"
+        android:visibility="gone" />
+
+</RelativeLayout>

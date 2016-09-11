@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loadview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+   
+
+    <com.ebox.pub.ui.customview.ProgressWebView
+        android:id="@+id/d_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarStyle="outsideOverlay" />
+    
+     <Button
+        android:id="@+id/d_bt_quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="关 闭" 
+        android:padding="6dp"
+        android:background="@drawable/ex_activity_bg"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+       
+        android:textSize="28sp">
+    </Button>
+
+</FrameLayout>

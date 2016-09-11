@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_group"
+        style="@style/pub_text_black_size_32_px"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/ex_code_table_content"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_door"
+        style="@style/pub_text_black_size_32_px"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/ex_code_table_content"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_doorState"
+        style="@style/pub_text_black_size_32_px"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/ex_code_table_content"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_boxState"
+        style="@style/pub_text_black_size_32_px"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/ex_code_table_content"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_boxSize"
+        style="@style/pub_text_black_size_32_px"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/ex_code_table_content"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_boxUserState"
+        style="@style/pub_text_black_size_32_px"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/ex_code_table_content"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_updateState"
+        style="@style/pub_text_black_size_32_px"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/ex_code_table_content"
+        android:gravity="center" />
+
+</LinearLayout>

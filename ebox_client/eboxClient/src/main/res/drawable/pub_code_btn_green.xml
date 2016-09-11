@@ -1,0 +1,23 @@
+<?xml version= "1.0" encoding= "utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="false">
+        <shape>
+
+            <!-- 背景 -->
+            <solid android:color="@color/pub_btn_dis_enable" />
+        </shape>
+    </item>
+
+    <item android:state_pressed="true" android:drawable="@drawable/pub_code_btn_green_pressed"/>
+
+    <!--<item android:state_focused="true" android:drawable="@drawable/pub_code_btn_green_pressed"/>-->
+    <item>
+        <shape>
+
+            <!-- 背景 -->
+            <solid android:color="@color/pub_btn_green_normal" />
+        </shape>
+    </item>
+
+</selector>

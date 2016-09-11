@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     style="?attr/pub_top_nag_page"
+	 android:id="@+id/rootView"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent" >
+     
+     <com.ebox.pub.ui.customview.Title android:id="@+id/title"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<Button
+			android:id="@+id/st_btn_handle"
+			android:layout_width="602px"
+			android:layout_height="276px"
+			android:background="@drawable/pub_code_btn_red"
+			android:text="@string/handle_business_licenses"
+			style="@style/pub_text_white_size_60_px"
+			android:layout_marginLeft="336px"
+			android:layout_marginTop="170px"/>
+
+		<Button
+			android:id="@+id/st_btn_zzlq"
+			android:layout_width="1240px"
+			android:layout_height="276px"
+			android:layout_below="@+id/st_btn_handle"
+			android:layout_marginTop="38px"
+			android:layout_marginLeft="336px"
+			android:background="@drawable/pub_code_btn_yellow"
+			android:text="@string/lic_get"
+			style="@style/pub_text_white_size_60_px"/>
+
+		<Button
+			android:id="@+id/st_btn_jdcx"
+			android:layout_alignBaseline="@+id/st_btn_handle"
+			android:layout_width="602px"
+			android:layout_height="276px"
+			android:layout_toRightOf="@+id/st_btn_handle"
+			android:layout_marginLeft="36px"
+			android:background="@drawable/pub_code_btn_blue"
+			android:text="@string/st_jdcx"
+			style="@style/pub_text_white_size_60_px"/>
+
+
+
+	</RelativeLayout>
+
+</LinearLayout>

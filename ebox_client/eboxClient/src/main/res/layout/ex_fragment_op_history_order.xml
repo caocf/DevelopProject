@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ll_op"
+        android:layout_width="match_parent"
+        android:layout_height="106px"
+        android:background="@color/pub_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_heightPercent="12%">
+
+        <ImageView
+            android:layout_width="86px"
+            android:layout_height="40px"
+            android:layout_marginLeft="10px"
+            android:scaleType="fitXY"
+            android:src="@drawable/ex_query_input" />
+
+        <EditText
+            android:id="@+id/ed_item_id"
+            style="@style/input_common_normal"
+            android:hint="@string/ex_op_history_order_input_hint" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20px"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10px"
+                android:text="选择查询期限:"
+                android:textColor="@color/ex_black"
+                android:textSize="@dimen/pub_text_size_22_px" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_today"
+                    android:layout_width="72px"
+                    android:layout_height="32px"
+                    android:background="@drawable/ex_code_radio_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="当天"
+                    android:textColor="@drawable/ex_code_radio_text"
+                    android:textSize="@dimen/pub_text_size_22_px" />
+
+                <RadioButton
+                    android:id="@+id/rb_week"
+                    android:layout_width="72px"
+                    android:layout_height="32px"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/ex_code_radio_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="本周"
+                    android:textColor="@drawable/ex_code_radio_text"
+                    android:textSize="@dimen/pub_text_size_22_px" />
+
+                <RadioButton
+                    android:id="@+id/rb_month"
+                    android:layout_width="72px"
+                    android:layout_height="32px"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/ex_code_radio_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="本月"
+                    android:textColor="@drawable/ex_code_radio_text"
+                    android:textSize="@dimen/pub_text_size_22_px" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_order_all"
+                android:layout_width="120px"
+                android:layout_height="wrap_content"
+                android:button="@drawable/ex_icon_radio"
+                android:text="全部"
+                android:textSize="@dimen/pub_text_size_22_px" />
+
+            <RadioButton
+                android:id="@+id/rb_order_unpick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8px"
+                android:button="@drawable/ex_icon_radio"
+                android:text="仅查未取走"
+                android:textSize="@dimen/pub_text_size_22_px" />
+        </RadioGroup>
+
+        <com.ebox.pub.ui.customview.view.MaterialButton
+            android:id="@+id/btn_query"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8px"
+            android:background="@drawable/ex_code_red"
+            android:gravity="center"
+            android:text="查 询"
+            android:textColor="@color/ex_while"
+            android:textSize="@dimen/pub_text_size_28_px" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/logo"
+        android:layout_below="@+id/ll_op">
+
+        <com.ebox.ex.ui.bar.RecycleOrderBar
+            android:id="@+id/recycle_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <com.ebox.ex.ui.bar.Logo style="@style/ex_logo" />
+
+    <RelativeLayout
+        android:id="@+id/rl_input"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/pub_transparent_50"
+        android:layout_below="@+id/ll_op">
+
+
+        <com.ebox.ex.ui.bar.EboxKeyboard
+            android:id="@+id/keyboard"
+            style="@style/ex_keyboard_style"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="60px"
+            android:layout_alignParentRight="false" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

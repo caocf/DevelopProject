@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20px">
+
+
+    <!--清洁柜体-->
+
+    <TextView
+        android:id="@+id/mgt_tv_fbc_clean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="请清洁下柜体!"
+        android:textColor="@color/pub_blue"
+        android:textSize="@dimen/pub_text_size_36_px" />
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_marginLeft="100px"-->
+    <!--android:text="清洁柜体:"-->
+    <!--android:textColor="@color/pub_blue"-->
+    <!--android:textSize="@dimen/pub_text_size_26_px" />-->
+
+
+    <!--<RadioGroup-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/rb_ok"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="30px"-->
+    <!--android:text="完成"-->
+    <!--android:textColor="@color/pub_blue"-->
+    <!--android:textSize="@dimen/pub_text_size_26_px" />-->
+
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/id_no"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:checked="true"-->
+    <!--android:text="未完成"-->
+    <!--android:textColor="@color/pub_blue"-->
+    <!--android:textSize="@dimen/pub_text_size_26_px"/>-->
+
+
+    <!--</RadioGroup>-->
+
+
+    <!--</LinearLayout>-->
+
+    <com.ebox.pub.ui.customview.view.MaterialButton
+        android:id="@+id/bt_fbc_ok"
+        style="@style/bt_fragment_test"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40px"
+        android:text="已清理柜体"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

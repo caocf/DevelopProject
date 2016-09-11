@@ -1,0 +1,16 @@
+<?xml version= "1.0" encoding= "utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <size
+                android:width="300px"
+                android:height="132px"/>
+            <solid android:color="@color/hx01_title_back_pressed"/>
+
+        </shape>
+    </item>
+
+    <item android:drawable="@drawable/hx01_icon_title_back"></item>
+
+</layer-list>

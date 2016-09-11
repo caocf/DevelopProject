@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20px">
+
+    <com.ebox.pub.ui.customview.view.MaterialButton
+        android:id="@+id/mgt_bt_fat_begin"
+        style="@style/bt_fragment_test"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100px"
+        android:text="播放声音" />
+
+    <com.ebox.pub.ui.customview.view.MaterialButton
+        android:id="@+id/mgt_bt_fat_stop"
+        style="@style/bt_fragment_test"
+        android:layout_below="@id/mgt_bt_fat_begin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40px"
+        android:text="停止播放"
+        android:textColor="@color/pub_white"
+        android:visibility="invisible"/>
+
+
+    <!--底部结果-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结果:"
+                android:textColor="@color/pub_blue"
+                android:textSize="@dimen/pub_text_size_34_px" />
+
+            <TextView
+                android:id="@+id/mgt_tv_fat_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:text="成功"
+                android:textColor="@color/pub_blue"
+                android:textSize="@dimen/pub_text_size_34_px" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

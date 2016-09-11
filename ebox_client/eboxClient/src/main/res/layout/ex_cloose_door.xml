@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/rl_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200px">
+
+        <LinearLayout
+            android:id="@+id/ll_door"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/ex_box_door_64_px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ex_black"
+                android:text="请您先关闭箱门" />
+
+            <TextView
+                android:id="@+id/tv_door"
+                style="@style/ex_box_door_64_px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:text="02组12号门"
+                android:textColor="@color/pub_red"
+                android:textSize="70px" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_door"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10px"
+            android:padding="20px"
+            android:text="关    闭"
+            android:textColor="@color/ex_black"
+            android:textSize="40px"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/bt_report"
+            style="@style/pub_text_white_size_42_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="40px"
+            android:background="@drawable/ex_btn_report"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

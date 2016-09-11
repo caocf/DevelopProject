@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title">
+
+        <ImageView
+            android:id="@+id/st_idcard_left"
+            android:layout_width="560px"
+            android:layout_height="770px"
+            android:layout_marginLeft="152px"
+            android:layout_marginTop="78px"
+            android:background="@drawable/st_idcard_left"
+            android:contentDescription="@string/pub_image_desc" />
+
+        <ImageView
+            android:id="@+id/st_idcard_middle"
+            android:layout_width="390px"
+            android:layout_height="300px"
+            android:layout_marginLeft="515px"
+            android:layout_marginTop="555px"
+            android:background="@drawable/st_imag_tips"
+            android:contentDescription="@string/pub_image_desc" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="83px"
+        android:layout_toRightOf="@+id/left">
+
+        <RelativeLayout
+            android:id="@+id/step1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <com.ebox.mgt.ui.CameraTest
+                android:id="@+id/cp"
+                android:layout_width="830px"
+                android:layout_height="495px"
+                android:layout_marginTop="180px" />
+
+            <Button
+                android:id="@+id/btn_sm"
+                style="@style/pub_text_white_size_60_px"
+                android:layout_width="830px"
+                android:layout_height="118px"
+                android:layout_below="@+id/cp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="42px"
+                android:background="@drawable/pub_code_btn_red"
+                android:text="@string/st_zjsm" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/step2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="830px"
+                android:layout_height="495px"
+                android:layout_marginTop="180px"
+                android:background="@color/pub_white"
+                android:contentDescription="@string/pub_image_desc"
+                android:scaleType="fitXY"/>
+
+            <Button
+                android:id="@+id/btn_sm_retry"
+                style="@style/pub_text_white_size_60_px"
+                android:layout_width="600px"
+                android:layout_height="118px"
+                android:layout_below="@+id/imageView"
+                android:layout_marginTop="42px"
+                android:background="@drawable/pub_code_btn_red"
+                android:text="重新扫描" />
+
+            <Button
+                android:id="@+id/btn_save"
+                style="@style/pub_text_white_size_60_px"
+                android:layout_width="194px"
+                android:layout_height="118px"
+                android:layout_alignBaseline="@+id/btn_sm_retry"
+                android:layout_marginLeft="36px"
+                android:layout_toRightOf="@+id/btn_sm_retry"
+                android:background="@drawable/pub_code_btn_green"
+                android:text="@string/mgt_save" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

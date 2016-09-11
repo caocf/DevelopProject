@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/pub_text_black_size_32_px"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ex_code_table_content_deal"
+            android:gravity="center"
+            android:text="类型" />
+
+        <TextView
+            style="@style/pub_text_black_size_32_px"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ex_code_table_content_deal"
+            android:gravity="center"
+            android:text="箱门" />
+
+        <TextView
+            style="@style/pub_text_black_size_32_px"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ex_code_table_content_deal"
+            android:gravity="center"
+            android:text="箱门状态" />
+
+        <TextView
+            style="@style/pub_text_black_size_32_px"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ex_code_table_content_deal"
+            android:gravity="center"
+            android:text="存件信息" />
+
+        <TextView
+            style="@style/pub_text_black_size_32_px"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ex_code_table_content_deal"
+            android:gravity="center"
+            android:text="箱门大小" />
+
+        <TextView
+            style="@style/pub_text_black_size_32_px"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ex_code_table_content_deal"
+            android:gravity="center"
+            android:text="格口状态" />
+
+        <TextView
+            style="@style/pub_text_black_size_32_px"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ex_code_table_content_deal"
+            android:gravity="center"
+            android:text="同步状态" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:listSelector="#00000000" />
+
+</LinearLayout>

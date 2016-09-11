@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/rl_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="92px"
+        android:layout_marginTop="90px"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/ex_text_top_white_title_36_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/ex_balance" />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            style="@style/ex_text_top_orange_title_50_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btn_get_balance"
+            android:layout_width="180px"
+            android:layout_height="80px"
+            android:layout_marginLeft="40px"
+            android:background="@drawable/pub_code_btn_orange_corner"
+            android:gravity="center"
+            android:text="@string/ex_query_balance"
+            android:textColor="@color/pub_black"
+            android:textSize="@dimen/pub_text_size_36_px" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_prompt"
+        style="@style/ex_text_top_blue_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="92px"
+        android:layout_marginTop="200px"
+        android:gravity="center"
+        android:text="@string/ex_scan_prompt" />
+
+    <RelativeLayout
+        android:id="@+id/rl_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_prompt"
+        android:layout_marginLeft="92px"
+        android:layout_marginTop="62px"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_barcode"
+            style="?attr/input_single"
+            android:gravity="center_vertical"
+            android:inputType="numberDecimal|text"
+            android:padding="20px" />
+
+        <com.ebox.pub.ui.customview.view.MaterialButton
+            android:id="@+id/bt_ok"
+            style="?attr/button_big"
+            android:layout_below="@+id/et_barcode"
+            android:layout_marginTop="86px"
+            android:text="@string/ex_confirm" />
+    </RelativeLayout>
+
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        style="?attr/keyboard_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+  />
+
+    <com.ebox.pub.ui.customview.view.MaterialImageView
+        android:id="@+id/iv_gif"
+        android:layout_width="640px"
+        android:scaleType="fitXY"
+        android:layout_height="120px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60px"
+        android:layout_marginTop="30px" />
+</RelativeLayout>

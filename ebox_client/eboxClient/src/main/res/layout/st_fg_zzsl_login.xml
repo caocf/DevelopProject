@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="?attr/pub_top_nag_page">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="166px"
+        android:layout_marginLeft="216px">
+
+
+        <EditText
+            android:id="@+id/et_username"
+            style="?attr/input_big"
+            android:padding="10px"
+            android:hint="@string/pub_username"/>
+
+        <EditText
+            android:id="@+id/et_verify"
+            style="?attr/input_big"
+            android:layout_marginTop="58px"
+            android:layout_below="@+id/et_username"
+            android:hint="@string/pub_password"
+            android:padding="10px"
+            android:inputType="numberPassword"/>
+
+        <Button
+            android:id="@+id/bt_ok"
+            android:layout_marginTop="58px"
+            android:layout_below="@+id/et_verify"
+            style="?attr/button_big"
+            android:text="@string/ex_login" />
+
+
+    </RelativeLayout>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        style="?attr/keyboard_style"
+        android:layout_width="@dimen/key_board_width"
+        android:layout_height="@dimen/key_board_height"/>
+
+</RelativeLayout>

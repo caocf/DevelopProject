@@ -1,0 +1,59 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        style="?attr/pub_top_nag_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingBottom="20px"
+            android:paddingLeft="10dp"
+            android:paddingTop="30px"
+            android:text="@string/ex_op_delivery_select_box"
+            android:textColor="@color/ex_black"
+            android:textSize="@dimen/pub_text_size_26_px" />
+
+        <TextView
+            android:id="@+id/tv_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_hint"
+            android:layout_marginLeft="14px"
+            android:layout_toRightOf="@+id/tv_hint"
+            android:textColor="@color/ex_red"
+            android:textStyle="bold"
+            android:textSize="@dimen/pub_text_size_24_px" />
+
+
+        <TextView
+            android:id="@+id/bt_manual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_hint"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/ex_pub_hand"
+            android:drawablePadding="10px"
+            android:gravity="center"
+            android:paddingBottom="10px"
+            android:paddingRight="10dp"
+            android:paddingTop="30px"
+            android:text="@string/ex_op_delivery_select_manual"
+            android:textColor="@color/ex_light_blue"
+            android:textSize="@dimen/pub_text_size_20_px" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_manual"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10px" />
+
+    </RelativeLayout>
+</merge>

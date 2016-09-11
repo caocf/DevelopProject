@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg_color"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/style_head" >
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/bg_btn_back"
+            android:clickable="true"
+            android:padding="8dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/bace1"
+                android:drawablePadding="6dp"
+                android:gravity="center_vertical"
+                android:text="返回"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/head_title"
+            android:text="@string/fast_query_deatils" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/order_hint_widht"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <TextView
+                        style="@style/style_order_details_text"
+                        android:text="快递单号" />
+
+                    <TextView style="@style/style_order_details_h" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_order_id"
+                    style="@style/style_order_details" />
+            </LinearLayout>
+
+            <View style="@style/style_item_line_ver" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/order_hint_widht"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <TextView
+                        style="@style/style_order_details_text"
+                        android:text="投递状态" />
+
+                    <TextView style="@style/style_order_details_h" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    style="@style/style_order_details"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/style_item_line_ver" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/order_hint_widht"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <TextView
+                        style="@style/style_order_details_text"
+                        android:text="收件人姓名" />
+
+                    <TextView style="@style/style_order_details_h" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_express_name"
+                    style="@style/style_order_details"
+                    android:text="" />
+            </LinearLayout>
+
+            <View
+                style="@style/style_item_line_ver"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/order_hint_widht"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <TextView
+                        style="@style/style_order_details_text"
+                        android:text="收件人号码" />
+
+                    <TextView style="@style/style_order_details_h" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_express_phone"
+                    style="@style/style_order_details"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/style_item_line_ver" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/order_hint_widht"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <TextView
+                        style="@style/style_order_details_text"
+                        android:text="小区名称" />
+
+                    <TextView style="@style/style_order_details_h" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_community"
+                    style="@style/style_order_details"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/style_item_line_ver" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/order_hint_widht"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <TextView
+                        style="@style/style_order_details_text"
+                        android:text="小区地址" />
+
+                    <TextView style="@style/style_order_details_h" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_community_place"
+                    style="@style/style_order_details"
+                    android:maxLines="2"
+                    android:singleLine="false"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/style_item_line_ver" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/order_hint_widht"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <TextView
+                        style="@style/style_order_details_text"
+                        android:text="投递时间" />
+
+                    <TextView style="@style/style_order_details_h" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_deliver_time"
+                    style="@style/style_order_details"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/style_item_line_ver" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/order_hint_widht"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <TextView
+                        style="@style/style_order_details_text"
+                        android:text="取件时间" />
+
+                    <TextView style="@style/style_order_details_h" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_fetch_time"
+                    style="@style/style_order_details"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/style_item_line_ver" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/order_hint_widht"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <TextView
+                        style="@style/style_order_details_text"
+                        android:text="本件扣费" />
+
+                    <TextView style="@style/style_order_details_h" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_charge"
+                    style="@style/style_order_details"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/style_item_line_ver" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

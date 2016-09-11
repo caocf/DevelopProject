@@ -1,0 +1,197 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title">
+    <!--menu  菜单-->
+
+    <LinearLayout
+        android:id="@+id/mgt_ll_aus_menu"
+        android:layout_width="0px"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:paddingBottom="20px"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:paddingTop="60px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+         <com.ebox.pub.ui.customview.view.MaterialButton
+            android:id="@+id/mgt_bt_aus_basic"
+             style="@style/button_menu"
+            android:text="@string/mgt_us_baisc" />
+
+        <com.ebox.pub.ui.customview.view.MaterialButton
+            android:id="@+id/mgt_bt_aus_extends"
+            style="@style/button_menu"
+            android:text="@string/mgt_us_extends" />
+
+        <com.ebox.pub.ui.customview.view.MaterialButton
+            android:id="@+id/mgt_bt_aus_union"
+            style="@style/button_menu"
+            android:text="@string/mgt_us_union" />
+        <com.ebox.pub.ui.customview.view.MaterialButton
+            android:id="@+id/mgt_bt_afi_init"
+            style="@style/button_menu"
+            android:text="4.系统初始化" />
+
+
+    </LinearLayout>
+
+    <!--fragment 内容添加-->
+    <LinearLayout
+        android:id="@+id/mgt_ll_aus_content"
+        android:layout_width="0px"
+        android:layout_weight="4"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/title"
+        android:layout_toRightOf="@id/mgt_ll_aus_menu"
+        android:paddingBottom="20px"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:paddingTop="60px">
+
+        <include
+            layout="@layout/fragment_header"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"></include>
+
+        <FrameLayout
+            android:id="@+id/mgt_fl_aus_content"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="4"
+            android:background="@color/pub_white"></FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_marginBottom="60px"
+            android:layout_weight="1"
+            android:background="@color/pub_white">
+
+            <View
+                android:id="@+id/v_aph"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/ex_operator_gray"></View>
+
+
+            <Button
+                android:id="@+id/mgt_bt_aus_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/v_aph"
+                android:layout_marginRight="40px"
+                android:layout_marginTop="10px"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:paddingTop="10px"
+                android:paddingBottom="10px"
+                android:background="@drawable/ex_code_blue"
+                android:text="完成"
+                android:textColor="@color/pub_white"
+                android:textSize="@dimen/pub_text_size_30_px" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_aph_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mgt_tv_aus_prosess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="配置进度: "
+                    android:textColor="@color/pub_btn_blue_pressed"
+                    android:textSize="@dimen/pub_text_size_28_px" />
+
+                <TextView
+                    android:id="@+id/mgt_tv_aus_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 "
+                    android:textColor="@color/pub_btn_blue_normal"
+                    android:textSize="@dimen/pub_text_size_28_px" />
+
+
+                <TextView
+                    android:id="@+id/mgt_tv_aus_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/ 4   "
+                    android:textColor="@color/pub_btn_blue_normal"
+                    android:textSize="@dimen/pub_text_size_28_px" />
+
+                <TextView
+                    android:id="@+id/mgt_tv_aus_1"
+                    style="@style/result_tv"
+                    android:background="@drawable/ex_code_circle_orange"
+                    android:text="1" />
+
+                <TextView
+                    android:id="@+id/mgt_tv_aus_2"
+                    style="@style/result_tv"
+                    android:background="@drawable/ex_code_circle_orange"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/mgt_tv_aus_3"
+                    style="@style/result_tv"
+                    android:background="@drawable/ex_code_circle_orange"
+                    android:text="3" />
+                <TextView
+                    android:id="@+id/mgt_tv_aus_4"
+                    style="@style/result_tv"
+                    android:background="@drawable/ex_code_circle_orange"
+                    android:text="4" />
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_below="@id/ll_aph_state"
+                android:id="@+id/mgt_bt_aus_over"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ex_code_blue"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:text="完成更新配置"
+                android:textColor="@color/pub_white"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/pub_text_size_22_px"
+                android:layout_marginRight="40px"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="5px"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

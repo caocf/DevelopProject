@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="104px"
+        android:layout_marginTop="166px">
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26px"
+            android:background="@drawable/yc_btn_left" />
+
+        <com.handmark.pulltorefresh.library.PullToRefreshGridView
+            android:id="@+id/wwlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="220px"
+            android:layout_marginRight="220px"
+            android:cacheColorHint="#000000"
+            android:horizontalSpacing="70px"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="30px" />
+
+        <Button
+            android:id="@+id/btn_right"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="26px"
+            android:background="@drawable/yc_btn_right" />
+
+    </RelativeLayout>
+
+</LinearLayout>

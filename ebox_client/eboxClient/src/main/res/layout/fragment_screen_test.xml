@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/mgt_rl_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20px"
+        android:background="@color/pub_red">
+
+        <TextView
+            android:id="@+id/mgt_tv_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20px"
+            android:text="红色"
+
+            android:textColor="@color/pub_white"
+            android:textSize="50px" />
+
+    </RelativeLayout>
+
+    <com.ebox.pub.ui.customview.view.MaterialButton
+        android:id="@+id/bt_ok"
+        style="@style/bt_fragment_test"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="测试成功" />
+
+    <com.ebox.pub.ui.customview.view.MaterialButton
+        android:id="@+id/bt_error"
+        style="@style/bt_fragment_test"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="测试失败"
+        android:layout_toRightOf="@id/bt_ok"
+        android:layout_marginLeft="10px"/>
+
+
+</RelativeLayout>

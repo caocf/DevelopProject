@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/pub_grey"
+    >
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/union_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="150px"
+            android:layout_marginLeft="500px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pub_white"
+                android:text="传统银行卡 终端号:   "
+                android:textSize="@dimen/pub_text_size_40_px"
+                android:layout_marginRight="20px"/>
+            <EditText
+                android:id="@+id/mgt_et_maus_t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="终端号"
+                android:padding="10px"
+                android:textSize="@dimen/pub_text_size_36_px"
+                android:background="@drawable/mgt_code_input_common"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="500px">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/pub_white"
+            android:text="全民付总部 终端号:   "
+            android:textSize="@dimen/pub_text_size_40_px"
+            android:layout_marginRight="20px"/>
+        <EditText
+            android:id="@+id/mgt_et_maus_t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="终端号"
+            android:padding="10px"
+            android:textSize="@dimen/pub_text_size_36_px"
+            android:background="@drawable/mgt_code_input_common"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="500px">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/pub_white"
+            android:text="江宁水煤 终端号:       "
+            android:textSize="@dimen/pub_text_size_40_px"
+            android:layout_marginRight="20px"/>
+        <EditText
+            android:id="@+id/mgt_et_maus_t3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="终端号"
+            android:padding="10px"
+            android:textSize="@dimen/pub_text_size_36_px"
+            android:background="@drawable/mgt_code_input_common"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,193 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/base_bg_color"
+        android:orientation="vertical" >
+
+        <com.moge.ebox.phone.ui.customview.Head
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="8dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/start_time"
+                android:textColor="@color/his_text_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                style="@style/text_login_edit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="@string/choose_start_time"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View style="@style/style_item_line_ver" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/end_time"
+                android:textColor="@color/his_text_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_end_time"
+                style="@style/text_login_edit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="@string/choose_end_time"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_state"
+                android:layout_width="136dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <View
+                    style="@style/style_item_line_ver"
+                    android:layout_alignParentTop="true" />
+
+                <ImageView
+                    android:id="@+id/iv_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/arrow_down2" />
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_toLeftOf="@+id/iv_hint"
+                    android:padding="5dp"
+                    android:textColor="@color/input_text_color"
+                    android:textColorHint="@color/his_text_color"
+                    android:textSize="@dimen/text_size_16" />
+
+                <Spinner
+                    android:id="@+id/spinner_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/translucent"
+                    android:gravity="center"
+                    android:visibility="gone" />
+
+                <View
+                    style="@style/style_item_line_ver"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_query"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_login"
+                android:gravity="center"
+                android:padding="14dp"
+                android:text="@string/query"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            style="@style/style_item_line_ver"
+            android:layout_marginTop="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/style_query_time_out_text"
+                android:text="@string/send_time" />
+
+            <View style="@style/style_item_line_hor" />
+
+            <TextView
+                style="@style/style_query_time_out_text"
+                android:text="@string/track_number" />
+
+            <View style="@style/style_item_line_hor" />
+
+            <TextView
+                style="@style/style_query_time_out_text"
+                android:text="@string/phone" />
+
+            <View style="@style/style_item_line_hor" />
+
+            <TextView
+                style="@style/style_query_time_out_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:text="@string/community" />
+        </LinearLayout>
+
+        <View style="@style/style_item_line_ver" />
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/refresh_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#000000"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/rl_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+</RelativeLayout>

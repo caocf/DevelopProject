@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loadview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/life_group_bg_color">
+    
+   <include layout="@layout/general_header"/>
+  
+   <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+       android:id="@+id/topicListScrollView" 
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_weight="1"
+       android:scrollbars="none"
+       app:ptrAnimationStyle="flip">
+       
+       <LinearLayout
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content"
+	       android:orientation="vertical">
+       
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       
+       <RelativeLayout
+           android:layout_width="match_parent"
+      	   android:layout_height="70dp"
+      	   android:paddingLeft="10dp"
+	       android:paddingRight="10dp"
+      	   android:background="@color/white">
+      	   
+       	   <com.moge.gege.util.widget.RoundedImageView 
+       	       android:id="@+id/avatarImage"
+           	   android:layout_width="50dp"
+           	   android:layout_height="50dp"
+           	   android:layout_centerVertical="true"
+           	   android:scaleType="fitXY"
+           	   app:corner_radius="5dp"
+           	   app:border_width="2dp"
+           	   app:border_color="@color/item_gray"/>
+       	   
+       	   <TextView 
+               android:id="@+id/signinBtn"
+               android:layout_width="63dp"
+		   	   android:layout_height="26dp"
+		   	   android:layout_alignParentRight="true"
+		   	   android:layout_centerVertical="true"
+		   	   android:textColor="@color/white"
+		   	   android:textSize="@dimen/text_size_14"
+		   	   android:gravity="center"/>
+           
+           <View
+              android:id="@+id/dividerView"
+              android:layout_width="0.5dp"
+              android:layout_height="40dp"
+              android:layout_toLeftOf="@id/signinBtn"
+              android:layout_marginRight="30dp"
+              android:layout_centerVertical="true"
+              android:background="@color/line_color"/>
+           
+           <RelativeLayout 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_toRightOf="@id/avatarImage"
+               android:layout_toLeftOf="@id/dividerView"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_centerVertical="true">
+               
+               <TextView 
+	               android:id="@+id/boardNameText"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               style="@style/text_topic_title"/>
+               
+               <TextView 
+                   android:id="@+id/membersText"
+               	   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/boardNameText"
+                   android:layout_marginTop="5dp"
+                   style="@style/text_topic_content"
+                   android:drawableLeft="@drawable/icon_member"
+                   android:drawablePadding="5dp"/>
+               
+               <TextView 
+                   android:id="@+id/topicsText"
+               	   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/boardNameText"
+                   android:layout_toRightOf="@id/membersText"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginLeft="30dp"
+                   style="@style/text_topic_content"
+                   android:text="@string/label"
+                   android:drawableLeft="@drawable/icon_topic"
+                   android:drawablePadding="5dp"/>
+               
+           </RelativeLayout>
+           
+       </RelativeLayout>
+       
+       <RelativeLayout
+           android:id="@+id/topedLayout"
+           android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:visibility="gone">
+           
+	       <com.moge.gege.util.widget.MyListView 
+	           android:id="@+id/topedList"
+	           android:layout_width="fill_parent"
+		       android:layout_height="wrap_content"
+		       android:layout_marginTop="5dp"
+		       android:cacheColorHint="#00000000"
+		       android:fadingEdge="none"
+		       android:fastScrollEnabled="false"
+		       android:footerDividersEnabled="false"
+		       android:headerDividersEnabled="false"
+		       android:smoothScrollbar="true"
+		       android:background="@color/white"
+		       android:divider="@color/line_color"
+			   android:dividerHeight="0.5dp"
+			   android:listSelector="@drawable/bg_listview"/>
+	       
+	       <TextView 
+               android:layout_width="63dp"
+		   	   android:layout_height="20dp"
+		   	   android:layout_marginTop="2dp"
+		   	   android:layout_marginRight="10dp"
+		   	   android:layout_alignParentTop="true"
+		   	   android:layout_alignParentRight="true"
+		   	   android:textColor="@color/white"
+		   	   android:textSize="@dimen/text_size_14"
+		   	   android:gravity="center"
+		   	   android:text="@string/toped"
+		   	   android:background="@drawable/bg_toped"/>
+       
+       </RelativeLayout>
+       
+   </LinearLayout>
+   
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="5dp"
+       android:orientation="vertical">
+  
+   	<com.moge.gege.util.widget.ScrollListView 
+       android:id="@+id/topicList"
+       android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        android:background="@color/white"
+        android:divider="@color/life_group_bg_color"
+		android:dividerHeight="10dp"
+		android:listSelector="@android:color/transparent"
+		app:divider_color="@color/item_gray"
+		app:divider_height="5dp"/>
+   	
+   	</LinearLayout>
+   	</LinearLayout>
+   	
+   </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+    <include layout="@layout/empty_view"/>
+
+</LinearLayout>

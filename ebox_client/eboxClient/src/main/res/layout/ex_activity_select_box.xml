@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/big_rl"
+        android:layout_width="382px"
+        android:layout_height="286px"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="136px"
+        android:layout_marginTop="200px"
+        android:background="@null">
+
+
+        <Button
+            android:id="@+id/big_box_btn"
+            android:layout_width="382px"
+            android:layout_height="286px"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ex_icon_box_big" />
+
+        <TextView
+            android:id="@+id/big_free"
+            style="@style/ex_box_big_count_blue_40_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16px" />
+
+        <TextView
+            android:id="@+id/big_fee"
+            style="@style/ex_box_price_40_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="42px"
+            android:layout_marginRight="40px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/middle_rl"
+        android:layout_width="382px"
+        android:layout_height="286px"
+        android:layout_alignTop="@+id/big_rl"
+        android:layout_marginLeft="50px"
+        android:layout_toRightOf="@+id/big_rl"
+        android:background="@null">
+
+
+        <Button
+            android:id="@+id/middle_box_btn"
+            android:layout_width="382px"
+            android:layout_height="286px"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ex_icon_box_middle" />
+
+        <TextView
+            android:id="@+id/middle_free"
+            style="@style/ex_box_middle_count_red_40_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16px" />
+
+        <TextView
+            android:id="@+id/middle_fee"
+            style="@style/ex_box_price_40_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="42px"
+            android:layout_marginRight="40px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/little_rl"
+        android:layout_width="382px"
+        android:layout_height="286px"
+        android:layout_alignTop="@+id/big_rl"
+        android:layout_marginLeft="50px"
+        android:layout_toRightOf="@+id/middle_rl"
+        android:background="@null">
+
+
+        <Button
+            android:id="@+id/little_box_btn"
+            android:layout_width="382px"
+            android:layout_height="286px"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ex_icon_box_little" />
+
+        <TextView
+            android:id="@+id/little_free"
+            style="@style/ex_box_small_count_blue_40_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16px" />
+
+        <TextView
+            android:id="@+id/little_fee"
+            style="@style/ex_box_price_40_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="42px"
+            android:layout_marginRight="40px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tiny_rl"
+        android:layout_width="382px"
+        android:layout_height="286px"
+        android:layout_alignTop="@+id/big_rl"
+        android:layout_marginLeft="50px"
+        android:layout_toRightOf="@+id/little_rl"
+        android:background="@null">
+
+
+        <Button
+            android:id="@+id/tiny_box_btn"
+            android:layout_width="382px"
+            android:layout_height="286px"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ex_icon_box_tiny" />
+
+        <TextView
+            android:id="@+id/tiny_free"
+            style="@style/ex_box_small_count_green_40_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16px" />
+
+        <TextView
+            android:id="@+id/tiny_fee"
+            style="@style/ex_box_price_40_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="42px"
+            android:layout_marginRight="40px" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_ok"
+        style="@style/ex_button_choose_door"
+        android:layout_below="@+id/big_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="106px"
+        android:text="@string/ex_choose_yourself" />
+
+    <FrameLayout
+        android:id="@+id/fl_choose_type"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>

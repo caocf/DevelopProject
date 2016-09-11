@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/historyCountText"
+        style="@style/text_title_15"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:background="@color/share_background_color"
+        android:text="@string/delivery_history"
+        android:textColor="@color/text_999_color"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.moge.gege.util.widget.RoundedImageView
+            android:id="@+id/deliveryImage"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            app:corner_radius="100dp" />
+
+        <TextView
+            android:id="@+id/deliveryNameText"
+            android:textSize="@dimen/text_size_17"
+            android:textColor="@color/text_444_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/deliveryImage"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/courierNameText"
+            android:textSize="@dimen/text_size_15"
+            android:textColor="@color/text_444_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/deliveryNameText"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/deliveryNameText"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/deliveryNumberText"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/text_999_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/deliveryNameText"
+            android:layout_below="@id/deliveryNameText"
+            android:layout_marginTop="2dp"
+            android:singleLine="true" />
+
+
+        <TextView
+            android:id="@+id/deliveryTimeText"
+            android:textSize="@dimen/text_size_15"
+            android:textColor="@color/text_666_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/line_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/boxNumberText"
+            android:textSize="@dimen/text_size_15"
+            android:textColor="@color/text_666_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/passwordText"
+            style="@style/text_title_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

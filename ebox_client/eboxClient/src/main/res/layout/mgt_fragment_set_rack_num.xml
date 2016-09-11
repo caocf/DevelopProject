@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="设置01组列数"
+                    android:textColor="@color/pub_orange"
+                    android:textSize="40sp" />
+
+                <EditText
+                    android:id="@+id/et_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:gravity="center_vertical"
+                    android:hint="请输入实际柜子的列数（默认2列）"
+                    android:inputType="number"
+                    android:padding="24dp"
+                    android:textColor="@color/pub_red"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/bt_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="保存"
+                    android:textColor="@color/pub_black"
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="设置02组列数"
+                    android:textColor="@color/pub_orange"
+                    android:textSize="40sp" />
+
+                <EditText
+                    android:id="@+id/et_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:gravity="center_vertical"
+                    android:hint="请输入实际柜子的列数（默认2列）"
+                    android:inputType="number"
+                    android:padding="24dp"
+                    android:textColor="@color/pub_red"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/bt_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="保存"
+                    android:textColor="@color/pub_black"
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="设置03组列数"
+                    android:textColor="@color/pub_orange"
+                    android:textSize="40sp" />
+
+                <EditText
+                    android:id="@+id/et_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:gravity="center_vertical"
+                    android:hint="请输入实际柜子的列数（默认2列）"
+                    android:inputType="number"
+                    android:padding="24dp"
+                    android:textColor="@color/pub_red"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/bt_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="保存"
+                    android:textColor="@color/pub_black"
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="设置04组列数"
+                    android:textColor="@color/pub_orange"
+                    android:textSize="40sp" />
+
+                <EditText
+                    android:id="@+id/et_04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:gravity="center_vertical"
+                    android:hint="请输入实际柜子的列数（默认2列）"
+                    android:inputType="number"
+                    android:padding="24dp"
+                    android:textColor="@color/pub_red"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/bt_04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="保存"
+                    android:textColor="@color/pub_black"
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="设置05组列数"
+                    android:textColor="@color/pub_orange"
+                    android:textSize="40sp" />
+
+                <EditText
+                    android:id="@+id/et_05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:gravity="center_vertical"
+                    android:hint="请输入实际柜子的列数（默认2列）"
+                    android:inputType="number"
+                    android:padding="24dp"
+                    android:textColor="@color/pub_red"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/bt_05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="保存"
+                    android:textColor="@color/pub_black"
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="设置06组列数"
+                    android:textColor="@color/pub_orange"
+                    android:textSize="40sp" />
+
+                <EditText
+                    android:id="@+id/et_06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:gravity="center_vertical"
+                    android:hint="请输入实际柜子的列数（默认2列）"
+                    android:inputType="number"
+                    android:padding="24dp"
+                    android:textColor="@color/pub_red"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/bt_06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="保存"
+                    android:textColor="@color/pub_black"
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="设置07组列数"
+                    android:textColor="@color/pub_orange"
+                    android:textSize="40sp" />
+
+                <EditText
+                    android:id="@+id/et_07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:gravity="center_vertical"
+                    android:hint="请输入实际柜子的列数（默认2列）"
+                    android:inputType="number"
+                    android:padding="24dp"
+                    android:textColor="@color/pub_red"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/bt_07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="保存"
+                    android:textColor="@color/pub_black"
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="设置08组列数"
+                    android:textColor="@color/pub_orange"
+                    android:textSize="40sp" />
+
+                <EditText
+                    android:id="@+id/et_08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:gravity="center_vertical"
+                    android:hint="请输入实际柜子的列数（默认2列）"
+                    android:inputType="number"
+                    android:padding="24dp"
+                    android:textColor="@color/pub_red"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/bt_08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="保存"
+                    android:textColor="@color/pub_black"
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="设置09组列数"
+                    android:textColor="@color/pub_orange"
+                    android:textSize="40sp" />
+
+                <EditText
+                    android:id="@+id/et_09"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:gravity="center_vertical"
+                    android:hint="请输入实际柜子的列数（默认2列）"
+                    android:inputType="number"
+                    android:padding="24dp"
+                    android:textColor="@color/pub_red"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/bt_09"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="保存"
+                    android:textColor="@color/pub_black"
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="设置10组列数"
+                    android:textColor="@color/pub_orange"
+                    android:textSize="40sp" />
+
+                <EditText
+                    android:id="@+id/et_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:gravity="center_vertical"
+                    android:hint="请输入实际柜子的列数（默认2列）"
+                    android:inputType="number"
+                    android:padding="24dp"
+                    android:textColor="@color/pub_red"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/bt_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="保存"
+                    android:textColor="@color/pub_black"
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="设置11组列数"
+                    android:textColor="@color/pub_orange"
+                    android:textSize="40sp" />
+
+                <EditText
+                    android:id="@+id/et_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:gravity="center_vertical"
+                    android:hint="请输入实际柜子的列数（默认2列）"
+                    android:inputType="number"
+                    android:padding="24dp"
+                    android:textColor="@color/pub_red"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/bt_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="保存"
+                    android:textColor="@color/pub_black"
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="设置12组列数"
+                    android:textColor="@color/pub_orange"
+                    android:textSize="40sp" />
+
+                <EditText
+                    android:id="@+id/et_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:gravity="center_vertical"
+                    android:hint="请输入实际柜子的列数（默认2列）"
+                    android:inputType="number"
+                    android:padding="24dp"
+                    android:textColor="@color/pub_red"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/bt_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="保存"
+                    android:textColor="@color/pub_black"
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="设置13组列数"
+                    android:textColor="@color/pub_orange"
+                    android:textSize="40sp" />
+
+                <EditText
+                    android:id="@+id/et_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:gravity="center_vertical"
+                    android:hint="请输入实际柜子的列数（默认2列）"
+                    android:inputType="number"
+                    android:padding="24dp"
+                    android:textColor="@color/pub_red"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/bt_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="保存"
+                    android:textColor="@color/pub_black"
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="设置14组列数"
+                    android:textColor="@color/pub_orange"
+                    android:textSize="40sp" />
+
+                <EditText
+                    android:id="@+id/et_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:gravity="center_vertical"
+                    android:hint="请输入实际柜子的列数（默认2列）"
+                    android:inputType="number"
+                    android:padding="24dp"
+                    android:textColor="@color/pub_red"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/bt_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="保存"
+                    android:textColor="@color/pub_black"
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="设置15组列数"
+                    android:textColor="@color/pub_orange"
+                    android:textSize="40sp" />
+
+                <EditText
+                    android:id="@+id/et_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:gravity="center_vertical"
+                    android:hint="请输入实际柜子的列数（默认2列）"
+                    android:inputType="number"
+                    android:padding="24dp"
+                    android:textColor="@color/pub_red"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/bt_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="保存"
+                    android:textColor="@color/pub_black"
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="设置16组列数"
+                    android:textColor="@color/pub_orange"
+                    android:textSize="40sp" />
+
+                <EditText
+                    android:id="@+id/et_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:gravity="center_vertical"
+                    android:hint="请输入实际柜子的列数（默认2列）"
+                    android:inputType="number"
+                    android:padding="24dp"
+                    android:textColor="@color/pub_red"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/bt_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="保存"
+                    android:textColor="@color/pub_black"
+                    android:textSize="40sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loadview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/life_group_bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/general_header" />
+
+    <ListView
+        android:id="@+id/payTypeList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:descendantFocusability="afterDescendants"
+        android:divider="@color/line_color"
+        android:dividerHeight="0.5dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:scrollbars="none"
+        android:smoothScrollbar="true"
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/moneyEdit"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="@string/input_money"
+            android:inputType="number"
+            style="@style/text_login_edit"
+            android:background="@color/white"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/cardLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/cardCodeEdit"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:hint="@string/input_card_code"
+                style="@style/text_login_edit"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_color" />
+
+            <EditText
+                android:id="@+id/cardPwdEdit"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:hint="@string/input_card_pwd"
+                style="@style/text_login_edit"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/rechargeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:background="@drawable/bg_btn_red"
+        style="@style/text_white_18"
+        android:text="@string/recharge"/>
+
+</LinearLayout>

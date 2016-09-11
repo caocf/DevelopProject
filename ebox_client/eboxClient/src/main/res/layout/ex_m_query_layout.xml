@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/tv_prompt"
+        style="@style/ex_text_top_blue_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160px"
+        android:text="@string/ex_query_prompt" />
+
+    <RelativeLayout
+        android:id="@+id/rl_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_prompt"
+        android:layout_marginTop="60px"
+        android:layout_centerHorizontal="true" >
+
+        <EditText
+            android:id="@+id/et_start"
+            style="?attr/input_big"
+            android:layout_width="500px"
+            android:drawableRight="@drawable/ex_icon_calendar"
+            android:focusableInTouchMode="false"
+            android:inputType="numberDecimal"
+            android:padding="20px" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_alignTop="@+id/et_start"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="50px"
+            android:layout_toRightOf="@+id/et_start"
+            android:background="@drawable/ex_from_to"
+            android:contentDescription="@string/pub_image_desc" >
+        </ImageView>
+
+        <EditText
+            android:id="@+id/et_end"
+            style="?attr/input_big"
+            android:layout_width="500px"
+            android:layout_alignTop="@+id/et_start"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/imageView"
+            android:drawableRight="@drawable/ex_icon_calendar"
+            android:focusableInTouchMode="false"
+            android:inputType="numberDecimal"
+            android:padding="20px" />
+    </RelativeLayout>
+
+    <com.ebox.pub.ui.customview.view.MaterialButton
+        android:id="@+id/bt_ok"
+        style="?attr/button_big"
+        android:layout_below="@+id/rl_et"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100px"
+        android:text="@string/ex_query" />
+
+</RelativeLayout>

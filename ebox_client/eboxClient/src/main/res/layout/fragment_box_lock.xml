@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20px">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100px"
+        android:orientation="vertical">
+
+        <!--柜门螺丝是否松动-->
+
+
+        <RadioGroup
+            android:id="@+id/rg_g1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="柜门螺丝松动数量:             "
+                android:textColor="@color/pub_blue"
+                android:textSize="@dimen/pub_text_size_26_px" />
+
+
+            <EditText
+                android:id="@+id/et_g1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:inputType="number"
+                android:hint=" 0  "
+                android:textSize="@dimen/pub_text_size_30_px"/>
+
+        </RadioGroup>
+
+
+        <!--处理业务锁定的锁-->
+
+
+        <RadioGroup
+            android:id="@+id/rg_g2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="处理业务锁定的锁数量:     "
+                android:textColor="@color/pub_blue"
+                android:textSize="@dimen/pub_text_size_26_px" />
+
+            <EditText
+                android:id="@+id/et_g2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:inputType="number"
+                android:hint=" 0  "
+                android:textSize="@dimen/pub_text_size_30_px"/>
+
+        </RadioGroup>
+
+
+        <!--更换硬件故障的锁-->
+
+
+        <RadioGroup
+            android:id="@+id/rg_g3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="更换硬件故障的锁数量：  "
+                android:textColor="@color/pub_blue"
+                android:textSize="@dimen/pub_text_size_26_px" />
+
+
+            <EditText
+                android:id="@+id/et_g3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:hint=" 0  "
+                android:inputType="number"
+                android:textSize="@dimen/pub_text_size_30_px"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <com.ebox.pub.ui.customview.view.MaterialButton
+        android:id="@+id/mgt_bt_fbl_boxman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50px"
+        android:background="@drawable/ex_code_blue"
+        android:padding="10px"
+        android:text="箱体管理"
+        android:textColor="@color/pub_white"
+        android:textSize="@dimen/pub_text_size_26_px" />
+
+
+</LinearLayout>

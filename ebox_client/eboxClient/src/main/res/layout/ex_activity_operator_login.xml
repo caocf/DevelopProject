@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <FrameLayout
+        android:id="@+id/fl_inner"
+        style="@style/ex_content_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="@dimen/ex_login_content_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="@dimen/ex_login_content_width"
+                android:layout_height="100px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="14px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:text="@string/ex_login_text"
+                    android:textColor="@color/ex_black"
+                    android:textSize="@dimen/pub_text_size_28_px" />
+
+                <TextView
+                    android:id="@+id/tv_tiny"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/ex_login_box_tiny"
+                    android:textColor="@color/ex_green"
+                    android:textSize="@dimen/pub_text_size_32_px" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="16px"
+                    android:layout_margin="2px"
+                    android:background="@color/ex_black_50" />
+
+                <TextView
+                    android:id="@+id/tv_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/ex_login_box_small"
+                    android:textColor="@color/ex_green"
+                    android:textSize="@dimen/pub_text_size_32_px" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="16px"
+                    android:layout_margin="2px"
+                    android:background="@color/ex_black_50" />
+
+                <TextView
+                    android:id="@+id/tv_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/ex_login_box_medium"
+                    android:textColor="@color/ex_green"
+                    android:textSize="@dimen/pub_text_size_32_px" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="16px"
+                    android:layout_margin="2px"
+                    android:background="@color/ex_black_50" />
+
+                <TextView
+                    android:id="@+id/tv_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/ex_login_box_big"
+                    android:textColor="@color/ex_green"
+                    android:textSize="@dimen/pub_text_size_32_px" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/ex_login_content_width"
+                android:layout_height="60px"
+                android:layout_marginTop="20px"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ex_icon_input_phone" />
+
+                <EditText
+                    android:id="@+id/ed_operator_phone"
+                    style="?attr/input_big"
+                    android:layout_marginLeft="12px"
+                    android:hint="@string/pub_username" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_error_tip"
+                style="@style/ex_error_tip"
+                android:layout_gravity="center_vertical"
+                android:text="@string/ex_phone_error" />
+
+            <LinearLayout
+                android:layout_width="@dimen/ex_login_content_width"
+                android:layout_height="60px"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ex_icon_input_pwd" />
+
+                <EditText
+                    android:id="@+id/ed_operator_pwd"
+                    style="?attr/input_big"
+                    android:layout_marginLeft="12px"
+                    android:hint="@string/pub_password"
+                    android:inputType="numberPassword" />
+            </LinearLayout>
+
+            <com.ebox.pub.ui.customview.view.MaterialButton
+                android:id="@+id/bt_ok"
+                style="?attr/button_big"
+                android:layout_marginTop="20px"
+                android:background="@drawable/ex_code_blue"
+                android:text="@string/ex_login"
+                android:textColor="@color/ex_while" />
+
+            <LinearLayout
+                android:id="@+id/ex_ll_wrapper"
+                android:layout_width="@dimen/ex_login_content_width"
+                android:layout_height="50px"
+                android:layout_below="@id/bt_ok"
+                android:layout_marginTop="16px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+
+                <Button
+                    android:id="@+id/bt_register"
+                    android:layout_width="0px"
+                    android:layout_height="42px"
+                    android:layout_weight="4"
+                    android:background="@drawable/ex_code_green"
+                    android:text="@string/ex_register"
+                    android:textColor="@color/ex_while"
+                    android:textSize="@dimen/ex_text_24_px" />
+
+                <View
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/bt_forget"
+                    android:layout_width="0px"
+                    android:layout_height="42px"
+                    android:layout_weight="4"
+                    android:background="@drawable/ex_code_yellow"
+                    android:text="@string/ex_forget_pwd"
+                    android:textColor="@color/ex_while"
+                    android:textSize="@dimen/ex_text_24_px" />
+
+                <View
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/ex_login_content_width"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px">
+
+                <ImageView
+                    android:id="@+id/iv_barcode"
+                    android:layout_width="160px"
+                    android:layout_height="160px"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ex_barcode_kdy_app" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:layout_toRightOf="@+id/iv_barcode"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ex_login_text1"
+                        android:textColor="@color/ex_black"
+                        android:textSize="@dimen/pub_text_size_22_px" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginBottom="4px"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginRight="30px"
+                        android:layout_marginTop="4px"
+                        android:background="@color/ex_black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ex_login_text2"
+                        android:textColor="@color/ex_black_50"
+                        android:textSize="@dimen/pub_text_size_24_px" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <com.ebox.ex.ui.bar.EboxKeyboard
+        android:id="@id/keyboard"
+        style="@style/ex_keyboard_style" />
+
+    <com.ebox.ex.ui.bar.Logo style="@style/ex_logo" />
+</RelativeLayout>

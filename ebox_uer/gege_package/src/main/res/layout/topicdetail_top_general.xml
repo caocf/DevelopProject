@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/topicdetail_top_header"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/text_topic_title"/>
+
+        <com.moge.gege.util.widget.chat.EmoticonTextView
+                android:id="@+id/contentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                style="@style/text_topic_content"/>
+
+        <com.moge.gege.util.widget.MyGridView
+                android:id="@+id/topicImageGridView"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="5dp"
+                android:columnWidth="50dp"
+                android:stretchMode="columnWidth"
+                android:horizontalSpacing="2dp"
+                android:verticalSpacing="2dp"
+                android:gravity="center"
+                android:scrollbars="none"
+                android:listSelector="@android:color/transparent"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/line_color"/>
+
+        <RelativeLayout
+                android:id="@+id/likeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+            <ImageView
+                    android:id="@+id/likeImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"/>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:gravity="right|center_vertical">
+
+                <com.moge.gege.util.widget.RoundedImageView
+                        android:id="@+id/likeAuthor1Image"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:scaleType="fitXY"
+                        app:corner_radius="100dp"
+                        app:border_width="1dp"
+                        app:border_color="@color/item_gray"/>
+
+                <com.moge.gege.util.widget.RoundedImageView
+                        android:id="@+id/likeAuthor2Image"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:scaleType="fitXY"
+                        app:corner_radius="100dp"
+                        app:border_width="1dp"
+                        app:border_color="@color/item_gray"/>
+
+                <com.moge.gege.util.widget.RoundedImageView
+                        android:id="@+id/likeAuthor3Image"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:scaleType="fitXY"
+                        app:corner_radius="100dp"
+                        app:border_width="1dp"
+                        app:border_color="@color/item_gray"/>
+
+                <com.moge.gege.util.widget.RoundedImageView
+                        android:id="@+id/likeAuthor4Image"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:scaleType="fitXY"
+                        app:corner_radius="100dp"
+                        app:border_width="1dp"
+                        app:border_color="@color/item_gray"/>
+
+                <com.moge.gege.util.widget.RoundedImageView
+                        android:id="@+id/likeAuthor5Image"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:scaleType="fitXY"
+                        app:corner_radius="100dp"
+                        app:border_width="1dp"
+                        app:border_color="@color/item_gray"/>
+
+                <TextView
+                        android:id="@+id/likeCountText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        style="@style/text_topic_time"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/line_color"/>
+
+</LinearLayout>

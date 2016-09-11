@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40px">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_box_content_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        >
+
+        <TextView
+            android:id="@+id/tv_board_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="柜编号"
+            android:textSize="@dimen/pub_text_size_36_px" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_boardnum"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_board_tag"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/tv_board_tag"
+            android:numeric="integer"
+            android:singleLine="true"
+            android:textColor="@color/pub_blue"
+            android:textSize="@dimen/pub_text_size_22" />
+
+        <TextView
+            android:id="@+id/tv_box_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_board_tag"
+            android:layout_below="@id/tv_board_tag"
+            android:layout_marginTop="20dp"
+            android:text="箱门数"
+            android:textSize="@dimen/pub_text_size_36_px" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_boxnum"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_box_tag"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/tv_box_tag"
+            android:numeric="integer"
+            android:singleLine="true"
+            android:textColor="@color/pub_blue"
+            android:textSize="@dimen/pub_text_size_22_px" />
+
+        <com.ebox.pub.ui.customview.view.MaterialButton
+            android:layout_below="@id/tv_box_tag"
+            android:id="@+id/bt_box_test"
+            style="@style/bt_fragment_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_alignRight="@id/et_boxnum"
+            android:text="开始测试"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_box_content_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_box_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开闭状态"
+            android:textSize="@dimen/pub_text_size_30_px" >
+        </TextView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

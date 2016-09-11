@@ -1,0 +1,1006 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@android:style/Animation.Activity">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        <!--<item name="android:activityCloseEnterAnimation">@anim/activity_close_enter</item>-->
+        <!--<item name="android:activityCloseExitAnimation">@anim/activity_close_exit</item>-->
+
+        <!--<item name="android:activityOpenEnterAnimation">@anim/activity_open_enter</item>-->
+        <!--<item name="android:activityOpenExitAnimation">@anim/activity_open_exit</item>-->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+
+    <!-- pub-->
+
+    <style name="pub_text_black_size_34_px">
+        <item name="android:textSize">@dimen/pub_text_size_34_px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pub_black</item>
+    </style>
+
+    <style name="pub_text_black_size_40_px">
+        <item name="android:textSize">@dimen/pub_text_size_40_px</item>
+        <item name="android:textColor">@color/pub_black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="pub_text_black_size_50_px">
+        <item name="android:textSize">@dimen/pub_text_size_50_px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pub_black</item>
+    </style>
+
+
+    <style name="pub_text_white_size_58_px">
+        <item name="android:textSize">@dimen/pub_text_size_58_px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pub_white</item>
+    </style>
+
+    <style name="pub_text_black_size_60_px">
+        <item name="android:textSize">@dimen/pub_text_size_60_px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pub_black</item>
+    </style>
+
+
+    <!--orange text--><style name="pub_text_orange_size_50_px">
+    <item name="android:textSize">@dimen/pub_text_size_50_px</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">@color/pub_orange</item>
+</style>
+
+    <style name="pub_text_orange_size_60_px">
+        <item name="android:textSize">@dimen/pub_text_size_60_px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pub_orange_number</item>
+    </style>
+
+    <!--red text-->
+
+    <style name="pub_text_red_size_36_px">
+        <item name="android:textSize">@dimen/pub_text_size_36_px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pub_red</item>
+    </style>
+
+
+    <!--white text--><style name="pub_text_white_size_32_px">
+    <item name="android:textSize">@dimen/pub_text_size_32_px</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">@color/pub_white</item>
+</style>
+
+    <style name="pub_text_white_size_36_px">
+        <item name="android:textSize">@dimen/pub_text_size_36_px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pub_white</item>
+    </style>
+
+    <style name="pub_text_black_size_24_px">
+        <item name="android:textSize">@dimen/pub_text_size_24_px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pub_black</item>
+    </style>
+
+    <style name="pub_text_black_size_32_px">
+        <item name="android:textSize">@dimen/pub_text_size_32_px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pub_black</item>
+    </style>
+
+    <style name="pub_text_orange_size_34_px">
+        <item name="android:textSize">@dimen/pub_text_size_34_px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pub_red</item>
+    </style>
+
+    <style name="pub_text_white_size_38_px">
+        <item name="android:textSize">@dimen/pub_text_size_38_px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pub_white</item>
+    </style>
+
+    <style name="pub_text_white_size_42_px">
+        <item name="android:textSize">@dimen/pub_text_size_42_px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pub_white</item>
+    </style>
+
+    <style name="pub_text_white_size_44_px">
+        <item name="android:textSize">@dimen/pub_text_size_44_px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pub_white</item>
+    </style>
+
+    <style name="pub_text_white_size_50_px">
+        <item name="android:textSize">@dimen/pub_text_size_50_px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pub_white</item>
+    </style>
+
+    <style name="pub_text_white_size_60_px">
+        <item name="android:textSize">@dimen/pub_text_size_60_px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pub_white</item>
+    </style>
+
+
+    <!-- 自定义loading dialog -->
+    <style name="pub_loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/pub_transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <!--loading 界面字体-->
+    <style name="pub_loading_text_gray">
+        <item name="android:textSize">@dimen/pub_text_size_30_px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pub_grey</item>
+    </style>
+
+    <!--提示话框界面字体--><style name="pub_dialog_text" parent="@style/pub_text_white_size_44_px">
+    <item name="android:textSize">@dimen/pub_text_size_40_px</item>
+    <item name="android:textColor">@color/pub_black</item>
+</style>
+
+    <style name="pub_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground"> @android:color/transparent </item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!-- sp_15 box--><style name="pub_text_white_11">
+    <item name="android:textSize">@dimen/pub_text_size_30_px</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textColor">@color/pub_white</item>
+</style>
+
+    <style name="pub_text_gray_9">
+        <item name="android:textSize">@dimen/pub_text_size_30_px</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/pub_command_text_color</item>
+    </style>
+
+    <style name="pub_text_trading_title_11">
+        <item name="android:textSize">@dimen/pub_text_size_30_px</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/pub_trading_title_color</item>
+    </style>
+
+    <style name="pub_text_confirm_money">
+        <item name="android:textSize">@dimen/ex_door_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pub_red</item>
+    </style>
+
+    <style name="pub_top_vertical_line">
+        <item name="android:layout_width">2px</item>
+        <item name="android:layout_height">100px</item>
+        <item name="android:layout_marginLeft">12px</item>
+        <item name="android:layout_marginRight">12px</item>
+        <item name="android:background">@drawable/pub_top_line</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+
+    <!-- ex -->
+    <style name="ex_text_orange_data">
+        <item name="android:textSize">30px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pub_orange</item>
+    </style>
+    <!--表格公用头标题-->
+    <style name="ex_text_table_title">
+        <item name="android:layout_width">@dimen/ex_table_title_width</item>
+        <item name="android:layout_height">@dimen/ex_table_title_height</item>
+        <item name="android:textSize">@dimen/pub_text_size_34_px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/ex_code_table_title</item>
+        <item name="android:textColor">@color/pub_table_title</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--UI2.0表格公用头标题-->
+    <style name="ex_table_title">
+        <item name="android:layout_width">0px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/pub_text_size_26_px</item>
+        <item name="android:textColor">@color/ex_while</item>
+        <!--<item name="android:layout_weight">2</item>-->
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--快递查询，超期件中ListView每一项字体样式-->
+    <style name="ex_text_table_item">
+        <item name="android:layout_width">@dimen/ex_table_width</item>
+        <item name="android:layout_height">@dimen/ex_table_height</item>
+        <item name="android:textSize">@dimen/pub_text_size_34_px</item>
+        <item name="android:background">@drawable/ex_code_table_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/pub_black</item>
+    </style>
+
+    <!--UI2.0快递查询，超期件中ListView每一行字体样式-->
+    <style name="ex_table_item">
+        <item name="android:layout_width">0px</item>
+        <item name="android:layout_height">@dimen/ex_table_high_height</item>
+        <item name="android:textSize">@dimen/pub_text_size_28_px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/ex_black</item>
+    </style>
+
+   <style name="ex_recycle_table_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/pub_text_size_24_px</item>
+        <item name="android:gravity">center</item>
+       <!--<item name="android:padding">4px</item>-->
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/ex_black</item>
+    </style>
+
+    <!--投递界面字体-->
+    <style name="ex_box_door_50_px">
+        <item name="android:textSize">@dimen/pub_text_size_50_px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pub_white</item>
+    </style>
+
+    <!--投递界面字体-->
+    <style name="ex_box_door_64_px">
+        <item name="android:textSize">@dimen/pub_text_size_50_px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pub_white</item>
+    </style>
+    <!--格子价格字体-->
+    <style name="ex_box_price_40_px">
+        <item name="android:textSize">@dimen/pub_text_size_40_px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pub_white</item>
+    </style>
+    <!--大箱门字体颜色-->
+    <style name="ex_box_big_count_blue_40_px">
+        <item name="android:textSize">@dimen/pub_text_size_40_px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/ex_box_big_blue</item>
+    </style>
+    <!--中箱门字体颜色-->
+    <style name="ex_box_middle_count_red_40_px">
+        <item name="android:textSize">@dimen/pub_text_size_40_px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/ex_box_middle_red</item>
+    </style>
+    <!--小箱门字体颜色-->
+    <style name="ex_box_small_count_blue_40_px">
+        <item name="android:textSize">@dimen/pub_text_size_40_px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/ex_box_small_orange</item>
+    </style>
+
+    <!--wei箱门字体颜色--><style name="ex_box_small_count_green_40_px">
+    <item name="android:textSize">@dimen/pub_text_size_40_px</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">@color/ex_box_small_green</item>
+</style>
+
+    <style name="ex_text_top_orange_title_50_px">
+        <item name="android:textSize">@dimen/pub_text_size_50_px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pub_orange_number</item>
+    </style>
+
+    <style name="ex_text_top_white_title_36_px">
+        <item name="android:textSize">@dimen/pub_text_size_36_px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pub_white</item>
+    </style>
+
+    <style name="ex_text_top_blue_title">
+        <item name="android:textSize">@dimen/pub_text_size_38_px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pub_top_blue</item>
+    </style>
+
+    <!--确认投递按钮-->
+    <style name="ex_button_confirm" parent="@style/pub_text_white_size_60_px">
+        <item name="android:background">@drawable/pub_code_btn_green</item>
+        <item name="android:layout_width">976px</item>
+        <item name="android:layout_height">150px</item>
+    </style>
+
+    <!--手动选择箱门按钮-->
+    <style name="ex_button_choose_door" parent="@style/pub_text_white_size_60_px">
+        <item name="android:background">@drawable/pub_code_btn_green</item>
+        <item name="android:layout_width">978px</item>
+        <item name="android:layout_height">150px</item>
+    </style>
+
+    <!--对话框按钮--><style name="ex_button_dialog" parent="@style/pub_text_white_size_60_px">
+    <item name="android:background">@drawable/pub_code_btn_green</item>
+    <item name="android:textSize">@dimen/pub_text_size_40_px</item>
+    <item name="android:layout_width">180px</item>
+    <item name="android:layout_height">80px</item>
+</style>
+
+    <style name="ex_webview_dialog" parent="@android:style/Theme.Dialog">
+        <!-- 去黑边 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 设置是否可滑动 -->
+        <!-- 设置是否透明 -->
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 是否变暗 -->
+        <!-- 点击空白部分activity不消失 -->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <style name="ex_top_btn">
+        <item name="android:textSize">32px</item>
+        <item name="android:background">@color/pub_transparent</item>
+        <!-- 自定义属性-->
+        <!--<item name="com.ebox:shadowColor">@color/top_bg_pressed</item>-->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:drawablePadding">10px</item>
+        <item name="android:paddingLeft">30px</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/pub_white</item>
+    </style>
+
+
+    <!-- 快递员操作界面右侧按钮样式-->
+    <style name="ex_style_operator_left_tab">
+        <item name="android:textSize">@dimen/pub_text_size_24_px</item>
+        <item name="android:background">@drawable/ex_icon_op_left_bg</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_height">108px</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:drawablePadding">14px</item>
+        <item name="android:paddingLeft">22px</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/pub_white</item>
+    </style>
+
+
+    <!-- 箱门号样式-->
+    <style name="ex_rack_num_hint" parent="@style/pub_text_white_size_32_px">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">18px</item>
+    </style>
+
+    <!-- 32个柜子--><style name="ex_rack_title_32" parent="@style/pub_text_black_size_34_px">
+    <item name="android:layout_width">@dimen/ex_rack_title_width</item>
+    <item name="android:layout_height">@dimen/ex_rack_title_height</item>
+    <item name="android:background">@drawable/ex_code_rack_title</item>
+    <item name="android:gravity">center</item>
+</style>
+
+    <style name="ex_rack_32" parent="@style/pub_text_white_size_36_px">
+        <item name="android:background">@drawable/ex_code_rack</item>
+        <item name="android:layout_width">@dimen/ex_rack_width_32</item>
+        <item name="android:layout_height">@dimen/ex_rack_height_32</item>
+    </style>
+
+    <!-- 22个柜子--><style name="ex_rack_title_22" parent="@style/pub_text_black_size_34_px">
+    <item name="android:layout_width">900px</item>
+    <item name="android:layout_height">@dimen/ex_rack_title_height</item>
+    <item name="android:background">@drawable/ex_code_rack_title</item>
+    <item name="android:gravity">center</item>
+</style>
+
+    <style name="ex_rack_22" parent="@style/pub_text_white_size_36_px">
+        <item name="android:background">@drawable/ex_code_rack</item>
+        <item name="android:layout_width">@dimen/ex_rack_width_22</item>
+        <item name="android:layout_height">@dimen/ex_rack_height_22</item>
+    </style>
+
+    <!-- 20个柜子--><style name="ex_rack_title_20" parent="@style/pub_text_black_size_34_px">
+    <item name="android:layout_width">900px</item>
+    <item name="android:layout_height">@dimen/ex_rack_title_height</item>
+    <item name="android:background">@drawable/ex_code_rack_title</item>
+    <item name="android:gravity">center</item>
+</style>
+
+    <style name="ex_rack_20" parent="@style/pub_text_white_size_36_px">
+        <item name="android:background">@drawable/ex_code_rack</item>
+        <item name="android:layout_width">@dimen/ex_rack_width_20</item>
+        <item name="android:layout_height">@dimen/ex_rack_height_20</item>
+    </style>
+
+    <!-- 18个柜子--><style name="ex_rack_title_18" parent="@style/pub_text_black_size_34_px">
+    <item name="android:layout_width">900px</item>
+    <item name="android:layout_height">@dimen/ex_rack_title_height</item>
+    <item name="android:background">@drawable/ex_code_rack_title</item>
+    <item name="android:gravity">center</item>
+</style>
+
+    <style name="ex_rack_18" parent="@style/pub_text_white_size_36_px">
+        <item name="android:background">@drawable/ex_code_rack</item>
+        <item name="android:layout_width">@dimen/ex_rack_width_18</item>
+        <item name="android:layout_height">@dimen/ex_rack_height_18</item>
+    </style>
+
+    <!-- 14个柜子--><style name="ex_rack_title_14" parent="@style/pub_text_black_size_34_px">
+    <item name="android:layout_width">900px</item>
+    <item name="android:layout_height">@dimen/ex_rack_title_height</item>
+    <item name="android:background">@drawable/ex_code_rack_title</item>
+    <item name="android:gravity">center</item>
+</style>
+
+    <style name="ex_rack_14" parent="@style/pub_text_white_size_36_px">
+        <item name="android:background">@drawable/ex_code_rack</item>
+        <item name="android:layout_width">@dimen/ex_rack_width_14</item>
+        <item name="android:layout_height">@dimen/ex_rack_height_14</item>
+    </style>
+
+
+    <!-- 15个柜子--><style name="ex_rack_title_15" parent="@style/pub_text_black_size_34_px">
+    <item name="android:layout_width">900px</item>
+    <item name="android:layout_height">@dimen/ex_rack_title_height</item>
+    <item name="android:background">@drawable/ex_code_rack_title</item>
+    <item name="android:gravity">center</item>
+</style>
+
+    <style name="ex_rack_15" parent="@style/pub_text_white_size_36_px">
+        <item name="android:background">@drawable/ex_code_rack</item>
+        <item name="android:layout_width">@dimen/ex_rack_width_15</item>
+        <item name="android:layout_height">@dimen/ex_rack_height_15</item>
+    </style>
+
+    <!-- 17个柜子--><style name="ex_rack_title_17" parent="@style/pub_text_black_size_34_px">
+    <item name="android:layout_width">900px</item>
+    <item name="android:layout_height">@dimen/ex_rack_title_height</item>
+    <item name="android:background">@drawable/ex_code_rack_title</item>
+    <item name="android:gravity">center</item>
+</style>
+
+    <style name="ex_rack_17" parent="@style/pub_text_white_size_36_px">
+        <item name="android:background">@drawable/ex_code_rack</item>
+        <item name="android:layout_width">@dimen/ex_rack_width_15</item>
+        <item name="android:layout_height">@dimen/ex_rack_height_15</item>
+    </style>
+
+
+    <!--mgt 后台管理-->
+
+    <!--管理员界面 操作按钮 -->
+    <style name="mgt_style_admin_btn" parent="@style/pub_text_white_size_50_px">
+        <item name="android:background">@drawable/pub_code_btn_blue</item>
+        <item name="android:padding">20px</item>
+        <item name="android:layout_width">310px</item>
+        <item name="android:layout_height">110px</item>
+        <item name="android:layout_marginLeft">70px</item>
+        <item name="android:layout_marginTop">20px</item>
+    </style>
+
+    <!--箱体配置输入框-->
+    <style name="mgt_style_setting_input" parent="@style/pub_text_white_size_38_px">
+        <item name="android:layout_margin">40px</item>
+        <item name="android:textColor">@color/pub_black</item>
+        <item name="android:background">@drawable/mgt_code_input_common</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">20px</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:inputType">number|text</item>
+    </style>
+
+    <!--箱体管理界面按钮-->
+    <style name="mgt_style_box_manage_btn" parent="@style/pub_text_white_size_32_px">
+        <item name="android:background">@drawable/pub_code_btn_blue</item>
+        <item name="android:padding">10px</item>
+        <item name="android:layout_width">340px</item>
+        <item name="android:layout_height">120px</item>
+        <item name="android:layout_marginLeft">100px</item>
+        <item name="android:layout_marginTop">60px</item>
+    </style>
+    <!-- 未同步数据界面按钮-->
+    <style name="mgt_radio_btn" parent="@style/pub_text_white_size_32_px">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100px</item>
+        <item name="android:background">@drawable/mgt_btn_sqlite_query</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_marginTop">6px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">6px</item>
+    </style>
+
+    <!--<style name="mgt_style_setting_btn" parent="@style/pub_text_white_size_38_px">--><!--<item name="android:layout_width">220dp</item>--><!--<item name="android:layout_height">83dp</item>--><!--<item name="android:layout_marginLeft">50dip</item>--><!--<item name="android:padding">10dip</item>--><!--<item name="android:background">@drawable/pub_enter</item>--><!--<item name="android:text">@string/mgt_save</item>--><!--<item name="android:layout_centerVertical">true</item>--><!--</style>-->
+
+    <!-- 默认 Application theme. --><style name="AppTheme_normal" parent="AppBaseTheme">
+
+    <item name="android:windowNoTitle">true</item>
+    <!--title-->
+    <item name="pub_title_background">@color/pub_transparent_50</item>
+    <item name="pub_title_line_background">@color/pub_top_title_line</item>
+    <item name="pub_title_back">@style/pub_title_back_normal</item>
+    <item name="pub_title_tv_style">@style/pub_title_content</item>
+    <item name="pub_clock_style">@style/pub_clock_style</item>
+
+    <!-- 快递员操作界面左侧背景-->
+    <item name="pub_op_main_left_bg">@style/pub_op_main_left_bg</item>
+    <!--页面底色-->
+    <item name="pub_top_nag_page">@style/pub_layer_nav_page</item>
+
+    <!--big-button-->
+    <item name="button_big">@style/common_button_big</item>
+    <!--normal-button-->
+    <item name="button_normal">@style/common_button_small</item>
+    <!-- single input-->
+    <item name="input_single">@style/pub_input_single</item>
+    <!--input-->
+    <item name="input_normal">@style/input_common_normal</item>
+    <item name="input_big">@style/input_common_big</item>
+
+    <!--keyboard-->
+    <item name="keyboard_style">@style/common_keyboard_style</item>
+
+</style>
+
+    <style name="pub_title_content" parent="@style/pub_text_white_size_58_px"></style>
+
+    <!-- 默认主题背景--><style name="pub_layer_nav_page">
+    <item name="android:orientation">vertical</item>
+    <item name="android:background">@color/pub_white</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:id">@id/rootView</item>
+</style>
+
+    <style name="pub_op_main_left_bg">
+        <item name="android:background">@color/ex_light_blue</item>
+    </style>
+
+
+    <!--默认键盘样式-->
+    <style name="common_keyboard_style" parent="@style/pub_style_keyboard_type_home" />
+
+    <!--默认大按钮样式-->
+    <style name="common_button_big">
+        <item name="android:background">@drawable/pub_code_btn_green</item>
+        <item name="android:textSize">@dimen/pub_text_size_28_px</item>
+        <item name="android:textColor">@color/ex_black</item>
+        <item name="android:layout_width">500px</item>
+        <item name="android:layout_height">82px</item>
+    </style>
+
+    <!--默认小按钮样式-->
+    <style name="common_button_small" parent="@style/pub_text_white_size_60_px">
+        <item name="android:background">@drawable/pub_code_btn_orange</item>
+        <item name="android:layout_width">746px</item>
+        <item name="android:layout_height">124px</item>
+    </style>
+
+    <!--默认大输入框样式-->
+    <style name="input_common_big">
+        <item name="android:background">@drawable/pub_code_input</item>
+        <item name="android:layout_width">460px</item>
+        <item name="android:layout_height">60px</item>
+        <item name="android:paddingLeft">10px</item>
+        <item name="android:textSize">@dimen/pub_text_size_28_px</item>
+        <item name="android:textColor">@color/pub_black</item>
+        <item name="android:textColorHint">@color/ex_black</item>
+        <item name="android:textCursorDrawable">@drawable/ex_edit_input_cursor</item>
+    </style>
+
+    <!--默认小输入框样式--><style name="input_common_normal">
+    <item name="android:background">@drawable/pub_code_input</item>
+    <item name="android:layout_width">400px</item>
+    <item name="android:layout_height">60px</item>
+    <item name="android:paddingLeft">10px</item>
+    <item name="android:textSize">@dimen/pub_text_size_28_px</item>
+    <item name="android:textColor">@color/pub_black</item>
+    <item name="android:textColorHint">@color/ex_black</item>
+    <item name="android:textCursorDrawable">@drawable/ex_edit_input_cursor</item>
+</style>
+
+    <style name="pub_input_single" >
+        <item name="android:background">@drawable/pub_code_input_normal</item>
+        <item name="android:layout_width">746px</item>
+        <item name="android:layout_height">124px</item>
+        <item name="android:textSize">38px</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/ex_black</item>
+    </style>
+
+    <!-- 键盘按钮大小-->
+    <style name="pub_keyboard_type">
+        <item name="android:keyTextSize">54px</item>
+        <item name="android:labelTextSize">24px</item>
+    </style>
+
+    <!--默认键盘-->
+    <style name="pub_style_keyboard_type_home" parent="@style/pub_keyboard_type">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@color/ex_light_blue</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:keyBackground">@drawable/ex_icon_key</item>
+        <item name="android:keyTextColor">@color/pub_number</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:layout_margin">34px</item>-->
+        <item name="android:layout_marginRight">38px</item>
+        <item name="android:layout_marginTop">42px</item>
+        <item name="android:layout_marginBottom">34px</item>
+        <item name="android:layout_marginLeft">24px</item>
+    </style>
+
+
+    <!-- 恒喜 01 Application theme. -->
+    <style name="AppTheme_hx01" parent="AppBaseTheme">
+
+        <item name="android:windowNoTitle">true</item>
+        <!--title-->
+        <item name="pub_title_background">@color/hx01_pub_title_bg</item>
+        <item name="pub_title_line_background">@color/pub_top_title_line</item>
+        <item name="pub_title_back">@style/hx01_title_back</item>
+        <item name="pub_title_tv_style">@style/pub_title_content</item>
+        <item name="pub_clock_style">@style/pub_clock_style</item>
+
+        <!-- 快递员操作界面左侧背景-->
+        <item name="pub_op_main_left_bg">@style/hx_01_op_main_left_bg</item>
+
+        <!--页面底色-->
+        <item name="pub_top_nag_page">@style/hx_pub_top_nag_page</item>
+
+        <!--big-button-->
+        <item name="button_big">@style/common_button_big</item>
+        <!--normal-button-->
+        <item name="button_normal">@style/common_button_small</item>
+
+        <!-- single input-->
+        <item name="input_single">@style/hx_01_input_single</item>
+        <!--input-->
+        <item name="input_normal">@style/hx_01_input_common_normal</item>
+        <item name="input_big">@style/hx_01_input_common_normal</item>
+
+        <!--keyboard-->
+        <item name="keyboard_style">@style/hx01_keyboard_style</item>
+
+    </style>
+
+    <!--恒喜01首页底色-->
+    <style name="hx_pub_top_nag_page">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/hx01_pub_nag_bg</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:id">@id/rootView</item>
+    </style>
+
+    <!-- 恒喜01键盘样式--><style name="hx01_keyboard_style" parent="@style/pub_keyboard_type">
+    <item name="android:layout_marginRight">160px</item>
+    <item name="android:layout_marginTop">310px</item>
+    <item name="android:background">@color/pub_transparent_50</item>
+    <item name="android:focusable">true</item>
+    <item name="android:focusableInTouchMode">true</item>
+    <item name="android:keyTextColor">@color/pub_number</item>
+    <item name="android:layout_width">@dimen/key_board_width</item>
+    <item name="android:layout_height">@dimen/key_board_height</item>
+    <item name="android:layout_alignParentRight">true</item>
+    <item name="android:keyBackground">@drawable/hx01_key</item>
+</style>
+
+    <style name="hx_01_input_common_normal" parent="@style/pub_text_black_size_50_px">
+        <item name="android:background">@drawable/hx01_code_input</item>
+        <item name="android:layout_width">746px</item>
+        <item name="android:layout_height">124px</item>
+        <item name="android:padding">20px</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="hx_01_input_single" parent="@style/pub_text_black_size_60_px">
+        <item name="android:background">@drawable/hx01_code_input_normal</item>
+        <item name="android:layout_width">746px</item>
+        <item name="android:layout_height">124px</item>
+    </style>
+
+    <style name="hx_01_op_main_left_bg">
+        <item name="android:background">@color/hx01_op_main_left_bg</item>
+    </style>
+
+
+    <!-- 恒喜 02 Application theme. -->
+    <style name="AppTheme_hx02" parent="AppBaseTheme">
+
+        <item name="android:windowNoTitle">true</item>
+        <!--title-->
+        <item name="pub_title_background">@color/hx01_pub_title_bg</item>
+        <item name="pub_title_line_background">@color/pub_top_title_line</item>
+        <item name="pub_title_back">@style/hx01_title_back</item>
+        <item name="pub_title_tv_style">@style/pub_title_content</item>
+        <item name="pub_clock_style">@style/pub_clock_style</item>
+
+        <!-- 快递员操作界面左侧背景-->
+        <item name="pub_op_main_left_bg">@style/hx_01_op_main_left_bg</item>
+
+        <!--页面底色-->
+        <item name="pub_top_nag_page">@style/hx02_pub_top_nag_page</item>
+
+        <!--big-button-->
+        <item name="button_big">@style/common_button_big</item>
+        <!--normal-button-->
+        <item name="button_normal">@style/common_button_small</item>
+
+        <!-- single input-->
+        <item name="input_single">@style/hx_01_input_single</item>
+        <!--input-->
+        <item name="input_normal">@style/hx_01_input_common_normal</item>
+        <item name="input_big">@style/hx_01_input_common_normal</item>
+
+        <!--keyboard-->
+        <item name="keyboard_style">@style/hx01_keyboard_style</item>
+
+    </style>
+
+    <!--恒喜01首页底色-->
+    <style name="hx02_pub_top_nag_page">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/pub_white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:id">@id/rootView</item>
+    </style>
+
+    <!--银川 Application 主题-->
+
+    <style name="AppTheme_yc" parent="AppBaseTheme">
+
+        <item name="android:windowNoTitle">true</item>
+        <!--title-->
+        <item name="pub_title_background">@color/yc_pub_title_blue_bg</item>
+        <item name="pub_title_line_background">@color/pub_top_title_line</item>
+
+        <item name="pub_title_back">@style/yc_title_back_style</item>
+        <item name="pub_clock_style">@style/yc_title_clock_style</item>
+
+        <item name="pub_title_tv_style">@style/pub_title_content</item>
+
+        <!-- 快递员操作界面左侧背景-->
+        <item name="pub_op_main_left_bg">@style/pub_op_main_left_bg</item>
+        <!--页面底色-->
+        <item name="pub_top_nag_page">@style/yc_pub_top_nag_page</item>
+
+        <!--big-button-->
+        <item name="button_big">@style/common_button_big</item>
+        <!--normal-button-->
+        <item name="button_normal">@style/common_button_small</item>
+        <!-- single input-->
+        <item name="input_single">@style/pub_input_single</item>
+        <!--input-->
+        <item name="input_normal">@style/input_common_normal</item>
+
+        <item name="input_big">@style/input_common_big</item>
+        <!--keyboard-->
+        <item name="keyboard_style">@style/common_keyboard_style</item>
+
+    </style>
+
+
+    <style name="yc_title_line">
+        <item name="android:background">@color/pub_transparent_10</item>
+    </style>
+
+
+    <!--银川首页底色--><style name="yc_pub_top_nag_page">
+    <item name="android:orientation">vertical</item>
+    <item name="android:background">@drawable/yc_bg</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:id">@id/rootView</item>
+</style>
+
+    <style name="yc_title_size_30">
+        <item name="android:textSize">@dimen/pub_text_size_40_px</item>
+        <item name="android:textColor">@color/title_yc_name</item>
+    </style>
+
+    <style name="yc_text_create_time">
+        <item name="android:textSize">@dimen/pub_text_size_40_px</item>
+        <item name="android:textColor">@color/yc_list_text_color</item>
+    </style>
+
+    <style name="yc_title_name_text">
+        <item name="android:textSize">@dimen/pub_text_size_30_px</item>
+        <item name="android:textColor">@color/title_text_name</item>
+    </style>
+
+    <!--默认头部返回样式 -->
+    <style name="pub_title_back_normal">
+        <item name="android:layout_width">106px</item>
+        <item name="android:layout_height">106px</item>
+        <item name="android:background">@drawable/pub_title_back</item>
+    </style>
+
+    <!--默认时钟样式-->
+    <style name="pub_clock_style" parent="@style/pub_text_orange_size_50_px">
+        <item name="android:background">@drawable/pub_clock_white</item>
+        <item name="android:paddingTop">6px</item>
+        <item name="android:textSize">@dimen/pub_text_size_44_px</item>
+        <item name="android:layout_width">100px</item>
+        <item name="android:layout_height">100px</item>
+    </style>
+
+    <!-- 恒喜头部返回-->
+    <style name="hx01_title_back">
+        <item name="android:textSize">@dimen/pub_text_size_58_px</item>
+        <item name="android:layout_width">300px</item>
+        <item name="android:layout_height">132px</item>
+        <item name="android:background">@drawable/hx01_title_back</item>
+    </style>
+
+
+    <!--銀川头部返回样式 -->
+    <style name="yc_title_back_style">
+        <item name="android:textSize">@dimen/pub_text_size_58_px</item>
+        <item name="android:layout_width">300px</item>
+        <item name="android:layout_height">124px</item>
+        <item name="android:text">@string/pub_back</item>
+        <item name="android:textColor">@color/pub_white</item>
+        <item name="android:background">@drawable/yc_title_back</item>
+    </style>
+
+    <!--银川时钟样式-->
+    <style name="yc_title_clock_style" parent="@style/pub_text_orange_size_50_px">
+        <item name="android:textColor">@color/pub_white</item>
+        <item name="android:textSize">@dimen/pub_text_size_44_px</item>
+        <item name="android:drawableLeft">@drawable/yc_icon_clock</item>
+        <item name="android:drawablePadding">8px</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--运维界面任务结果-->
+    <style name="result_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/pub_white</item>
+        <item name="android:textSize">@dimen/pub_text_size_36_px</item>
+        <item name="android:layout_marginRight">20px</item>
+        <item name="android:padding">15px</item>
+    </style>
+
+    <!--进入enter按钮-->
+    <style name="button_enter">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/pub_white</item>
+        <item name="android:textSize">@dimen/pub_text_size_42_px</item>
+        <item name="android:padding">45px</item>
+        <item name="android:layout_margin">20px</item>
+        <item name="android:background">@drawable/ex_code_green</item>
+    </style>
+
+    <!--菜单按钮-->
+    <style name="button_menu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">90px</item>
+        <item name="android:textColor">@color/pub_white</item>
+        <item name="android:textSize">@dimen/pub_text_size_40_px</item>
+        <item name="android:paddingLeft">40px</item>
+        <item name="android:paddingRight">40px</item>
+        <item name="android:paddingTop">20px</item>
+        <item name="android:paddingBottom">20px</item>
+        <item name="android:layout_marginBottom">10px</item>
+        <item name="android:background">@drawable/pub_code_btn_green</item>
+    </style>
+
+
+    <!--运维系统测试点击按钮--><style name="bt_fragment_test">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textColor">@color/pub_white</item>
+    <item name="android:textSize">@dimen/pub_text_size_24_px</item>
+    <item name="android:padding">14px</item>
+    <item name="android:background">@drawable/ex_code_blue_pressed</item>
+</style>
+
+    <style name="mgt_et_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">100px</item>
+        <item name="android:layout_marginTop">10px</item>
+        <item name="android:background">@drawable/mgt_code_input_common</item>
+        <item name="android:padding">10px</item>
+        <item name="android:textColor">@color/pub_black</item>
+        <item name="android:textSize">@dimen/pub_text_size_22_px</item>
+    </style>
+
+    <style name="ex_keyboard_style">
+        <item name="android:layout_width">@dimen/ex_key_board_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_below">@+id/title</item>
+    </style>
+
+    <style name="ex_content_style">
+        <item name="android:layout_alignTop">@id/keyboard</item>
+        <item name="android:layout_toLeftOf">@id/keyboard</item>
+        <item name="android:layout_toStartOf">@id/keyboard</item>
+        <item name="android:layout_below">@+id/title</item>
+        <item name="android:layout_above">@id/logo</item>
+    </style>
+
+    <!--ui2.0-->
+    <style name="ex_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ex_text_normal" parent="@style/ex_text">
+        <item name="android:textSize">24px</item>
+        <item name="android:textColor">@color/pub_black</item>
+    </style>
+
+    <style name="ex_recharge_text" parent="ex_text_normal">
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/ex_black</item>
+        <item name="android:textSize">@dimen/pub_text_size_30_px</item>
+        <item name="android:drawableBottom">@drawable/ex_code_check_line</item>
+        <item name="android:drawablePadding">14px</item>
+    </style>
+
+    <style name="ex_logo">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_height">@dimen/ex_logo_height</item>
+        <item name="android:id">@id/logo</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="ex_error_tip" parent="@style/ex_text_normal">
+        <item name="android:textColor">@color/ex_red</item>
+        <item name="android:layout_marginLeft">16px</item>
+        <item name="android:layout_marginTop">10px</item>
+        <item name="android:drawablePadding">6px</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawableLeft">@drawable/ex_sad</item>
+    </style>
+
+
+    <style name="ex_recharge_bar">
+        <item name="android:layout_width">506px</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--输入框的错误提示-->
+    <style name="ex_error_input_tip" parent="@style/ex_text_normal">
+        <item name="android:textSize">@dimen/pub_text_size_24_px</item>
+        <item name="android:textColor">@color/ex_red</item>
+    </style>
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page">
+
+
+    <RadioGroup
+        android:id="@+id/rg_checked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="@dimen/pub_text_size_58_px">
+
+        <RadioButton
+            android:id="@+id/rb_recharge"
+            style="@style/ex_recharge_text"
+            android:text="@string/ex_recharge_thin"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_recharge_note"
+            style="@style/ex_recharge_text"
+            android:text="@string/ex_recharge_record" />
+    </RadioGroup>
+
+    <com.ebox.ex.ui.bar.Logo style="@style/ex_logo" />
+
+    <FrameLayout
+        android:layout_marginLeft="100px"
+        android:id="@+id/fl_content"
+        style="@style/ex_recharge_bar"
+        android:layout_below="@id/rg_checked"
+        android:layout_marginBottom="@dimen/pub_text_size_20_px"
+        android:layout_above="@id/logo"
+       />
+
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        style="?attr/keyboard_style"
+        android:layout_width="@dimen/key_board_width"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

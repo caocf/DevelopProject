@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/mgt_tv_version"
+        style="@style/pub_text_black_size_24_px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mgt_tv_version_tag"
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="10px"
+        android:gravity="center"
+        android:textColor="@color/pub_white" />
+
+    <TextView
+        android:id="@+id/mgt_tv_version_tag"
+        style="@style/pub_text_black_size_24_px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="10px"
+        android:gravity="center"
+        android:text="@string/mgt_version_tag"
+        android:textColor="@color/pub_white" />
+
+    <RelativeLayout
+        android:id="@+id/mgt_rl_signal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title"
+        android:layout_marginRight="30px">
+
+        <TextView
+            android:id="@+id/mgt_tv_signal_tag"
+            style="@style/pub_text_black_size_32_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mgt_signal_tag"
+            android:textColor="@color/pub_white"
+            android:layout_marginTop="10px"/>
+
+        <TextView
+            android:id="@+id/mgt_tv_signal"
+            style="@style/pub_text_black_size_32_px"
+            android:layout_width="82px"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/mgt_tv_signal_tag"
+            android:layout_toRightOf="@id/mgt_tv_signal_tag"
+            android:text="@string/mgt_signal_no"
+            android:textColor="@color/pub_white" />
+
+        <TextView
+            android:id="@+id/mgt_tv_signal_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/mgt_tv_signal_tag"
+            android:layout_below="@id/mgt_tv_signal_tag"
+            android:text="@string/mgt_signal_des"
+            android:textColor="@color/pub_white"
+            android:textSize="@dimen/pub_text_size_22_px"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <com.ebox.pub.ui.customview.view.MaterialButton
+        android:id="@+id/mgt_bt_box_state"
+        style="@style/button_enter"
+        android:layout_below="@id/mgt_tv_version"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100px"
+        android:text="@string/mgt_state"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20px"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="80px">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.ebox.pub.ui.customview.view.MaterialButton
+                android:id="@+id/mgt_bt_first_install"
+                style="@style/button_enter"
+                android:layout_width="560px"
+                android:layout_height="0px"
+                android:layout_margin="10px"
+                android:layout_weight="1"
+                android:padding="40px"
+                android:text="@string/mgt_first_install" />
+
+            <com.ebox.pub.ui.customview.view.MaterialButton
+                android:id="@+id/mgt_bt_update_set"
+                style="@style/button_enter"
+                android:layout_width="560px"
+                android:layout_height="0px"
+                android:layout_margin="10px"
+                android:layout_weight="1"
+                android:padding="40px"
+                android:text="@string/mgt_update_set" />
+
+            <com.ebox.pub.ui.customview.view.MaterialButton
+                android:id="@+id/mgt_bt_polling"
+                style="@style/button_enter"
+                android:layout_width="560px"
+                android:layout_height="0px"
+                android:layout_margin="10px"
+                android:layout_weight="1"
+                android:padding="40px"
+                android:text="@string/mgt_polling" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingBottom="10px"
+            >
+            <com.ebox.pub.ui.customview.view.MaterialButton
+                android:id="@+id/mgt_bt_single_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:background="@drawable/ex_code_green"
+                android:padding="40px"
+                android:layout_marginRight="10px"
+                android:text="@string/mgt_single_test"
+                android:textColor="@color/pub_white"
+                android:textSize="@dimen/pub_text_size_42_px" />
+
+            <com.ebox.pub.ui.customview.view.MaterialButton
+                android:id="@+id/mgt_bt_export_log"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:background="@drawable/ex_code_green"
+                android:layout_marginLeft="10px"
+                android:padding="40px"
+                android:text="@string/mgt_export_log"
+                android:textColor="@color/pub_white"
+                android:textSize="@dimen/pub_text_size_42_px" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

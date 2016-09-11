@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#999999"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="140dip"
+        android:background="#999999"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.moge.ebox.phone.utils.wheel.WheelView
+            android:id="@+id/picker1"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="3" />
+
+        <TextView
+            android:layout_width="20dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="－"
+            android:textSize="30dip"
+            android:visibility="gone" />
+
+        <com.moge.ebox.phone.utils.wheel.WheelView
+            android:id="@+id/picker2"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" />
+
+        <TextView
+            android:layout_width="20dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="－"
+            android:textSize="30dip"
+            android:visibility="gone" />
+
+        <com.moge.ebox.phone.utils.wheel.WheelView
+            android:id="@+id/picker3"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" />
+
+        <TextView
+            android:layout_width="20dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textSize="30dip"
+            android:visibility="gone" />
+
+        <com.moge.ebox.phone.utils.wheel.WheelView
+            android:id="@+id/picker4"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0" />
+
+        <TextView
+            android:layout_width="20dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=":"
+            android:textSize="30dip"
+            android:visibility="gone" />
+
+        <com.moge.ebox.phone.utils.wheel.WheelView
+            android:id="@+id/picker5"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0" />
+
+        <TextView
+            android:layout_width="20dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=":"
+            android:textSize="30dip"
+            android:visibility="gone" />
+
+        <com.moge.ebox.phone.utils.wheel.WheelView
+            android:id="@+id/picker6"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/graycolor"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonOk"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_ok"
+            android:text="确 定"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <View
+            style="@style/style_home_line_hor"
+            android:layout_width="3dp"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_ok"
+            android:text="取 消"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

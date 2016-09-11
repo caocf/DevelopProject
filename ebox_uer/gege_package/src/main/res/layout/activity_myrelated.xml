@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loadview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/life_group_bg_color">
+    
+   	<include layout="@layout/general_header"/>
+   	
+   	<LinearLayout
+   	    android:id="@+id/myPublishLayout"
+   	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:visibility="gone">
+	    
+   	    <View
+	       	android:id="@+id/line"
+	       	android:layout_width="match_parent"
+	    	android:layout_height="0.5dp"
+	    	android:background="@color/line_gray_color"/> 
+   	
+   		<RadioGroup
+			android:id="@+id/tabRadioGroup"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:background="@color/head_bg_color"
+			android:orientation="horizontal" >
+
+        	<com.moge.gege.util.widget.MyRadioButton
+		       	android:id="@+id/tabBtn1"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+                android:background="@drawable/white"
+				android:drawableLeft="@drawable/icon_my_topic"
+				android:drawablePadding="5dp"
+				android:text="@string/category"
+				android:textColor="@color/topic_title_color"
+		       	android:button="@null"
+		       	style="@style/text_white_16"
+		       	android:singleLine="true"
+		       	android:checked="true"/>
+        
+			<com.moge.gege.util.widget.MyRadioButton
+		       	android:id="@+id/tabBtn2"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+				android:background="@drawable/white"
+				android:drawableLeft="@drawable/icon_my_activity"
+				android:drawablePadding="5dp"
+				android:text="@string/hot"
+				android:textColor="@color/topic_title_color"
+				android:button="@null"
+				style="@style/text_white_16"
+		       	android:singleLine="true"/>
+		
+			<com.moge.gege.util.widget.MyRadioButton
+		       	android:id="@+id/tabBtn3"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+				android:background="@drawable/white"
+				android:drawableLeft="@drawable/icon_my_category"
+				android:drawablePadding="5dp"
+				android:text="@string/latest"
+				android:textColor="@color/topic_title_color"
+				android:button="@null"
+				style="@style/text_white_16"
+		       	android:singleLine="true"/>
+		
+   		</RadioGroup>
+   	</LinearLayout>
+
+    <com.moge.gege.util.widget.viewpagerindicator.LinePageIndicator
+        android:id="@+id/indicator"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        app:strokeWidth="5dp"
+        app:lineWidth="160dp"
+        app:unselectedColor="@color/transparent"
+        app:selectedColor="@color/head_bg_color"
+        />
+
+  	<android.support.v4.view.ViewPager  
+        android:id="@+id/myViewPager"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_gravity="center"  
+        android:background="@color/white"  
+        android:flipInterval="30"  
+        android:persistentDrawingCache="animation"/>
+   
+</LinearLayout>

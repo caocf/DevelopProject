@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_state"
+        style="@style/pub_text_white_size_36_px"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ex_code_rack"
+        android:textSize="@dimen/pub_text_size_26_px"
+        android:gravity="center"
+        android:text="ceshi" />
+
+    <TextView
+        android:id="@+id/tv_num"
+        style="@style/pub_text_white_size_32_px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:textSize="@dimen/pub_text_size_24_px"
+        android:text="10" />
+
+</RelativeLayout>

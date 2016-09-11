@@ -1,0 +1,89 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'gege'
+            keyPassword 'moge123456'
+            storeFile file('../gege.keystore')
+            storePassword 'moge123456'
+        }
+    }
+    compileSdkVersion 20
+    buildToolsVersion "21.1.2"
+    defaultConfig {
+        applicationId "com.moge.gege"
+        minSdkVersion 8
+        targetSdkVersion 20
+        signingConfig signingConfigs.config
+
+        // dex突破65535的限制
+        multiDexEnabled true
+
+        // 默认是umeng的渠道
+        manifestPlaceholders = [UMENG_CHANNEL_VALUE: "moge"]
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            proguardFiles 'proguard.cfg'
+            signingConfig signingConfigs.config
+            proguardFile './proguard.cfg'
+        }
+    }
+    productFlavors {
+
+        /* 公司渠道 */
+        moge {}
+        sina {}
+        huodong {}
+
+
+//        /* 主要渠道 */
+        hiapk {}
+        _91 {}
+        wdj {}
+        _360 {}
+        nduo {}
+        yyh {}
+        gfan {}
+        tencent {}
+        baidu {}
+        anzhi {}
+        xiaomi {}
+        zhhy {}
+        tbyysc {}
+
+        /* 其他渠道 */
+        liantong {}
+        mm {}
+        meizu {}
+        oppo {}
+        shzm {}
+        mmy {}
+        youyi {}
+        suning {}
+        lenovo {}
+        yiyong {}
+        sohu {}
+        _3g {}
+        dahan {}
+        wy {}
+    }
+
+    productFlavors.all { flavor ->
+        flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+}
+
+dependencies {
+    compile project(':pullToRefresh')
+    compile 'com.android.support:support-v4:20.0.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.jakewharton:butterknife:6.1.0'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+}

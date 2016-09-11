@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="50px"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_startx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_startx_name"
+                style="@style/pub_text_white_size_38_px"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dip"
+                android:text="@string/mgt_startx" />
+
+            <EditText
+                android:id="@+id/et_startx"
+                style="?attr/input_big"
+                android:layout_marginLeft="50dip"
+                android:layout_toRightOf="@+id/tv_startx_name"
+                android:gravity="center_vertical"
+                android:padding="20dip"
+                android:text="@string/mgt_save" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_endx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_startx"
+            android:layout_marginTop="30px">
+
+            <TextView
+                android:id="@+id/tv_endx_name"
+                style="@style/pub_text_white_size_38_px"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dip"
+                android:text="@string/mgt_endx" />
+
+            <EditText
+                android:id="@+id/et_endx"
+                style="?attr/input_big"
+                android:layout_marginLeft="50px"
+                android:layout_toRightOf="@+id/tv_endx_name"
+                android:gravity="center_vertical"
+                android:padding="20px"
+                android:text="@string/mgt_save" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_led_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_endx"
+            android:layout_marginTop="30px">
+
+            <TextView
+                android:id="@+id/tv_led_test_name"
+                style="@style/pub_text_white_size_38_px"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dip"
+                android:text="@string/mgt_led_test" />
+
+            <EditText
+                android:id="@+id/et_led_test"
+                style="?attr/input_big"
+                android:layout_marginLeft="50px"
+                android:layout_toRightOf="@+id/tv_led_test_name"
+                android:gravity="center_vertical"
+                android:padding="20px"
+                android:text="@string/mgt_save" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_save"
+            style="?attr/button_big"
+            android:layout_marginTop="40px"
+            android:text="@string/mgt_save" />
+    </LinearLayout>
+
+
+</RelativeLayout>

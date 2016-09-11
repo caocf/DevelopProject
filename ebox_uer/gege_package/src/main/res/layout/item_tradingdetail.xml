@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minHeight="90dp"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <CheckBox
+         android:id="@+id/agreeCheckBox"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:paddingRight="10dp"
+         android:layout_centerVertical="true"
+         android:button="@null"
+         android:checked="true"
+         android:drawableLeft="@drawable/common_radio"
+		 android:drawablePadding="0dp"
+		 android:background="@android:color/transparent"/>
+    
+    <RelativeLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/agreeCheckBox">
+        
+        <com.moge.gege.util.widget.RoundedImageView 
+         android:id="@+id/tradingImage"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:scaleType="fitXY"
+         app:corner_radius="5dp"/>
+               
+        <TextView
+            android:id="@+id/multiGoodsText"
+	        android:layout_width="match_parent"
+	    	android:layout_height="25dp"
+	    	android:layout_alignParentBottom="true"
+	    	android:gravity="center"
+	    	android:textColor="@color/white"
+	    	android:textSize="@dimen/text_size_13"
+	    	android:text="@string/multi_goods"
+	    	android:background="@drawable/bg_black_bottom_corner"
+	    	android:visibility="gone"/>
+        
+    </RelativeLayout>
+   
+    <RelativeLayout
+        android:layout_width="wrap_content"
+     	android:layout_height="match_parent"
+     	android:layout_toRightOf="@id/imageLayout"
+     	android:layout_centerVertical="true"
+     	android:layout_marginLeft="10dp"
+     	android:layout_marginRight="10dp">
+       
+        <TextView
+	     	android:id="@+id/titleText"
+	     	android:layout_width="wrap_content"
+	     	android:layout_height="wrap_content"
+	     	android:maxLines="2"
+	     	android:ellipsize="end"
+	     	style="@style/text_trading_title_15"/>
+        
+        <LinearLayout
+            android:id="@+id/numLayout"
+            android:layout_width="wrap_content"
+	     	android:layout_height="wrap_content"
+	     	android:layout_below="@id/titleText"
+	     	android:layout_marginTop="5dp">
+            
+            <TextView
+                android:id="@+id/buyNumText"
+		     	android:layout_width="wrap_content"
+		     	android:layout_height="wrap_content"
+		     	android:singleLine="true"
+		     	style="@style/text_gray_13"
+		     	android:visibility="gone"/>
+            
+            <LinearLayout
+	            android:id="@+id/editNumLayout"
+	            android:layout_width="wrap_content"
+		     	android:layout_height="25dp"
+		     	android:orientation="horizontal"
+		     	android:visibility="gone">
+		     	
+                <Button
+	                android:id="@+id/reduceNumBtn"
+			     	android:layout_width="33dp"
+			     	android:layout_height="match_parent"
+			     	android:background="@drawable/bg_num_reduce"
+			     	android:focusable="false"
+			     	android:focusableInTouchMode="false"/>
+                
+                <TextView
+	                android:id="@+id/editNumText"
+			     	android:layout_width="wrap_content"
+			     	android:layout_height="match_parent"
+			     	android:gravity="center"
+			     	android:background="@drawable/icon_num_edit"
+			     	style="@style/text_gray_13"/>
+                
+                <Button
+	                android:id="@+id/plusNumBtn"
+			     	android:layout_width="33dp"
+			     	android:layout_height="match_parent"
+			     	android:background="@drawable/bg_num_plus"
+			     	android:focusable="false"
+			     	android:focusableInTouchMode="false"/>
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+	     	
+        <RelativeLayout
+            android:layout_width="match_parent"
+	     	android:layout_height="20dp"
+	     	android:layout_below="@id/numLayout"
+	     	android:layout_marginTop="5dp">
+	     	
+            <TextView
+                android:id="@+id/moneyTitle"
+		     	android:layout_width="wrap_content"
+		     	android:layout_height="wrap_content"
+		     	android:singleLine="true"
+		     	android:layout_alignParentBottom="true"
+		     	style="@style/text_gray_13"
+		     	android:text="@string/good_money"/>
+        
+	         <TextView
+		     	android:id="@+id/moneyText"
+		     	android:layout_width="wrap_content"
+		     	android:layout_height="wrap_content"
+		     	android:layout_alignParentBottom="true"
+		     	android:layout_alignParentRight="true"
+				android:layout_alignBaseline="@id/moneyTitle"
+		     	android:singleLine="true"
+		     	android:textSize="@dimen/text_size_18"
+		     	android:textColor="@color/money_color"/>
+         
+         </RelativeLayout>
+         
+    </RelativeLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rootView"
+        style="?attr/pub_top_nag_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/rl_top_action"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ex_title_height"
+            android:layout_gravity="center"
+            android:background="@color/ex_dark_blue"
+            android:orientation="horizontal">
+
+            <com.ebox.pub.ui.customview.view.MaterialButton
+                android:id="@+id/pickup_btn_normal"
+                style="@style/ex_top_btn"
+                android:drawableLeft="@drawable/ex_icon_pickup"
+                android:text="@string/ex_i_pickup" />
+
+            <com.ebox.pub.ui.customview.view.MaterialButton
+                android:id="@+id/oper_btn_normal"
+                style="@style/ex_top_btn"
+                android:drawableLeft="@drawable/ex_icon_operator"
+                android:text="@string/ex_operator" />
+
+            <com.ebox.pub.ui.customview.view.MaterialButton
+                android:id="@+id/query_btn_normal"
+                style="@style/ex_top_btn"
+                android:drawableLeft="@drawable/ex_icon_query2"
+                android:text="@string/ex_i_query" />
+
+            <com.ebox.pub.ui.customview.view.MaterialButton
+                android:id="@+id/service_btn_normal"
+                style="@style/ex_top_btn"
+                android:drawableLeft="@drawable/ex_icon_service"
+                android:text="@string/pub_service" />
+
+            <com.ebox.pub.ui.customview.view.MaterialButton
+                android:id="@+id/help_view"
+                style="@style/ex_top_btn"
+                android:drawableLeft="@drawable/ex_icon_help"
+                android:text="@string/pub_help" />
+
+            <com.ebox.pub.ui.customview.view.MaterialButton
+                android:id="@+id/web_view"
+                style="@style/ex_top_btn"
+                android:gravity="center"
+                android:text="@string/pub_taobao" />
+
+            <com.ebox.pub.ui.customview.view.MaterialButton
+                android:id="@+id/huozhan_btn_normal"
+                style="@style/ex_top_btn"
+                android:drawableLeft="@drawable/ex_icon_huozhan"
+                android:text="@string/pub_huozhan"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/fl_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/logo"
+            android:layout_below="@+id/rl_top_action" />
+
+
+        <com.ebox.ex.ui.bar.Logo
+            android:id="@id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ex_logo_height"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</merge>

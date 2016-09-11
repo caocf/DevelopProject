@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	style="?attr/pub_top_nag_page"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <TextView 
+        android:id="@+id/tv_guide_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="6px"
+        android:text="123123"
+        style="@style/yc_title_size_30"/>
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="6px">
+        
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="40px"
+	        android:paddingRight="40px"
+	        android:background="@color/pub_white"
+	        android:orientation="vertical">
+			<LinearLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="6px"
+			    android:orientation="horizontal">
+			    <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        style="@style/pub_text_black_size_32_px"
+			        android:text="服务主体:"/>
+			    <TextView 
+			        android:id="@+id/tv_fwzt"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        style="@style/pub_text_black_size_32_px"
+			        android:layout_marginLeft="5dp"/>
+			</LinearLayout>
+			
+			<View 
+			    android:layout_width="match_parent"
+			    android:layout_height="1dp"
+			    android:layout_marginTop="12px"
+			    android:background="@color/pub_grey"/>
+			
+			<LinearLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="6px"
+			    android:orientation="horizontal">
+			    <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        style="@style/pub_text_black_size_32_px"
+			        android:text="申办依据:"/>
+			    <TextView 
+			        android:id="@+id/tv_sbyj"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        style="@style/pub_text_black_size_32_px"
+			        android:layout_marginLeft="6px"/>
+			</LinearLayout>
+			
+			<View 
+			    android:layout_width="match_parent"
+			    android:layout_height="1px"
+			    android:layout_marginTop="10px"
+			    android:background="@color/pub_grey"/>
+			
+			<LinearLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="6px"
+			    android:orientation="horizontal">
+			    <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        style="@style/pub_text_black_size_32_px"
+			        android:text="申办条件:"/>
+			    <TextView 
+			        android:id="@+id/tv_sbtj"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        style="@style/pub_text_black_size_32_px"
+			        android:layout_marginLeft="6px"/>
+			</LinearLayout>
+			
+			<View 
+			    android:layout_width="match_parent"
+			    android:layout_height="1px"
+			    android:layout_marginTop="10px"
+			    android:background="@color/pub_grey"/>
+			
+			<LinearLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="6px"
+			    android:orientation="horizontal">
+			    <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        style="@style/pub_text_black_size_32_px"
+			        android:text="办事材料:"/>
+			    <TextView 
+			        android:id="@+id/tv_bscl"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        style="@style/pub_text_black_size_32_px"
+			        android:layout_marginLeft="6px"/>
+			</LinearLayout>
+			
+			<View 
+			    android:layout_width="match_parent"
+			    android:layout_height="1px"
+			    android:layout_marginTop="10px"
+			    android:background="@color/pub_grey"/>
+			
+			<LinearLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="6px"
+			    android:orientation="horizontal">
+			    <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        style="@style/pub_text_black_size_32_px"
+			        android:text="办事程序:"/>
+			    <TextView 
+			        android:id="@+id/tv_blcx"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        style="@style/pub_text_black_size_32_px"
+			        android:layout_marginLeft="6px"/>
+			</LinearLayout>
+			
+			<View 
+			    android:layout_width="match_parent"
+			    android:layout_height="1px"
+			    android:layout_marginTop="10px"
+			    android:background="@color/pub_grey"/>
+			
+			<LinearLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="6px"
+			    android:orientation="horizontal">
+			    <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        style="@style/pub_text_black_size_32_px"
+			        android:text="办理时限:"/>
+			    <TextView 
+			        android:id="@+id/tv_blsx"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        style="@style/pub_text_black_size_32_px"
+			        android:layout_marginLeft="6px"/>
+			</LinearLayout>
+			
+			<View 
+			    android:layout_width="match_parent"
+			    android:layout_height="1px"
+			    android:layout_marginTop="10px"
+			    android:background="@color/pub_grey"/>
+			
+			<LinearLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="5dp"
+			    android:orientation="horizontal">
+			    <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        style="@style/pub_text_black_size_32_px"
+			        android:text="支付类型:"/>
+			    <TextView 
+			        android:id="@+id/tv_zflx"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        style="@style/pub_text_black_size_32_px"
+			        android:layout_marginLeft="6px"/>
+			</LinearLayout>
+			
+			<View 
+			    android:layout_width="match_parent"
+			    android:layout_height="1px"
+			    android:layout_marginTop="10px"
+			    android:background="@color/pub_grey"/>
+			
+			<LinearLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="6px"
+			    android:orientation="horizontal">
+			    <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        style="@style/pub_text_black_size_32_px"
+			        android:text="地址:"/>
+			    <TextView 
+			        android:id="@+id/tv_dz"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        style="@style/pub_text_black_size_32_px"
+			        android:layout_marginLeft="5dp"/>
+			</LinearLayout>
+			
+			<View 
+			    android:layout_width="match_parent"
+			    android:layout_height="1px"
+			    android:layout_marginTop="10px"
+			    android:background="@color/pub_grey"/>
+			
+			<LinearLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="6px"
+			    android:orientation="horizontal">
+			    <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        style="@style/pub_text_black_size_32_px"
+			        android:text="联系电话:"/>
+			    <TextView 
+			        android:id="@+id/tv_lxdh"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        style="@style/pub_text_black_size_32_px"
+			        android:layout_marginLeft="6px"/>
+			</LinearLayout>
+			
+			<View 
+			    android:layout_width="match_parent"
+			    android:layout_height="1px"
+			    android:layout_marginTop="10px"
+			    android:background="@color/pub_grey"/>
+			
+			<LinearLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="6px"
+			    android:orientation="horizontal">
+			    <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        style="@style/pub_text_black_size_32_px"
+			        android:text="描述:"/>
+			    <TextView 
+			        android:id="@+id/tv_ms"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        style="@style/pub_text_black_size_32_px"
+			        android:layout_marginLeft="6px"/>
+			</LinearLayout>
+	        
+	    </LinearLayout>
+        
+    </ScrollView>
+
+    
+
+</LinearLayout>

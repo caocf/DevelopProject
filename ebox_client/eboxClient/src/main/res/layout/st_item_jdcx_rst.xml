@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_item_jdcx_rst">
+    
+     <TextView
+        android:id="@+id/tv_create_at"
+        style="@style/pub_text_white_size_60_px"
+        android:layout_width="620px"
+        android:layout_height="140px"
+        android:background="@drawable/pub_code_btn_black"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_state"
+        style="@style/pub_text_white_size_60_px"
+        android:layout_width="620px"
+        android:layout_height="140px"
+        android:gravity="center"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusableInTouchMode="true"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:focusable="true"
+        android:layout_toRightOf="@+id/tv_create_at"
+        android:background="@drawable/pub_code_btn_black" />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        style="@style/pub_text_white_size_60_px"
+        android:layout_width="620px"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/pub_code_btn_black"
+        />
+
+
+    
+
+</RelativeLayout>

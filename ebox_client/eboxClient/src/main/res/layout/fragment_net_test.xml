@@ -1,0 +1,179 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="40px">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ebox.pub.ui.customview.view.MaterialButton
+            android:id="@+id/mgt_bt_fnt_nettest"
+            style="@style/bt_fragment_test"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="20px"
+            android:text="检测网络" />
+
+        <WebView
+            android:id="@+id/mgt_wv_fnt_nettest"
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:layout_toRightOf="@id/mgt_bt_fnt_nettest"
+            android:background="@color/pub_red"></WebView>
+
+        <TextView
+            android:id="@+id/mgt_tv_fnt_nettest"
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:layout_toRightOf="@id/mgt_bt_fnt_nettest"
+            android:background="@color/pub_red"
+            android:gravity="center"
+            android:text="网页显示区"
+            android:textColor="@color/pub_white"
+            android:textSize="@dimen/pub_text_size_40_px"></TextView>
+
+        <LinearLayout
+            android:id="@+id/mgt_ll_showstate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/mgt_wv_fnt_nettest"
+            android:layout_marginTop="10px"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RadioGroup
+                    android:id="@+id/rg_route"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3G路由器模块:"
+                        android:textColor="@color/pub_blue"
+                        android:textSize="@dimen/pub_text_size_26_px" />
+
+                    <RadioButton
+                        android:id="@+id/rb_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="正常"
+                        android:textColor="@color/pub_blue"
+                        android:textSize="@dimen/pub_text_size_26_px" />
+
+
+                    <RadioButton
+                        android:id="@+id/rb_error"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="异常"
+                        android:textColor="@color/pub_blue"
+                        android:textSize="@dimen/pub_text_size_26_px" />
+
+
+                </RadioGroup>
+
+
+                <RadioGroup
+                    android:id="@+id/rg_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3G天线 :           "
+                        android:textColor="@color/pub_blue"
+                        android:textSize="@dimen/pub_text_size_26_px" />
+
+                    <RadioButton
+                        android:id="@+id/rb_ok_line"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="正常"
+                        android:textColor="@color/pub_blue"
+                        android:textSize="@dimen/pub_text_size_26_px" />
+
+
+                    <RadioButton
+                        android:id="@+id/rb_error_line"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="异常"
+                        android:textColor="@color/pub_blue"
+                        android:textSize="@dimen/pub_text_size_26_px" />
+
+
+                </RadioGroup>
+
+
+                <RadioGroup
+                    android:id="@+id/rg_net"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="网络路由器:     "
+                        android:textColor="@color/pub_blue"
+                        android:textSize="@dimen/pub_text_size_26_px" />
+
+                    <RadioButton
+                        android:id="@+id/rb_ok_net"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="正常"
+                        android:textColor="@color/pub_blue"
+                        android:textSize="@dimen/pub_text_size_26_px" />
+
+
+                    <RadioButton
+                        android:id="@+id/rb_error_net"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="异常"
+                        android:textColor="@color/pub_blue"
+                        android:textSize="@dimen/pub_text_size_26_px" />
+
+
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.ebox.pub.ui.customview.view.MaterialButton
+            android:id="@+id/bt_ok"
+            style="@style/bt_fragment_test"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="测试成功" />
+
+        <com.ebox.pub.ui.customview.view.MaterialButton
+            android:id="@+id/bt_error"
+            style="@style/bt_fragment_test"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@id/bt_ok"
+            android:text="测试失败" />
+    </RelativeLayout>
+
+
+</ScrollView>

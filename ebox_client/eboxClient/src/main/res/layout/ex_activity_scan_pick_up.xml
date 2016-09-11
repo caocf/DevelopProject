@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="1323px"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="80px"
+        android:layout_marginLeft="302px"
+        android:background="@color/pub_white">
+
+        <!-- header -->
+
+        <RelativeLayout
+            android:id="@+id/rl_scan_header"
+            android:layout_width="1324px"
+            android:layout_height="125px"
+            android:background="@drawable/ex_bg_scan_title">
+
+            <ImageView
+                android:id="@+id/iv_scan_title"
+                android:layout_width="404px"
+                android:layout_height="73px"
+                android:layout_marginLeft="50px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ex_scan_logo" />
+        </RelativeLayout>
+
+        <!-- 标题底端 -->
+
+
+        <!-- center content -->
+        <RelativeLayout
+            android:id="@+id/rl_center_content"
+            android:layout_width="1324px"
+            android:layout_height="589px"
+            android:layout_alignLeft="@+id/rl_scan_header"
+            android:layout_alignRight="@+id/rl_scan_header"
+            android:layout_below="@+id/rl_scan_header">
+
+            <ImageView
+                android:id="@+id/iv_scan_code"
+                android:layout_width="297px"
+                android:layout_height="293px"
+                android:layout_marginTop="55px"
+                android:layout_marginLeft="109px"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_scan_code"
+                android:layout_marginLeft="93px"
+                android:layout_marginTop="60px">
+
+                <TextView
+                    android:id="@+id/tv_use_tag1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/ex_scan_use_tag1"
+                    android:textColor="@color/pub_black"
+                    android:textSize="@dimen/pub_text_size_42_px" />
+
+                <ImageView
+                    android:id="@+id/iv_scan_wechat"
+                    android:layout_width="95px"
+                    android:layout_height="79px"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_use_tag1"
+                    android:src="@drawable/ex_scan_wechat"
+                    android:textColor="@color/pub_black" />
+
+                <TextView
+                    android:id="@+id/tv_scan_use2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_scan_wechat"
+                    android:text="@string/ex_scan_use_tag2"
+                    android:textColor="@color/pub_black"
+                    android:textSize="@dimen/pub_text_size_42_px" />
+
+                <TextView
+                    android:id="@+id/tv_scan_use3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_scan_wechat"
+                    android:layout_marginTop="20px"
+                    android:text="@string/ex_scan_use_tag3"
+                    android:textColor="@color/pub_black"
+                    android:textSize="@dimen/pub_text_size_42_px" />
+            </RelativeLayout>
+
+            <!-- bottom   Text -->
+
+            <TextView
+                android:id="@+id/tv_scan_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_scan_code"
+                android:text="@string/ex_scan_use_bottom"
+                android:textColor="@color/pub_black"
+                android:textSize="@dimen/pub_text_size_34_px"
+                android:padding="10px"/>
+
+            <!-- Bottom Button -->
+
+            <Button
+                android:id="@+id/bt_scan_enter"
+                android:layout_width="195px"
+                android:layout_height="77px"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="478px"
+                android:background="@drawable/ex_bg_scan_enter"
+                android:text="@string/ex_scan_enter"
+                android:textColor="@color/pub_white"
+                android:textSize="@dimen/pub_text_size_26_px" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1323px"
+            android:layout_height="375px"
+            android:src="@drawable/ex_scan_yy"
+            android:layout_below="@+id/rl_center_content"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

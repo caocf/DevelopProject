@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ex_green"
+    android:id="@+id/rootView">
+
+   <Button
+       android:id="@+id/ex_bt_ro_back"
+       android:layout_width="@dimen/pub_text_size_20_px"
+       android:layout_height="@dimen/pub_text_size_34_px"
+       android:background="@drawable/ex_back"
+       android:layout_marginTop="@dimen/pub_text_size_40_px"
+       android:layout_marginLeft="@dimen/pub_text_size_40_px"/>
+
+
+    <LinearLayout
+        android:layout_below="@id/ex_bt_ro_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+        <ImageView
+            android:id="@+id/ex_iv_ro_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ex_registe_ok"/>
+
+        <TextView
+           style="@style/ex_text"
+            android:textColor="@color/pub_white"
+            android:textSize="50px"
+            android:text="@string/ex_regist_state"
+            android:layout_marginTop="@dimen/pub_text_size_40_px"
+            />
+
+        <TextView
+            style="@style/ex_text"
+            android:textColor="@color/pub_white"
+            android:textSize="@dimen/pub_text_size_30_px"
+            android:text="@string/ex_regist_login"
+            />
+
+        <TextView
+            style="@style/ex_text"
+            android:textColor="@color/pub_white"
+            android:textSize="@dimen/pub_text_size_30_px"
+            android:text="@string/ex_regist_tip"
+            android:layout_marginTop="@dimen/pub_text_size_60_px"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MyImageButton">
+        <attr name="text" format="string"/>
+        <attr name="textColor" format="reference|color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="image" format="reference|color"/>
+        <attr name="background" format="reference|color"/>
+        <attr name="distance" format="dimension"/>
+    </declare-styleable>
+
+    <!-- focus view -->
+    <declare-styleable name="FocusView">
+        <attr name="borderDrawable" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="Chronometer">
+
+        <!--
+             Format string: if specified, the Chronometer will display this
+             string, with the first "%s" replaced by the current timer value
+             in "MM:SS" or "H:MM:SS" form.
+             If no format string is specified, the Chronometer will simply display
+             "MM:SS" or "H:MM:SS".
+
+
+        -->
+        <attr name="format" format="string" localization="suggested"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="corner_radius" format="dimension"/>
+        <attr name="border_width" format="dimension"/>
+        <attr name="border_color" format="color"/>
+        <attr name="mutate_background" format="boolean"/>
+        <attr name="oval" format="boolean"/>
+        <attr name="android:scaleType"/>
+    </declare-styleable>
+
+    <declare-styleable name="ScrollListView">
+        <attr name="divider_height" format="dimension"/>
+        <attr name="divider_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="EmptyView">
+        <attr name="loadingDrawable" format="reference|color"/>
+        <attr name="emptyDrawable" format="reference|color"/>
+        <attr name="failDrawable" format="reference|color"/>
+    </declare-styleable>
+
+
+</resources>

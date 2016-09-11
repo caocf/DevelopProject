@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+    	android:layout_height="35dp">
+    	
+        <TextView 
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            style="@style/text_topic_time"
+            android:singleLine="true"/>
+               
+        <TextView 
+            android:id="@+id/likeCountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_like"
+            android:drawablePadding="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            style="@style/text_topic_like"/>
+           
+        <TextView 
+            android:id="@+id/postCountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_post"
+            android:drawablePadding="5dp"
+            android:layout_toLeftOf="@id/likeCountText"
+            android:layout_marginRight="30dp"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            style="@style/text_topic_like"/>
+        
+   </RelativeLayout>
+    
+
+</LinearLayout>

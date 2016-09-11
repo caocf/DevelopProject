@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loadview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/life_group_bg_color">
+    
+   <include layout="@layout/general_header"/>
+   			
+		       
+   <RelativeLayout
+		android:id="@+id/versionLayout"
+		android:layout_width="match_parent"
+		android:layout_height="53dp"
+		android:paddingLeft="15dp"
+		android:paddingRight="15dp"
+		android:clickable="true"
+		android:background="@drawable/bg_mycenter_selector">
+       				
+       <ImageView
+           	android:id="@+id/versionImage"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:background="@drawable/icon_version"
+			android:scaleType="fitXY" />
+   		           
+       <TextView
+       		android:layout_width="wrap_content"
+		   	android:layout_height="wrap_content"
+		   	android:layout_marginLeft="10dp"
+		   	android:layout_toRightOf="@id/versionImage"
+		   	android:layout_centerVertical="true"
+		   	android:text="@string/update_version"
+		   	style="@style/text_mytitle_15"/>
+   		           
+       <ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"
+			android:background="@drawable/icon_right_small"
+			android:scaleType="fitXY" />
+       
+   	</RelativeLayout>
+   				
+    <View
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:background="@color/line_color"
+		android:visibility="gone"/>
+   		        
+    <RelativeLayout
+	    android:id="@+id/praiseLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="53dp"
+	    android:paddingLeft="15dp"
+	  	android:paddingRight="15dp"
+	    android:clickable="true"
+	    android:background="@drawable/bg_mycenter_selector"
+	    android:visibility="gone">
+				
+    	<ImageView
+	        android:id="@+id/praiseImage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/icon_praise"
+	        android:scaleType="fitXY" />
+         
+    	<TextView
+	        android:layout_width="wrap_content"
+		   	android:layout_height="wrap_content"
+		   	android:layout_marginLeft="10dp"
+		   	android:layout_toRightOf="@id/praiseImage"
+		   	android:layout_centerVertical="true"
+		   	android:text="@string/give_praise"
+		   	style="@style/text_mytitle_15"/>
+         
+   		<ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:background="@drawable/icon_right_small"
+	        android:scaleType="fitXY" />
+
+	</RelativeLayout>
+
+    <RelativeLayout
+		android:id="@+id/aboutUsLayout"
+		android:layout_width="match_parent"
+		android:layout_marginTop="5dp"
+		android:layout_height="53dp"
+		android:paddingLeft="15dp"
+		android:paddingRight="15dp"
+		android:background="@drawable/bg_mycenter_selector">
+       				
+         <ImageView
+         	android:id="@+id/aboutUsImage"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:background="@drawable/icon_aboutus"
+			android:scaleType="fitXY" />
+         
+         <TextView
+       		android:layout_width="wrap_content"
+		   	android:layout_height="wrap_content"
+		   	android:layout_marginLeft="10dp"
+		   	android:layout_toRightOf="@id/aboutUsImage"
+		   	android:layout_centerVertical="true"
+		   	android:text="@string/about_us"
+		   	style="@style/text_mytitle_15"/>
+         
+         <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:background="@drawable/icon_right_small"
+	        android:scaleType="fitXY" />
+
+	</RelativeLayout>
+   				
+  	<View
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:background="@color/line_color"/>
+   		        
+    <RelativeLayout
+        android:id="@+id/contactUsLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="53dp"
+	    android:paddingLeft="15dp"
+  	    android:paddingRight="15dp"
+   		android:background="@drawable/bg_mycenter_selector">
+				
+        <ImageView
+            android:id="@+id/contactUsImage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/icon_contactus"
+	        android:scaleType="fitXY" />
+         
+       <TextView
+       		android:layout_width="wrap_content"
+		   	android:layout_height="wrap_content"
+		   	android:layout_marginLeft="10dp"
+		   	android:layout_toRightOf="@id/contactUsImage"
+		   	android:layout_centerVertical="true"
+		   	android:text="@string/contact_us"
+		   	style="@style/text_mytitle_15"/>
+         
+       <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:background="@drawable/icon_right_small"
+	        android:scaleType="fitXY" />
+
+	</RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/inviteFriendLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="53dp"
+		android:layout_marginTop="5dp"
+	    android:paddingLeft="15dp"
+  	    android:paddingRight="15dp"
+   		android:background="@drawable/bg_mycenter_selector">
+				
+        <ImageView
+            android:id="@+id/inviteFriendImage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/icon_invite_friend"
+	        android:scaleType="fitXY" />
+         
+       <TextView
+       		android:layout_width="wrap_content"
+		   	android:layout_height="wrap_content"
+		   	android:layout_marginLeft="10dp"
+		   	android:layout_toRightOf="@id/inviteFriendImage"
+		   	android:layout_centerVertical="true"
+		   	android:text="@string/invite_friend"
+		   	style="@style/text_mytitle_15"/>
+         
+       <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:background="@drawable/icon_right_small"
+	        android:scaleType="fitXY" />
+
+	</RelativeLayout>
+	
+    <View
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:background="@color/line_color"/>
+   		        
+    <RelativeLayout
+ 		android:id="@+id/feedbackLayout"
+		android:layout_width="match_parent"
+		android:layout_height="53dp"
+		android:paddingLeft="15dp"
+      	android:paddingRight="15dp"
+   		android:background="@drawable/bg_mycenter_selector">
+				
+        <ImageView
+	        android:id="@+id/feedbackImage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/icon_feedback"
+	        android:scaleType="fitXY" />
+         
+       <TextView
+       		android:layout_width="wrap_content"
+		   	android:layout_height="wrap_content"
+		   	android:layout_marginLeft="10dp"
+		   	android:layout_toRightOf="@id/feedbackImage"
+		   	android:layout_centerVertical="true"
+		   	android:text="@string/feedback"
+		   	style="@style/text_mytitle_15"/>
+         
+      <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:background="@drawable/icon_right_small"
+	        android:scaleType="fitXY" />
+
+	</RelativeLayout>
+
+	<Button
+			android:id="@+id/quitBtn"
+			android:layout_width="match_parent"
+			android:layout_marginTop="20dp"
+			android:layout_height="44dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:layout_marginBottom="15dp"
+			android:gravity="center"
+			android:text="@string/exit"
+			style="@style/text_white_18"
+			android:background="@drawable/bg_btn_red"/>
+
+   
+</LinearLayout>

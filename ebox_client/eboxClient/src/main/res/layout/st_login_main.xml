@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_op"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/pub_transparent_50"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_put"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px" >
+
+            <Button
+                android:id="@+id/bt_put_normal"
+                style="@style/pub_text_white_size_60_px"
+                android:layout_width="300px"
+                android:layout_height="116px"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:background="@color/transparent" 
+                android:text="存证照"/>
+
+            <Button
+                android:id="@+id/bt_put_pressed"
+                style="@style/pub_text_white_size_60_px"
+                android:layout_width="300px"
+                android:layout_height="116px"
+                android:text="存证照"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:background="@drawable/st_btn_main_oper"
+                android:visibility="gone" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/rl_get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/bt_get_normal"
+                style="@style/pub_text_white_size_60_px"
+                android:layout_width="300px"
+                android:layout_height="116px"
+                android:background="@color/transparent" 
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:text="取文件"/>
+
+            <Button
+                android:id="@+id/bt_get_pressed"
+                style="@style/pub_text_white_size_60_px"
+                android:layout_width="300px"
+                android:layout_height="116px"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:text="取文件"
+                android:background="@drawable/st_btn_main_oper"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_has_put"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip" >
+
+            <Button
+                android:id="@+id/bt_has_put_normal"
+                style="@style/pub_text_white_size_60_px"
+                android:layout_width="300px"
+                android:layout_height="116px"
+                android:background="@color/transparent" 
+                android:text="已存证照"
+                android:paddingLeft="20px"
+                android:paddingRight="10px"/>
+
+            <Button
+                android:id="@+id/bt_has_put_pressed"
+                style="@style/pub_text_white_size_60_px"
+                android:layout_width="300px"
+                android:layout_height="116px"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:text="已存证照"
+                android:background="@drawable/st_btn_main_oper"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.ebox.ex.ui.bar.OperMainLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title"
+        android:layout_above="@+id/ll_op">
+    </com.ebox.ex.ui.bar.OperMainLayout>
+
+</RelativeLayout>

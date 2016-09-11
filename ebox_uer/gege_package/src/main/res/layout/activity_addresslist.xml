@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/loadview"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/life_group_bg_color">
+
+    <include layout="@layout/general_header"/>
+
+    <ListView
+            android:id="@+id/addressList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="true"
+            android:background="@color/white"
+            android:divider="@color/line_color"
+            android:dividerHeight="5dp"
+            android:listSelector="@drawable/bg_listview"
+            android:scrollbars="none"
+            android:descendantFocusability="afterDescendants"/>
+
+    <include layout="@layout/empty_view" />
+
+</LinearLayout>

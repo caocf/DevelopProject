@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="service_des">
+        <item>话题</item>
+        <item>活动</item>
+        <item>拼车</item>
+        <item>约伴</item>
+        <item>交友</item>
+        <item>宠物</item>
+        <item>二手</item>
+        <item>租房</item>
+        <item>活动</item>
+        <item>更多</item>
+    </string-array>
+    
+    <string-array name="service_des_resname">
+        <item>icon_activity</item>
+        <item>icon_activity</item>
+        <item>icon_carpool</item>
+        <item>icon_together</item>
+        <item>icon_marriage_dating</item>
+        <item>icon_pet</item>
+        <item>icon_secondhand</item>
+        <item>icon_renthouse</item>
+        <item>icon_activity</item>
+        <item>icon_service</item>
+    </string-array>
+    
+    <string-array name="service_des_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>3</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>1</item>
+        <item>9</item>
+    </string-array>
+    
+    <string-array name="carpool_menu">
+        <item>需求</item>
+        <item>路线</item>
+        <item>时间</item>
+    </string-array>
+    
+    <string-array name="marriage_menu">
+        <item>需求</item>
+        <item>年龄</item>
+        <item>性别</item>
+    </string-array>
+    
+    <string-array name="marriage_needtype">
+        <item>全部</item>
+        <item>征婚</item>
+        <item>交友</item>
+    </string-array>
+    
+    <string-array name="marriage_age">
+        <item>全部</item>
+        <item>25岁以下</item>
+        <item>25~30</item>
+        <item>30~35</item>
+        <item>35以上</item>
+    </string-array>
+    
+    <string-array name="marriage_gender">
+        <item>全部</item>
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    
+    <string-array name="together_menu">
+        <item>需求</item>
+        <item>时间</item>
+        <item>地点</item>
+    </string-array>
+    
+    <string-array name="together_needtype">
+        <item>全部</item>
+        <item>健身</item>
+        <item>玩</item>
+    </string-array>
+    
+    <string-array name="together_time">
+        <item>全部</item>
+        <item>今日</item>
+        <item>周末</item>
+        <item>近一周</item>
+    </string-array>
+    
+    <string-array name="together_address">
+        <item>全部</item>
+        <item>户外</item>
+        <item>室内</item>
+    </string-array>
+    
+    <string-array name="pet_menu">
+        <item>需求</item>
+        <item>品种</item>
+        <item>性别</item>
+    </string-array>
+    
+    <string-array name="pet_needtype">
+        <item>全部</item>
+        <item>领养</item>
+        <item>约会</item>
+    </string-array>
+    
+    <string-array name="pet_gender">
+        <item>全部</item>
+        <item>GG</item>
+        <item>MM</item>
+    </string-array>
+    
+ 	<string-array name="secondhand_menu">
+        <item>需求</item>
+        <item>分类</item>
+        <item>新旧程度</item>
+    </string-array>
+    
+ 	<string-array name="secondhand_menu_icon">
+        <item>icon_secondhand_need</item>
+        <item>icon_secondhand_classify</item>
+        <item>icon_secondhand_condition</item>
+    </string-array>
+    
+ 	<string-array name="secondhand_needtype">
+        <item>全部</item>
+        <item>求购</item>
+        <item>闲置</item>
+    </string-array>
+    
+ 	<string-array name="secondhand_category">
+        <item>全部</item>
+        <item>手机数码</item>
+        <item>鞋帽服饰</item>
+        <item>影音家电</item>
+        <item>家具日用</item>
+        <item>母婴用品</item>
+        <item>其他</item>
+    </string-array>
+    
+ 	<string-array name="secondhand_condition">
+        <item>全部</item>
+        <item>全新</item>
+        <item>九成新</item>
+        <item>八成新</item>
+        <item>其他</item>
+    </string-array>
+    
+ 	<string-array name="secondhand_publish_condition">
+        <item>全新</item>
+        <item>九成新</item>
+        <item>八成新</item>
+        <item>其他</item>
+    </string-array>
+    
+ 	<string-array name="renthouse_menu">
+        <item>需求</item>
+        <item>区域</item>
+        <item>户型</item>
+        <item>租金</item>
+    </string-array>
+    
+ 	<string-array name="renthouse_needtype">
+        <item>全部</item>
+        <item>求租房</item>
+        <item>出租房</item>
+    </string-array>
+    
+ 	<string-array name="renthouse_area">
+        <item>全南京</item>
+        <item>玄武</item>
+        <item>鼓楼</item>
+    </string-array>
+    
+ 	<string-array name="renthouse_money">
+        <item>全部</item>
+        <item>500以下</item>
+        <item>500-1000</item>
+        <item>1000-2000</item>
+    </string-array>
+    
+ 	<string-array name="convenience_list">
+        <item>快递</item>
+        <item>送水</item>
+        <item>干洗</item>
+        <item>保洁</item>
+        <item>修马桶</item>
+        <item>开锁</item>
+        <item>装修</item>
+        <item>维修</item>
+        <item>回收</item>
+        <item>搬家</item>
+    </string-array>
+    
+ 	<string-array name="convenience_resname_list">
+ 	    <item>icon_express_delivery</item>
+ 	    <item>icon_send_water</item>
+ 	    <item>icon_dry_cleaning</item>
+        <item>icon_procter</item>
+        <item>icon_repairtoliet</item>
+        <item>icon_unlock</item>
+        <item>icon_decorate</item>
+        <item>icon_maintenance</item>
+        <item>icon_recycle</item>
+        <item>icon_move</item>
+    </string-array>
+    
+    <string-array name="months_of_year">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+    </string-array>
+    
+    <string-array name="image_select_menu">
+        <item>拍照</item>
+        <item>从相册选择</item>
+        <item>取消</item>
+    </string-array>
+    
+    <string-array name="share_name">
+        <item>新浪微博</item>
+        <item>微信</item>
+        <item>朋友圈</item>
+        <item>QQ空间</item>
+        <item>好友</item>
+    </string-array>
+    
+    <string-array name="share_res_name">
+        <item>icon_sina_normal</item>
+        <item>icon_wechat_normal</item>
+        <item>icon_moments_normal</item>
+        <item>icon_qzone_normal</item>
+        <item>icon_tencent_normal</item>
+    </string-array>
+
+</resources>

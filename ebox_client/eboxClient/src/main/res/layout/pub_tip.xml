@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380px"
+    android:layout_height="140px"
+    android:background="@drawable/ex_code_tip_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="380px"
+        android:layout_height="140px"
+        android:background="@drawable/ex_code_tip_bg" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/ex_box_door_64_px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/ex_while"
+        android:textSize="@dimen/pub_text_size_28_px" />
+
+    <TextView
+        android:id="@+id/description"
+        style="@style/pub_dialog_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:maxLines="3"
+        android:maxWidth="360px"
+        android:text="@string/ex_pickup_success"
+        android:textColor="@color/ex_while"
+        android:textSize="@dimen/pub_text_size_28_px" />
+</RelativeLayout>

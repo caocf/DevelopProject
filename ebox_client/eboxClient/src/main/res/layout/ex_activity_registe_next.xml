@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+
+        <GridView
+            android:id="@+id/ex_gv_arn_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="6"
+            android:verticalSpacing="5px"
+            android:horizontalSpacing="10px"
+            android:gravity="center"
+            android:layout_below="@id/title"
+            android:layout_margin="@dimen/pub_text_size_50_px"
+            ></GridView>
+
+        <GridView
+            android:id="@+id/gv_origination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="1px"
+            android:horizontalSpacing="1px"
+            android:columnWidth="180px"
+            android:stretchMode="columnWidth"
+            android:gravity="center"
+            android:layout_below="@id/ex_gv_arn_image"
+            android:layout_marginLeft="@dimen/pub_text_size_50_px"
+            android:layout_marginRight="@dimen/pub_text_size_50_px"
+           ></GridView>
+
+    <com.ebox.ex.ui.bar.Logo
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ex_logo_height"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

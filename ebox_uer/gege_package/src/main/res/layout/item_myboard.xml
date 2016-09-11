@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="60dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="horizontal" 
+    android:gravity="center_vertical">
+   	   
+    <com.moge.gege.util.widget.RoundedImageView 
+        android:id="@+id/avatarImage"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:scaleType="fitXY"
+        app:corner_radius="100dp"
+        app:border_width="2dp"
+        app:border_color="@color/item_gray"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp">
+        
+   		<LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+	        android:orientation="vertical"
+	        android:gravity="center_vertical">
+	        
+   		    <TextView
+		        android:id="@+id/nameText"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        style="@style/text_life_title"/>
+		        
+		   <TextView
+		        android:id="@+id/levelText"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="5dp"
+		        android:gravity="center"
+		        android:background="@drawable/bg_level"
+		        android:textSize="@dimen/text_size_6"
+		        android:textColor="@color/white"
+		        android:textStyle="bold"
+		        android:visibility="gone"/>
+		   
+		   <LinearLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+    
+			    <ImageView
+			   		android:id="@+id/managerImage"
+			  		android:layout_width="wrap_content"
+			  		android:layout_height="wrap_content"
+			  		android:scaleType="fitXY" />
+			    
+			    <TextView
+			   		android:id="@+id/vipText"
+			  		android:layout_width="wrap_content"
+			  		android:layout_height="wrap_content"
+			  		android:paddingLeft="5dp"
+			  		android:paddingRight="5dp"
+			  		android:gravity="center"
+			  		android:text="@string/member" 
+			  		android:textColor="@color/white"
+			  		android:background="@drawable/bg_member"/>
+			    
+			    <TextView
+			   		android:id="@+id/ownerText"
+			  		android:layout_width="wrap_content"
+			  		android:layout_height="wrap_content"
+			  		android:layout_marginLeft="3dp"
+			  		android:paddingLeft="5dp"
+			  		android:paddingRight="5dp"
+			  		android:gravity="center"
+			  		android:text="@string/owner" 
+			  		android:textColor="@color/white"
+			  		android:background="@drawable/bg_owner"/>
+			</LinearLayout>
+		     
+        </LinearLayout>
+        
+   		<LinearLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_centerVertical="true">
+		   
+		        <TextView
+			       android:id="@+id/topicCountText"
+			       android:layout_width="40dp"
+			       android:layout_height="20dp"
+			       android:gravity="center"
+			       android:textColor="@color/topic_count_color"
+			       android:textSize="@dimen/text_size_13"
+			       android:background="@drawable/bg_topic_count_corner"/>
+		</LinearLayout>
+        
+   		<View
+   		    android:id="@+id/line"
+   		    android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_color"/>
+    </RelativeLayout>
+    
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/loadview"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/life_group_bg_color">
+
+    <include layout="@layout/general_header"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+            android:id="@+id/tradingScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:ptrAnimationStyle="flip">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <com.moge.gege.ui.widget.ImagePageView
+                    android:id="@+id/promotionView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_color" />
+
+            <com.moge.gege.util.widget.horizontalListview.widget.HListView
+                android:id="@+id/categoryListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="@drawable/bg_listview"
+                android:fadingEdge="none"
+                android:overScrollMode="never"
+                android:divider="@color/line_color"
+                app:hlv_dividerWidth="1dp"
+                android:background="@color/white"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_color" />
+
+            <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:orientation="horizontal">-->
+
+                <!--<com.moge.gege.ui.widget.TradingPromotionView-->
+                        <!--android:id="@+id/promotion2View"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"/>-->
+
+                <!--<com.moge.gege.ui.widget.TradingPromotionView-->
+                        <!--android:id="@+id/promotion3View"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"/>-->
+
+            <!--</RelativeLayout>-->
+
+            <com.moge.gege.ui.widget.TradingPromotionView
+                    android:id="@+id/promotion4View"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"/>
+
+
+            <com.moge.gege.util.widget.MyGridView
+                    android:id="@+id/tradingGridView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="10dp"
+                    android:cacheColorHint="#00000000"
+                    android:fadingEdge="none"
+                    android:fastScrollEnabled="false"
+                    android:footerDividersEnabled="false"
+                    android:headerDividersEnabled="false"
+                    android:smoothScrollbar="true"
+                    android:divider="@color/line_color"
+                    android:dividerHeight="0.5dp"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbars="none"
+                    android:descendantFocusability="afterDescendants"
+                    android:columnWidth="150dp"
+                    android:stretchMode="columnWidth"
+                    android:numColumns="2"
+                    android:horizontalSpacing="5dp"
+                    android:verticalSpacing="5dp"
+                    android:background="@color/life_group_bg_color"/>
+
+        </LinearLayout>
+
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+    <include layout="@layout/empty_view" />
+
+</LinearLayout>

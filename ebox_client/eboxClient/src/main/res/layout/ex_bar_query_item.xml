@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_query_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/ex_table_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/ll_at"
+        android:layout_width="0px"
+        android:layout_height="@dimen/ex_table_high_height"
+        android:layout_weight="2"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/tv_time_date"
+            style="@style/ex_table_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_time_year"
+            style="@style/ex_table_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textColor="@color/ex_text_blue"
+            android:layout_below="@id/tv_time_date"
+            android:textSize="@dimen/pub_text_size_18_px"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/ex_query_line" />
+
+    <TextView
+        android:id="@+id/tv_operatorId"
+        style="@style/ex_table_item"
+        android:ellipsize="end"
+        android:maxLines="2" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/ex_query_line" />
+
+    <TextView
+        android:id="@+id/tv_barcode"
+        style="@style/ex_table_item"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:maxWidth="100px" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/ex_query_line" />
+
+    <TextView
+        android:id="@+id/tv_telephone"
+        style="@style/ex_table_item"
+        android:gravity="center" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/ex_query_line" />
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:paddingLeft="86px">
+
+        <com.ebox.pub.ui.customview.view.MaterialButton
+            android:id="@+id/btn_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ex_sms"
+           />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

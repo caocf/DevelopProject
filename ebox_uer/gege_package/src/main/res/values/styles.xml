@@ -1,0 +1,534 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+     <style name="FullHeightDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+    <!--  <item name="android:editTextBackground">@drawable/transparent_background</item> -->
+ </style>
+
+ <style name="load_progress_style" parent="android:style/Widget.ProgressBar.Small">
+     <item name="android:minWidth">30dip</item>
+     <item name="android:maxWidth">30dip</item>
+     <item name="android:minHeight">30dip</item>
+     <item name="android:maxHeight">30dip</item>
+ </style>
+
+ <!-- add 4.0 fullscreen -->
+    <style name="Lancy_FullScreen">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    
+    <!-- popupwindow style -->
+    <style name="popwin_anim_style">
+     <item name="android:windowEnterAnimation">@anim/popupwindow_bottom_in</item>
+     <item name="android:windowExitAnimation">@anim/popupwindow_top_out</item>
+	</style>
+    
+    <!-- wheel time -->
+     <style name="time_wheel">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">126.0dip</item>
+    </style>
+    <style name="cronWheelView_fill">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="cronWheelView_full">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">126.0dip</item>
+    </style>
+    <style name="wheel_item_text">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textColor">@color/date_time_item_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingBottom">6.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="wheel_date_time_item_text" parent="@style/wheel_item_text">
+        <item name="android:textSize">17.0sp</item>
+    </style>
+    <style name="date_time_item_text" parent="@style/wheel_date_time_item_text">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingBottom">8.0dip</item>
+    </style>
+    
+     <!-- 半透明窗口 -->
+    <style name="translucent" parent="@style/Lancy_FullScreen">
+        <item name="android:windowBackground">@color/translucent_background</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    
+    <style name="customdialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <!-- 背景是否半透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    
+    <style name="nobgDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    
+    <style name="AgreeCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:textColor">@color/checkbox_protocol_color</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:button">@drawable/check_box</item>
+    </style>
+    
+    <style name="NumberEditText">
+        <item name="android:digits">0123456789</item>
+        <item name="android:inputType">number|textNoSuggestions</item>
+    </style>
+    
+    <style name="GeneralEditText">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/edittext_hint_color</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="coupon_code_edit">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/text_666_color</item>
+        <item name="android:textColorHint">@color/text_999_color</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <style name="head_title">
+        <item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textSize">@dimen/text_size_21</item>
+		<item name="android:textColor">@android:color/white</item>
+		<item name="android:textStyle">normal</item>
+		<!--  
+		<item name="android:shadowColor">#ffffffff</item>
+		<item name="android:shadowDx">1</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:shadowRadius">1</item>
+		-->
+    </style>
+    
+    <style name="blue_head_title">
+        <item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textSize">@dimen/text_size_16</item>
+		<item name="android:textColor">@color/general_blue_color</item>
+		<item name="android:textStyle">normal</item>
+    </style>
+    
+    
+    <!-- login page -->
+    <style name="text_login_edit">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/trading_title_color</item>
+        <item name="android:textColorHint">@color/input_text_color</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@null</item>
+    </style>
+    
+    <style name="text_register_title">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/register_title_text_color</item>
+    </style>
+    
+    <style name="text_register_info">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/register_info_text_color</item>
+    </style>
+    
+    <style name="text_register_option">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/register_option_text_color</item>
+    </style>
+    
+    <style name="text_register_checkbox">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/register_checkbox_color</item>
+    </style>
+    
+    <style name="text_life_title">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/life_title_color</item>
+    </style>
+    
+    <style name="text_life_subtitle">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/life_title_color</item>
+    </style>
+    
+    <style name="text_life_detail">
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/input_text_color</item>
+    </style>
+    
+    <style name="text_topic_nickname">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/topic_nickname_color</item>
+    </style>
+    
+    
+    <style name="text_topic_title">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/topic_title_color</item>
+    </style>
+    
+    <style name="text_topic_desc">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/topic_desc_color</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+    
+    <style name="text_topic_content">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/topic_content_color</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+    
+    <style name="text_topic_time">
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/topic_time_color</item>
+    </style>
+    
+    <style name="text_topic_like">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/topic_time_color</item>
+    </style>
+    
+    <style name="text_topic_floor">
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/topic_time_color</item>
+    </style>
+    
+    <!-- 帖子发布 -->
+    <style name="text_publish_content">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/trading_title_color</item>
+        <item name="android:textColorHint">@color/input_text_color</item>
+        <item name="android:background">@null</item>
+    </style>
+    
+     <style name="text_publish_title">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/trading_title_color</item>
+        <item name="android:textColorHint">@color/input_text_color</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    
+    <!-- custom -->
+    
+    <style name="text_white_11">
+        <item name="android:textSize">@dimen/text_size_11</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    
+    <style name="text_white_14">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    
+     <style name="text_white_16">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    
+    <style name="text_white_18">
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    
+    <style name="text_white_26">
+        <item name="android:textSize">@dimen/text_size_26</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    
+    <style name="text_black_18">
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    
+    <style name="text_black_16">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    
+    <style name="text_gray_9">
+        <item name="android:textSize">@dimen/text_size_9</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/command_text_color</item>
+    </style>
+    
+    <style name="text_gray_11">
+        <item name="android:textSize">@dimen/text_size_11</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/command_text_color</item>
+    </style>
+    
+    <style name="text_gray_12">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/command_text_color</item>
+    </style>
+    
+    <style name="text_gray_13">
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/command_text_color</item>
+    </style>
+    
+    <style name="text_gray_14">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/command_text_color</item>
+    </style>
+    
+     <style name="text_title_12">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/title_color</item>
+    </style>
+    
+     <style name="text_title_13">
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/title_color</item>
+    </style>
+    
+    <style name="text_title_14">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/title_color</item>
+    </style>
+    
+    <style name="text_title_15">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/title_color</item>
+    </style>
+
+    <style name="text_title_16">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/title_color</item>
+    </style>
+    
+    <style name="text_title_18">
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/title_color</item>
+    </style>
+    
+    <style name="text_mytitle_14">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/my_title_text_color</item>
+    </style>
+    
+    <style name="text_topicname_11">
+        <item name="android:textSize">@dimen/text_size_11</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/topic_name_color</item>
+    </style>
+    
+    <style name="text_topicname_13">
+        <item name="android:textSize">@dimen/text_size_11</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/topic_name_color</item>
+    </style>
+    
+    <style name="text_topiccontent_13">
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/topic_content_color</item>
+    </style>
+    
+    <style name="text_trading_title_11">
+        <item name="android:textSize">@dimen/text_size_11</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/trading_title_color</item>
+    </style>
+    
+    <style name="text_trading_title_13">
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/trading_title_color</item>
+    </style>
+
+    <style name="text_trading_title_14">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/trading_title_color</item>
+    </style>
+    
+    <style name="text_trading_title_15">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/trading_title_color</item>
+    </style>
+    
+    <style name="text_trading_count_13">
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/trading_count_color</item>
+    </style>
+    
+    <style name="text_trading_shoppingcard_9">
+        <item name="android:textSize">@dimen/text_size_9</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/trading_shoppingcard_color</item>
+    </style>
+    
+    <style name="text_trading_sellername_15">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/seller_name_color</item>
+    </style>
+    
+    <style name="text_trading_chat_15">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/seller_chat_color</item>
+    </style>
+    
+    <!-- 个人中心 -->
+    <style name="text_mytitle_16">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/my_title_text_color</item>
+    </style>
+    
+    <style name="text_mytitle_15">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/text_444_color</item>
+    </style>
+
+    <style name="text_mytitle_13">
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/my_title_text_color</item>
+    </style>
+
+    <style name="CustomDialog.Animation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/push_up_in</item>
+        <item name="android:windowExitAnimation">@anim/push_up_out</item>
+    </style>
+    
+   <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/CustomDialog.Animation</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    
+    <style name="CustomDialog.Menu" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@drawable/bg_custom_dialog</item>
+    </style>
+    
+    <style name="CustomDialog.Share" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@color/share_background_color</item>
+    </style>
+    
+    <style name="custom_dialog_text_title">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+    
+    <style name="custom_dialog_text">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff686868</item>
+    </style>
+    
+    <style name="custom_dialog_button_text">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="empty_view_default">
+        <item name="android:src">@drawable/icon_load_empty</item>
+        <item name="loadingDrawable">@drawable/icon_loading</item>
+        <item name="emptyDrawable">@drawable/icon_load_empty</item>
+        <item name="failDrawable">@drawable/icon_load_failed</item>
+    </style>
+
+    <style name="pay_title_text">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/command_text_color</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:background">@color/life_group_bg_color</item>
+    </style>
+    
+</resources>

@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/scan_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/mgt_et_fst_scan"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginTop="100px"
+        android:background="@drawable/mgt_code_input_common"
+        android:singleLine="true"
+        android:textSize="50px" />
+
+    <com.ebox.pub.ui.customview.view.MaterialButton
+        android:id="@+id/mgt_bt_fst_clean"
+        style="@style/bt_fragment_test"
+        android:layout_below="@id/mgt_et_fst_scan"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20px"
+        android:text="清除"
+        android:textSize="@dimen/pub_text_size_40_px" />
+
+
+</RelativeLayout>

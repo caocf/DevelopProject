@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MaterialTextView">
+        <attr name="shadowColor" format="color"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="Pub_RoundedImageView">
+	    <attr name="corner_radius" format="dimension" />
+	    <attr name="border_width" format="dimension" />
+	    <attr name="border_color" format="color" />
+	    <attr name="mutate_background" format="boolean" />
+	    <attr name="oval" format="boolean" />
+	    <attr name="android:scaleType" />
+  	</declare-styleable>
+  	
+     <declare-styleable name="Pub_FlowIndicator">
+        <attr name="count" format="integer" />
+        <!-- 圆钮半径 -->
+        <attr name="radius" format="dimension" />
+        <!-- 间距 -->
+        <attr name="space" format="dimension" />
+        <!-- 缺省颜色 -->
+        <attr name="normal_color" format="color|reference" />
+        <!-- 焦点颜色 -->
+        <attr name="focus_color" format="color|reference" />
+    </declare-styleable>
+
+    <!--title attrs-->
+    <!--标题背景色-->
+    <attr name="pub_title_background" format="reference"/>
+    <!--标题底部线色-->
+    <attr name="pub_title_line_background" format="reference"/>
+    <!--标题返回按钮-->
+    <attr name="pub_title_back" format="reference"/>
+    <!--标题内容字体样式-->
+    <attr name="pub_title_tv_style" format="reference"/>
+    <!--标题时钟样式-->
+    <attr name="pub_clock_style" format="reference"/>
+
+    <!--pub_top_nag_page-->
+    <attr name="pub_top_nag_page" format="reference"/>
+    <attr name="button_big" format="reference"/>
+    <attr name="button_normal" format="reference"/>
+    <attr name="input_normal" format="reference"/>
+    <attr name="input_big" format="reference"/>
+    <attr name="input_single" format="reference"/>
+    <attr name="pub_op_main_left_bg" format="reference"/>
+
+    <attr name="keyboard_style" format="reference"/>
+
+
+
+</resources>

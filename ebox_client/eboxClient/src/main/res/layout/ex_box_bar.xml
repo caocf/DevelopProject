@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bt_box"
+        style="@style/mgt_style_box_manage_btn"
+        android:layout_width="340px"
+        android:layout_height="140px"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20px"
+        android:clickable="false"
+        android:focusable="false"
+        android:padding="10px"
+        android:text="@string/mgt_save" />
+
+
+</RelativeLayout>

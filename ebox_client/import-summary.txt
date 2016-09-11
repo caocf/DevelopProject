@@ -1,0 +1,99 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From EboxClient:
+* README
+* config.properties
+* ic_launcher-web.png
+* libarm.so
+* proguard-project.txt
+* vitamio.rar
+* 代码规范.txt
+From library:
+* LICENSE
+* pom.xml
+From vitamio:
+* README.md
+* build.gradle
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:20.0.0
+gson-2.3.jar => com.google.code.gson:gson:2.3
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In library:
+* AndroidManifest.xml => library\src\main\AndroidManifest.xml
+* assets\ => library\src\main\assets\
+* res\ => library\src\main\res\
+* src\ => library\src\main\java\
+In vitamio:
+* AndroidManifest.xml => vitamio\src\main\AndroidManifest.xml
+* assets\ => vitamio\src\main\assets\
+* libs\armeabi\libvinit.so => vitamio\src\main\jniLibs\armeabi\libvinit.so
+* res\ => vitamio\src\main\res\
+* src\ => vitamio\src\main\java\
+In EboxClient:
+* AndroidManifest.xml => eboxClient\src\main\AndroidManifest.xml
+* libs\armeabi\libImageProc.so => eboxClient\src\main\jniLibs\armeabi\libImageProc.so
+* libs\armeabi\librxtxSerial.so => eboxClient\src\main\jniLibs\armeabi\librxtxSerial.so
+* libs\armeabi\libserial_port.so => eboxClient\src\main\jniLibs\armeabi\libserial_port.so
+* libs\armeabi\libumsipsndk.so => eboxClient\src\main\jniLibs\armeabi\libumsipsndk.so
+* libs\butterknife-6.1.0.jar => eboxClient\libs\butterknife-6.1.0.jar
+* libs\codec(1).jar => eboxClient\libs\codec(1).jar
+* libs\jackson-core-asl-1.9.13.jar => eboxClient\libs\jackson-core-asl-1.9.13.jar
+* libs\jackson-mapper-asl-1.9.13.jar => eboxClient\libs\jackson-mapper-asl-1.9.13.jar
+* libs\locSDK_4.2.jar => eboxClient\libs\locSDK_4.2.jar
+* libs\mglibrary.jar => eboxClient\libs\mglibrary.jar
+* libs\mina-core-2.0.7.jar => eboxClient\libs\mina-core-2.0.7.jar
+* libs\slf4j-api-1.7.2.jar => eboxClient\libs\slf4j-api-1.7.2.jar
+* libs\umsips.jar => eboxClient\libs\umsips.jar
+* libs\universal-image-loader-1.9.3.jar => eboxClient\libs\universal-image-loader-1.9.3.jar
+* libs\volley-1.0.15.jar => eboxClient\libs\volley-1.0.15.jar
+* libs\zxing.jar => eboxClient\libs\zxing.jar
+* lint.xml => eboxClient\lint.xml
+* res\ => eboxClient\src\main\res\
+* src\ => eboxClient\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_seq"
+        style="@style/ex_rack_title_32" />
+
+    <Button
+        android:id="@+id/bt_box1"
+        style="@style/ex_rack_32"
+        android:layout_below="@+id/tv_seq" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box1"
+        android:layout_alignTop="@+id/bt_box1"
+        android:text="01" />
+
+    <Button
+        android:id="@+id/bt_box2"
+        style="@style/ex_rack_32"
+        android:layout_below="@+id/bt_box1" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box2"
+        android:layout_alignTop="@+id/bt_box2"
+        android:text="02" />
+
+    <Button
+        android:id="@+id/bt_box3"
+        style="@style/ex_rack_32"
+        android:layout_below="@+id/bt_box2" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box3"
+        android:layout_alignTop="@+id/bt_box3"
+        android:text="03" />
+
+    <Button
+        android:id="@+id/bt_box4"
+        style="@style/ex_rack_32"
+        android:layout_below="@+id/bt_box3" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box4"
+        android:layout_alignTop="@+id/bt_box4"
+        android:text="04" />
+
+    <Button
+        android:id="@+id/bt_box5"
+        style="@style/ex_rack_32"
+        android:layout_below="@+id/bt_box4" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box5"
+        android:layout_alignTop="@+id/bt_box5"
+        android:text="05" />
+
+    <Button
+        android:id="@+id/bt_box6"
+        style="@style/ex_rack_32"
+        android:layout_below="@+id/bt_box5" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box6"
+        android:layout_alignTop="@+id/bt_box6"
+        android:text="06" />
+
+    <Button
+        android:id="@+id/bt_box7"
+        style="@style/ex_rack_32"
+        android:layout_below="@+id/bt_box6" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box7"
+        android:layout_alignTop="@+id/bt_box7"
+        android:text="07" />
+
+
+    <Button
+        android:id="@+id/bt_box8"
+        style="@style/ex_rack_32"
+        android:layout_below="@+id/bt_box7" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box8"
+        android:layout_alignTop="@+id/bt_box8"
+        android:text="08" />
+
+    <Button
+        android:id="@+id/bt_box9"
+        style="@style/ex_rack_32"
+        android:layout_below="@+id/tv_seq"
+        android:layout_toRightOf="@+id/bt_box1" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box9"
+        android:layout_alignTop="@+id/bt_box9"
+        android:text="09" />
+
+
+    <Button
+        android:id="@+id/bt_box10"
+        style="@style/ex_rack_32"
+        android:layout_alignLeft="@+id/bt_box9"
+        android:layout_below="@+id/bt_box9" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box10"
+        android:layout_alignTop="@+id/bt_box10"
+        android:text="10" />
+
+
+    <Button
+        android:id="@+id/bt_box11"
+        style="@style/ex_rack_32"
+        android:layout_alignLeft="@+id/bt_box9"
+        android:layout_below="@+id/bt_box10" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box11"
+        android:layout_alignTop="@+id/bt_box11"
+        android:text="11" />
+
+    <Button
+        android:id="@+id/bt_box12"
+        style="@style/ex_rack_32"
+        android:layout_alignLeft="@+id/bt_box9"
+        android:layout_below="@+id/bt_box11" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box12"
+        android:layout_alignTop="@+id/bt_box12"
+        android:text="12" />
+
+
+    <Button
+        android:id="@+id/bt_box13"
+        style="@style/ex_rack_32"
+        android:layout_alignLeft="@+id/bt_box9"
+        android:layout_below="@+id/bt_box12" />
+
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box13"
+        android:layout_alignTop="@+id/bt_box13"
+        android:text="13" />
+
+
+    <Button
+        android:id="@+id/bt_box14"
+        style="@style/ex_rack_32"
+        android:layout_alignLeft="@+id/bt_box9"
+        android:layout_below="@+id/bt_box13" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box14"
+        android:layout_alignTop="@+id/bt_box14"
+        android:text="14" />
+
+    <Button
+        android:id="@+id/bt_box15"
+        style="@style/ex_rack_32"
+        android:layout_alignLeft="@+id/bt_box9"
+        android:layout_below="@+id/bt_box14" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box15"
+        android:layout_alignTop="@+id/bt_box15"
+        android:text="15" />
+
+    <Button
+        android:id="@+id/bt_box16"
+        style="@style/ex_rack_32"
+        android:layout_alignLeft="@+id/bt_box9"
+        android:layout_below="@+id/bt_box15" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box16"
+        android:layout_alignTop="@+id/bt_box16"
+        android:text="16" />
+
+    <Button
+        android:id="@+id/bt_box17"
+        style="@style/ex_rack_32"
+        android:layout_below="@+id/tv_seq"
+        android:layout_toRightOf="@+id/bt_box9" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box17"
+        android:layout_alignTop="@+id/bt_box17"
+        android:text="17" />
+
+    <Button
+        android:id="@+id/bt_box18"
+        style="@style/ex_rack_32"
+        android:layout_alignLeft="@+id/bt_box17"
+        android:layout_below="@+id/bt_box17" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box18"
+        android:layout_alignTop="@+id/bt_box18"
+        android:text="18" />
+
+    <Button
+        android:id="@+id/bt_box19"
+        style="@style/ex_rack_32"
+        android:layout_alignLeft="@+id/bt_box17"
+        android:layout_below="@+id/bt_box18" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box19"
+        android:layout_alignTop="@+id/bt_box19"
+        android:text="19" />
+
+
+    <Button
+        android:id="@+id/bt_box20"
+        style="@style/ex_rack_32"
+        android:layout_alignLeft="@+id/bt_box17"
+        android:layout_below="@+id/bt_box19" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box20"
+        android:layout_alignTop="@+id/bt_box20"
+        android:text="20" />
+
+    <Button
+        android:id="@+id/bt_box21"
+        style="@style/ex_rack_32"
+        android:layout_alignLeft="@+id/bt_box17"
+        android:layout_below="@+id/bt_box20" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box21"
+        android:layout_alignTop="@+id/bt_box21"
+        android:text="21" />
+
+    <Button
+        android:id="@+id/bt_box22"
+        style="@style/ex_rack_32"
+        android:layout_alignLeft="@+id/bt_box17"
+        android:layout_below="@+id/bt_box21" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box22"
+        android:layout_alignTop="@+id/bt_box22"
+        android:text="22" />
+
+    <Button
+        android:id="@+id/bt_box23"
+        style="@style/ex_rack_32"
+        android:layout_alignLeft="@+id/bt_box17"
+        android:layout_below="@+id/bt_box22" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box23"
+        android:layout_alignTop="@+id/bt_box23"
+        android:text="23" />
+
+
+    <Button
+        android:id="@+id/bt_box24"
+        style="@style/ex_rack_32"
+        android:layout_alignLeft="@+id/bt_box17"
+        android:layout_below="@+id/bt_box23" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box24"
+        android:layout_alignTop="@+id/bt_box24"
+        android:text="24" />
+
+
+    <Button
+        android:id="@+id/bt_box25"
+        style="@style/ex_rack_32"
+        android:layout_below="@+id/tv_seq"
+        android:layout_toRightOf="@+id/bt_box17" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box25"
+        android:layout_alignTop="@+id/bt_box25"
+        android:text="25" />
+
+    <Button
+        android:id="@+id/bt_box26"
+        style="@style/ex_rack_32"
+        android:layout_alignLeft="@+id/bt_box25"
+        android:layout_below="@+id/bt_box25" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box26"
+        android:layout_alignTop="@+id/bt_box26"
+        android:text="26" />
+
+    <Button
+        android:id="@+id/bt_box27"
+        style="@style/ex_rack_32"
+        android:layout_alignLeft="@+id/bt_box25"
+        android:layout_below="@+id/bt_box26" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box27"
+        android:layout_alignTop="@+id/bt_box27"
+        android:text="27" />
+
+
+    <Button
+        android:id="@+id/bt_box28"
+        style="@style/ex_rack_32"
+        android:layout_alignLeft="@+id/bt_box25"
+        android:layout_below="@+id/bt_box27" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box28"
+        android:layout_alignTop="@+id/bt_box28"
+        android:text="28" />
+
+    <Button
+        android:id="@+id/bt_box29"
+        style="@style/ex_rack_32"
+        android:layout_alignLeft="@+id/bt_box25"
+        android:layout_below="@+id/bt_box28" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box29"
+        android:layout_alignTop="@+id/bt_box29"
+        android:text="29" />
+
+
+    <Button
+        android:id="@+id/bt_box30"
+        style="@style/ex_rack_32"
+        android:layout_alignLeft="@+id/bt_box25"
+        android:layout_below="@+id/bt_box29" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box30"
+        android:layout_alignTop="@+id/bt_box30"
+        android:text="30" />
+
+
+    <Button
+        android:id="@+id/bt_box31"
+        style="@style/ex_rack_32"
+        android:layout_alignLeft="@+id/bt_box25"
+        android:layout_below="@+id/bt_box30" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box31"
+        android:layout_alignTop="@+id/bt_box31"
+        android:text="31" />
+
+    <Button
+        android:id="@+id/bt_box32"
+        style="@style/ex_rack_32"
+        android:layout_alignLeft="@+id/bt_box25"
+        android:layout_below="@+id/bt_box31" />
+
+    <TextView
+        style="@style/ex_rack_num_hint"
+        android:layout_alignLeft="@+id/bt_box32"
+        android:layout_alignTop="@+id/bt_box32"
+        android:text="32" />
+</RelativeLayout>

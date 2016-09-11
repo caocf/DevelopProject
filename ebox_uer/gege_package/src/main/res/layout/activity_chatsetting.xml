@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loadview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+    
+   	<include layout="@layout/general_header"/>
+  
+  	    
+  	<RelativeLayout
+  	    android:layout_width="match_parent"
+  	    android:layout_height="55dp"
+  	    android:paddingLeft="10dp"
+  	    android:paddingRight="10dp">
+	  	    
+  	    <TextView
+  	        android:layout_width="wrap_content"
+  	    	android:layout_height="wrap_content"
+  	    	android:layout_alignParentLeft="true"
+  	    	android:layout_centerVertical="true"
+  	    	android:text="@string/notify_new_message"
+  	    	android:textSize="@dimen/text_size_15"
+  	    	android:textColor="@color/chat_setting_text_color"/>
+	  	    
+  	    <CheckBox  
+            android:id="@+id/settingSwitchCheckBox"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_alignParentRight="true"
+  	    	android:layout_centerVertical="true"
+            android:background="@drawable/btn_switch_notifymsg"  
+            android:button="@null"  
+            android:checked="true"/>  
+	  	    
+	</RelativeLayout>
+  	
+	<View
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="0.5dp"
+ 	    android:layout_marginLeft="10dp"
+ 	    android:background="@color/line_color"
+ 	    android:visibility="gone"/>
+	
+	<RelativeLayout
+	    android:id="@+id/clearRecordLayout"
+  	    android:layout_width="match_parent"
+  	    android:layout_height="55dp"
+  	    android:paddingLeft="10dp"
+  	    android:paddingRight="10dp"
+  	    android:background="@drawable/bg_mycenter_selector"
+  	    android:visibility="gone">
+  	    
+	    <TextView
+  	        android:layout_width="wrap_content"
+  	    	android:layout_height="wrap_content"
+  	    	android:layout_alignParentLeft="true"
+  	    	android:layout_centerVertical="true"
+  	    	android:text="@string/clear_chat_record"
+  	    	android:textSize="@dimen/text_size_15"
+  	    	android:textColor="@color/chat_setting_text_color"/>
+	
+		<ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+           android:background="@drawable/icon_right_small"
+           android:scaleType="fitXY" />
+	</RelativeLayout>
+	
+	<View
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="0.5dp"
+ 	    android:layout_marginLeft="10dp"
+ 	    android:background="@color/line_color"
+ 	    android:visibility="gone"/>
+	
+	<RelativeLayout
+	    android:id="@+id/complainLayout"
+  	    android:layout_width="match_parent"
+  	    android:layout_height="55dp"
+  	    android:paddingLeft="10dp"
+  	    android:paddingRight="10dp"
+  	    android:background="@drawable/bg_mycenter_selector"
+  	    android:visibility="gone">
+  	    
+	    <TextView
+  	        android:layout_width="wrap_content"
+  	    	android:layout_height="wrap_content"
+  	    	android:layout_alignParentLeft="true"
+  	    	android:layout_centerVertical="true"
+  	    	android:text="@string/complain"
+  	    	android:textSize="@dimen/text_size_15"
+  	    	android:textColor="@color/chat_setting_text_color"/>
+	
+		<ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+           android:background="@drawable/icon_right_small"
+           android:scaleType="fitXY" />
+	</RelativeLayout>
+  		
+  	
+   
+</LinearLayout>

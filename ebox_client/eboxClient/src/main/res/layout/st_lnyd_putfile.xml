@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="?attr/pub_top_nag_page">
+
+     <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_telephone"
+        style="?attr/input_normal"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="260px"
+        android:layout_marginTop="120px"
+        android:hint="@string/st_take_telephone"
+        android:inputType="numberDecimal"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/bt_box"
+        style="?attr/button_normal"
+        android:layout_below="@+id/et_telephone"
+        android:layout_marginTop="24px"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginLeft="260px"
+        android:text="@string/ex_select_box"/>
+
+    <Button
+        android:id="@+id/bt_put_item"
+        style="?attr/button_big"
+        android:layout_below="@+id/bt_box"
+        android:layout_marginTop="42px"
+        android:layout_marginLeft="260px"
+        android:padding="10dp"
+        android:text="@string/ex_confirm_open_door" />
+
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        style="?attr/keyboard_style"/>
+
+</RelativeLayout>

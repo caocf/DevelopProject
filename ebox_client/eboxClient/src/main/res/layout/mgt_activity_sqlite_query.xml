@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="300px"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RadioButton
+                android:id="@+id/rb_order"
+                style="@style/mgt_radio_btn"
+                android:text="@string/mgt_order" />
+
+            <RadioButton
+                android:id="@+id/rb_deliver"
+                style="@style/mgt_radio_btn"
+                android:text="@string/mgt_deliver" />
+
+            <RadioButton
+                android:id="@+id/rb_userInfo"
+                style="@style/mgt_radio_btn"
+                android:layout_marginTop="6px"
+                android:text="@string/mgt_user_info" />
+
+            <RadioButton
+                android:id="@+id/rb_boxinfo"
+                style="@style/mgt_radio_btn"
+                android:text="@string/mgt_box_info1" />
+
+            <RadioButton
+                android:id="@+id/rb_alarm"
+                style="@style/mgt_radio_btn"
+                android:text="@string/mgt_alarm_info" />
+
+            <RadioButton
+                android:id="@+id/rb_timeOut"
+                style="@style/mgt_radio_btn"
+                android:text="@string/mgt_time_out_info"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rb_rack_num"
+                style="@style/mgt_radio_btn"
+                android:layout_marginTop="6px"
+                android:text="格口列数" />
+        </RadioGroup>
+
+        <FrameLayout
+            android:id="@+id/fl_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15px" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_traffic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="6dp"
+        android:textColor="@color/pub_btn_orange_normal"
+        android:textSize="@dimen/pub_text_size_30_px" />
+
+</RelativeLayout>

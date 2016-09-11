@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bt_box1"
+        style="@style/mgt_style_box_manage_btn"
+        android:layout_below="@+id/title"
+        android:text="@string/mgt_setting" />
+
+    <Button
+        android:id="@+id/bt_box2"
+        style="@style/mgt_style_box_manage_btn"
+        android:layout_alignBaseline="@+id/bt_box1"
+        android:layout_toRightOf="@+id/bt_box1"
+        android:text="@string/mgt_setting" />
+
+    <Button
+        android:id="@+id/bt_box3"
+        style="@style/mgt_style_box_manage_btn"
+        android:layout_alignBaseline="@+id/bt_box1"
+        android:layout_toRightOf="@+id/bt_box2"
+        android:text="@string/mgt_setting" />
+
+    <Button
+        android:id="@+id/bt_box4"
+        style="@style/mgt_style_box_manage_btn"
+        android:layout_alignBaseline="@+id/bt_box1"
+        android:layout_toRightOf="@+id/bt_box3"
+        android:text="@string/mgt_setting" />
+
+    <Button
+        android:id="@+id/bt_box5"
+        style="@style/mgt_style_box_manage_btn"
+        android:layout_below="@+id/bt_box1"
+        android:text="@string/mgt_setting" />
+
+    <Button
+        android:id="@+id/bt_box6"
+        style="@style/mgt_style_box_manage_btn"
+        android:layout_below="@+id/bt_box1"
+        android:layout_toRightOf="@+id/bt_box5"
+        android:text="@string/mgt_setting" />
+
+    <Button
+        android:id="@+id/bt_box7"
+        style="@style/mgt_style_box_manage_btn"
+        android:layout_below="@+id/bt_box1"
+        android:layout_toRightOf="@+id/bt_box6"
+        android:text="@string/mgt_setting" />
+
+    <Button
+        android:id="@+id/bt_box8"
+        style="@style/mgt_style_box_manage_btn"
+        android:layout_below="@+id/bt_box1"
+        android:layout_toRightOf="@+id/bt_box7"
+        android:text="@string/mgt_setting" />
+
+    <Button
+        android:id="@+id/bt_box9"
+        style="@style/mgt_style_box_manage_btn"
+        android:layout_below="@+id/bt_box5"
+        android:text="@string/mgt_setting" />
+
+    <Button
+        android:id="@+id/bt_box10"
+        style="@style/mgt_style_box_manage_btn"
+        android:layout_below="@+id/bt_box5"
+        android:layout_toRightOf="@+id/bt_box9"
+        android:text="@string/mgt_setting" />
+
+    <Button
+        android:id="@+id/bt_box11"
+        style="@style/mgt_style_box_manage_btn"
+        android:layout_below="@+id/bt_box5"
+        android:layout_toRightOf="@+id/bt_box10"
+        android:text="@string/mgt_setting" />
+
+    <Button
+        android:id="@+id/bt_box12"
+        style="@style/mgt_style_box_manage_btn"
+        android:layout_below="@+id/bt_box5"
+        android:layout_toRightOf="@+id/bt_box11"
+        android:text="@string/mgt_setting" />
+
+    <Button
+        android:id="@+id/bt_box13"
+        style="@style/mgt_style_box_manage_btn"
+        android:layout_below="@+id/bt_box9"
+        android:text="@string/mgt_setting" />
+
+    <Button
+        android:id="@+id/bt_box14"
+        style="@style/mgt_style_box_manage_btn"
+        android:layout_below="@+id/bt_box9"
+        android:layout_toRightOf="@+id/bt_box13"
+        android:text="@string/mgt_setting" />
+
+    <Button
+        android:id="@+id/bt_box15"
+        style="@style/mgt_style_box_manage_btn"
+        android:layout_below="@+id/bt_box9"
+        android:layout_toRightOf="@+id/bt_box14"
+        android:text="@string/mgt_setting" />
+
+    <Button
+        android:id="@+id/bt_box16"
+        style="@style/mgt_style_box_manage_btn"
+        android:layout_below="@+id/bt_box9"
+        android:layout_toRightOf="@+id/bt_box15"
+        android:text="@string/mgt_setting" />
+
+</RelativeLayout>

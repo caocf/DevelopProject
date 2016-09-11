@@ -1,0 +1,15 @@
+<?xml version= "1.0" encoding= "utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+
+            <size android:width="446px" android:height="70px" />
+
+            <corners android:bottomLeftRadius="6px" android:bottomRightRadius="6px" android:topLeftRadius="1px" android:topRightRadius="1px" />
+
+            <solid android:color="@color/yc_grid_item_text_bg" />
+        </shape>
+    </item>
+
+</selector>

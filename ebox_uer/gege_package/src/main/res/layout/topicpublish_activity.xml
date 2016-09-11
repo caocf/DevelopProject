@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    
+    <EditText
+	    android:id="@+id/activityNameEdit"
+	    android:layout_width="match_parent"
+	    android:layout_height="55dp"
+        android:paddingLeft="10dp"
+  		android:paddingRight="10dp"
+	    android:hint="@string/activity_name"
+	    android:nextFocusDown="@+id/contentEdit"
+	    android:singleLine="true"
+	    style="@style/text_login_edit" />
+    
+    <View
+	    android:layout_width="match_parent"
+	    android:layout_height="0.5dp"
+	    android:layout_marginLeft="10dp"
+	    android:background="@color/line_color"/>
+    
+    <TextView
+	    android:id="@+id/startTimeText"
+	    android:layout_width="match_parent"
+	    android:layout_height="55dp"
+        android:paddingLeft="10dp"
+  		android:paddingRight="10dp"
+	    android:hint="@string/begin_time"
+	    android:singleLine="true"
+	    style="@style/text_login_edit" />
+    
+    <View
+	    android:layout_width="match_parent"
+	    android:layout_height="0.5dp"
+	    android:layout_marginLeft="10dp"
+	    android:background="@color/line_color"/>
+    
+    <TextView
+	    android:id="@+id/endTimeText"
+	    android:layout_width="match_parent"
+	    android:layout_height="55dp"
+        android:paddingLeft="10dp"
+  		android:paddingRight="10dp"
+	    android:hint="@string/end_time"
+	    android:singleLine="true"
+	    style="@style/text_login_edit" />
+
+    <View
+	    android:layout_width="match_parent"
+	    android:layout_height="0.5dp"
+	    android:layout_marginLeft="10dp"
+	    android:background="@color/line_color"/>
+    
+    <EditText
+	    android:id="@+id/addressEdit"
+	    android:layout_width="match_parent"
+	    android:layout_height="55dp"
+        android:paddingLeft="10dp"
+  		android:paddingRight="10dp"
+	    android:hint="@string/address"
+	    android:nextFocusDown="@+id/contentEdit"
+	    android:singleLine="true"
+	    style="@style/text_login_edit" >
+    </EditText>
+    
+    <View
+	    android:layout_width="match_parent"
+	    android:layout_height="5dp"
+	    android:background="@color/line_color"/>
+    
+    <com.moge.gege.util.widget.chat.EmoticonEditText
+	    android:id="@+id/contentEdit"
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp"
+	    android:paddingTop="10dp"
+	    android:paddingLeft="10dp"
+  		android:paddingRight="10dp"
+	    android:gravity="top"
+	    android:hint="@string/content"
+	    style="@style/text_publish_content" />
+
+	</LinearLayout>
+
+</ScrollView>

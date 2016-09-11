@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    style="?attr/pub_top_nag_page"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_card_bg"
+        android:layout_width="640px"
+        android:layout_height="300px"
+        android:layout_centerInParent="true"
+        android:background="@drawable/pub_code_btn_orange_corner">
+
+        <TextView
+            style="@style/pub_text_white_size_44_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/ex_operator_login_by_card"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_switch"
+        style="@style/pub_text_white_size_42_px"
+        android:layout_width="640px"
+        android:layout_height="140px"
+        android:layout_below="@+id/rl_card_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24px"
+        android:background="@drawable/pub_code_btn_green"
+        android:text="@string/ex_change_tel_login"/>
+
+</RelativeLayout>

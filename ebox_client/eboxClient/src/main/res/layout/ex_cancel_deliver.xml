@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoText="false"
+        android:focusable="true"
+        android:gravity="center"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tv_prompt"
+        style="@style/pub_text_orange_size_50_px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60px"
+        android:text="@string/ex_delivering" />
+
+    <LinearLayout
+        android:id="@+id/rl_choose"
+        android:layout_width="976px"
+        android:layout_height="460px"
+        android:layout_below="@+id/tv_prompt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50px"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="260px"
+            android:layout_height="match_parent"
+            android:background="@color/pub_orange_number"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/ex_box_door_64_px"
+                android:layout_width="260px"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="箱门号:" />
+
+            <TextView
+                android:id="@+id/tv_box_barcode"
+                style="@style/ex_box_door_64_px"
+                android:layout_width="260px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="46px"
+                android:gravity="center"
+                android:text="运单号:" />
+
+            <TextView
+                android:id="@+id/tv_pickphone_tip"
+                style="@style/ex_box_door_64_px"
+                android:layout_width="260px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="46px"
+                android:gravity="center"
+                android:text="收件人:" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pub_white"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="22px">
+
+            <TextView
+                android:id="@+id/tv_door"
+                style="@style/ex_box_door_64_px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/ex_door"
+                android:textColor="@color/pub_red" />
+
+            <TextView
+                android:id="@+id/tv_itemId"
+                style="@style/ex_box_door_64_px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="46px"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:text="13526525262662"
+                android:textColor="@color/pub_black" />
+
+            <TextView
+                android:id="@+id/tv_pickPhone"
+                style="@style/ex_box_door_64_px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="46px"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="15656263709"
+                android:textColor="@color/pub_black" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_ok"
+        style="@style/ex_button_confirm"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="110px"
+        android:enabled="false"
+        android:text="@string/ex_confirm_deliver" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="270px"
+        android:layout_height="120px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="100px"
+        android:background="@drawable/ex_icon_btn_cancle_delivery"
+        android:contentDescription="@string/pub_image_desc" />
+</RelativeLayout>

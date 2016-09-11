@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loadview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/life_group_bg_color">
+    
+   	<include layout="@layout/general_header"/>
+   	
+   	<View
+       	android:layout_width="match_parent"
+    	android:layout_height="0.5dp"
+    	android:background="@color/line_gray_color"/> 
+   	
+   	<RadioGroup
+		android:id="@+id/contactTabGroup"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:background="@color/head_bg_color"
+		android:orientation="horizontal" >
+
+        <com.moge.gege.util.widget.MyRadioButton
+	       	android:id="@+id/friendBtn"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:background="@drawable/white"
+			android:drawableLeft="@drawable/icon_friend"
+			android:drawablePadding="5dp"
+			android:text="@string/my_friend"
+			android:textColor="@color/topic_title_color"
+	       	android:button="@null" 
+	       	android:singleLine="true"/>
+        
+		<com.moge.gege.util.widget.MyRadioButton
+	       	android:id="@+id/neighborBtn"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:background="@drawable/white"
+			android:drawableLeft="@drawable/icon_neighbor"
+			android:drawablePadding="5dp"
+			android:button="@null" 
+			android:text="@string/my_neighbor"
+			android:textColor="@color/topic_title_color"
+			style="@style/text_white_16"
+	       	android:singleLine="true"/>
+		
+   	</RadioGroup>
+
+    <com.moge.gege.util.widget.viewpagerindicator.LinePageIndicator
+        android:id="@+id/indicator"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        app:strokeWidth="5dp"
+        app:lineWidth="160dp"
+        app:unselectedColor="@color/transparent"
+        app:selectedColor="@color/head_bg_color"
+        />
+   	    
+  	<android.support.v4.view.ViewPager  
+        android:id="@+id/userViewPager"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_gravity="center"  
+        android:background="@color/white"  
+        android:flipInterval="30"  
+        android:persistentDrawingCache="animation" />
+   
+</LinearLayout>

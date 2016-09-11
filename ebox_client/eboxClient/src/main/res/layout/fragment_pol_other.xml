@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20px">
+
+    <!--喇叭测试-->
+
+
+    <RadioGroup
+        android:id="@+id/rg_media"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:text="喇叭    "
+            android:textColor="@color/pub_blue"
+            android:textSize="@dimen/pub_text_size_26_px" />
+
+        <RadioButton
+            android:id="@+id/rb_ok_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:text="成功"
+            android:textColor="@color/pub_blue"
+            android:textSize="@dimen/pub_text_size_26_px" />
+
+
+        <RadioButton
+            android:id="@+id/rb_error_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="失败"
+            android:textColor="@color/pub_blue"
+            android:textSize="@dimen/pub_text_size_26_px" />
+
+        <com.ebox.pub.ui.customview.view.MaterialButton
+            android:id="@+id/mgt_bt_p_audio"
+            style="@style/bt_fragment_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20px"
+            android:layout_weight="2"
+            android:text="喇叭测试 " />
+
+    </RadioGroup>
+
+
+    <!--扫描枪测试-->
+
+    <RadioGroup
+        android:id="@+id/rg_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:text="扫描器"
+            android:textColor="@color/pub_blue"
+            android:textSize="@dimen/pub_text_size_26_px" />
+
+        <RadioButton
+            android:id="@+id/rb_ok_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:text="成功"
+            android:textColor="@color/pub_blue"
+            android:textSize="@dimen/pub_text_size_26_px" />
+
+
+        <RadioButton
+            android:id="@+id/rb_error_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="失败"
+            android:textColor="@color/pub_blue"
+            android:textSize="@dimen/pub_text_size_26_px" />
+
+        <com.ebox.pub.ui.customview.view.MaterialButton
+            android:id="@+id/mgt_bt_p_scan"
+            style="@style/bt_fragment_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20px"
+            android:layout_weight="2"
+            android:text="扫描器测试 " />
+
+    </RadioGroup>
+
+    <!--摄像头测试-->
+
+    <RadioGroup
+        android:id="@+id/rg_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:text="摄像头"
+            android:textColor="@color/pub_blue"
+            android:textSize="@dimen/pub_text_size_26_px" />
+
+        <RadioButton
+            android:id="@+id/rb_ok_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:text="成功"
+            android:textColor="@color/pub_blue"
+            android:textSize="@dimen/pub_text_size_26_px" />
+
+
+        <RadioButton
+            android:id="@+id/rb_error_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="失败"
+            android:textColor="@color/pub_blue"
+            android:textSize="@dimen/pub_text_size_26_px" />
+
+        <com.ebox.pub.ui.customview.view.MaterialButton
+            android:id="@+id/mgt_bt_p_camera"
+            style="@style/bt_fragment_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20px"
+            android:layout_weight="2"
+            android:text="摄像头测试 " />
+
+    </RadioGroup>
+
+    <!--处理超时件-->
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:text="超时件数量： "
+            android:textColor="@color/pub_blue"
+            android:textSize="@dimen/pub_text_size_26_px" />
+
+
+        <EditText
+            android:id="@+id/et_overtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:inputType="number"
+            android:textSize="@dimen/pub_text_size_30_px"
+            android:hint=" 0 "/>
+
+    </RadioGroup>
+
+
+</LinearLayout>

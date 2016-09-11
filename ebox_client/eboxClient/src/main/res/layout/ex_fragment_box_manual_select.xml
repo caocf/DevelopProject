@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20px">
+
+
+    <TextView
+        android:id="@+id/tv_seq"
+        style="@style/ex_rack_title_32"
+        android:textSize="@dimen/pub_text_size_30_px"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="@dimen/ex_rack_title_width"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_seq"
+        android:layout_centerInParent="true" />
+
+
+    <Button
+        android:id="@+id/bt_last"
+        android:layout_width="62px"
+        android:layout_height="62px"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="50px"
+        android:layout_toLeftOf="@+id/recyclerView"
+        android:background="@drawable/ex_pub_left" />
+
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="62px"
+        android:layout_height="62px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50px"
+        android:layout_toRightOf="@+id/recyclerView"
+        android:background="@drawable/ex_pub_right" />
+
+
+</RelativeLayout>

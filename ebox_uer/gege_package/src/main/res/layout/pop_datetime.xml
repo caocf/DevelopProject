@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/datetimePopLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#b0000000"
+    android:gravity="bottom"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:id="@+id/headLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/life_group_bg_color">
+        
+        <TextView
+             android:id="@+id/cancelText"
+             android:layout_width="40dp"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:text="@string/cancel"
+             android:textColor="@color/head_bg_color"
+             android:textSize="@dimen/text_size_16"
+             android:gravity="center"/>
+        
+        <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:text="@string/select_time"
+             android:textColor="@color/black"
+             android:textSize="@dimen/text_size_18"/>
+        
+        <TextView
+             android:id="@+id/commitText"
+             android:layout_width="40dp"
+             android:layout_height="match_parent"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:text="@string/ok"
+             android:textColor="@color/head_bg_color"
+             android:textSize="@dimen/text_size_16"
+             android:gravity="center"/>
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        
+	    <com.moge.gege.util.widget.wheel.time.DateTimeCtrl 
+		    	android:id="@+id/datetimeCtrl"
+	    	    android:layout_width="wrap_content"
+	            android:layout_height="wrap_content">
+	    </com.moge.gege.util.widget.wheel.time.DateTimeCtrl>
+    
+    </LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ebox.mgt.ui.fragment.FragmentUpdateSet"
+    android:paddingBottom="20px">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_theme_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:text="@string/mgt_theme"
+                android:textColor="@color/pub_blue"
+                android:textSize="@dimen/pub_text_size_26_px" />
+
+            <EditText
+                android:id="@+id/et_theme"
+                style="@style/mgt_et_style"
+                android:hint="默认主题" />
+
+
+            <TextView
+                android:id="@+id/tv_led_ip_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:text="LED"
+                android:textColor="@color/pub_blue"
+                android:layout_marginTop="20px"
+                android:textSize="@dimen/pub_text_size_26_px" />
+
+            <EditText
+                android:id="@+id/et_led_ip"
+                style="@style/mgt_et_style"
+                android:text="@string/mgt_led_ip" />
+
+            <TextView
+                style="@style/pub_text_white_size_38_px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:text="是否开启淘宝网"
+                android:layout_marginTop="20px"
+                android:textColor="@color/pub_blue"
+                android:textSize="@dimen/pub_text_size_26_px" />
+
+            <EditText
+                android:id="@+id/et_web_ctrl"
+                style="@style/mgt_et_style"
+                android:hint="@string/mgt_web_ctrl"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_backlight1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:text="背光设置（时间[0~23]:亮度[0~255]）"
+                android:textColor="@color/pub_blue"
+                android:layout_marginTop="20px"
+                android:textSize="@dimen/pub_text_size_26_px" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_backlight1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:layout_marginTop="10px"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_time1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/mgt_time"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/et_backlight1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/mgt_backligt"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/rl_backlight2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:layout_marginTop="10px"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/et_time2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/mgt_time"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/et_backlight2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/mgt_backligt"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_community_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:text="@string/community_id"
+                android:textColor="@color/pub_blue"
+                android:layout_marginTop="20px"
+                android:textSize="@dimen/pub_text_size_26_px" />
+
+            <EditText
+                android:id="@+id/et_community_id"
+                style="@style/mgt_et_style"
+                android:hint="36" />
+
+
+            <TextView
+                android:id="@+id/tv_scan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:text="@string/mgt_scantimer"
+                android:textColor="@color/pub_blue"
+                android:layout_marginTop="20px"
+                android:textSize="@dimen/pub_text_size_26_px" />
+
+            <EditText
+                android:id="@+id/et_scan"
+                style="@style/mgt_et_style"
+                android:hint="30"
+                android:layout_marginBottom="50px"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/ll_help"
+        style="?attr/pub_op_main_left_bg"
+        android:layout_width="220px"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RadioButton
+            android:id="@+id/rb_pickup"
+            style="@style/ex_style_operator_left_tab"
+            android:drawableLeft="@drawable/ex_help_pickup"
+            android:background="@drawable/ex_icon_op_left_help_bg"
+            android:text="@string/ex_help_pickup"
+            android:textSize="@dimen/pub_text_size_26_px"/>
+
+        <RadioButton
+            android:id="@+id/rb_deliver"
+            style="@style/ex_style_operator_left_tab"
+            android:drawableLeft="@drawable/ex_help_deliver"
+            android:background="@drawable/ex_icon_op_left_help_bg"
+            android:text="@string/ex_help_deliver"
+            android:textSize="@dimen/pub_text_size_26_px"/>
+
+        <RadioButton
+            android:id="@+id/rb_faq"
+            style="@style/ex_style_operator_left_tab"
+            android:drawableLeft="@drawable/ex_help_faq"
+            android:background="@drawable/ex_icon_op_left_help_bg"
+            android:text="@string/ex_help_faq"
+            android:textSize="@dimen/pub_text_size_26_px"/>
+
+        <RadioButton
+            android:id="@+id/rb_call"
+            style="@style/ex_style_operator_left_tab"
+            android:background="@drawable/ex_icon_op_left_help_bg"
+            android:drawableLeft="@drawable/ex_help_call"
+            android:text="@string/ex_help_call"
+            android:textSize="@dimen/pub_text_size_26_px"/>
+
+
+    </RadioGroup>
+
+
+
+    <RelativeLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/ll_help"
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="80px"/>
+
+
+
+</RelativeLayout>

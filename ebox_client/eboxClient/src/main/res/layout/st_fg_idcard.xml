@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/rootView"
+    style="?attr/pub_top_nag_page" >
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:layout_width="560px"
+        android:layout_height="770px"
+        android:id="@+id/st_idcard_left"
+        android:layout_marginLeft="360px"
+        android:layout_marginTop="220px"
+        android:background="@drawable/st_idcard_left"
+        android:contentDescription="@string/pub_image_desc"/>
+
+    <ImageView
+        android:layout_width="860px"
+        android:layout_height="300px"
+        android:id="@+id/st_idcard_middle"
+        android:background="@drawable/st_idcard_tips"
+        android:layout_marginRight="350px"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="354px"
+        android:contentDescription="@string/pub_image_desc"/>
+    
+    
+
+
+</RelativeLayout>

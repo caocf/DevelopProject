@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center" 
+    android:id="@+id/wheel_middle" 
+    android:layout_height="wrap_content" 
+    style="@style/time_wheel"
+	android:baselineAligned="false">
+	  
+    <RelativeLayout 
+        android:gravity="center" 
+        android:id="@+id/date_time_ctrl_left" 
+        android:background="@drawable/date_time_ctrl_left_bg" 
+        android:layout_weight="0.6" 
+        style="@style/cronWheelView_fill">
+        
+        <com.moge.gege.util.widget.wheel.WheelView 
+            android:id="@+id/ymd" 
+            style="@style/cronWheelView_full" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:gravity="center" 
+        android:id="@+id/wheel_left" 
+        android:background="@drawable/date_time_ctrl_middle_bg" 
+        android:layout_weight="1.0" 
+        style="@style/cronWheelView_fill">
+        
+        <com.moge.gege.util.widget.wheel.WheelView 
+            android:id="@+id/hh" 
+            style="@style/cronWheelView_full" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:gravity="center_vertical" 
+        android:id="@+id/wheel_right" 
+        android:background="@drawable/date_time_ctrl_right_bg" 
+        android:layout_weight="1.0" 
+        style="@style/cronWheelView_fill">
+        
+        <com.moge.gege.util.widget.wheel.WheelView 
+            android:id="@+id/mm" 
+            style="@style/time_wheel" />
+    </RelativeLayout>
+</LinearLayout>

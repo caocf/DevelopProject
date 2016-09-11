@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 通用 -->
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="darkgray">#ff938192</color>
+    <color name="lightgreen">#ff7cd12e</color>
+    <color name="shen_black">#ff000033</color>
+    <color name="zise">#ff660066</color>
+    <color name="blue">#ff009999</color>
+    <color name="silver_blue">#ff0066cc</color>
+    <color name="yellow">#ffffff00</color>
+    <color name="dark_yellow">#ffffdd00</color>
+    <color name="red">#ffff0033</color>
+    <color name="detail_blue">#ff003399</color>
+    <color name="detail_red">#ffce0a0a</color>
+    <color name="detail_gray">#ffa6a6a6</color>
+    <color name="orange">#ffff8000</color>
+    <color name="graycolor">#ff868686</color>
+    <color name="tip_bg">#666666</color>
+    <color name="tip_text">#ff8700</color>
+    <color name="dark_blue">#ff0e3d9e</color>
+    <color name="translucent_background">#E1000000</color>
+    <color name="translucent">#00000000</color>
+    <color name="transparent">#00000000</color>
+
+    <drawable name="white">#ffffffff</drawable>
+    <drawable name="red">#7f00</drawable>
+    <drawable name="blue">#770000ff</drawable>
+    <drawable name="green">#7700ff00</drawable>
+    <drawable name="yellow">#77ffff00</drawable>
+
+    <!-- 公用部分 -->
+    <color name="base_bg_color">#eeeeee</color>
+    <color name="hint_light_gray">#bbbbbb</color>
+    <color name="hint_gray">#ababab</color>
+    <color name="head_bg_color">#8ec640</color>
+    <color name="his_text_color">#ff969696</color>
+    <color name="service_option_bg_color">#323d49</color>
+
+    <!-- 登陆页面 -->
+    <color name="input_text_color">#ff000000</color>
+    <color name="edittext_hint_color">#cecece</color>
+    <color name="protocol_color">#7e7e7e</color>
+    <color name="login_background">#eeeeee</color>
+
+    <drawable name="btn_normal_color">#ff8703</drawable>
+    <drawable name="btn_pressed_color">#d16f02</drawable>
+    <drawable name="btn_disable_color">#b5b5b5</drawable>
+
+    <!-- 主页面 -->
+    <color name="home_money_color">#ffbe7a</color>
+    <color name="home_count_color">#ff8700</color>
+    <color name="home_text_color">#ff666666</color>
+    <color name="home_line_color">#eeeeee</color>
+    <color name="table_line_color">#bbbbbb</color>
+
+    <drawable name="btn_home_normal_color">#ffffffff</drawable>
+    <drawable name="btn_home_pressed_color">#ffebebeb</drawable>
+    <drawable name="btn_picker_pressed_color">#FFcdcdcd</drawable>
+    <drawable name="btn_picker_normal_color">#ffa6a6a6</drawable>
+    <drawable name="check_color">#ffff8703</drawable>
+    <drawable name="uncheck_color">#ffffffff</drawable>
+    <drawable name="check_text_color">#ffffffff</drawable>
+    <drawable name="uncheck_text_color">#ff000000</drawable>
+    <drawable name="back_normal_color">#00000000</drawable>
+    <drawable name="back_press_color">#40000000</drawable>
+    <drawable name="exit_normal_color">#ff8700</drawable>
+    <drawable name="exit_press_color">#e67a00</drawable>
+    <drawable name="set_item_normal_color">#ffffffff</drawable>
+    <drawable name="set_item_press_color">#05000000</drawable>
+
+    <color name="line_color">#f0efed</color>
+
+</resources>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+     
+     <com.ebox.pub.ui.customview.Title
+         android:id="@+id/title"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/rl_name"
+        android:layout_width="976px"
+        android:layout_height="120px"
+        android:background="@drawable/st_marry_input"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="40px"
+        android:layout_centerHorizontal="true">
+        <TextView
+           android:id="@+id/tv_name"
+           style="@style/pub_text_white_size_60_px"
+           android:layout_width="230px"
+           android:layout_height="120px"
+           android:text="@string/st_name"
+           android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/et_name"
+            style="@style/pub_text_white_size_60_px"
+            android:layout_width="736px"
+            android:layout_height="120px"
+            android:layout_toRightOf="@+id/tv_name"
+            android:layout_alignTop="@+id/tv_name"
+            android:padding="10px"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_telephone"
+        android:layout_width="976px"
+        android:layout_height="120px"
+        android:background="@drawable/st_marry_input"
+        android:layout_below="@+id/rl_name"
+        android:layout_marginTop="20px"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/tv_telephone"
+            style="@style/pub_text_white_size_60_px"
+            android:layout_width="230px"
+            android:layout_height="120px"
+            android:text="@string/st_telephone"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/et_telephone"
+            style="@style/pub_text_white_size_60_px"
+            android:layout_width="736px"
+            android:layout_height="120px"
+            android:layout_toRightOf="@+id/tv_telephone"
+            android:layout_alignTop="@+id/tv_telephone"
+            android:background="@color/pub_transparent"
+            android:inputType="phone"
+            android:padding="10px"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_home"
+        android:layout_width="976px"
+        android:layout_height="120px"
+        android:background="@drawable/st_marry_input"
+        android:layout_below="@+id/rl_telephone"
+        android:layout_marginTop="20px"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/tv_home"
+            style="@style/pub_text_white_size_60_px"
+            android:layout_width="230px"
+            android:layout_height="120px"
+            android:text="@string/st_home"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/et_home"
+            style="@style/pub_text_white_size_60_px"
+            android:layout_width="736px"
+            android:layout_height="120px"
+            android:layout_toRightOf="@+id/tv_home"
+            android:layout_alignTop="@+id/tv_home"
+            android:singleLine="true"
+            android:background="@color/pub_transparent"
+            android:padding="10px"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_employment"
+        android:layout_width="976px"
+        android:layout_height="120px"
+        android:background="@drawable/st_marry_input"
+        android:layout_below="@+id/rl_home"
+        android:layout_marginTop="20px"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tv_employment"
+            style="@style/pub_text_white_size_60_px"
+            android:layout_width="230px"
+            android:layout_height="120px"
+            android:text="@string/st_employment"
+            android:gravity="center"/>
+
+        <Spinner
+            android:id="@+id/sp_employment"
+            style="@style/pub_text_white_size_60_px"
+            android:layout_width="736px"
+            android:layout_height="120px"
+            android:layout_toRightOf="@+id/tv_employment"
+            android:layout_alignTop="@+id/tv_employment"
+            android:padding="10px"
+            android:spinnerMode="dropdown"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_add"
+        style="@style/pub_text_white_size_60_px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/st_add_family"
+        android:layout_below="@+id/rl_employment"
+        android:layout_marginTop="10px"/>
+
+    <GridView
+        android:id="@+id/gv_population"
+        android:layout_width="wrap_content"
+        android:layout_height="215px"
+        android:layout_alignLeft="@+id/rl_home"
+        android:layout_alignRight="@+id/rl_home"
+        android:layout_below="@+id/tv_add"
+        android:numColumns="4"
+        android:layout_marginTop="10px"/>
+
+    <Button
+        android:id="@+id/bt_commit"
+        style="?attr/button_normal"
+        android:layout_marginTop="10px"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/gv_population"
+        android:text="@string/st_commit"/>
+
+</RelativeLayout>

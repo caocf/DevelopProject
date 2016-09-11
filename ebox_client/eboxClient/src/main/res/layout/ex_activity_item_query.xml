@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.ebox.ex.ui.bar.EboxKeyboard
+        android:id="@+id/keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/title" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="90px"
+        android:src="@drawable/ex_query_bg" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ex_bottom">
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="150px"
+        android:layout_marginTop="90px"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/ll_input"
+            android:layout_width="wrap_content"
+            android:layout_height="90px"
+            android:gravity="bottom">
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="86px"
+                android:layout_height="40px"
+                android:src="@drawable/ex_query_input" />
+
+            <EditText
+                android:id="@+id/et_item_query"
+                style="?attr/input_big"
+                android:layout_width="394px"
+                android:inputType="number|text"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_errortip"
+            style="@style/ex_error_tip"
+            android:layout_below="@id/ll_input"
+            android:layout_marginLeft="100px"
+            android:text="@string/ex_query_error"
+            android:visibility="invisible"/>
+
+
+        <com.ebox.pub.ui.customview.view.MaterialButton
+            android:id="@+id/bt_ok"
+            style="?attr/button_big"
+            android:layout_below="@+id/tv_errortip"
+            android:layout_marginTop="40px"
+            android:background="@drawable/ex_code_blue"
+            android:padding="20px"
+            android:text="@string/ex_query"
+            android:textColor="@color/pub_white" />
+
+
+        <ImageView
+            android:id="@+id/iv_code"
+            android:layout_width="110px"
+            android:layout_height="110px"
+            android:layout_below="@id/bt_ok"
+            android:layout_marginTop="34px"
+            android:src="@drawable/ex_barcode_wx" />
+
+        <TextView
+            style="@style/ex_text_normal"
+            android:layout_width="360px"
+            android:layout_alignTop="@id/iv_code"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="24px"
+            android:layout_toRightOf="@id/iv_code"
+            android:text="@string/ex_query_tip" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     style="?attr/pub_top_nag_page"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:id="@+id/rootView">
+     
+     <com.ebox.pub.ui.customview.Title android:id="@+id/title"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content" />
+     
+     <RelativeLayout
+        android:id="@+id/tv_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	    
+	    <TextView
+            android:id="@+id/tv_add"
+            style="@style/pub_text_white_size_60_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加孩子信息"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="336px"
+            android:layout_marginTop="120px">
+        </TextView>
+	    
+	    <GridView
+            android:id="@+id/gv_population"
+	        android:layout_width="1550px"
+	        android:layout_height="215px"
+	        android:layout_below="@+id/tv_add"
+	        android:layout_centerHorizontal="true"
+	        android:numColumns="7"
+	        android:layout_marginTop="20px"/>
+	    
+	    <Button 
+			android:id="@+id/bt_commit"
+			android:text="@string/pub_skip"
+			style="?attr/button_normal"
+            android:layout_marginTop="58px"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/gv_population" />
+	    
+    </RelativeLayout>
+
+</LinearLayout>

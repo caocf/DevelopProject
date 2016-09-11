@@ -1,0 +1,17 @@
+<?xml version= "1.0" encoding= "utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+
+            <!-- 边框 -->
+            <stroke android:width="2dp" android:color="@color/pub_white" />
+
+            <corners android:radius="2dp" />
+            <!-- 背景 -->
+            <solid android:color="@color/pub_transparent" />
+        </shape>
+    </item>
+
+
+</selector>

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/loadview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/life_group_bg_color">
+
+    <include
+            android:id="@+id/headerLayout"
+            layout="@layout/general_header"/>
+
+    <RelativeLayout
+            android:id="@+id/payLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_alignParentBottom="true">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pay_fee"
+                    style="@style/text_black_16"/>
+
+            <TextView
+                    android:id="@+id/payFeeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pay_fee"
+                    android:textSize="@dimen/text_size_22"
+                    android:textColor="@color/pay_money_color"
+                    android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/payBtn"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:background="@drawable/bg_btn_red"
+                android:text="@string/commit_pay"
+                style="@style/text_white_18"/>
+
+    </RelativeLayout>
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/headerLayout"
+            android:layout_above="@id/payLayout"
+            android:background="@color/white"
+            android:scrollbars="none"
+            android:fadingEdge="none">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:paddingLeft="10dp"
+                    style="@style/pay_title_text"
+                    android:text="@string/delivery_address"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                    android:id="@+id/selectAddressLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_mycenter_selector">
+
+                <TextView
+                        android:id="@+id/addNewAddressText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:gravity="center"
+                        android:text="@string/add_address_tips"
+                        android:textSize="@dimen/text_size_16"
+                        android:textColor="@color/general_blue_color"
+                        android:drawableRight="@drawable/icon_right_small"
+                        />
+
+                <RelativeLayout
+                        android:id="@+id/addressLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        >
+
+                    <ImageView
+                            android:id="@+id/addressImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="10dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/icon_delivery_address"
+                            android:scaleType="fitXY"
+                            android:visibility="gone"/>
+
+                    <TextView
+                            android:id="@+id/nameText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/addressImage"
+                            style="@style/text_topic_title"/>
+
+                    <TextView
+                            android:id="@+id/addressText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/addressImage"
+                            android:layout_below="@id/nameText"
+                            style="@style/text_topic_desc"/>
+
+                    <TextView
+                            android:id="@+id/addressDetailText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/addressImage"
+                            android:layout_below="@id/addressText"
+                            style="@style/text_topic_desc"/>
+
+                    <TextView
+                            android:id="@+id/mobileText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/addressImage"
+                            android:layout_below="@id/addressDetailText"
+                            style="@style/text_topic_desc"/>
+
+                </RelativeLayout>
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/icon_right_small"/>
+
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:paddingLeft="10dp"
+                    style="@style/pay_title_text"
+                    android:text="@string/goods_list"/>
+
+            <com.moge.gege.util.widget.MyListView
+                    android:id="@+id/goodsList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:cacheColorHint="#00000000"
+                    android:fadingEdge="none"
+                    android:fastScrollEnabled="false"
+                    android:footerDividersEnabled="false"
+                    android:headerDividersEnabled="false"
+                    android:smoothScrollbar="true"
+                    android:divider="@color/line_color"
+                    android:dividerHeight="0.5dp"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbars="none"
+                    android:descendantFocusability="afterDescendants"/>
+
+            <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--style="@style/pay_title_text"-->
+                    <!--android:text="@string/pay_info"/>-->
+
+            <!--<RelativeLayout-->
+                    <!--android:id="@+id/payTypeLayout"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:paddingRight="10dp"-->
+                    <!--android:background="@drawable/bg_mycenter_selector">-->
+
+                <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:text="@string/pay_type"-->
+                        <!--style="@style/text_trading_title_15"/>-->
+
+                <!--<TextView-->
+                        <!--android:id="@+id/payTypeText"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:drawableRight="@drawable/icon_right_small"-->
+                        <!--android:drawablePadding="5dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--style="@style/text_topic_desc"/>-->
+
+            <!--</RelativeLayout>-->
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="5dp"
+                  android:background="@color/line_color"/>
+
+            <RelativeLayout
+                    android:id="@+id/couponLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/bg_mycenter_selector">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/offset_coupon"
+                        style="@style/text_trading_title_15"/>
+
+                <TextView
+                        android:id="@+id/couponText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/icon_right_small"
+                        android:drawablePadding="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/please_select_coupon"
+                        style="@style/text_topic_desc"/>
+
+            </RelativeLayout>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:paddingLeft="10dp"
+                    style="@style/pay_title_text"
+                    android:text="@string/price_list"/>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/goodsfee"
+                        style="@style/text_trading_title_15"/>
+
+                <TextView
+                        android:id="@+id/totalFeeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/money_color"
+                        android:textSize="@dimen/text_size_18"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                <TextView
+                        android:id="@+id/shippingFeeTitleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/shippingfee"
+                        style="@style/text_trading_title_15"/>
+
+                <TextView
+                        android:id="@+id/shippingFeeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/money_color"
+                        android:textSize="@dimen/text_size_18"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/coupon_fee_title"
+                        style="@style/text_trading_title_15"/>
+
+                <TextView
+                        android:id="@+id/couponFeeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/topic_desc_color"
+                        android:textSize="@dimen/text_size_18"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/remarkLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:paddingLeft="10dp"
+                    android:layout_centerVertical="true"
+                    style="@style/pay_title_text"
+                    android:text="@string/remark"/>
+
+                <ImageView
+                    android:id="@+id/updownImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_up"/>
+
+            </RelativeLayout>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/foot_line_color"/>
+
+            <EditText
+                android:id="@+id/remarkEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:minHeight="50dp"
+                android:gravity="top|left"
+                android:textColorHint="@color/topic_desc_color"
+                android:hint="@string/msg_to_seller"
+                style="@style/text_trading_title_14"
+                android:background="@null"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <include layout="@layout/empty_view"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_below="@id/headerLayout"/>
+
+</RelativeLayout>

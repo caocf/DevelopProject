@@ -1,0 +1,65 @@
+1、mglibrary中已有的功能，使用库中接口实现
+1) 网络请求封装&解析
+2) 图片异步加载
+3) util 内部整理
+4) 三方lib库
+
+2、模块名：快递：ex  格格云店：mall 银联：ums 工作站：st  软创：zte ;
+          公用：pub 后台管理：mgt; jsonRpc数据结构model; 银川 yc;
+
+3、xml文件/raw文件命名规则
+
+   模块名_控件类型_功能名.xml
+   layout-720x625 目录存放55寸版本布局文件
+   layout-1280x720 目录存放22寸/17寸版本布局文件
+   
+   values、xml下文件内变量命名规则：模块名_变量名
+   
+4、src目录规划
+   com
+      ——jni
+	    ——serialport 串口驱动
+		——camera 摄像头驱动
+	  ——ebox
+		——ex
+		  ——adv 广告模块
+		  ——database 数据库
+		  ——network 与服务器通讯
+		  ——ui 显示控件
+		——model 数据结构
+		——mall
+		  ——ui 显示控件
+		  ——warehouse 与服务器通讯
+		——mgt
+		  ——ui 显示控件
+	    ——pub
+		  ——boxctrl  主副柜通信
+		  ——camera   摄像头控制
+		  ——database 数据库
+		  ——file  配置文件
+		  ——http 与服务器通讯
+		  ——ledctrl led管理
+		  ——service 任务、后台服务
+		  ——socket mina长连接
+		  ——ui 公共UI
+		  ——utils 工具类
+		  ——websocket websocket长连接
+		——ums
+		  ——database 数据库
+		  ——model 数据结构
+		  ——ui 银联UI
+		——st
+			——model 数据结构
+			——network 与服务器通讯
+			——ui 办证UI
+		——zte
+		——yc
+		AppApplication.java
+		CrashHandler.java
+	  
+5、待整理 TODO
+   3）mglibrary中已有的功能使用公共库
+   3）网络操作使用统一接口,去掉org（等服务端先完成）
+   4) 配置文件模块整理，方便增加配置
+
+     

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        style="@style/ex_content_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="@dimen/ex_op_delivery_content_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="20px"
+            android:paddingTop="20px">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="90px"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ex_input_item_id_blue" />
+
+                <EditText
+                    android:id="@+id/ed_item_id"
+                    style="?attr/input_normal"
+                    android:layout_marginLeft="12px"
+                    android:hint="@string/ex_op_delivery_item_id" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:src="@drawable/ex_input_item" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:layout_marginTop="12px"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ex_icon_input_phone" />
+
+                <EditText
+                    android:id="@+id/ed_customer"
+                    style="?attr/input_big"
+                    android:layout_marginLeft="12px"
+                    android:hint="@string/ex_op_delivery_customer" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ex_icon_input_phone" />
+
+                <EditText
+                    android:id="@+id/ed_customer_again"
+                    style="?attr/input_big"
+                    android:layout_marginLeft="12px"
+                    android:hint="@string/ex_op_delivery_customer_again" />
+
+            </LinearLayout>
+
+            <com.ebox.ex.ui.bar.SelectBoxBar
+                android:id="@+id/select_box_bar"
+                android:layout_width="@dimen/ex_op_delivery_content_width"
+                android:layout_height="290px" />
+
+            <FrameLayout
+                android:id="@+id/fl_open"
+                android:layout_width="@dimen/ex_op_delivery_content_width"
+                android:layout_height="70px"
+                android:layout_marginTop="10px"
+                android:background="@drawable/ex_code_red"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ex_box_medium_select"
+                    android:drawablePadding="6px"
+                    android:gravity="center_vertical"
+                    android:text="@string/ex_op_delivery_open"
+                    android:textColor="@color/pub_white"
+                    android:textSize="@dimen/pub_text_size_28_px" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <com.ebox.ex.ui.bar.EboxKeyboard
+        android:id="@+id/keyboard"
+        style="@style/ex_keyboard_style" />
+
+    <com.ebox.ex.ui.bar.Logo style="@style/ex_logo" />
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/pub_layer_nav_page"
+    android:id="@+id/rootView">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/step1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ll_left"
+            android:layout_width="940px"
+            android:layout_height="700px"
+            android:contentDescription="@string/pub_image_desc"
+            android:background="@drawable/pub_adv">
+        </ImageView>
+        
+        <RelativeLayout
+             android:id="@+id/iv_insert_card"
+             android:layout_width="594px"
+             android:layout_height="700px"
+             android:layout_toRightOf="@+id/ll_left"
+             android:background="@color/pub_white">
+
+             <ImageView
+                 android:id="@+id/ums_bg"
+                 android:layout_width="348px"
+                 android:layout_height="240px"
+                 android:layout_marginLeft="120px"
+                 android:background="@drawable/pub_ums_logo" />
+
+             <ImageView
+                 android:id="@+id/sms_readcard"
+                 android:layout_width="420px"
+                 android:layout_height="300px"
+                 android:layout_below="@+id/ums_bg"
+                 android:layout_marginLeft="93px"
+                 android:src="@drawable/pub_ums_card_device" />
+
+             <ImageView
+                 android:id="@+id/card"
+                 android:layout_width="400px"
+                 android:layout_height="380px"
+                 android:layout_below="@+id/ums_bg"
+                 android:layout_marginLeft="93px"
+                 android:layout_marginTop="300px"
+                 android:src="@drawable/pub_ums_card" />
+            </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/step2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ll_left2"
+            android:layout_width="940px"
+            android:layout_height="700px"
+            android:background="@drawable/pub_adv">
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="594px"
+            android:layout_height="700px"
+            android:background="@color/pub_white"
+            android:layout_toRightOf="@+id/ll_left2">
+
+            <TextView
+                android:id="@+id/tv_input"
+                android:layout_width="500px"
+                android:layout_height="120px"
+                style="@style/pub_text_black_size_40_px"
+                android:background="@drawable/pub_code_checkbox_white"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:hint="@string/ums_inputPwdPls"
+                android:layout_marginTop="200px"/>
+
+            <Button
+                android:id="@+id/btn_card_confirm"
+                style="@style/common_button_big"
+                android:layout_width="500px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dip"
+                android:layout_below="@+id/tv_input"
+                android:text="@string/ums_Confirm"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/step3"
+        android:layout_width="778px"
+        android:layout_height="480px"
+        android:layout_marginTop="300px"
+        android:layout_marginLeft="570px"
+        android:background="@drawable/pub_code_tip_bg">
+        <TextView
+            style="@style/pub_text_white_size_60_px"
+            android:layout_width="wrap_content"
+            android:layout_height="88px"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="结果"/>
+
+        <TextView
+            android:id="@+id/result"
+            style="@style/pub_text_black_size_50_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"/>
+        
+    </RelativeLayout>
+    
+    
+    
+
+</RelativeLayout>

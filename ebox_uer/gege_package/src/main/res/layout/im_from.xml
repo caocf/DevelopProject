@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp">
+        
+   	   	<com.moge.gege.util.widget.RoundedImageView 
+	        android:id="@+id/avatarImage"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_marginTop="20dp" 
+	        android:scaleType="fitXY"
+	        app:corner_radius="100dp"
+	        app:border_width="1dp"
+	        app:border_color="@color/item_gray"/>
+        
+       <TextView
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/avatarImage"
+            android:textColor="@color/chat_time_text_color"
+            android:textSize="@dimen/text_size_11" />
+       
+       
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/timeText"
+           android:layout_marginTop="5dp"
+	       android:layout_marginLeft="5dp"
+	       android:paddingLeft="10dp"
+	       android:paddingTop="5dp"
+	       android:paddingBottom="5dp"
+	       android:paddingRight="5dp"
+	       android:layout_toRightOf="@id/avatarImage"
+           android:background="@drawable/bg_chat_left"
+           android:orientation="vertical">
+
+        	<com.moge.gege.util.widget.chat.EmoticonTextView
+	            android:id="@+id/contentText"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/chat_content_text_color"
+	            android:textSize="@dimen/text_size_15"/>
+        
+        	<ImageView
+	            android:id="@+id/contentImage"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:scaleType="fitXY" />
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+</LinearLayout>

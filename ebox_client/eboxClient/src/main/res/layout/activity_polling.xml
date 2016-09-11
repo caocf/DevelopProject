@@ -1,0 +1,257 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title">
+
+    <!--menu  菜单-->
+
+
+    <LinearLayout
+        android:id="@+id/mgt_ll_ap_menu"
+        android:layout_width="0px"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20px"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:paddingTop="60px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.ebox.pub.ui.customview.view.MaterialButton
+            android:id="@+id/mgt_bt_ap_confirm"
+            style="@style/button_menu"
+            android:visibility="gone"
+            android:text="@string/mgt_p_confirm" />
+
+        <com.ebox.pub.ui.customview.view.MaterialButton
+            android:id="@+id/mgt_bt_ap_clean"
+            style="@style/button_menu"
+            android:text="@string/mgt_p_clean" />
+        <com.ebox.pub.ui.customview.view.MaterialButton
+            android:id="@+id/mgt_bt_ap_screen"
+            style="@style/button_menu"
+            android:text="@string/mgt_p_screen" />
+
+        <com.ebox.pub.ui.customview.view.MaterialButton
+            android:id="@+id/mgt_bt_ap_touch"
+            style="@style/button_menu"
+            android:text="@string/mgt_p_touch" />
+
+        <com.ebox.pub.ui.customview.view.MaterialButton
+            android:id="@+id/mgt_bt_ap_electric"
+            style="@style/button_menu"
+            android:text="@string/mgt_p_electric" />
+
+        <com.ebox.pub.ui.customview.view.MaterialButton
+            android:id="@+id/mgt_bt_ap_monitor"
+            style="@style/button_menu"
+            android:text="@string/mgt_p_monitor" />
+
+        <com.ebox.pub.ui.customview.view.MaterialButton
+            android:id="@+id/mgt_bt_ap_3g"
+            style="@style/button_menu"
+            android:text="@string/mgt_p_3g" />
+
+        <com.ebox.pub.ui.customview.view.MaterialButton
+            android:id="@+id/mgt_bt_ap_boxlock"
+            style="@style/button_menu"
+            android:text="@string/mgt_p_boxlock" />
+
+        <com.ebox.pub.ui.customview.view.MaterialButton
+            android:id="@+id/mgt_bt_ap_other"
+            style="@style/button_menu"
+            android:text="@string/mgt_p_other" />
+
+        <com.ebox.pub.ui.customview.view.MaterialButton
+            android:id="@+id/mgt_bt_ap_result"
+            style="@style/button_menu"
+            android:visibility="gone"
+            android:text="@string/mgt_p_result" />
+
+
+    </LinearLayout>
+
+
+    <!--fragment 内容添加-->
+    <LinearLayout
+        android:id="@+id/mgt_ll_ap_content"
+        android:layout_width="0px"
+        android:layout_weight="4"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/title"
+        android:layout_toRightOf="@id/mgt_ll_ap_menu"
+        android:paddingBottom="20px"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:paddingTop="60px">
+
+        <include
+            layout="@layout/fragment_header"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"></include>
+
+        <FrameLayout
+            android:id="@+id/mgt_fl_ap_content"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="4"
+            android:background="@color/pub_white"></FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_marginBottom="60px"
+            android:layout_weight="1"
+            android:background="@color/pub_white">
+
+            <View
+                android:id="@+id/v_aph"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/ex_operator_gray"></View>
+
+
+            <Button
+                android:id="@+id/mgt_bt_ap_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/v_aph"
+                android:layout_marginRight="40px"
+                android:layout_marginTop="10px"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:paddingTop="10px"
+                android:paddingBottom="10px"
+                android:background="@drawable/ex_code_blue"
+                android:text="完成"
+                android:textColor="@color/pub_white"
+                android:textSize="@dimen/pub_text_size_30_px" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_aph_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mgt_tv_ap_prosess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="巡检完成结果: "
+                    android:textColor="@color/pub_btn_blue_pressed"
+                    android:textSize="@dimen/pub_text_size_28_px" />
+
+                <TextView
+                    android:id="@+id/mgt_tv_ap_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 "
+                    android:textColor="@color/pub_btn_blue_normal"
+                    android:textSize="@dimen/pub_text_size_28_px" />
+
+
+                <TextView
+                    android:id="@+id/mgt_tv_ap_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/8   "
+                    android:textColor="@color/pub_btn_blue_normal"
+                    android:textSize="@dimen/pub_text_size_28_px" />
+
+                <TextView
+                    android:id="@+id/mgt_tv_ap_1"
+                    style="@style/result_tv"
+                    android:background="@drawable/ex_code_circle_orange"
+                    android:text="1" />
+
+                <TextView
+                    android:id="@+id/mgt_tv_ap_2"
+                    style="@style/result_tv"
+                    android:background="@drawable/ex_code_circle_orange"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/mgt_tv_ap_3"
+                    style="@style/result_tv"
+                    android:background="@drawable/ex_code_circle_orange"
+                    android:text="3" />
+
+                <TextView
+                    android:id="@+id/mgt_tv_ap_4"
+                    style="@style/result_tv"
+                    android:background="@drawable/ex_code_circle_orange"
+                    android:text="4" />
+
+                <TextView
+                    android:id="@+id/mgt_tv_ap_5"
+                    style="@style/result_tv"
+                    android:background="@drawable/ex_code_circle_orange"
+                    android:text="5" />
+
+                <TextView
+                    android:id="@+id/mgt_tv_ap_6"
+                    style="@style/result_tv"
+                    android:background="@drawable/ex_code_circle_orange"
+                    android:text="6" />
+
+                <TextView
+                    android:id="@+id/mgt_tv_ap_7"
+                    style="@style/result_tv"
+                    android:background="@drawable/ex_code_circle_orange"
+                    android:text="7" />
+
+                <TextView
+                    android:id="@+id/mgt_tv_ap_8"
+                    style="@style/result_tv"
+                    android:layout_marginRight="10px"
+                    android:background="@drawable/ex_code_circle_orange"
+                    android:text="8" />
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_below="@id/ll_aph_state"
+                android:id="@+id/mgt_bt_ap_over"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ex_code_blue"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:text="完成巡检"
+                android:textColor="@color/pub_white"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/pub_text_size_22_px"
+                android:layout_marginRight="40px"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="5px"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+

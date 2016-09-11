@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:id="@+id/ex_ll_in_content">
+
+    <RelativeLayout
+        android:layout_width="0px"
+        android:layout_height="80px"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/pub_text_size_20_px">
+
+        <TextView
+            android:id="@+id/tv_year"
+           style="@style/ex_text_normal"
+            android:text="12/03"
+            android:textColor="@color/ex_text_blue"
+            android:textSize="@dimen/pub_text_size_30_px"
+            android:layout_marginTop="5px"/>
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/ex_text_normal"
+            android:text="08:08:08"
+            android:layout_below="@id/tv_year"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_money"
+        style="@style/ex_text_normal"
+        android:layout_width="0px"
+        android:layout_height="80px"
+        android:layout_weight="1"
+        android:text="+120(充值)"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_type"
+        style="@style/ex_text_normal"
+        android:layout_width="0px"
+        android:layout_height="80px"
+        android:layout_weight="1"
+        android:text="充100送20"
+        android:gravity="center"
+        />
+
+
+
+</LinearLayout>

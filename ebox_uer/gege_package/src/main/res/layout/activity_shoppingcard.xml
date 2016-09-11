@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loadview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/life_group_bg_color">
+    
+   	<include
+   	    android:id="@+id/headerLayout" 
+   	    layout="@layout/general_header"/>
+  
+  	<RelativeLayout 
+  	    android:id="@+id/bottomLayout"
+  	    android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/life_group_bg_color"
+        android:paddingLeft="10dp"
+   	    android:paddingRight="10dp"
+   	    android:layout_alignParentBottom="true">
+        
+  	    <CheckBox
+  	        android:id="@+id/allSelectCheckBox"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+			android:button="@null"
+			android:checked="true"
+			android:drawableLeft="@drawable/common_radio"
+			android:drawablePadding="10dp"
+			android:textColor="@color/black"
+			android:background="@android:color/transparent"
+            android:visibility="gone"/>
+  	    
+  	    <TextView
+  	        android:id="@+id/totalMoneyTextView"
+  	        android:layout_width="wrap_content"
+  	        android:layout_height="wrap_content"
+  	        android:layout_centerVertical="true"
+  	        android:layout_toRightOf="@id/allSelectCheckBox"
+  	        android:layout_marginLeft="10dp"
+  	        android:textColor="@color/good_money_color"
+  	        android:textSize="@dimen/text_size_22"
+  	        android:textStyle="bold"/>
+        
+  	    <Button 
+	   	    android:id="@+id/checkoutBtn"
+	   	    android:layout_width="130dp"
+	   	    android:layout_height="40dp"
+	   	    android:layout_centerVertical="true"
+	   	    android:layout_alignParentRight="true"
+	   	    android:paddingLeft="5dp"
+	   	    android:paddingRight="5dp"
+	   	    android:gravity="center"
+	   	    android:background="@drawable/bg_btn_orange"
+	   	    style="@style/text_white_16"
+            android:text="@string/to_checkout"/>
+  	    
+  	    <Button 
+	   	    android:id="@+id/deleteBtn"
+	   	    android:layout_width="130dp"
+	   	    android:layout_height="40dp"
+	   	    android:layout_centerVertical="true"
+	   	    android:layout_alignParentRight="true"
+	   	    android:paddingLeft="5dp"
+	   	    android:paddingRight="5dp"
+	   	    android:gravity="center"
+	   	    android:background="@drawable/bg_btn_orange"
+	   	    style="@style/text_white_16"
+	   	    android:text="@string/delete"
+	   	    android:visibility="gone"/>
+  	    
+  	</RelativeLayout>
+  	
+  	<ListView
+       	android:id="@+id/goodsList"
+       	android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_below="@id/headerLayout"
+        android:layout_above="@id/bottomLayout"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        android:background="@color/white"
+        android:divider="@color/line_color"
+		android:dividerHeight="0.5dp"
+		android:listSelector="@android:color/transparent"
+		android:scrollbars="none"
+		android:descendantFocusability="afterDescendants"/>
+  	
+   
+</RelativeLayout>

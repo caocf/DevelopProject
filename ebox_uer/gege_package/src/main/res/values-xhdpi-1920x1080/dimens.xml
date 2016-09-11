@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+   <!-- emoticon dimen -->
+    <dimen name="emoticon_textview_size">25dp</dimen>
+    <dimen name="emoticon_edittext_size">8dp</dimen>
+
+    <dimen name="trading_item_height">255dp</dimen>
+    
+</resources>

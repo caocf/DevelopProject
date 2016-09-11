@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   	android:layout_width="fill_parent"
+   	android:layout_height="48dp"
+   	android:background="@color/white">
+   	
+   	<TextView 
+   		android:id="@+id/headerLeftText"
+	   	android:layout_width="wrap_content" 
+	   	android:layout_height="match_parent" 
+	   	android:paddingLeft="10dp"
+	   	android:paddingRight="10dp"
+	   	android:layout_alignParentLeft="true"
+    	android:layout_centerVertical="true"
+    	android:drawableLeft="@drawable/icon_green_back"
+    	android:drawablePadding="5dp"
+    	android:gravity="center"
+	   	android:clickable="true" 
+	   	android:textSize="@dimen/text_size_16"
+	   	android:textColor="@color/general_green_color"
+	   	android:background="@drawable/bg_header_btn_color"/>
+   	
+   	<TextView 
+   	    android:id="@+id/headerRightText"
+   	    android:layout_width="wrap_content"
+    	android:layout_height="match_parent"
+    	android:paddingLeft="10dp"
+	   	android:paddingRight="10dp"
+    	android:layout_alignParentRight="true"
+    	android:background="@drawable/bg_header_btn_color"
+    	android:gravity="center"
+    	android:textSize="@dimen/text_size_16"
+	    android:textColor="@color/general_green_color"
+	    android:text="@string/publish"/>
+   	
+   	<LinearLayout 
+   	    android:id="@+id/requireLayout"
+   	    android:layout_width="200dp"
+    	android:layout_height="30dp"
+    	android:layout_centerInParent="true"
+    	android:background="@drawable/bg_green_corner"
+    	android:orientation="vertical"
+    	android:visibility="gone" >
+   	
+    	<RadioGroup
+                android:id="@+id/requireRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/topicBtn"
+		      	    android:layout_width="fill_parent"
+		      	    android:layout_height="fill_parent"
+		      	    android:layout_weight="1"
+		      	    android:gravity="center"
+		      	    android:text="@string/topic"
+		      	    android:textColor="@drawable/topicpublish_option_color"
+		      	    android:textSize="@dimen/text_size_16"
+                    android:button="@null"
+                    android:background="@drawable/bg_btn_topicpublish_left_option"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/serviceBtn"
+		      	    android:layout_width="fill_parent"
+		      	    android:layout_height="fill_parent"
+		      	    android:layout_weight="1"
+		      	    android:gravity="center"
+		      	    android:text="@string/requirement"
+		      	    android:textColor="@drawable/topicpublish_option_color"
+		      	    android:textSize="@dimen/text_size_16"
+		      	    style="@style/text_white_16"
+		      	    android:button="@null"
+                    android:background="@drawable/bg_btn_topicpublish_right_option"/>
+                </RadioGroup>
+          
+    </LinearLayout>
+    
+</RelativeLayout>

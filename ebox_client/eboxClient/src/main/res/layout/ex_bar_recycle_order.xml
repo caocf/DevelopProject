@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebox.pub.ui.customview.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_query_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.ebox.pub.ui.customview.PercentLinearLayout
+        android:id="@id/table_head"
+        android:layout_width="match_parent"
+        android:layout_height="72px"
+        android:background="@color/ex_table_title_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="10%" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/ex_table_title"
+            android:layout_width="140px"
+            android:layout_height="match_parent"
+            android:text="投放时间"
+            app:layout_widthPercent="13%" />
+
+        <TextView
+            android:id="@+id/tv_item_id"
+            style="@style/ex_table_title"
+            android:layout_width="220px"
+            android:layout_height="match_parent"
+            android:text="运单编号"
+            app:layout_widthPercent="24%" />
+
+        <TextView
+            android:id="@+id/tv_customer"
+            style="@style/ex_table_title"
+            android:layout_weight="1.6"
+            android:text="收件人"
+            app:layout_widthPercent="18%" />
+
+
+        <TextView
+            android:id="@+id/tv_state"
+            style="@style/ex_table_title"
+            android:layout_weight="1"
+            android:text="状态"
+            app:layout_widthPercent="13%" />
+
+        <TextView
+            android:id="@+id/tv_resend"
+            style="@style/ex_table_title"
+            android:layout_width="260px"
+            android:layout_height="match_parent"
+            android:text="重发提取码"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_recycle"
+            style="@style/ex_table_title"
+            android:layout_width="170px"
+            android:layout_height="match_parent"
+            android:text="回收"
+            android:visibility="visible"
+            app:layout_widthPercent="19%" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="3%" />
+    </com.ebox.pub.ui.customview.PercentLinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="没用查询到您的快递信息"
+            android:textColor="@color/ex_black"
+            android:textSize="@dimen/pub_text_size_28_px"
+            android:visibility="invisible" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</com.ebox.pub.ui.customview.PercentLinearLayout>

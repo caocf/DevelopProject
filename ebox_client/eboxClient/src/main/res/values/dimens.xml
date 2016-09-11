@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 公共模块 -->
+    <dimen name="pub_text_size_40">40.0dip</dimen>
+    <dimen name="pub_text_size_35">35.0dip</dimen>
+    <dimen name="pub_text_size_30">30.0dip</dimen>
+    <dimen name="pub_text_size_32">32.0dip</dimen>
+    <dimen name="pub_text_size_26">26.0dip</dimen>
+    <dimen name="pub_text_size_24">24.0dip</dimen>
+    <dimen name="pub_text_size_22">22.0dip</dimen>
+    <dimen name="pub_margin_width">200px</dimen>
+    <dimen name="pub_text_size_18_px">18px</dimen>
+    <dimen name="pub_text_size_20_px">20px</dimen>
+    <dimen name="pub_text_size_22_px">22px</dimen>
+    <dimen name="pub_text_size_24_px">24px</dimen>
+    <dimen name="pub_text_size_26_px">26px</dimen>
+    <dimen name="pub_text_size_28_px">28px</dimen>
+    <dimen name="pub_text_size_30_px">30px</dimen>
+    <dimen name="pub_text_size_32_px">32px</dimen>
+    <dimen name="pub_text_size_34_px">34px</dimen>
+    <dimen name="pub_text_size_36_px">36px</dimen>
+    <dimen name="pub_text_size_38_px">38px</dimen>
+    <dimen name="pub_text_size_40_px">40px</dimen>
+    <dimen name="pub_text_size_42_px">42px</dimen>
+    <dimen name="pub_text_size_44_px">44px</dimen>
+    <dimen name="pub_text_size_45_px">45px</dimen>
+    <dimen name="pub_text_size_46_px">46px</dimen>
+    <dimen name="pub_text_size_47_px">47px</dimen>
+    <dimen name="pub_text_size_48_px">48px</dimen>
+    <dimen name="pub_text_size_49_px">49px</dimen>
+    <dimen name="pub_text_size_50_px">50px</dimen>
+    <dimen name="pub_text_size_51_px">51px</dimen>
+    <dimen name="pub_text_size_52_px">52px</dimen>
+    <dimen name="pub_text_size_58_px">58px</dimen>
+    <dimen name="pub_text_size_59_px">59px</dimen>
+    <dimen name="pub_text_size_60_px">60px</dimen>
+    <dimen name="pub_text_size_64_px">64px</dimen>
+    <dimen name="pub_text_size_78_px">78px</dimen>
+    <dimen name="pub_text_size_84_px">84px</dimen>
+    <!-- 快递模块 -->
+    <dimen name="ex_door_size">70.0dip</dimen>
+
+    <!-- 表格大小 -->
+    <dimen name="ex_table_title_width">400px</dimen>
+    <dimen name="ex_table_title_height">90px</dimen>
+    <dimen name="ex_table_width">400px</dimen>
+    <dimen name="ex_table_height">84px</dimen>
+    <dimen name="ex_table_high_height">98px</dimen>
+
+    <!-- 箱门头标题大小 -->
+    <dimen name="ex_rack_title_width">740px</dimen>
+    <dimen name="ex_rack_title_height">86px</dimen>
+    <!-- 公共高度-->
+    <dimen name="ex_rack_height">74px</dimen>
+
+    <!-- 箱门大小 -->
+    <dimen name="ex_rack_width_32">330px</dimen>
+    <dimen name="ex_rack_height_32">90px</dimen>
+    <dimen name="ex_rack_width_22">450px</dimen>
+    <dimen name="ex_rack_height_22">70px</dimen>
+    <dimen name="ex_rack_width_20">450px</dimen>
+    <dimen name="ex_rack_height_20">70px</dimen>
+    <dimen name="ex_rack_width_18">450px</dimen>
+    <dimen name="ex_rack_height_18">80px</dimen>
+    <dimen name="ex_rack_width_14">450px</dimen>
+    <dimen name="ex_rack_height_14">90px</dimen>
+    <dimen name="ex_rack_width_15">450px</dimen>
+    <dimen name="ex_rack_height_15">70px</dimen>
+    <dimen name="ex_rack_width_17">450px</dimen>
+    <dimen name="ex_rack_height_17">62px</dimen>
+
+    <!-- 键盘大小 -->
+    <dimen name="key_board_width">400px</dimen>
+    <dimen name="key_board_height">510px</dimen>
+    <dimen name="pub_title_height">136px</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--UI2.0  字体大小-->
+    <dimen name="ex_text_content_38px">38px</dimen>
+    <dimen name="ex_text_tip_34px">34px</dimen>
+    <dimen name="ex_text_title_55px">55px</dimen>
+    <dimen name="ex_title_height">132px</dimen>
+
+    <!-- 内容宽度-->
+    <dimen name="ex_op_delivery_content_width">500px</dimen>
+    <dimen name="ex_login_content_width">500px</dimen>
+    <dimen name="ex_logo_height">104px</dimen>
+
+
+    <dimen name="ex_text_24_px">24px</dimen>
+    <dimen name="ex_key_board_width">415px</dimen>
+
+</resources>

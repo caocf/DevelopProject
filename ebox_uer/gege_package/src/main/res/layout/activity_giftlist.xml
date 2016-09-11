@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loadview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/life_group_bg_color">
+    
+   	<include layout="@layout/general_header"/>
+   	
+   	<com.handmark.pulltorefresh.library.PullToRefreshGridView
+       	android:id="@+id/giftGridView"
+       	android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="2dp"
+        android:horizontalSpacing="2dp"
+        android:columnWidth="100dp"
+        android:stretchMode="columnWidth"
+        android:gravity="fill"
+        android:listSelector="@android:color/transparent"
+		android:descendantFocusability="afterDescendants"
+        app:ptrAnimationStyle="flip"/>
+
+    <include layout="@layout/empty_view"/>
+ 
+</LinearLayout>

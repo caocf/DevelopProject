@@ -1,0 +1,311 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_box_seq_name"
+                style="@style/pub_text_white_size_38_px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:text="@string/mgt_box_sequence" />
+
+            <EditText
+                android:id="@+id/et_box_seq"
+                style="@style/mgt_style_setting_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mgt_box_sequence" />
+
+            <TextView
+                android:id="@+id/tv_box_cnt_name"
+                style="@style/pub_text_white_size_38_px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:text="@string/mgt_box_cnt" />
+
+            <EditText
+                android:id="@+id/et_box_cnt"
+                style="@style/mgt_style_setting_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mgt_box_cnt" />
+
+
+            <TextView
+                android:id="@+id/tv_dot_name"
+                style="@style/pub_text_white_size_38_px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:text="@string/mgt_box_dot" />
+
+            <EditText
+                android:id="@+id/et_dot"
+                style="@style/mgt_style_setting_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mgt_box_dot" />
+
+            <TextView
+                android:id="@+id/tv_theme_name"
+                style="@style/pub_text_white_size_38_px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:text="@string/mgt_theme" />
+
+            <EditText
+                android:id="@+id/et_theme"
+                style="@style/mgt_style_setting_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mgt_theme" />
+
+            <TextView
+                android:id="@+id/tv_main_board_name"
+                style="@style/pub_text_white_size_38_px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:text="@string/mgt_main_board" />
+
+            <EditText
+                android:id="@+id/et_main_board"
+                style="@style/mgt_style_setting_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mgt_main_board" />
+
+
+            <TextView
+                android:id="@+id/tv_led_ip_name"
+                style="@style/pub_text_white_size_38_px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:text="@string/mgt_led_ip" />
+
+            <EditText
+                android:id="@+id/et_led_ip"
+                style="@style/mgt_style_setting_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mgt_led_ip" />
+
+            <TextView
+                android:id="@+id/tv_led_port_name"
+                style="@style/pub_text_white_size_38_px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:text="@string/mgt_led_port" />
+
+            <EditText
+                android:id="@+id/et_led_port"
+                style="@style/mgt_style_setting_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mgt_led_port" />
+
+
+            <TextView
+                style="@style/pub_text_white_size_38_px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:text="@string/mgt_web_ctrl" />
+
+            <EditText
+                android:id="@+id/et_web_ctrl"
+                style="@style/mgt_style_setting_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mgt_web_ctrl"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/tv_screen"
+                style="@style/pub_text_white_size_38_px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:text="@string/mgt_screen" />
+
+            <EditText
+                android:id="@+id/et_screen"
+                style="@style/mgt_style_setting_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mgt_screen"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/tv_service_ctrl_name"
+                style="@style/pub_text_white_size_38_px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:text="@string/mgt_service_ctrl" />
+
+            <EditText
+                android:id="@+id/et_service_ctrl"
+                style="@style/mgt_style_setting_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mgt_service_ctrl" />
+
+
+            <TextView
+                android:id="@+id/tv_njums_name"
+                style="@style/pub_text_white_size_38_px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:text="@string/mgt_jsums_ctrl" />
+
+            <EditText
+                android:id="@+id/et_njusm_ctrl"
+                style="@style/mgt_style_setting_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mgt_jsums_ctrl" />
+
+
+            <TextView
+                android:id="@+id/tv_camera_name"
+                style="@style/pub_text_white_size_38_px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:text="@string/mgt_camera" />
+
+            <EditText
+                android:id="@+id/et_camera"
+                style="@style/mgt_style_setting_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mgt_camera" />
+
+
+            <TextView
+                android:id="@+id/tv_backlight1"
+                style="@style/pub_text_white_size_38_px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:text="@string/mgt_backlight1" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_backlight1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="50dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_time1"
+                    style="@style/mgt_style_setting_input"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/mgt_time"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/et_backlight1"
+                    style="@style/mgt_style_setting_input"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/mgt_backligt"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/rl_backlight2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dip"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/et_time2"
+                    style="@style/mgt_style_setting_input"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/mgt_time"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/et_backlight2"
+                    style="@style/mgt_style_setting_input"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/mgt_backligt"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_scantimer_name"
+                style="@style/pub_text_white_size_38_px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:text="@string/mgt_scantimer" />
+
+            <EditText
+                android:id="@+id/et_scantimer"
+                style="@style/mgt_style_setting_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mgt_scantimer" />
+
+            <TextView
+                android:id="@+id/tv_community_id"
+                style="@style/pub_text_white_size_38_px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50px"
+                android:text="@string/community_id" />
+
+            <EditText
+                android:id="@+id/et_community_id"
+                style="@style/mgt_style_setting_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_community_id" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

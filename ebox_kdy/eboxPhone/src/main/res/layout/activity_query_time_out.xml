@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/base_bg_color"
+        android:orientation="vertical" >
+
+        <com.moge.ebox.phone.ui.customview.Head
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/style_item_line_ver"
+            android:layout_marginTop="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/style_query_time_out_text"
+                android:text="@string/send_time" />
+
+            <View style="@style/style_item_line_hor" />
+
+            <TextView
+                style="@style/style_query_time_out_text"
+                android:text="@string/track_number" />
+
+            <View style="@style/style_item_line_hor" />
+
+            <TextView
+                style="@style/style_query_time_out_text"
+                android:text="@string/phone" />
+
+            <View style="@style/style_item_line_hor" />
+
+            <TextView
+                style="@style/style_query_time_out_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:text="@string/community" />
+        </LinearLayout>
+
+        <View style="@style/style_item_line_ver" />
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/refresh_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/rl_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

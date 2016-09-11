@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="10px">
+
+    <LinearLayout
+        android:id="@+id/iv_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="10px"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_number"
+            style="@style/pub_text_white_size_60_px"
+            android:layout_width="320px"
+            android:layout_height="130px"
+            android:layout_weight="1"
+            android:background="#00bf5e"
+            android:gravity="center"
+            android:text="事项编号" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/pub_text_white_size_60_px"
+            android:layout_width="320px"
+            android:layout_height="130px"
+            android:layout_weight="1"
+            android:background="#ea8010"
+            android:gravity="center"
+            android:text="存入时间" />
+
+        <TextView
+            android:id="@+id/tv_barcode"
+            style="@style/pub_text_white_size_60_px"
+            android:layout_width="320px"
+            android:layout_height="130px"
+            android:layout_weight="1"
+            android:background="#00bf5e"
+            android:gravity="center"
+            android:text="办理人" />
+
+        <TextView
+            android:id="@+id/tv_telephone"
+            style="@style/pub_text_white_size_60_px"
+            android:layout_width="320px"
+            android:layout_height="130px"
+            android:layout_weight="1"
+            android:background="#ea8010"
+            android:gravity="center"
+            android:text="箱格" />
+
+        <Button
+            android:id="@+id/btn_deal"
+            style="@style/pub_text_white_size_60_px"
+            android:layout_width="320px"
+            android:layout_height="130px"
+            android:background="#ffffff"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/item_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="10px"
+        android:layout_marginBottom="10px"
+        android:layout_below="@+id/iv_top"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:cacheColorHint="#000000" />
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    tools:context="com.ebox.mgt.ui.fragment.FragmentInit">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="柜子首次使用操作\n管理员必须进行配置文件校验,柜子才可以正常使用"
+        android:textColor="@color/pub_btn_orange_normal"
+        android:textSize="@dimen/pub_text_size_26_px" />
+
+    <com.ebox.pub.ui.customview.view.MaterialButton
+        android:id="@+id/mgt_bt_fi_verify"
+        style="@style/bt_fragment_test"
+        android:layout_marginTop="10px"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:text="柜子首次使用操作\n管理员必须将本地箱门使用数据跟服务端同步一次\n该操作会更新本地全部箱门的使用数据,需谨慎操作"
+        android:textColor="@color/pub_btn_orange_normal"
+        android:textSize="@dimen/pub_text_size_26_px" />
+
+    <com.ebox.pub.ui.customview.view.MaterialButton
+        android:id="@+id/mgt_bt_fi_box"
+        style="@style/bt_fragment_test"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10px"
+        android:layout_gravity="center_horizontal" />
+     <com.ebox.pub.ui.customview.view.MaterialButton
+        android:id="@+id/mgt_bt_again"
+        style="@style/bt_fragment_test"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px"
+         android:text="重新校验"
+         android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</ScrollView>

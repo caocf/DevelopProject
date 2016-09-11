@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <Button
+            android:id="@+id/sendDeliveryBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/general_new_red_color"
+            android:drawablePadding="-10dp"
+            android:drawableTop="@drawable/icon_plane"
+            android:paddingTop="20dp"
+            android:text="@string/send_delivery"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/scanOpenBoxBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/general_new_blue_color"
+            android:drawablePadding="-10dp"
+            android:drawableTop="@drawable/icon_open_box"
+            android:paddingTop="20dp"
+            android:text="@string/scan_to_openbox"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/searchImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_search_delivery" />
+
+        <View
+            android:id="@+id/lineView"
+            android:layout_width="0.5dp"
+            android:layout_height="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/searchImage"
+            android:background="@color/line_color" />
+
+        <Button
+            android:id="@+id/scanDeliveryBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:background="@color/transparent"
+            android:drawableLeft="@drawable/icon_scan_delivery"
+            android:drawablePadding="5dp"
+            android:text="@string/scan"
+            android:textSize="@dimen/text_size_12"
+            android:textColor="@color/text_bbb_color" />
+
+        <TextView
+            android:id="@+id/searchDeliveryText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@id/scanDeliveryBtn"
+            android:layout_toRightOf="@id/lineView"
+            android:gravity="center_vertical"
+            android:text="@string/input_delivery_number"
+            android:textColor="@color/text_bbb_color"
+            android:textSize="@dimen/text_size_14" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/line_color" />
+
+</LinearLayout>
+

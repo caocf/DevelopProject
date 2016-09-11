@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/wheel_middle" 
+    android:layout_height="wrap_content" style="@style/time_wheel"
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	   android:background="@drawable/time_all_bg" >
+	  <kankan.wheel.widget.WheelView android:id="@+id/day" style="@style/cronWheelView_full" />
+</LinearLayout>

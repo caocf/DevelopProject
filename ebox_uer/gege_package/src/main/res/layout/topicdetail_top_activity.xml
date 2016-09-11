@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/topicdetail_top_header"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/text_topic_title"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+            <TextView
+                    android:id="@+id/activityTimeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"/>
+
+            <TextView
+                    android:id="@+id/activityLocationText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activityTimeText"
+                    android:layout_marginTop="2dp"
+                    android:layout_alignParentBottom="true"/>
+
+            <TextView
+                    android:id="@+id/activityFeeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="免费"
+                    android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <com.moge.gege.util.widget.MyGridView
+                android:id="@+id/topicImageGridView"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="5dp"
+                android:columnWidth="50dp"
+                android:stretchMode="columnWidth"
+                android:numColumns="auto_fit"
+                android:horizontalSpacing="2dp"
+                android:verticalSpacing="2dp"
+                android:gravity="center"
+                android:scrollbars="none"
+                android:listSelector="@android:color/transparent"/>
+
+        <com.moge.gege.util.widget.chat.EmoticonTextView
+                android:id="@+id/contentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                style="@style/text_topic_content"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/line_color"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:gravity="right|center_vertical">
+
+            <com.moge.gege.util.widget.RoundedImageView
+                    android:id="@+id/likeAuthor1Image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    app:corner_radius="100dp"
+                    app:border_width="1dp"
+                    app:border_color="@color/item_gray"/>
+
+            <com.moge.gege.util.widget.RoundedImageView
+                    android:id="@+id/likeAuthor2Image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitXY"
+                    app:corner_radius="100dp"
+                    app:border_width="1dp"
+                    app:border_color="@color/item_gray"/>
+
+            <com.moge.gege.util.widget.RoundedImageView
+                    android:id="@+id/likeAuthor3Image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitXY"
+                    app:corner_radius="100dp"
+                    app:border_width="1dp"
+                    app:border_color="@color/item_gray"/>
+
+            <com.moge.gege.util.widget.RoundedImageView
+                    android:id="@+id/likeAuthor4Image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitXY"
+                    app:corner_radius="100dp"
+                    app:border_width="1dp"
+                    app:border_color="@color/item_gray"/>
+
+            <com.moge.gege.util.widget.RoundedImageView
+                    android:id="@+id/likeAuthor5Image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitXY"
+                    app:corner_radius="100dp"
+                    app:border_width="1dp"
+                    app:border_color="@color/item_gray"/>
+
+            <TextView
+                    android:id="@+id/applyCountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    style="@style/text_topic_content"/>
+
+            <ImageView
+                    android:id="@+id/rightImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/icon_right"
+                    android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/applyLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_listview"
+                android:clickable="true"
+                android:orientation="vertical">
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/line_color"/>
+
+            <TextView
+                    android:id="@+id/applyText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/to_apply"
+                    android:textColor="@color/sign_text_color"
+                    android:textSize="@dimen/text_size_18"
+                    android:textStyle="normal"/>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/line_color"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/loadview"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@color/white">
+
+    <include layout="@layout/general_header"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/avatarText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/text_register_title"
+                        android:text="@string/avatar"
+                        android:layout_centerVertical="true"/>
+
+                <com.moge.gege.util.widget.RoundedImageView
+                        android:id="@+id/avatarImage"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/plus"
+                        android:scaleType="fitXY"
+                        app:corner_radius="0dp"
+                        app:border_width="0dp"
+                        app:border_color="@color/item_gray"/>
+
+            </RelativeLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/line_color"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/text_register_title"
+                        android:text="@string/nickname"/>
+
+                <EditText
+                        android:id="@+id/nicknameEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        style="@style/text_register_info"
+                        android:background="@null"/>
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/line_color"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        style="@style/text_register_title"
+                        android:text="@string/select_community"/>
+
+                <TextView
+                        android:id="@+id/communityText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        style="@style/text_register_info"/>
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/line_color"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        style="@style/text_register_title"
+                        android:text="@string/gender"/>
+
+                <RadioGroup
+                        android:id="@+id/genderGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                    <RadioButton
+                            android:id="@+id/manRadioBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/man"
+                            style="@style/text_register_checkbox"
+                            android:button="@drawable/common_radio"
+                            android:paddingLeft="20dp"
+                            android:checked="true"/>
+                    <RadioButton
+                            android:id="@+id/womanRadioBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:text="@string/woman"
+                            style="@style/text_register_checkbox"
+                            android:button="@drawable/common_radio"
+                            android:paddingLeft="20dp"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/line_color"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/jobTitleText"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        style="@style/text_register_option"
+                        android:text="@string/job"/>
+
+                <EditText
+                        android:id="@+id/jobEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        style="@style/text_register_info"/>
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/line_color"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/hobbyTitleText"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        style="@style/text_register_option"
+                        android:text="@string/hobby"/>
+
+                <EditText
+                        android:id="@+id/hobbyEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        style="@style/text_register_info"/>
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_color"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pub_title_height"
+        android:background="@color/yc_pub_title_blue_bg">
+
+
+        <ImageView
+            android:layout_width="300px"
+            android:layout_height="80px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60px"
+            android:background="@drawable/yc_logo"
+            android:contentDescription="@string/pub_image_desc" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/yc_btn_hj"
+        android:layout_width="330px"
+        android:layout_height="574px"
+        android:layout_marginLeft="234px"
+        android:layout_marginTop="150px"
+        android:layout_below="@+id/layout_title"
+        android:background="@drawable/yc_btn_hjxx" />
+
+
+    <Button
+        android:id="@+id/yc_btn_kuaidi"
+        android:layout_width="530px"
+        android:layout_height="270px"
+        android:layout_below="@+id/layout_title"
+        android:layout_toRightOf="@+id/yc_btn_hj"
+        android:layout_marginLeft="42px"
+        android:layout_marginTop="150px"
+        android:background="@drawable/yc_btn_kuaidi" />
+
+    <Button
+        android:id="@+id/yc_btn_jiaofei"
+        android:layout_width="530px"
+        android:layout_height="270px"
+        android:layout_alignBaseline="@+id/yc_btn_kuaidi"
+        android:layout_marginLeft="42px"
+        android:layout_toRightOf="@+id/yc_btn_kuaidi"
+        android:background="@drawable/yc_btn_jiaofei" />
+
+    <Button
+        android:id="@+id/yc_btn_sqgg"
+        android:layout_width="530px"
+        android:layout_height="270px"
+        android:layout_below="@+id/yc_btn_kuaidi"
+        android:layout_toRightOf="@+id/yc_btn_hj"
+        android:layout_marginLeft="42px"
+        android:layout_marginTop="36px"
+        android:background="@drawable/yc_btn_sqgg" />
+
+    <Button
+        android:id="@+id/yc_btn_sqbs"
+        android:layout_width="530px"
+        android:layout_height="270px"
+        android:layout_alignBaseline="@+id/yc_btn_sqgg"
+        android:layout_below="@+id/yc_btn_kuaidi"
+        android:layout_marginLeft="42px"
+        android:layout_marginTop="68px"
+        android:layout_toRightOf="@+id/yc_btn_sqgg"
+        android:background="@drawable/yc_btn_sqbs" />
+
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--公共模块-->
+	<color name="pub_white">#ffffff</color>
+    <color name="pub_white_50">#afffffff</color>
+	<color name="pub_black">#111111</color>
+	<color name="pub_blue">#0B4D67</color>
+    <color name="pub_green">#217F07</color>
+    <color name="pub_top_blue">#00fff6</color>
+    <color name="pub_top_red">#ff3600</color>
+    <color name="pub_grey">#8d8c87</color>
+    <color name="pub_light_grey">#f5f8fd</color>
+    <color name="pub_orange">#FF9642</color>
+    <color name="pub_orange_number">#ffac36</color>
+    <color name="pub_number">#ffffff</color>
+	<color name="pub_table_title">#2188F1</color>
+	<color name="pub_point_normal">#50ffffff</color>
+	<color name="pub_point_focus">#ff01b8bd</color>
+	<color name="pub_command_text_color">#a3a3a3</color>
+	<color name="pub_trading_title_color">#2a2a2a</color>
+	<color name="pub_red">#ffff0033</color>
+	<color name="pub_line_color">#999999</color>
+	<color name="pub_shop_bg">#D6D6D6</color>
+    <color name="pub_transparent">#00000000</color>
+    <color name="pub_transparent_10">#55000000</color>
+	<color name="pub_transparent_50">#7f000000</color>
+    <color name="pub_top_title">#4f4f4f</color>
+    <color name="pub_top_title_line">#b9b3ff</color>
+
+    <color name="pub_btn_grey_normal">#9f9f9f</color>
+    <color name="pub_btn_grey_pressed">#585858</color>
+	<color name="pub_btn_red_normal">#fe3c7b</color>
+	<color name="pub_btn_red_pressed">#7f1e3d</color>
+	<color name="pub_btn_blue_normal">#0785d1</color>
+	<color name="pub_btn_blue_pressed">#034268</color>
+	<color name="pub_btn_yellow_normal">#f8ae1e</color>
+	<color name="pub_btn_yellow_pressed">#7c570f</color>
+    <color name="pub_btn_orange_normal">#f89f2c</color>
+    <color name="pub_btn_orange_pressed">#945b1d</color>
+    <color name="pub_btn_dis_enable">#939798</color>
+
+    <color name="pub_btn_green_normal">#00c05e</color>
+    <color name="pub_btn_green_shadow">#00602c</color>
+    <color name="pub_btn_green_pressed">#00602c</color>
+
+    <!--大輸入框-->
+    <color name="pub_input_big_pressed">#ff01b8bd</color>
+    <color name="pub_input_big_normal">#ffD6D6D6</color>
+    <color name="pub_input_big_bg">#00000000</color>
+
+
+
+    <!--快递模块-->
+    <color name="ex_box_kd">#00b7ee</color>
+    <color name="ex_box_sx">#ff5252</color>
+    <color name="ex_box_bw">#f8a515</color>
+
+    <color name="ex_box_big_blue">#00b7ee</color>
+    <color name="ex_box_middle_red">#ff5252</color>
+	<color name="ex_box_small_orange">#f8a515</color>
+    <color name="ex_box_small_green">#73d4bf</color>
+    <color name="ex_top_btn_pressed">#d500f9</color>
+    <color name="ex_scan_red">#CF3D40</color>
+    <color name="ex_operator_gray">#e8e6e6</color>
+    <color name="ex_query_line">#d8d8d8</color>
+
+    <color name="ex_table_content">#fefcfc</color>
+    <color name="ex_table_content_normal">#fe9641</color>
+    <color name="ex_table_content_pressed">#cb7834</color>
+    <color name="ex_table_title">#cddbed</color>
+
+    <color name="ex_rack_normal">#8fda0d</color>
+    <color name="ex_rack_pressed">#72ae0a</color>
+    <color name="ex_rack_title">#d9fff1</color>
+    <color name="ex_rack_disabled">#f8a515</color>
+    <color name="ex_text_blue">#467dce</color>
+
+
+    <!--恒喜theme1-->
+    <color name="hx01_pub_title_bg">#0f3e44</color>
+    <color name="hx01_pub_nag_bg">#e7dba0</color>
+    <color name="hx01_op_main_left_bg">#696969</color>
+    <color name="hx01_input_bg_normal">#ffffff</color>
+    <color name="hx01_title_back_normal">#00000000</color>
+    <color name="hx01_title_back_pressed">#58d229</color>
+
+	<!--st-->
+	<color name="st_operator_main_bottom">#008f46</color>
+	<color name="st_operator_main_bottom_pressed">#ea8010</color>
+
+	<!--yc-->
+	<color name="yc_pub_title_blue_bg">#000188cf</color>
+	<color name="title_text_name">#444444</color>
+	<color name="yc_list_text_color">#696969</color>
+	<color name="title_yc_name">#212121</color>
+    <color name="yc_grid_item_text_bg">#b01b99e6</color>
+    <color name="yc_list_item_line">#fac358</color>
+    <color name="yc_title_back_normal">#00000000</color>
+    <color name="yc_title_back_pressed">#36000000</color>
+
+    <!--ui2.0-->
+    <color name="ex_light_blue">#3a75cb</color>
+    <color name="ex_dark_blue">#2e415d</color>
+    <color name="ex_red_2">#fc4c7a</color>
+    <color name="ex_red">#ff2e73</color>
+    <color name="ex_red_pressed">#ad204f</color>
+    <color name="ex_green">#89d44e</color>
+    <color name="ex_green_pressed">#4c7829</color>
+    <color name="ex_pick">#ff6666</color>
+    <color name="ex_hint_bg">#45d48f</color>
+    <color name="ex_yellow">#ffc800</color>
+    <color name="ex_yellow_pressed">#767202</color>
+    <color name="ex_black">#333333</color>
+    <color name="ex_black_50">#6b6b6b</color>
+    <color name="ex_while">#ffffff</color>
+    <color name="ex_grey">#ccccff</color>
+
+    <color name="ex_box_normal">#4c85ff</color>
+    <color name="ex_box_select">#ff2e73</color>
+    <color name="ex_box_disable">#d5d5d5</color>
+
+    <color name="ex_text_normal">#3a75cb</color>
+    <color name="ex_text_select">#ffffff</color>
+    <color name="ex_text_disable">#666666</color>
+    <color name="ex_text_grey">#098cff</color>
+
+    <color name="ex_disable">#20eeeeee</color>
+    <color name="ex_blue_50">#d9ecfd</color>
+    <color name="ex_area_bg">#fbfcff</color>
+    <color name="ex_recharge_header">#b4dcff</color>
+    <color name="ex_recharge_content">#f2f2f2</color>
+    <color name="ex_table_title_bg">#57c2e6</color>
+
+</resources>

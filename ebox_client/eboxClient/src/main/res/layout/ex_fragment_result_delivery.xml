@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="660px"
+        android:layout_height="640px"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ex_op_result_bg"
+        android:paddingLeft="68px"
+        android:paddingRight="68px"
+        android:paddingTop="30px">
+
+        <RelativeLayout
+            android:id="@+id/rl_door"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_open_door"
+                android:layout_width="80px"
+                android:layout_height="88px"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ex_icon_open_door" />
+
+            <TextView
+                android:id="@+id/tv_hint_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ex_while"
+                android:layout_marginLeft="16px"
+                android:layout_toRightOf="@+id/iv_open_door"
+                android:text="@string/ex_open_door_text1"
+                android:textSize="@dimen/pub_text_size_36_px" />
+
+            <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_hint_1"
+                android:layout_toRightOf="@+id/tv_hint_1"
+                android:text="01组07"
+                android:textColor="@color/ex_yellow"
+                android:textSize="@dimen/pub_text_size_36_px" />
+
+            <TextView
+                android:id="@+id/tv_hint_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_number"
+                android:layout_toRightOf="@+id/tv_number"
+                android:textColor="@color/ex_while"
+                android:text="@string/ex_open_door_text2"
+                android:textSize="@dimen/pub_text_size_36_px" />
+
+            <TextView
+                android:id="@+id/tv_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_open_door"
+                android:layout_marginLeft="24px"
+                android:textColor="@color/ex_while"
+                android:layout_marginTop="10px"
+                android:layout_below="@+id/tv_number"
+                android:text="@string/ex_open_door_text3"
+                android:textSize="@dimen/pub_text_size_22_px" />
+        </RelativeLayout>
+
+        <com.ebox.ex.ui.bar.OpenBoxBar
+            android:id="@+id/open_box_bar"
+            android:layout_marginTop="30px"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_door" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="86px"
+            android:layout_marginTop="50px"
+            android:layout_below="@+id/open_box_bar"
+            android:orientation="horizontal">
+
+            <com.ebox.pub.ui.customview.view.MaterialButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="230px"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/ex_code_red"
+                android:text="取消投递"
+                android:textColor="@color/ex_while"
+                android:textSize="@dimen/pub_text_size_26_px" />
+
+            <com.ebox.pub.ui.customview.view.MaterialButton
+                android:id="@+id/btn_confirm"
+                android:layout_width="230px"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ex_code_green"
+                android:text="确认投递"
+                android:textColor="@color/ex_while"
+                android:textSize="@dimen/pub_text_size_26_px" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <com.ebox.ex.ui.bar.Logo style="@style/ex_logo" />
+
+</RelativeLayout>

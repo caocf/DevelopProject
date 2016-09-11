@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="employment">
+        <item>企业职员</item>
+        <item>个体</item>
+        <item>失业</item>
+        <item>赋闲在家</item>
+    </string-array>
+</resources>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loadview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/life_group_bg_color">
+    
+   <include layout="@layout/general_header"/>
+  
+   <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+       android:id="@+id/myCenterScrollView"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:scrollbars="none"
+       app:ptrAnimationStyle="flip">
+       
+       <LinearLayout
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content"
+	       android:orientation="vertical">
+       
+   		   <RelativeLayout
+   		       android:id="@+id/infoLayout"
+		       android:layout_width="match_parent"
+		       android:layout_height="80dp"
+		       android:paddingLeft="10dp"
+		       android:paddingRight="10dp"
+		       android:background="@color/white">
+   	   
+	       	   <com.moge.gege.util.widget.RoundedImageView 
+	       	       android:id="@+id/avatarImage"
+	           	   android:layout_width="50dp"
+	           	   android:layout_height="50dp"
+	           	   android:layout_centerVertical="true"
+	           	   android:scaleType="fitXY"
+	           	   app:corner_radius="100dp"
+	           	   app:border_width="1dp"
+	           	   app:border_color="@color/item_gray"/>
+      	   
+           		<RelativeLayout 
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:layout_toRightOf="@id/avatarImage"
+	               android:layout_marginLeft="10dp"
+	               android:layout_centerVertical="true">
+		       	   
+           		   <TextView 
+		               android:id="@+id/nicknameText"
+		               android:layout_width="wrap_content"
+		               android:layout_height="wrap_content"
+		               android:drawablePadding="5dp"
+		               android:text=""
+		               style="@style/text_black_16"/>
+           		   
+           		   <TextView 
+	                   android:id="@+id/pointText"
+	               	   android:layout_width="wrap_content"
+	                   android:layout_height="wrap_content"
+	                   android:layout_alignTop="@id/nicknameText"
+	                   android:layout_alignParentRight="true"
+	                   android:textSize="@dimen/text_size_14"
+	                   android:textColor="@color/center_points_color"/>
+           		   
+           		   <LinearLayout
+           		       android:layout_width="wrap_content"
+	                   android:layout_height="wrap_content"
+	                   android:layout_below="@id/pointText"
+	                   android:layout_marginTop="3dp"
+	                   android:layout_alignParentRight="true"
+	                   android:orientation="horizontal">
+	                   
+           		       <TextView 
+		               	   android:layout_width="wrap_content"
+		                   android:layout_height="wrap_content"
+		                   android:textSize="@dimen/text_size_14"
+	                   	   android:textColor="@color/center_points_color"
+		                   android:text="@string/gift"/>
+           		   
+           		   	   <TextView 
+		                   android:id="@+id/giftText"
+		               	   android:layout_width="wrap_content"
+		                   android:layout_height="wrap_content"
+		                   android:drawableLeft="@drawable/icon_gift"
+		                   android:textSize="@dimen/text_size_14"
+	                       android:textColor="@color/center_points_color"/>
+           		   
+           		   </LinearLayout>
+               
+               	   <TextView 
+	                   android:id="@+id/introductionText"
+	               	   android:layout_width="wrap_content"
+	                   android:layout_height="wrap_content"
+	                   android:layout_alignLeft="@id/nicknameText"
+	                   android:layout_below="@id/nicknameText"
+	                   style="@style/text_topic_content"
+	                   android:text=""/>
+               
+           		</RelativeLayout>
+           			
+   			</RelativeLayout>
+   			
+   		   <View
+		        android:layout_width="match_parent"
+		        android:layout_height="0.5dp"
+		        android:background="@color/line_color"/>
+   			
+   		   <LinearLayout
+   		       android:layout_width="match_parent"
+		       android:layout_height="45dp"
+		       android:background="@color/white"
+		       android:orientation="horizontal">
+   		       
+   		       <com.moge.gege.util.widget.MyDrawableCenterTextView
+   		           android:id="@+id/operFriendBtn"
+	   		       android:layout_width="match_parent"
+			       android:layout_height="match_parent"
+			       android:paddingRight="1dp"
+			       android:layout_weight="1"
+			       android:gravity="center_vertical"
+			       android:text="@string/add_friend"
+			       android:drawableLeft="@drawable/icon_add_friend"
+           		   android:drawablePadding="5dp"
+           		   android:background="@drawable/bg_listview"/>
+   		       
+   		       <View
+   		           android:layout_width="0.5dp"
+   		           android:layout_height="match_parent"
+   		           android:background="@color/line_color"/>
+   		       
+   		       <com.moge.gege.util.widget.MyDrawableCenterTextView
+   		           android:id="@+id/sendMsgBtn"
+	   		       android:layout_width="match_parent"
+			       android:layout_height="match_parent"
+			       android:paddingRight="1dp"
+			       android:layout_weight="1"
+			       android:gravity="center_vertical"
+			       android:text="@string/send_msg"
+			       android:drawableLeft="@drawable/icon_send_msg"
+           		   android:drawablePadding="5dp"
+           		   android:background="@drawable/bg_listview"/>
+   		       
+   		        <View
+   		           android:layout_width="0.5dp"
+   		           android:layout_height="match_parent"
+   		           android:background="@color/line_color"/>
+   		       
+   		       <com.moge.gege.util.widget.MyDrawableCenterTextView
+   		           android:id="@+id/sendGiftBtn"
+	   		       android:layout_width="match_parent"
+			       android:layout_height="match_parent"
+			       android:layout_weight="1"
+			       android:gravity="center_vertical"
+			       android:text="@string/send_gift"
+			       android:drawableLeft="@drawable/icon_send_gift"
+           		   android:drawablePadding="5dp"
+           		   android:background="@drawable/bg_listview"/>
+   		       
+   		   </LinearLayout>
+   			
+   		    <LinearLayout
+		       android:layout_width="match_parent"
+		       android:layout_height="wrap_content"
+		       android:layout_marginTop="10dp"
+		       android:paddingLeft="10dp"
+		       android:paddingRight="10dp"
+		       android:background="@color/white"
+		       android:orientation="vertical">
+           		
+   		       <RelativeLayout
+	   		       android:id="@+id/giftLayout"
+			       android:layout_width="match_parent"
+			       android:clickable="true"
+			       android:layout_height="53dp"
+			       android:visibility="gone">
+       				
+   		           <TextView
+   		               android:id="@+id/receiveGiftText"
+			  	        android:layout_width="wrap_content"
+			  	    	android:layout_height="wrap_content"
+			  	    	android:layout_centerVertical="true"
+			  	    	android:text="@string/receive_gift"
+			  	    	style="@style/text_title_14"/>
+   		           
+   		           <LinearLayout
+   		               android:id="@+id/giftImageLayout"
+   		               android:layout_width="wrap_content"
+			  	    	android:layout_height="wrap_content"
+			  	    	android:layout_centerVertical="true"
+			  	    	android:layout_toRightOf="@id/receiveGiftText"
+			  	    	android:layout_marginLeft="10dp"
+			  	    	android:orientation="horizontal">
+   		               
+   		           </LinearLayout>
+   		           
+   		           <ImageView
+   		               android:id="@+id/rightImage"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_centerVertical="true"
+			            android:layout_alignParentRight="true"
+			            android:background="@drawable/icon_right"
+			            android:scaleType="fitXY" />
+   		           
+   		           <TextView
+   		               	android:id="@+id/giftCountText"
+			  	        android:layout_width="wrap_content"
+			  	    	android:layout_height="wrap_content"
+			  	    	android:layout_centerVertical="true"
+			  	    	android:layout_toLeftOf="@id/rightImage"
+			  	    	android:text="@string/gift_unit"/>
+       
+   				</RelativeLayout>
+   				
+   		       <View
+   		            android:layout_width="match_parent"
+			        android:layout_height="0.5dp"
+			        android:background="@color/line_color"/>
+   		       
+   		       <LinearLayout 
+   		           	android:layout_width="wrap_content"
+		  	    	android:layout_height="53dp"
+		  	    	android:gravity="center_vertical"
+   		           	android:orientation="horizontal">
+   		           
+   		           <TextView
+			  	        android:layout_width="wrap_content"
+			  	    	android:layout_height="wrap_content"
+			  	    	android:text="@string/center_community"
+			  	    	android:textSize="@dimen/text_size_14"
+	                    android:textColor="@color/center_points_color"/>
+		       
+   		      	 	<TextView
+	   		           	android:id="@+id/communityText"
+			  	        android:layout_width="wrap_content"
+			  	    	android:layout_height="wrap_content"
+			  	    	android:layout_marginLeft="5dp"
+			  	    	style="@style/text_mytitle_14"/>
+   		       
+   		       </LinearLayout>
+   				
+   		        <View
+   		            android:layout_width="match_parent"
+			        android:layout_height="0.5dp"
+			        android:background="@color/line_color"/>
+   		        
+   		        <LinearLayout 
+   		           	android:layout_width="wrap_content"
+		  	    	android:layout_height="53dp"
+		  	    	android:gravity="center_vertical"
+   		           	android:orientation="horizontal">
+   		      	 	
+   		           <TextView
+			  	        android:layout_width="wrap_content"
+			  	    	android:layout_height="wrap_content"
+			  	    	android:text="@string/center_job"
+			  	    	android:textSize="@dimen/text_size_14"
+	                    android:textColor="@color/center_points_color"/>
+		       
+   		      	 	<TextView
+	   		           	android:id="@+id/jobText"
+			  	        android:layout_width="wrap_content"
+			  	    	android:layout_height="wrap_content"
+			  	    	android:layout_marginLeft="5dp"
+			  	    	style="@style/text_mytitle_14"/>
+   		       
+   		       </LinearLayout>
+   		        
+   				
+   		        <View
+   		            android:layout_width="match_parent"
+			        android:layout_height="0.5dp"
+			        android:background="@color/line_color"/>
+   		        
+   		        <LinearLayout 
+   		           	android:layout_width="wrap_content"
+		  	    	android:layout_height="53dp"
+		  	    	android:gravity="center_vertical"
+   		           	android:orientation="horizontal">
+   		      	 	
+   		           <TextView
+			  	        android:layout_width="wrap_content"
+			  	    	android:layout_height="wrap_content"
+			  	    	android:text="@string/center_interest"
+			  	    	android:textSize="@dimen/text_size_14"
+	                    android:textColor="@color/center_points_color"/>
+		       
+   		      	 	<TextView
+	   		           	android:id="@+id/hobbyText"
+			  	        android:layout_width="wrap_content"
+			  	    	android:layout_height="wrap_content"
+			  	    	android:layout_marginLeft="5dp"
+			  	    	style="@style/text_mytitle_14"/>
+   		       
+   		       </LinearLayout>
+   				
+   		        <View
+   		            android:layout_width="match_parent"
+			        android:layout_height="0.5dp"
+			        android:background="@color/line_color"/>
+   		        
+   		         <com.moge.gege.util.widget.horizontalListview.widget.HListView
+			        android:id="@+id/boardListView"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:listSelector="@drawable/bg_listview" 
+			        android:fadingEdge="none"
+			        android:overScrollMode="never"/>
+       
+   			</LinearLayout>
+   			
+   		   
+   		    <com.moge.gege.util.widget.ScrollListView 
+	       		android:id="@+id/topicList"
+	       		android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:cacheColorHint="#00000000"
+		        android:fadingEdge="none"
+		        android:fastScrollEnabled="false"
+		        android:footerDividersEnabled="false"
+		        android:headerDividersEnabled="false"
+		        android:smoothScrollbar="true"
+		        android:background="@color/white"
+		        android:divider="@color/life_group_bg_color"
+				android:dividerHeight="10dp"
+				android:listSelector="@drawable/bg_listview"/>
+
+  		</LinearLayout>
+   	
+  </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+   
+   <include layout="@layout/empty_view"/>
+   
+</LinearLayout>

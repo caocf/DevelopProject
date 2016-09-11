@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="116px"
+        android:layout_marginTop="178px">
+
+        <RelativeLayout
+            android:id="@+id/rl_barcode"
+            android:layout_width="976px"
+            android:layout_height="140px"
+            android:background="@drawable/st_marry_input">
+
+            <TextView
+                android:id="@+id/tv_telephone"
+                style="@style/pub_text_white_size_60_px"
+                android:layout_width="230px"
+                android:layout_height="140px"
+                android:gravity="center"
+                android:text="@string/st_telephone" />
+
+            <EditText
+                android:id="@+id/et_telephone"
+                style="@style/pub_text_white_size_60_px"
+                android:layout_width="736px"
+                android:layout_height="140px"
+                android:layout_alignTop="@+id/tv_telephone"
+                android:layout_toRightOf="@+id/tv_telephone"
+                android:paddingLeft="30px" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_state"
+            android:layout_width="976px"
+            android:layout_height="140px"
+            android:layout_below="@+id/rl_barcode"
+            android:layout_marginTop="40px"
+            android:background="@drawable/st_marry_input">
+
+            <TextView
+                android:id="@+id/tv_marray_state"
+                style="@style/pub_text_white_size_60_px"
+                android:layout_width="230px"
+                android:layout_height="140px"
+                android:gravity="center"
+                android:text="婚姻" />
+
+            <RadioGroup
+                android:id="@+id/state"
+                android:layout_width="736px"
+                android:layout_height="140px"
+                android:layout_toRightOf="@+id/tv_marray_state"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/first"
+                    style="@style/pub_text_white_size_60_px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50px"
+                    android:drawableLeft="@drawable/st_check_box"
+                    android:button="@null"
+                    android:checked="true"
+                    android:text="初婚" />
+
+                <RadioButton
+                    android:id="@+id/more"
+                    style="@style/pub_text_white_size_60_px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50px"
+                    android:drawableLeft="@drawable/st_check_box"
+                    android:button="@null"
+                    android:text="再婚" />
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_put_item"
+            style="@style/pub_text_white_size_60_px"
+            android:layout_width="976px"
+            android:layout_height="140px"
+            android:layout_below="@+id/rl_state"
+            android:layout_marginTop="68px"
+            android:background="@drawable/pub_code_btn_green"
+            android:text="下一步" />
+
+
+    </RelativeLayout>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        style="?attr/keyboard_style"
+        android:layout_width="560px"
+        android:layout_height="720px"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

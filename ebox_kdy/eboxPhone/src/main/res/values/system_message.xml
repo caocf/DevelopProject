@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="serviceError">确&#160;认</string>
+    <string name="create_pay_order">正在提交支付订单，请稍后&#8230;</string>
+    <string name="pay_order_failed">支付失败</string>
+
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/rl_adv1">
+        <com.ebox.ex.adv.utils.AutoScrollViewPager
+	        android:id="@+id/auto_scroll_viewpager"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" />
+
+	    <com.ebox.ex.adv.utils.FlowIndicator
+	        android:id="@+id/indicator"
+	        android:layout_width="500dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginBottom="20dp"
+	        android:paddingEnd="10dp"
+	        app:count="3"
+	        app:focus_color="@color/pub_point_focus"
+	        app:normal_color="@color/pub_point_normal"
+	        app:radius="10dp"
+	        app:space="20dp"/>
+	     <SurfaceView
+            android:id="@+id/surface"
+            android:layout_width="0dp"
+            android:layout_height="0dp" >
+        </SurfaceView>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_adv2">
+
+	    <io.vov.vitamio.widget.VideoView 
+	        android:id="@+id/videoview" 
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:layout_gravity="center"> 
+		</io.vov.vitamio.widget.VideoView>
+
+    </RelativeLayout>
+
+    
+
+</RelativeLayout>

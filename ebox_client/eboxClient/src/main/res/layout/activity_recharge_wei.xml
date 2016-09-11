@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/ex_tv_arw_title"
+        style="@style/ex_text_normal"
+        android:layout_width="match_parent"
+        android:layout_below="@id/title"
+        android:gravity="center"
+        android:text="@string/ex_wei_title" />
+
+    <ImageView
+        android:id="@+id/ex_iv_arw_qrcode"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_below="@id/ex_tv_arw_title"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/ex_tv_arw_tip"
+        style="@style/ex_text_normal"
+        android:layout_centerHorizontal="true"
+        android:text="@string/ex_wei_tip"
+        android:layout_below="@id/ex_iv_arw_qrcode"
+        android:layout_marginTop="10px"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ex_tv_arw_tip"
+        android:layout_margin="@dimen/pub_text_size_20_px"
+        android:orientation="vertical"
+       >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/pub_grey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:orientation="horizontal"
+            android:weightSum="6"
+            android:paddingTop="10px">
+
+            <TextView
+                style="@style/ex_text_normal"
+                android:text="@string/ex_wei_money"
+                android:layout_gravity="right"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:textColor="@color/pub_grey"
+                />
+
+            <TextView
+                android:id="@+id/ex_tv_arw_money"
+                style="@style/ex_text_normal"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="@dimen/pub_text_size_30_px"
+                android:textColor="@color/ex_green"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/pub_grey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:orientation="horizontal"
+            android:weightSum="6"
+            android:paddingTop="10px">
+
+            <TextView
+                style="@style/ex_text_normal"
+                android:text="@string/ex_wei_type"
+                android:layout_gravity="right"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:textColor="@color/pub_grey"
+                />
+
+            <ImageView
+                android:id="@+id/ex_iv_arw_type"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:src="@drawable/ex_icon_weixin"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/pub_grey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:orientation="horizontal"
+            android:weightSum="6"
+            android:paddingTop="10px">
+
+            <TextView
+                style="@style/ex_text_normal"
+                android:text="@string/ex_wei_id"
+                android:layout_gravity="right"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:textColor="@color/pub_grey"/>
+
+            <TextView
+                android:id="@+id/ex_tv_arw_id"
+                style="@style/ex_text_normal"
+                android:layout_width="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/pub_grey"/>
+    </LinearLayout>
+
+</RelativeLayout>

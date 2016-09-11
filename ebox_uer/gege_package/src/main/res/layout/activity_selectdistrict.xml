@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loadview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/life_group_bg_color">
+    
+   	<include layout="@layout/general_header"/>
+   	
+   	<LinearLayout
+   	    android:id="@+id/selectAddressLayout"
+   	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+        
+   	    <TextView
+   	        android:id="@+id/selectAddressText"
+   	        android:layout_width="match_parent"
+        	android:layout_height="40dp"
+        	android:gravity="center_vertical|left"/>
+   	    
+   	    <View
+   	        android:layout_width="match_parent"
+        	android:layout_height="1dp"
+        	android:background="@color/line_color"/>
+   	    
+   	</LinearLayout>
+  
+  	<ListView
+       	android:id="@+id/contentList"
+       	android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        android:background="@color/white"
+        android:divider="@color/line_color"
+		android:dividerHeight="0.5dp"
+		android:listSelector="@android:color/transparent"
+		android:scrollbars="none"
+		android:descendantFocusability="afterDescendants"/>
+   
+</LinearLayout>

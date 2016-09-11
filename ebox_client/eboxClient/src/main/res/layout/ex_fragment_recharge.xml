@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    style="?attr/pub_top_nag_page"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="120px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_charge"
+                style="@style/pub_text_white_size_50_px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ex_recharge_money"
+                android:gravity="right|center_vertical"
+                android:paddingRight="96px"
+                android:singleLine="true"
+                android:text="50 元"
+                />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                style="@style/pub_text_white_size_50_px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ex_recharge_id"
+                android:gravity="right|center_vertical"
+                android:paddingRight="36px"
+                android:singleLine="true"
+                android:text="13505623935"
+                />
+
+            <Button
+                android:id="@+id/bt_cancle"
+                style="@style/pub_text_white_size_50_px"
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/pub_code_btn_grey"
+                android:text="@string/pub_cancel"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20px"
+            android:background="@drawable/ex_scand">
+
+            <ImageView
+                android:id="@+id/iv_code"
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="26px"
+                android:layout_marginTop="24px"
+                android:contentDescription="@null"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

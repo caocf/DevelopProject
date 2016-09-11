@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/rl_top_action"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/hx01_pub_title_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="10px"
+        android:paddingRight="10px">
+
+        <Button
+            android:id="@+id/oper_btn_normal"
+            android:layout_width="309px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="250px"
+            android:background="@drawable/hx01_btn_top_oper"></Button>
+
+        <View style="@style/pub_top_vertical_line" />
+
+        <Button
+            android:id="@+id/pickup_btn_normal"
+            android:layout_width="309px"
+            android:layout_height="match_parent"
+            android:background="@drawable/hx01_btn_top_pick_up"
+            android:visibility="visible"></Button>
+
+        <View style="@style/pub_top_vertical_line" />
+
+        <Button
+            android:id="@+id/query_btn_normal"
+            android:layout_width="309px"
+            android:layout_height="match_parent"
+            android:background="@drawable/hx01_btn_top_query" />
+
+        <View style="@style/pub_top_vertical_line" />
+
+        <Button
+            android:id="@+id/btn_help"
+            android:layout_width="309px"
+            android:layout_height="match_parent"
+            android:background="@drawable/hx01_btn_top_help" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_top_action">
+
+        <RelativeLayout
+            android:id="@+id/fl_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_pressed_key"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:background="@color/hx01_pub_title_bg" />
+
+</RelativeLayout>

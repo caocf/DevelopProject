@@ -1,0 +1,11 @@
+.gradle
+.idea/
+*.iml
+*.swp
+*.apk
+build
+eboxClient/build/
+vitamio/build
+library/build
+local.properties
+local.properties

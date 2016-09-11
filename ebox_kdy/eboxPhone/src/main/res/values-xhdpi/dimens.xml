@@ -1,0 +1,11 @@
+<resources>
+
+    <dimen name="home_item_big">160dip</dimen>
+    <dimen name="head_title">22dip</dimen>
+    <dimen name="home_item_samll">130dip</dimen>
+    <dimen name="home_top_text">20.0dip</dimen>
+    <dimen name="time_out_top_text">14.0dip</dimen>
+    <dimen name="query_item_text">12.0dip</dimen>
+    <dimen name="query_fast_top_text">16.0dip</dimen>
+    <dimen name="item_empty_hight">44dip</dimen>
+</resources>

@@ -1,0 +1,345 @@
+[33mcommit e3b0a86356f09bf23e9156a85b8d1359e58d0933[m
+Author: mark75 <757537413@qq.com>
+Date:   Sun Sep 20 19:47:45 2015 +0800
+
+    运维界面架构
+
+[33mcommit 9506ff402c38dbd33c4981e85e14ca2b1fc39fea[m
+Merge: 5812db0 c5801e0
+Author: mark75 <757537413@qq.com>
+Date:   Thu Aug 13 09:34:57 2015 +0800
+
+    Merge branch 'develop'
+
+[33mcommit 5812db097fcf027b5caaaf6608e8910f468a7ccf[m
+Merge: 2834ebe 474cf05
+Author: shi.delei <shi.delei@mgooo.cn>
+Date:   Wed Aug 12 15:15:37 2015 +0800
+
+    Merge branch 'fix_bug'
+
+[33mcommit 474cf05def29019cb2275101e8522d858e1866cd[m
+Author: shi.delei <shi.delei@mgooo.cn>
+Date:   Wed Aug 12 15:14:38 2015 +0800
+
+    update
+
+[33mcommit cb02c40fd3a1f532c0f560f2e9c05722f78a8201[m
+Author: shi.delei <shi.delei@mgooo.cn>
+Date:   Wed Aug 12 14:08:00 2015 +0800
+
+    update
+
+[33mcommit c5801e0c668460d42043ff7377eab79549150ae1[m
+Merge: fb429f1 62862d0
+Author: mark75 <757537413@qq.com>
+Date:   Mon Aug 10 11:08:14 2015 +0800
+
+    Merge branch 'develop_zzh' into develop
+    
+    Conflicts:
+    	eboxClient/src/main/AndroidManifest.xml
+    	eboxClient/src/main/java/com/ebox/AppApplication.java
+    	eboxClient/src/main/java/com/ebox/ex/ui/TopActivity.java
+
+[33mcommit 62862d0ec764f6b168be4ca36a83d5d2382d77f9[m
+Author: mark75 <757537413@qq.com>
+Date:   Mon Aug 10 10:58:57 2015 +0800
+
+    去掉多余注释
+
+[33mcommit e93223ea103e4eb3ab33b5be03b4fb0ff4acac45[m
+Author: mark75 <757537413@qq.com>
+Date:   Thu Aug 6 16:56:37 2015 +0800
+
+    修改快递公司选择错乱问题
+
+[33mcommit 19e418ef5ae2335c4a5d02ea59a8639de5b951d3[m
+Author: mark75 <757537413@qq.com>
+Date:   Thu Aug 6 16:04:31 2015 +0800
+
+    注册业务流程细节修改
+
+[33mcommit fbe84c7fcb18180590599aae98bff15bef43595f[m
+Author: mark75 <757537413@qq.com>
+Date:   Thu Aug 6 11:27:00 2015 +0800
+
+    隐藏公司内部的快递公司
+
+[33mcommit ab4dc26dbe5cc1d5ca3661757e836b1782f0a882[m
+Author: mark75 <757537413@qq.com>
+Date:   Thu Aug 6 10:52:09 2015 +0800
+
+    快递员注册完成，注册接口使用手机端接口
+
+[33mcommit fb429f15abf61c4dac29d2503e8452c89af512e3[m
+Author: shi.delei <shi.delei@mgooo.cn>
+Date:   Wed Aug 5 18:02:51 2015 +0800
+
+    修改箱门占用显示问题
+
+[33mcommit aadaa3797ecca83fa44cbf74d77a8de227873698[m
+Author: mark75 <757537413@qq.com>
+Date:   Wed Aug 5 17:16:40 2015 +0800
+
+    快递柜注册修改
+
+[33mcommit 8ae737ed5e4b17d7064b79a8c08369dfe3f9abf1[m
+Author: mark75 <757537413@qq.com>
+Date:   Wed Aug 5 15:32:54 2015 +0800
+
+    快递员注册
+
+[33mcommit d42eb3a528a7ab72b904000989f13d4b299d4954[m
+Author: shi.delei <shi.delei@mgooo.cn>
+Date:   Wed Aug 5 13:45:35 2015 +0800
+
+    修改箱门占用显示问题和服务启动判断
+
+[33mcommit 884d781e067e49ee28a1ab590fde9daca2c043f7[m
+Author: mark75 <757537413@qq.com>
+Date:   Wed Aug 5 09:20:58 2015 +0800
+
+    register
+
+[33mcommit 37e8f9057143775ec3506a293f9347bc0eff39dd[m
+Merge: 4cfc275 bcbc88c
+Author: shi.delei <shi.delei@mgooo.cn>
+Date:   Tue Aug 4 16:24:03 2015 +0800
+
+    Merge branch 'develop' of git.aimoge.com:ebox/merge_eboxclient into develop
+
+[33mcommit 4cfc2752922bda8bf23e15ccc17d4af23cc82438[m
+Author: shi.delei <shi.delei@mgooo.cn>
+Date:   Tue Aug 4 16:16:56 2015 +0800
+
+    Update yc bug
+
+[33mcommit cb7faa6f6c7350a42247c074eed9d31303690445[m
+Author: shi.delei <shi.delei@mgooo.cn>
+Date:   Tue Aug 4 16:13:17 2015 +0800
+
+    Update yc bug
+
+[33mcommit bcbc88cd4c4edc6c83e9c7631869f100d80a5128[m
+Author: mafeng <ma.feng@mgooo.cn>
+Date:   Mon Aug 3 16:42:49 2015 +0800
+
+    银川 api 网址更新
+
+[33mcommit 2834ebeb9539008792d1d3adaf4be625a4303536[m
+Merge: 23be00d a643e02
+Author: shi.delei <shi.delei@mgooo.cn>
+Date:   Sat Aug 1 16:42:26 2015 +0800
+
+    Merge branch 'develop'
+    
+    Conflicts:
+    	.gitignore
+
+[33mcommit 23be00dbbcf13ea9ddf212244b7411c18cd449a6[m
+Author: shi.delei <shi.delei@mgooo.cn>
+Date:   Sat Aug 1 16:41:06 2015 +0800
+
+    update .gitignore
+
+[33mcommit a643e02d5081db4a32ce861d85ad0344f17d0a68[m
+Merge: b065b93 00652e1
+Author: shi.delei <shi.delei@mgooo.cn>
+Date:   Sat Aug 1 15:56:26 2015 +0800
+
+    Merge remote-tracking branch 'origin/develop' into develop
+
+[33mcommit b065b9356968bb6456e82032ee49852173fb8ef6[m
+Author: shi.delei <shi.delei@mgooo.cn>
+Date:   Sat Aug 1 15:25:24 2015 +0800
+
+    update judge
+
+[33mcommit 5dfd58ec33be996df0af1b31e74862a63326805e[m
+Author: shidelei <shi.delei@mgooo.cn>
+Date:   Fri Jul 31 17:11:15 2015 +0800
+
+    update application and service mode
+
+[33mcommit ab1a78e10a543da000bbef547fc41b9ea5a213d5[m
+Author: shidelei <shi.delei@mgooo.cn>
+Date:   Fri Jul 31 10:48:03 2015 +0800
+
+    test
+
+[33mcommit ff3e815eca4b49416b90e00b6cae084d7090fa66[m
+Author: shidelei <shi.delei@mgooo.cn>
+Date:   Fri Jul 31 10:35:08 2015 +0800
+
+    update view location
+
+[33mcommit c73c67e61fbaa3f6f3546f47dc17a62ae6873986[m
+Author: shidelei <shi.delei@mgooo.cn>
+Date:   Fri Jul 31 09:07:49 2015 +0800
+
+    update view location
+
+[33mcommit 00652e1d5eede4ab8fa1e1526c4586fdecbe9782[m
+Author: mafeng <ma.feng@mgooo.cn>
+Date:   Thu Jul 30 15:58:05 2015 +0800
+
+    更新a31s版本LED
+
+[33mcommit d02a9ebd6319df15b110e7a69e3f0735665206db[m
+Author: shidelei <shi.delei@mgooo.cn>
+Date:   Wed Jul 29 09:49:33 2015 +0800
+
+    hide input
+
+[33mcommit f5c04c23d1d11ad78d7d313669c5a91c8bb12028[m
+Author: shidelei <shi.delei@mgooo.cn>
+Date:   Tue Jul 28 15:40:21 2015 +0800
+
+    修改在线取件Loading界面提前关闭问题
+
+[33mcommit 694faa4afe047aa86f19324456c426eba74f45c3[m
+Author: shidelei <shi.delei@mgooo.cn>
+Date:   Tue Jul 28 15:31:20 2015 +0800
+
+    修改超时件在刚取完时下拉服务端数据重叠，导致超时件界面无法数据不显示问题
+
+[33mcommit 701891087fde51186d3e6ac7f51ef3bd9c11750e[m
+Author: shidelei <shi.delei@mgooo.cn>
+Date:   Tue Jul 28 11:30:42 2015 +0800
+
+    update
+
+[33mcommit 9735b4694ceb239562b4051e258a93e231cad6a8[m
+Author: shidelei <shi.delei@mgooo.cn>
+Date:   Tue Jul 28 11:27:06 2015 +0800
+
+    ignore
+
+[33mcommit 208d4655d1961212a6e919b1591f69dd4050bdd3[m
+Author: mafeng <ma.feng@mgooo.cn>
+Date:   Tue Jul 28 11:10:14 2015 +0800
+
+    update
+
+[33mcommit 3ff90ba8046db3e46d580d0667529cbb313b3503[m
+Author: mafeng <ma.feng@mgooo.cn>
+Date:   Tue Jul 28 11:09:10 2015 +0800
+
+    update
+
+[33mcommit 5f43c72f8a3861dfa1c7082137f6cc39d0e13943[m
+Author: mafeng <ma.feng@mgooo.cn>
+Date:   Tue Jul 28 11:07:46 2015 +0800
+
+    update
+
+[33mcommit a354e006a859025fdaf98986f69cde58d576ecfc[m
+Merge: ce43874 321fabe
+Author: mafeng <ma.feng@mgooo.cn>
+Date:   Tue Jul 28 10:57:12 2015 +0800
+
+    Merge branch 'develop' of git.aimoge.com:ebox/merge_eboxclient into develop
+
+[33mcommit ce43874dde86efe20ecb9fcbf19023d054620fa5[m
+Author: mafeng <ma.feng@mgooo.cn>
+Date:   Tue Jul 28 10:56:31 2015 +0800
+
+    update
+
+[33mcommit 86169225f7b3cf1b9399d46a0d536c4f51517db3[m
+Author: mafeng <ma.feng@mgooo.cn>
+Date:   Tue Jul 28 10:52:26 2015 +0800
+
+    update
+
+[33mcommit 321fabee925c9b645595ea51f5ab5d803eed2ddd[m
+Author: shidelei <shi.delei@mgooo.cn>
+Date:   Tue Jul 28 10:28:24 2015 +0800
+
+    龙岗取文件，先掉接口后开门
+
+[33mcommit 5e9788461b287009dfca1e1b67b8e2d5c8c6d321[m
+Merge: 404d9ca 6ea2b07
+Author: shidelei <shi.delei@mgooo.cn>
+Date:   Mon Jul 27 09:03:02 2015 +0800
+
+    Merge remote-tracking branch 'remotes/origin/develop' into develop
+
+[33mcommit 404d9ca95ed98850d79de1637a5bb412f7cc1729[m
+Author: shidelei <shi.delei@mgooo.cn>
+Date:   Mon Jul 27 08:55:57 2015 +0800
+
+    update
+
+[33mcommit 6ea2b070e9bd15cd454cf32378d007ac397c580d[m
+Author: shidelei <shi.delei@mgooo.cn>
+Date:   Sat Jul 25 14:59:30 2015 +0800
+
+    new_line
+
+[33mcommit a26afe9026aa9eda7c4cfe4d3c27642b7879bcae[m
+Author: shidelei <shi.delei@mgooo.cn>
+Date:   Fri Jul 24 15:05:35 2015 +0800
+
+    merge develop
+
+[33mcommit 16034a1acb3b5330351aa81cf5e8a8153dd9d9f7[m
+Author: shidelei <shi.delei@mgooo.cn>
+Date:   Fri Jul 24 13:12:32 2015 +0800
+
+    test
+
+[33mcommit 4276ae2d3e005e996ec851f20584944e1000b022[m
+Author: shidelei <shi.delei@mgooo.cn>
+Date:   Fri Jul 24 13:10:24 2015 +0800
+
+    update
+
+[33mcommit 8c2fdf2d9ad0a2376172df3a264906572d6fd732[m
+Author: shidelei <shi.delei@mgooo.cn>
+Date:   Fri Jul 24 13:07:26 2015 +0800
+
+    update
+
+[33mcommit dd5e3c2a2ef8efa46bf103050515d202370d395b[m
+Author: shidelei <shi.delei@mgooo.cn>
+Date:   Fri Jul 24 13:07:03 2015 +0800
+
+    'update'
+
+[33mcommit 1beec619f146d079ef8ae4e9b456408b1f7e2828[m
+Author: shidelei <shi.delei@mgooo.cn>
+Date:   Fri Jul 24 13:04:11 2015 +0800
+
+    update
+
+[33mcommit cdee0954cc16c9b35fe02897ef4d57347053e06a[m
+Author: shidelei <shi.delei@mgooo.cn>
+Date:   Fri Jul 24 13:02:47 2015 +0800
+
+    clean
+
+[33mcommit a95ec362aa1e577141b5f8d769473755a0150149[m
+Author: shidelei <shi.delei@mgooo.cn>
+Date:   Fri Jul 24 13:01:57 2015 +0800
+
+    update
+
+[33mcommit 5268fbb9dcc5e30c9996bcaeed6c5862b00cf005[m
+Author: shidelei <shi.delei@mgooo.cn>
+Date:   Fri Jul 24 12:58:54 2015 +0800
+
+    update
+
+[33mcommit 7fdaee72a7044561fd1d62d40defc2f4b106ad46[m
+Author: shidelei <shi.delei@mgooo.cn>
+Date:   Fri Jul 24 12:50:35 2015 +0800
+
+    update
+
+[33mcommit 11b6ae1226afdf86754a9e36ed985ae3b5a0d633[m
+Author: shidelei <shi.delei@mgooo.cn>
+Date:   Fri Jul 24 12:46:25 2015 +0800
+
+    init

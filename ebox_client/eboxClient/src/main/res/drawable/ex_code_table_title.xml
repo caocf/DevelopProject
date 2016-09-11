@@ -1,0 +1,15 @@
+<?xml version= "1.0" encoding= "utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <size android:width="@dimen/ex_table_title_width" android:height="@dimen/ex_table_title_height" />
+
+            <stroke android:width="1px" android:color="@color/pub_black" />
+
+            <!-- 背景 -->
+            <solid android:color="@color/ex_table_title" />
+        </shape>
+    </item>
+
+</selector>

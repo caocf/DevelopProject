@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loadview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/life_group_bg_color">
+    
+    <include layout="@layout/general_header"/>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        
+    	<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical">
+
+  			<TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="15dp"
+		    	android:paddingRight="15dp"
+		        android:layout_marginTop="10dp"
+		       	style="@style/text_topic_content"
+		       	android:text="@string/contact_by_qq"/>
+  			
+  			<TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="15dp"
+		    	android:paddingRight="15dp"
+		        android:layout_marginTop="10dp"
+		       	style="@style/text_topic_content"
+		       	android:text="@string/contact_by_sina"/>
+  			
+  			<TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="15dp"
+		    	android:paddingRight="15dp"
+		        android:layout_marginTop="10dp"
+		       	style="@style/text_topic_content"
+		       	android:text="@string/contact_by_weichat"/>
+
+			<TextView
+				android:id="@+id/phoneText"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="15dp"
+				android:paddingRight="15dp"
+				android:layout_marginTop="10dp"
+				style="@style/text_topic_content"
+				android:text="@string/contact_by_phone"/>
+  	
+  		</LinearLayout>
+  		
+    </ScrollView>
+        
+</LinearLayout>

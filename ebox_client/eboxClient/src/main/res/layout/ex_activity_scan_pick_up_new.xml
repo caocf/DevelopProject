@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="1794px"
+        android:layout_height="882px"
+        android:background="@drawable/ex_scan_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40px"
+        android:layout_marginBottom="30px"
+        android:layout_below="@+id/title">
+
+        <ImageView
+            android:id="@+id/new_iv_scan_code"
+            android:layout_width="250px"
+            android:layout_height="253px"
+            android:layout_marginLeft="170px"
+            android:layout_marginTop="200px"
+            android:scaleType="fitXY"
+			android:src="@drawable/ex_scan_code"/>
+
+        <Button
+            android:id="@+id/new_bt_scan_enter"
+            android:layout_width="600px"
+            android:layout_height="134px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/pub_code_btn_green"
+            android:text="手动开门"
+            style="@style/pub_text_white_size_60_px"
+            android:layout_marginLeft="355px"
+            android:layout_marginBottom="100px">
+        </Button>
+        
+        
+        <TextView
+            android:id="@+id/new_tv_scan_time"
+            android:layout_width="340px"
+            android:layout_height="300px"
+            android:text="30"
+            android:textSize="150px"
+            android:textColor="@color/pub_red"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginTop="190px"
+            android:layout_marginRight="200px"/>
+        
+    </RelativeLayout>
+    
+    
+
+</RelativeLayout>

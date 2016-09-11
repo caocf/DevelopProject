@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loadview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/life_group_bg_color">
+    
+    <RelativeLayout 
+        android:id="@+id/searchLayout"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="50dp"
+   	    android:paddingLeft="5dp"
+   	    android:paddingRight="5dp"
+   	    android:gravity="center_vertical"
+   	    android:visibility="gone">
+   	    
+   	    <ImageView 
+   	        android:id="@+id/findImage"
+   	        android:layout_width="36dp"
+   	        android:layout_height="36dp"
+   	        android:layout_alignParentRight="true"
+   	        android:layout_centerVertical="true"
+   	        android:scaleType="fitXY"
+   	        android:src="@drawable/icon_find"/>
+		
+   	    <EditText
+            android:id="@+id/keywordEdit"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_toLeftOf="@id/findImage"
+            android:layout_centerVertical="true"
+            android:hint="@string/keywords"
+            android:imeOptions="actionSearch"
+            style="@style/text_login_edit" 
+            android:background="@color/white"/>
+   	    
+   	</RelativeLayout>
+    
+   	<com.handmark.pulltorefresh.library.PullToRefreshListView 
+       android:id="@+id/contentList"
+       android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        android:divider="@color/line_color"
+		android:dividerHeight="0dp"
+		android:listSelector="@drawable/bg_listview"
+		android:scrollbars="none"
+		android:background="@color/white"
+		android:descendantFocusability="afterDescendants"
+		app:ptrAnimationStyle="flip"/>
+
+    <include layout="@layout/empty_view" />
+   
+</LinearLayout>

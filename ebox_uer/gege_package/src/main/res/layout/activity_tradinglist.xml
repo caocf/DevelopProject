@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loadview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/life_group_bg_color">
+    
+   	<include layout="@layout/general_header"/>
+   	
+   	<com.handmark.pulltorefresh.library.PullToRefreshGridView
+       	android:id="@+id/tradingGridView"
+       	android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+		android:scrollbars="none"
+		android:listSelector="@android:color/transparent"
+		android:descendantFocusability="afterDescendants"
+		app:ptrAnimationStyle="flip"
+		android:columnWidth="150dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="2"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"/>
+
+    <include layout="@layout/empty_view" />
+  
+</LinearLayout>

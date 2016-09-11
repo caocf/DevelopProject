@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="788px"
+    android:layout_height="480px">
+
+    <ImageView
+        android:id="@+id/iv_confirm_bg"
+        android:layout_width="788px"
+        android:layout_height="480px"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/pub_image_desc"
+        android:src="@drawable/pub_code_tip_bg" />
+
+
+    <TextView
+        android:id="@+id/tv_head"
+        style="@style/ex_box_door_64_px"
+        android:layout_width="wrap_content"
+        android:layout_height="88px"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="提示"
+        android:textSize="@dimen/pub_text_size_40_px" />
+
+
+    <TextView
+        android:id="@+id/description"
+        style="@style/pub_dialog_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70px"
+        android:text="@string/ex_pickup_success" />
+
+    <TextView
+        android:id="@+id/tv_hint"
+        style="@style/pub_dialog_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px"
+        android:text="上报故障后，该箱门将无法使用"
+        android:textColor="@color/pub_red"
+        android:textSize="@dimen/pub_text_size_34_px"
+        android:visibility="gone" />
+    <!-- 确认按钮 -->
+
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/ex_button_dialog"
+        android:layout_alignLeft="@+id/iv_confirm_bg"
+        android:layout_below="@+id/description"
+        android:layout_marginLeft="160px"
+        android:layout_marginTop="100px"
+        android:contentDescription="@string/pub_image_desc"
+        android:text="@string/pub_ok" />
+    <!-- 取消按钮 -->
+
+    <Button
+        android:id="@+id/btn_cancel"
+        style="@style/ex_button_dialog"
+        android:layout_alignRight="@+id/iv_confirm_bg"
+        android:layout_below="@+id/description"
+        android:layout_marginRight="160px"
+        android:layout_marginTop="100px"
+        android:contentDescription="@string/pub_image_desc"
+        android:text="@string/pub_cancel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_cancel"
+        android:layout_marginTop="1px" />
+</RelativeLayout>

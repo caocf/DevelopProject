@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_number"
+        style="@style/ex_text_table_item" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/ex_text_table_item"
+        android:maxLines="2"
+        android:textSize="@dimen/pub_text_size_28_px" />
+
+    <TextView
+        android:id="@+id/tv_barcode"
+        style="@style/ex_text_table_item"
+        android:ellipsize="end"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_telephone"
+        style="@style/ex_text_table_item"
+        android:gravity="center" />
+
+    <com.ebox.pub.ui.customview.view.MaterialButton
+        android:id="@+id/btn_deal"
+        style="@style/ex_text_table_item"
+        android:background="@drawable/ex_code_table_content_deal"
+        android:drawableLeft="@drawable/ex_get_back"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:paddingLeft="30px"
+        android:text="@string/ex_deal"
+        android:textColor="@color/pub_white" />
+
+</LinearLayout>

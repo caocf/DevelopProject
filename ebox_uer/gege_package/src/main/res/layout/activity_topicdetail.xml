@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loadview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+   
+   <include layout="@layout/general_header"/>
+   
+   <RelativeLayout
+       android:id="@+id/topicOperateLayout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:visibility="gone">
+       
+       <View
+           android:id="@+id/line"
+           android:layout_width="match_parent"
+	       android:layout_height="0.5dp"
+	       android:background="@color/line_gray_color"/> 
+   
+   		<LinearLayout
+	       android:layout_width="match_parent"
+	       android:layout_height="40dp" 
+	       android:layout_below="@id/line"
+	       android:gravity="center_vertical"
+	       android:background="@color/general_blue_color"
+	       android:orientation="horizontal">
+       
+       <com.moge.gege.util.widget.MyDrawableCenterTextView
+           android:id="@+id/sortText"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="center_vertical"
+           android:background="@drawable/bg_blue_option"
+           android:text="@string/down_sort"
+           android:textColor="@color/white"
+           android:drawableLeft="@drawable/icon_downsort"
+           android:drawablePadding="5dp"/>
+       
+       
+       <com.moge.gege.util.widget.MyDrawableCenterTextView
+           android:id="@+id/favoriteText"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="center_vertical"
+           android:background="@drawable/bg_blue_option"
+           android:text="@string/favorite"
+           android:textColor="@color/white"
+           android:drawableLeft="@drawable/icon_favorite"
+           android:drawablePadding="5dp"/>
+       
+       
+       <com.moge.gege.util.widget.MyDrawableCenterTextView
+           android:id="@+id/reportText"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="center_vertical"
+           android:background="@drawable/bg_blue_option"
+           android:text="@string/report"
+           android:textColor="@color/white"
+           android:drawableLeft="@drawable/icon_report"
+           android:drawablePadding="5dp"/>
+       
+       <!--  
+       <LinearLayout
+	       android:layout_width="match_parent"
+	       android:layout_height="match_parent" 
+	       android:layout_weight="1"
+	       android:orientation="horizontal"
+	       android:visibility="gone">
+       
+	       <View
+	           android:layout_width="0.5dp"
+	           android:layout_height="match_parent"
+	           android:layout_marginTop="2dp"
+	           android:layout_marginBottom="2dp"
+	           android:alpha="0.5"
+	           android:background="@color/line_color"/>
+       
+	       <com.moge.gege.util.widget.MyDrawableCenterTextView
+	           android:id="@+id/deleteText"
+	           android:layout_width="match_parent"
+	           android:layout_height="match_parent"
+	           android:gravity="center_vertical|left"
+	           android:text="@string/delete_topic"
+	           android:drawableLeft="@drawable/icon_report"
+	           android:drawablePadding="5dp"/>
+       
+       </LinearLayout>
+       -->
+       
+   </LinearLayout>
+   
+  </RelativeLayout> 
+ 
+   <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+       android:id="@+id/topicDetailScrollView"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_weight="1"
+       android:scrollbars="none"
+       app:ptrAnimationStyle="flip" >
+      
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical" >
+      
+            <LinearLayout
+                android:id="@+id/topContainerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+      
+                <!-- 
+                <include
+                    android:id="@+id/generalTopicLayout"
+                   layout="@layout/topicdetail_top_general"
+                   android:visibility="gone" />
+               
+                <include
+                    android:id="@+id/activityTopicLayout"
+                   layout="@layout/topicdetail_top_activity"
+                   android:visibility="gone" />
+                  
+                   -->
+
+      
+              </LinearLayout>
+  
+              <com.moge.gege.util.widget.MyListView
+                  android:id="@+id/topicpostList"
+                  android:layout_width="fill_parent"
+	              android:layout_height="wrap_content"
+	              android:cacheColorHint="#00000000"
+	              android:fadingEdge="none"
+	              android:fastScrollEnabled="false"
+	              android:footerDividersEnabled="false"
+	              android:headerDividersEnabled="false"
+                 android:smoothScrollbar="true"
+                 android:background="@color/white"
+                 android:divider="@color/line_color"
+				 android:dividerHeight="0.5dp"
+                 android:listSelector="@android:color/transparent"
+				 android:descendantFocusability="afterDescendants"/>
+
+          </LinearLayout>
+    
+  </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+    <include layout="@layout/empty_view"/>
+
+    <com.moge.gege.util.widget.chat.IMFooterView
+       	android:id="@+id/footerView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

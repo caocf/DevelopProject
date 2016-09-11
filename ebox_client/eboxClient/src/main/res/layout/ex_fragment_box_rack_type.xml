@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="?attr/pub_top_nag_page"
+    tools:context="com.ebox.ex.ui.fragment.BoxRackTypeFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/big_rl"
+        android:layout_width="382px"
+        android:layout_height="286px"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="336px"
+        android:layout_marginTop="200px"
+        android:background="@null">
+
+
+        <Button
+            android:id="@+id/box_kd"
+            android:layout_width="382px"
+            android:layout_height="286px"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/box_kd_hint"
+            style="@style/ex_box_big_count_blue_40_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16px"
+            android:text="快递柜" />
+
+        <TextView
+            android:id="@+id/box_kd_count"
+            style="@style/ex_box_price_40_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="10"
+            android:textColor="@color/ex_box_kd" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/middle_rl"
+        android:layout_width="382px"
+        android:layout_height="286px"
+        android:layout_alignTop="@+id/big_rl"
+        android:layout_marginLeft="50px"
+        android:layout_toRightOf="@+id/big_rl"
+        android:background="@null">
+
+
+        <Button
+            android:id="@+id/box_sx"
+            android:layout_width="382px"
+            android:layout_height="286px"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/box_sx_hint"
+            style="@style/ex_box_middle_count_red_40_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16px"
+            android:text="生鲜柜" />
+
+        <TextView
+            android:id="@+id/box_sx_count"
+            style="@style/ex_box_price_40_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="10"
+            android:textColor="@color/ex_box_sx" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/little_rl"
+        android:layout_width="382px"
+        android:layout_height="286px"
+        android:layout_alignTop="@+id/big_rl"
+        android:layout_marginLeft="50px"
+        android:layout_toRightOf="@+id/middle_rl"
+        android:background="@null">
+
+
+        <Button
+            android:id="@+id/box_bw"
+            android:layout_width="382px"
+            android:layout_height="286px"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/box_bw_hint"
+            style="@style/ex_box_small_count_blue_40_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16px"
+            android:text="保温柜" />
+
+        <TextView
+            android:id="@+id/box_bw_count"
+            style="@style/ex_box_price_40_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="10"
+            android:textColor="@color/ex_box_bw" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_ok"
+        style="@style/ex_button_choose_door"
+        android:layout_below="@+id/big_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="106px"
+        android:text="@string/ex_choose_yourself" />
+
+</RelativeLayout>

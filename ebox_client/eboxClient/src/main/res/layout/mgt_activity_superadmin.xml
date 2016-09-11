@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_version"
+        style="@style/pub_text_black_size_32_px"
+        android:layout_width="wrap_content"
+        android:textColor="@color/pub_orange"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:gravity="center" />
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bt_box_setting"
+        style="@style/mgt_style_admin_btn"
+        android:layout_below="@+id/tv_version"
+        android:text="@string/mgt_box_setting" />
+
+    <Button
+        android:id="@+id/bt_box_manage"
+        style="@style/mgt_style_admin_btn"
+        android:layout_alignBaseline="@+id/bt_box_setting"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/bt_box_setting"
+        android:text="@string/mgt_box_manage" />
+
+    <Button
+        android:id="@+id/bt_box_test"
+        style="@style/mgt_style_admin_btn"
+        android:layout_alignBaseline="@+id/bt_box_setting"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/bt_box_manage"
+        android:text="@string/mgt_box_test" />
+
+    <Button
+        android:id="@+id/bt_box_init"
+        style="@style/mgt_style_admin_btn"
+        android:layout_alignBaseline="@+id/bt_box_setting"
+        android:layout_alignTop="@+id/bt_box_setting"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/bt_box_test"
+        android:text="@string/mgt_box_init" />
+
+    <Button
+        android:id="@+id/bt_camera_test"
+        style="@style/mgt_style_admin_btn"
+        android:layout_below="@+id/bt_box_setting"
+        android:text="@string/mgt_camera_test" />
+
+    <Button
+        android:id="@+id/bt_audio_test"
+        style="@style/mgt_style_admin_btn"
+        android:layout_alignBaseline="@+id/bt_camera_test"
+        android:layout_below="@+id/bt_box_manage"
+        android:layout_toRightOf="@+id/bt_camera_test"
+        android:text="@string/mgt_audio_test" />
+
+    <Button
+        android:id="@+id/bt_led_test"
+        style="@style/mgt_style_admin_btn"
+        android:layout_below="@+id/bt_box_setting"
+        android:layout_toRightOf="@+id/bt_audio_test"
+        android:text="@string/mgt_led_test" />
+
+    <Button
+        android:id="@+id/bt_sd"
+        style="@style/mgt_style_admin_btn"
+        android:layout_below="@+id/bt_box_setting"
+        android:layout_toRightOf="@+id/bt_led_test"
+        android:text="@string/mgt_disk" />
+
+    <Button
+        android:id="@+id/bt_restartapk"
+        style="@style/mgt_style_admin_btn"
+        android:layout_below="@+id/bt_camera_test"
+        android:text="@string/mgt_restartapk" />
+
+    <Button
+        android:id="@+id/bt_reboot"
+        style="@style/mgt_style_admin_btn"
+        android:layout_below="@+id/bt_camera_test"
+        android:layout_toRightOf="@+id/bt_restartapk"
+        android:text="@string/mgt_reboot" />
+
+    <Button
+        android:id="@+id/bt_querySqlite"
+        style="@style/mgt_style_admin_btn"
+        android:layout_below="@+id/bt_led_test"
+        android:layout_toRightOf="@+id/bt_reboot"
+        android:text="@string/mgt_query_sqlite" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/bt_restartapk"
+        android:layout_marginTop="40px"
+        android:background="@color/pub_blue" />
+
+    <GridView
+        android:id="@+id/apps_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_restartapk"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50px"
+        android:numColumns="4"></GridView>
+
+</RelativeLayout>

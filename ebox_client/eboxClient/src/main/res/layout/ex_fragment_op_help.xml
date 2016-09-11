@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:background="@drawable/ex_help_bg">
+
+    <ImageView
+        android:id="@+id/ex_iv_fop_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ex_help_tel"
+
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="200px"/>
+
+    <TextView
+        android:id="@+id/ex_tv_fop_tel"
+        style="@style/ex_text_normal"
+        android:text="@string/ex_tel"
+        android:layout_toRightOf="@id/ex_iv_fop_icon"
+        android:textColor="@color/ex_pick"
+        android:textSize="@dimen/pub_text_size_32_px"
+        android:layout_marginLeft="@dimen/pub_text_size_18_px"
+        android:textStyle="bold"
+        android:layout_marginTop="200px"/>
+
+    <TextView
+        android:id="@+id/ex_tv_fop_tip"
+        style="@style/ex_text_normal"
+        android:text="@string/ex_help_tip"
+        android:layout_toRightOf="@id/ex_iv_fop_icon"
+        android:layout_below="@id/ex_tv_fop_tel"
+        android:textColor="@color/ex_pick"
+        android:layout_marginLeft="@dimen/pub_text_size_18_px"
+        android:textSize="@dimen/pub_text_size_26_px"/>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:text="220V电压:"
+            android:textColor="@color/pub_blue"
+            android:textSize="@dimen/pub_text_size_26_px" />
+
+        <RadioGroup
+            android:id="@+id/rg_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           >
+
+            <RadioButton
+                android:id="@+id/rb_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:text="正常"
+                android:textColor="@color/pub_blue"
+                android:textSize="@dimen/pub_text_size_26_px"
+                />
+
+
+            <RadioButton
+                android:id="@+id/rb_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="异常"
+                android:textColor="@color/pub_blue"
+                android:textSize="@dimen/pub_text_size_26_px"/>
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:text="电表度数"
+            android:textColor="@color/pub_blue"
+            android:layout_marginTop="20px"
+            android:textSize="@dimen/pub_text_size_26_px" />
+
+        <EditText
+            android:id="@+id/et_fe_degree"
+            style="@style/mgt_et_style"
+            android:inputType="number"
+            android:hint=" 0 "
+             />
+
+    </LinearLayout>
+</ScrollView>

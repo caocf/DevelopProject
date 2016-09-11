@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="85dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="horizontal" 
+    android:gravity="center_vertical">
+   	   
+     <com.moge.gege.util.widget.RoundedImageView 
+         android:id="@+id/avatarImage"
+         android:layout_width="60dp"
+         android:layout_height="60dp"
+         android:layout_gravity="center_vertical"
+         android:scaleType="fitXY"
+         app:corner_radius="100dp"
+         app:border_width="1dp"
+         app:border_color="@color/item_gray"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_marginLeft="10dp"
+    	android:orientation="vertical" >
+    	
+	   <LinearLayout
+	        android:layout_width="match_parent"
+	    	android:layout_height="84dp"
+	    	android:orientation="horizontal" 
+	    	android:gravity="center_vertical">
+    
+		    <TextView
+	           	android:id="@+id/nameText"
+	           	android:layout_width="wrap_content"
+	           	android:layout_height="wrap_content"
+	           	style="@style/text_life_title"/>
+          
+		   <ImageView
+		        android:id="@+id/genderImage"
+		       	android:layout_width="wrap_content"
+		       	android:layout_height="wrap_content"
+		       	android:layout_marginLeft="5dp"
+		       	android:scaleType="fitXY"/>
+		   
+		   <TextView
+	            android:id="@+id/communityText"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="30dp"
+	            style="@style/text_life_detail"/>
+            
+     </LinearLayout>
+        
+     <TextView
+         android:id="@+id/descText"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="5dp"
+         style="@style/text_life_detail"/>
+        
+  </LinearLayout>
+    		
+		   
+    	
+</LinearLayout>

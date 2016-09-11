@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_state_top"
+        style="@style/pub_text_white_size_60_px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px" />
+
+    <RelativeLayout
+        android:id="@+id/iv_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_state_top"
+        android:layout_marginTop="20px">
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/pub_text_white_size_60_px"
+            android:layout_width="620px"
+            android:layout_height="150px"
+            android:layout_marginLeft="336px"
+            android:background="@drawable/pub_code_btn_yellow"
+            android:gravity="center"
+            android:text="@string/st_create_time" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            style="@style/pub_text_white_size_60_px"
+            android:layout_width="620px"
+            android:layout_height="150px"
+            android:layout_toRightOf="@+id/tv_time"
+            android:background="@drawable/pub_code_btn_green"
+            android:gravity="center"
+            android:text="@string/st_state" />
+
+        <TextView
+            android:id="@+id/tv_msg"
+            style="@style/pub_text_white_size_60_px"
+            android:layout_width="620px"
+            android:layout_height="150px"
+            android:layout_toRightOf="@+id/tv_status"
+            android:background="@drawable/pub_code_btn_green"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="@string/st_desc"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/item_list"
+        android:layout_width="1240px"
+        android:layout_height="550px"
+        android:layout_alignLeft="@+id/iv_top"
+        android:layout_alignRight="@+id/iv_top"
+        android:layout_below="@+id/iv_top"
+        android:layout_marginLeft="336px"
+        android:cacheColorHint="#000000"/>
+
+
+</RelativeLayout>

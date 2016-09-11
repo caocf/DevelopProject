@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/pub_layer_nav_page"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/rootView">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="778px"
+        android:layout_height="480px"
+        android:src="@drawable/pub_code_tip_bg"
+        android:layout_marginTop="300px"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        style="@style/pub_text_white_size_60_px"
+        android:layout_width="wrap_content"
+        android:layout_height="88px"
+        android:layout_marginTop="340px"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="结果"/>
+
+
+    <TextView
+        android:id="@+id/result"
+        style="@style/pub_text_black_size_50_px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500px"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"/>
+
+    <include layout="@layout/ums_bottom_prompt"/>
+
+
+</RelativeLayout>

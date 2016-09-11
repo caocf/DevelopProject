@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <com.ebox.pub.ui.customview.Title
+         android:id="@+id/title" 
+		 android:layout_width="match_parent" 
+		 android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:id="@+id/tv_order"
+        style="@style/pub_text_white_size_60_px"
+        android:layout_marginLeft="336px"
+        android:layout_marginTop="120px"/>
+
+    <Button
+        android:id="@+id/bt_box"
+        style="?attr/button_normal"
+        android:layout_below="@+id/tv_order"
+        android:layout_marginTop="24px"
+        android:layout_marginLeft="336px"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/ex_select_box"/>
+
+    <Button
+        android:id="@+id/bt_put_item"
+        style="?attr/button_big"
+        android:layout_below="@+id/bt_box"
+        android:layout_marginTop="42px"
+        android:layout_marginLeft="336px"
+        android:padding="10dp"
+        android:text="@string/ex_confirm_deliver" />
+</RelativeLayout>

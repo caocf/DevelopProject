@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ebox.pub.ui.customview.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/fl_inner"
+        style="@style/ex_content_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="100px"
+        android:layout_marginTop="85px"
+        android:orientation="vertical">
+
+        <!--手机号-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="25px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ex_icon_input_phone" />
+
+            <EditText
+                android:id="@+id/et_operator_phone"
+                style="?attr/input_big"
+                android:layout_marginLeft="12px"
+                android:hint="@string/pub_username" />
+
+        </LinearLayout>
+
+
+        <!--验证码-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="25px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ex_icon_verify" />
+
+            <EditText
+                android:id="@+id/et_operator_verify"
+                style="?attr/input_big"
+                android:layout_width="300px"
+                android:layout_marginLeft="12px"
+                android:hint="@string/ex_hint_verify" />
+
+            <com.ebox.pub.ui.customview.view.MaterialButton
+                android:id="@+id/bt_get"
+                android:layout_width="150px"
+                android:layout_height="58px"
+                android:background="@drawable/ex_code_green"
+                android:text="@string/ex_get_verify"
+                android:textColor="@color/ex_while"
+                android:textSize="@dimen/ex_text_24_px"
+                android:layout_marginLeft="12px"/>
+
+        </LinearLayout>
+
+        <!--语音验证码-->
+        <LinearLayout
+            android:id="@+id/ex_ll_ar_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="66px"
+            android:layout_marginLeft="200px"
+            android:visibility="invisible">
+
+            <TextView
+                style="@style/ex_text_normal"
+                android:text="@string/ex_sms_voice1" />
+
+            <TextView
+                android:id="@+id/ex_tv_ar_voice"
+                style="@style/ex_text_normal"
+                android:text="@string/ex_sms_voice"
+                android:clickable="true"
+                android:textColor="@color/ex_light_blue" />
+        </LinearLayout>
+
+
+        <!--请输入密码-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="25px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ex_icon_password" />
+
+            <EditText
+                android:id="@+id/et_operator_password"
+                style="?attr/input_big"
+                android:layout_marginLeft="12px"
+                android:hint="@string/pub_password" />
+        </LinearLayout>
+
+
+        <!--选择快递公司-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="75px">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ex_icon_city" />
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="457px"
+                android:layout_height="61px"
+                android:clickable="true"
+                android:background="@drawable/ex_input_city_bg"
+                android:text="@string/ex_i_orgselect"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/pub_text_size_20_px"
+                android:textColor="@color/pub_white"
+                android:textSize="28px"
+                android:layout_marginLeft="12px"/>
+
+        </LinearLayout>
+
+        <com.ebox.pub.ui.customview.view.MaterialButton
+            android:id="@+id/bt_ok"
+            style="?attr/button_big"
+            android:layout_below="@+id/et_pwd_again"
+            android:layout_marginTop="20px"
+            android:text="@string/st_commit"
+            android:textColor="@color/pub_white"/>
+
+    </LinearLayout>
+
+
+
+
+    <com.ebox.ex.ui.bar.EboxKeyboard
+        android:id="@id/keyboard"
+        style="@style/ex_keyboard_style" />
+
+    <com.ebox.ex.ui.bar.Logo style="@style/ex_logo" />
+
+</RelativeLayout>

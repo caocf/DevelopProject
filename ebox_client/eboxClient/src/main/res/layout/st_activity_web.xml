@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/pub_top_nag_page">
+    
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pub_title_height"
+        android:background="?attr/pub_title_background">
+
+        <Button
+            android:id="@+id/bt_back"
+            style="?attr/pub_title_back"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:layout_width="300px"
+            android:layout_height="@dimen/pub_title_height"
+            android:id="@+id/btn_exit"
+            android:layout_centerVertical="true"
+            android:background="@drawable/pub_title_home"
+            android:layout_toRightOf="@+id/bt_back"
+         />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="?attr/pub_title_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center" />
+
+
+
+        <TextView
+            android:id="@+id/tv_timer"
+            style="?attr/pub_clock_style"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="180px"
+            android:gravity="center" />
+
+    </RelativeLayout>
+    <WebView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_top"
+        android:id="@+id/web"/>
+    
+</RelativeLayout>
